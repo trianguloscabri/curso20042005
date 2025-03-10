@@ -1,0 +1,137 @@
+<title>trianguloscabri234</title> 
+
+
+<body bgcolor="#FFFFFF">
+<table width="100%" border="0">
+  <tr> 
+    <td height="2"> 
+      <h1><font face="Verdana, Arial, Helvetica, sans-serif">Problema 234 de <i>tri&aacute;nguloscabri</i></font></h1>
+    </td>
+  </tr>
+</table>
+<table width="100%" border="0">
+  <tr> 
+    <td bgcolor="#FFFF99" height="36"> 
+      <p class="Subsubtitle" align="left">Demostrar que si las longitudes de los 
+        lados de un tri&aacute;ngulo forman una progresi&oacute;n aritm&eacute;tica, 
+        el centro de la circunferencia inscrita en dicho tri&aacute;ngulo y el 
+        baricentro de &eacute;ste est&aacute;n situados en una recta paralela 
+        al lado de la longitud intermedia. </p>
+      <p></p>
+    </td>
+  </tr>
+  <tr> 
+    <td height="18"> 
+      <div align="right"> 
+        <p><font size="-1">G&uacute;siev, V.y otros (1989) &quot;Pr&aacute;cticas 
+          para resolver Problemas matem&aacute;ticos. Geometr&iacute;a&quot; .Propuesto 
+          por Ricard Peir&oacute; i Estruch</font></p>
+      </div>
+    </td>
+  </tr>
+</table>
+<p><font face="Verdana, Arial, Helvetica, sans-serif"><i>Soluci&oacute;n de <a href="http://garciacapitan.auna.com">Francisco 
+  Javier Garc&iacute;a Capit&aacute;n</a></i> </font></p>
+<h2><b>1. Soluci&oacute;n con coordenadas baric&eacute;ntricas</b></h2>
+<p>Este es un problema que se resuelve de una forma r&aacute;pida con coordenadas 
+  baric&eacute;ntricas, siendo los c&aacute;lculos los suficientemente sencillos 
+  como para servir tambi&eacute;n de introducci&oacute;n al uso de estas coordenadas.</p>
+<p>Podemos suponer, sin p&eacute;rdida de generalidad que es <img src="ecuacion6.gif" width="62" height="18" align="absmiddle"></p>
+<p>El baricentro <i>G</i> y el incentro <i>I</i> del tri&aacute;ngulo <i>ABC</i> 
+  tienen coordenadas baric&eacute;ntricas <i>G</i> = (1, 1, 1) e <i>I</i> = (<i>a</i>, 
+  <i>b</i>, <i>c</i>), respectivamente. Entonces, la ecuaci&oacute;n de la recta 
+  <i>GI</i> es </p>
+<div class=Section1>
+  <div class=Section1>
+    <p><img src="ecuacion1.gif" width="316" height="74"></p>
+    <p>La intersecci&oacute;n de <i>GI</i> con la recta <i>AC</i> (de ecuaci&oacute;n 
+      <img src="ecuacion2.gif" width="37" height="21" align="texttop">) es el 
+      punto <img src="ecuacion3.gif" width="128" height="21" align="absmiddle">.</p>
+    <p>Si los lados del tri&aacute;ngulo est&aacute;n en progresi&oacute;n aritm&eacute;tica 
+      ser&aacute; <img src="ecuacion5.gif" width="70" height="21" align="absmiddle"> 
+      por lo que las coordenadas de <i>P</i> suman 0 y <i>P</i> es un punto del 
+      infinito. Al cortarse el lado <i>AC</i> y la recta <i>GI</i> en un punto 
+      del infinito, ambas rectas son paralelas. </p>
+    <h2><b>2. Construcci&oacute;n con Cabri</b></h2>
+    <p><img src="234.jpg" width="427" height="277" align="right">Para obtener 
+      una figura con Cabri de los tri&aacute;ngulos que satisfacen las condiciones 
+      del problema fijamos el segmento de longitud <i>BC</i> = <i>a</i>, y consideramos 
+      un punto variable <i>N</i> en <i>BC</i>. Interpretando que <i>BN</i>=<i>c</i> 
+      y teniendo en cuenta la relaci&oacute;n <img src="ecuacion5.gif" width="70" height="21" align="absmiddle"> 
+      hallamos el sim&eacute;trico <i>N'</i> de <i>N</i> respecto de <i>B</i> 
+      y el punto medio <i>M</i> de <i>N'C</i>. Si <i>b</i> = <i>MC</i>, es evidente 
+      que se cumple la relaci&oacute;n anterior, por lo que las circunferencias 
+      con centros B y C y radios <i>BN</i> y <i>MC</i> respectivamente se cortar&aacute;n 
+      en el v&eacute;rtice A de un tri&aacute;ngulo cumpliendo las condiciones 
+      del problema. </p>
+    <p>Podemos preguntar a Cabri por el lugar geom&eacute;trico de los puntos 
+      <i>A</i> obtenidos de esta forma al fijar <i>BC</i> y variar <i>N</i> dentro 
+      de <i>BC</i>.</p>
+    <p>Parece un arco de circunferencia ...</p>
+    <h2><b>3. An&aacute;lisis con <i>Mathematica</i></b></h2>
+    <p>... pero no. </p>
+    <p>Si consideramos el segmento <i>BC</i> situado sobre el eje <i>x</i>, y 
+      centrado en el origen de coordenadas, podemos hallar la ecuaci&oacute;n 
+      del lugar geom&eacute;trico de <i>A</i>:</p>
+    <p align="left"><img src="index_1.gif" width="505" height="29"><br>
+      <img src="index_2.gif" width="495" height="17"> </p>
+    <p><img src="index_3.gif" width="292" height="18"><br>
+      <img src="index_4.gif" width="507" height="17"> </p>
+    <p><img src="index_11.gif" width="288" height="288" align="right">Si representamos 
+      esta cu&aacute;rtica vemos que se trata de una &quot;casi circunferencia&quot; 
+      un poco abollada, y vemos que el lugar geom&eacute;trico de <i>A</i> est&aacute; 
+      formado por la parte de dicha curva que queda dentro de un tri&aacute;ngulo 
+      equil&aacute;tero construido sobre <i>BC</i>. Naturalmente podriamos haber 
+      construido tambi&eacute;n <i>A</i> y el tri&aacute;ngulo equil&aacute;tero 
+      al otro lado de <i>BC</i>.</p>
+    <p><img src="index_5.gif" width="39" height="18"><br>
+      <img src="index_6.gif" width="176" height="18"> <br>
+      <img src="index_7.gif" width="355" height="38"> <br>
+      <img src="index_8.gif" width="415" height="38"> <br>
+      <img src="index_9.gif" width="330" height="36"><br>
+      <img src="index_10.gif" width="409" height="58"> </p>
+    <p>&iexcl;S&oacute;lo un detalle m&aacute;s antes de cansar al lector! Al 
+      querer hallar los puntos de corte de la curva con el eje <i>x</i> nos llevamos 
+      una sorpresa:<br>
+      <img src="index_13.gif" width="192" height="18"> <br>
+      <img src="index_14.gif" width="265" height="30"> </p>
+    <p>&iexcl;Pero la curva parece tener SOLO DOS puntos de corte con el eje <i>x</i>! 
+      Veamos lo que ocurre. Intentemos despejar <i>y</i> en funci&oacute;n de 
+      <i>x</i>:<br>
+      <img src="index_15.gif" width="124" height="18"> <br>
+      <img src="index_16.gif" width="528" height="76"> </p>
+    <p>Y veamos el signo de los radicandos:<br>
+      <img src="index_17.gif" width="530" height="30"> <br>
+      <img src="index_18.gif" width="514" height="30"> <br>
+      <img src="index_19.gif" width="376" height="18"> <br>
+      <img src="index_21.gif" width="537" height="158"> </p>
+    <p>Ahora la situaci&oacute;n es clara: uno de los dos radicandos nunca es 
+      positivo, y se anula solamente en -1/6 y en 1/2 . Esto dar&aacute; lugar 
+      a s&oacute;lo dos puntos reales de la curva: el (-1/6,0) y el (1/2,0). Las 
+      expresiones de <i>y</i> con el otro radicando son las que dan lugar a la 
+      &quot;casi circunferencia&quot;, que al contener al punto (-1/6,0) da como 
+      resultado que la curva est&aacute; formada por la &quot;casi circunferencia&quot; 
+      y el punto (1/2, 0).</p>
+    <p>Pulsa <a href="234.nb">aqu&iacute;</a> para descargar el c&oacute;digo 
+      de <i>Mathematica</i> utilizado.</p>
+    <p>&nbsp;</p>
+    <h2><b>4. Applet de CabriJava</b></h2>
+    <p align="center"><applet
+codebase="../."
+archive="CabriJava.jar"
+code="CabriJava.class"
+width=520 height=360>
+    <param name=file value="234ii.fig">
+    <param name=lang value="es">
+    <param name=border value=0>
+    <param name=bgcolor value=#FFFFCC>
+    <param name=controller value=true>
+  </applet>
+
+
+
+
+
+</p>
+  </div>
+</div>

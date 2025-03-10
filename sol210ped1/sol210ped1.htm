@@ -1,0 +1,456 @@
+<html>
+
+<head>
+<meta name="generator" content="Corel WordPerfect 12">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<style>
+table
+{
+	border-collapse: collapse;
+	border-spacing: 0pt;
+	border-color: black;
+	empty-cells: show;
+	font-family: "Times New Roman", serif;
+	font-size: 12pt;
+	font-weight: normal;
+	font-style: normal
+}
+
+td
+{
+	border-color: black
+}
+
+td.table1column1
+{
+	padding-left: 0.196667in;
+	padding-right: 0.196667in;
+	border: 0.0133333in solid
+}
+
+p
+{
+	margin-top: 0px;
+	margin-bottom: 1px
+}
+
+span.WPCharBox
+{
+	border-width: 0.0133333in;
+	border-style: solid;
+	border-color: black;
+	padding: 0px;
+	width: 100%;
+	margin: 0px
+}
+
+span.WPCharBoxWrapper
+{
+	padding: 0px;
+	vertical-align: text-top
+}
+
+span.WPBoxCaption
+{
+	padding: 0px;
+	width: 100%;
+	margin: 2px
+}
+
+body
+{
+	font-family: "Times New Roman", serif;
+	font-size: 12pt;
+	font-weight: normal;
+	font-style: normal;
+	background-color: #666666;
+}
+body,td,th {
+	font-family: Courier New, Courier, mono;
+	color: #800000;
+}
+.Estilo1 {color: #004000}
+.Estilo2 {font-weight: bold}
+.Estilo3 {color: #FFFFCC}
+.Estilo7 {font-size: 8px}
+.Estilo8 {
+	font-family: 'Courier New', monospace;
+	font-size: 11pt;
+	color: #ffffcc;
+}
+</style>
+
+</head>
+
+<body>
+<div align="center">
+  <table width="649.68px" cellpadding="6" cellspacing="0">
+    <tr>
+      <td class="table1column1" width="100%" style="background-color: #800000; border: 0.0133333in solid" valign="top"><div align="justify">
+          <p><br>
+            <span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="font-weight: bold"><span style="color: #ffffcc">Problema 210</span></span></span></span>              </p>
+          <p><span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="font-weight: bold"><span style="color: #ffffcc">Dado un tri&aacute;ngulo ABC y un tri&aacute;ngulo MNP, hallar el tri&aacute;ngulo XYZ cuyos v&eacute;rtices se apoyen en los lados de ABC y cuyos lados pasen por los v&eacute;rtices de MNP</span></span></span></span></p>
+          <p>&nbsp;</p>
+          <p><span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="font-weight: bold"><span style="color: #ffffcc">Primera soluci&oacute;n</span></span></span></span></p>
+          </div>
+          <p align="justify" style="text-align: right"><span style="font-family: 'Courier New', monospace"><span style="font-size: 8pt"><span style="font-weight: bold"><span style="color: #ffffcc"><span style="font-size: 8pt"><span class="Estilo7"> </span>Jos&eacute; Mar&iacute;a Pedret. Ingeniero Naval. Esplugues de Llobregat (Barcelona).</span></span></span></span></span></p>
+          <p align="justify" style="text-align: right"><span style="font-family: 'Courier New', monospace"><span style="font-size: 8pt"><span style="font-weight: bold"><span style="color: #ffffcc"><span style="font-size: 8pt"> 16 de enero de 2005</span></span></span></span></span></p></td>
+    </tr>
+    <tr>
+      <td class="table1column1" width="100%" style="border-left: none; border-right: none; border-top: none; border-bottom: none; background-color: #666666" valign="top"><p align="justify"><span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="color: #800000">&#160;</span></span></span></p></td>
+    </tr>
+    <tr>
+      <td class="table1column1" width="100%" style="background-color: #800000; border: 0.0133333in solid" valign="top"><p align="justify"><span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="color: #800000"><span style="font-weight: bold"><span style="color: #ffffcc">0. INTRODUCCION</span></span></span></span></span></p></td>
+    </tr>
+    <tr>
+      <td class="table1column1" width="100%" style="border-left: none; border-right: none; border-top: none; border-bottom: none; background-color: #666666" valign="top"><p align="justify" style="text-align: center"><span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="color: #800000">&#160;</span></span></span></p></td>
+    </tr>
+    <tr>
+      <td class="table1column1" width="100%" style="background-color: #ffffcc; border: 0.0133333in solid" valign="top"><p align="justify" style="text-align: center"><span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="color: #800000"> 
+          <span class="WPCharBoxWrapper" style="width: 583px"><span class="WPCharBox" style="border: none"> 
+          <img src="figura.01.gif" alt="figura.01.gif" width="581" height="355" border="0"></span><span class="WPBoxCaption" style="text-align: center"><span style="color: #000000"><span style="font-size: 9pt">figura 
+          1</span></span></span></span></span></span></span> </p>
+        <div align="justify"><br>
+            <span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="color: #800000">Suponemos que R, un punto cualquiera sobre el lado AB del primer tri&aacute;ngulo, es el v&eacute;rtice sobre AB.</span></span></span></div>
+        <div align="justify"><br>
+            <span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="color: #800000">El lado por este v&eacute;rtice R ha de pasar por M, uno de los v&eacute;rtices del segundo tri&aacute;ngulo;  la recta MR  corta al lado BC en R<sub>M</sub>.</span></span></span></div>
+          <div align="justify"><br>
+              <span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="color: #800000">Si R<sub>M</sub> es el v&eacute;rtice sobre BC, el lado por <span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="color: #800000">R<sub>M</sub></span></span></span> ha de pasar por N, segundo v&eacute;rtice del segundo tri&aacute;ngulo;   NR<sub>M</sub>  corta a  CA en  R<sub>MN</sub>.</span></span></span></div>
+          <div align="justify"><br>
+              <span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="color: #800000">El lado por R<sub>MN</sub> ha de pasar por P y  PR<sub>MN</sub> corta al lado AB en R<sub>MNP</sub>.</span></span></span></div>
+          <div align="justify">
+            <p><br>
+                <span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="color: #800000"><span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="color: #800000">R</span></span></span> y R<sub>MNP</sub>   en general no coinciden, si <span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="color: #800000">R<sub>MNP</sub> coincidiese con R </span></span></span>habr&iacute;amos conseguido la soluci&oacute;n, y ser&iacute;a</span></span></span></p>
+            <p>&nbsp; </p>
+        </div>
+          <p align="justify" class="Estilo1" style="text-align: center"><span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt">R<sub>MNP</sub>=R&#8217;=R=R&#8221;</span></span></p>
+          <p align="justify" style="text-align: center">&nbsp; </p>
+          <div align="justify">              <span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="color: #800000">Si somos capaces de determinar la relaci&oacute;n que existe entre R y R&#8217; estableceremos la condici&oacute;n  para que R y R&#8217; coincidan.</span></span></span></div></td>
+    </tr>
+    <tr>
+      <td class="table1column1" width="100%" style="border-left: none; border-right: none; border-top: none; border-bottom: none; background-color: #666666" valign="top"><p align="justify"><span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="color: #800000">&#160;</span></span></span></p></td>
+    </tr>
+    <tr>
+      <td class="table1column1" width="100%" style="background-color: #800000; border: 0.0133333in solid" valign="top"><p align="justify"><span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="color: #800000"><span style="font-weight: bold"><span style="color: #ffffcc">1. &iquest;QU&Eacute; TRANSFORMACI&Oacute;N CONVIERTE A R EN R<sub>M</sub>?</span></span></span></span></span></p></td>
+    </tr>
+    <tr>
+      <td class="table1column1" width="100%" style="border-left: none; border-right: none; border-top: none; border-bottom: none; background-color: #666666" valign="top"><p align="justify"><span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="color: #800000">&#160;</span></span></span></p></td>
+    </tr>
+    <tr>
+      <td class="table1column1" width="100%" style="background-color: #b2b2b2; border: 0.0133333in solid" valign="top"><p align="justify"><span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="color: #800000"><span style="font-weight: bold">HOMOGRAF&Iacute;AS</span></span></span></span></p>
+          <p align="justify"><span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="color: #800000">S&oacute;lo consideraremos que son biyecciones entre espacios proyectivos que conservan la raz&oacute;n doble de cuatro puntos. Recordemos algunas propiedades:</span></span></span></p>
+          <p align="justify" style="text-indent: -0.5in; margin-left: 0.5in; margin-right: 0.5in">&#160;</p>
+          <p align="justify" style="text-indent: -0.5in; margin-left: 0.5in; margin-right: 0.5in"><span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="color: #800000">a)<span>&#160;&#160;&#160;</span>La composici&oacute;n de homograf&iacute;as es una homograf&iacute;a.</span></span></span></p>
+          <p align="justify" style="text-indent: -0.5in; margin-left: 0.5in; margin-right: 0.5in">&#160;</p>
+          <p align="justify" style="text-indent: -0.5in; margin-left: 0.5in; margin-right: 0.5in"><span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="color: #800000">b)<span>&#160;&#160;&#160;</span>La homograf&iacute;a transforma puntos alineados en puntos alineados. De ello se deduce que una homograf&iacute;a entre espacios proyectivos P y P&#8217; transforma toda recta de P en una recta de P&#8217;.</span></span></span></p>
+          <div align="justify"><br>
+              <span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="color: #800000">La transformaci&oacute;n a estudiar toma un punto de una recta y lo transforma en un punto de otra recta y como que a cada punto de AB le corresponde un &uacute;nico punto de BC, la transformaci&oacute;n es claramente una biyecci&oacute;n. Veamos si es una homograf&iacute;a.</span></span></span></div></td>
+    </tr>
+    <tr>
+      <td class="table1column1" width="100%" style="border-left: none; border-right: none; border-top: none; border-bottom: none; background-color: #666666" valign="top"><p align="justify" style="text-align: center"><span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="color: #800000">&#160;</span></span></span></p></td>
+    </tr>
+    <tr>
+      <td class="table1column1" width="100%" style="background-color: #ffffcc; border: 0.0133333in solid" valign="top"><p align="justify" style="text-align: center"><span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="color: #800000"> 
+          <span class="WPCharBoxWrapper" style="width: 583px"><span class="WPCharBox" style="border: none"> 
+          <img src="figura.02.gif" alt="figura.02.gif" width="581" height="355" border="0"></span><span class="WPBoxCaption" style="text-align: center"><span style="color: #000000"><span style="font-size: 9pt">figura 
+          2</span></span></span></span></span></span></span> </p>
+          <div align="justify"><br>
+          </div>
+          <p align="justify"><span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="color: #800000"><span style="font-weight: bold">LAS PROYECCIONES</span></span></span></span></p>
+          <p align="justify"><span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="color: #800000">Sean AB ,BC dos rectas proyectivas de un plano proyectivo y M un punto de ese plano que no pertenece ni a AB ni a BC. La aplicaci&oacute;n de AB sobre BC que a un punto R de AB asocia un punto R&#8217;</span></span></span></p>
+          <p align="justify">&nbsp;</p>
+          <p align="center"><span class="Estilo1"><span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span class="WPCharBoxWrapper" style="width: 220px"><span style="font-family: 'Courier New', monospace"><span style="font-family: 'New Century Schoolbook', serif">&#960;</span><sub>M</sub>:AB&#8594;BC;</span></span></span></span></span></p>
+          <p align="center">&nbsp;</p>
+          <p align="center"><span class="Estilo1"><span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span class="WPCharBoxWrapper" style="width: 220px"><span style="font-family: 'Courier New', monospace"> <span style="font-family: 'New Century Schoolbook', serif">&#960;</span><sub>M</sub>(R)=RM&#8745;BC=R<sub>M</sub>, R&isin;AB</span></span></span></span></span></p>
+          <p align="center">&nbsp;</p>
+          <p align="justify"><span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="color: #800000">recibe el nombre de proyecci&oacute;n central de centro M de AB sobre BC.</span></span></span></p>
+          <div align="justify">
+            <p><br>
+            <span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="color: #800000">Recordamos ahora que en el plano proyectivo, cuatro rectas distintas r<sub>1</sub>, r<sub>2</sub>, r<sub>3</sub>, r<sub>4</sub> que pasan por un punto fijo O y que son cortadas por una secante s, que no pasa por O, en los puntos P<sub>1</sub>, P<sub>2</sub>, P<sub>3</sub>, P<sub>4</sub> cumplen que la raz&oacute;n doble de las rectas es igual a la raz&oacute;n doble de los puntos</span></span></span></p>
+            <p>&nbsp; </p>
+            <p align="center" class="Estilo1"><span style="font-family: 'Courier New', monospace">(r<sub>1</sub>,r<sub>2</sub>,r<sub>3</sub>,r<sub>4</sub>)=(P<sub>1</sub>,P<sub>2</sub>,P<sub>3</sub>,P<sub>4</sub>).</span></p>
+            <br>
+            <p><span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="color: #800000">As&iacute;,la proyecci&oacute;n entre rectas proyectivas es una biyecci&oacute;n que conserva la raz&oacute;n doble y por tanto es una homograf&iacute;a.</span></span></span></p>
+          </div>
+          <div align="justify"><br>
+              <span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="color: #800000">Se puede demostrar que una homograf&iacute;a entre dos rectas distintas de un plano proyectivo es una proyecci&oacute;n si y s&oacute;lo si el punto de intersecci&oacute;n de estas rectas se transforma en s&iacute; mismo.</span></span></span></div>
+          <div align="justify">
+            <p><br>
+                <span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="color: #800000">De forma an&aacute;loga observamos dos proyecciones m&aacute;s (ver figura 1)</span></span></span></p>
+            <p>&nbsp;</p>
+            <p align="center" class="Estilo1"><span style="font-family: 'New Century Schoolbook', serif">&#960;</span><sub>N</sub>:BC&#8594;CA; <span style="font-family: 'New Century Schoolbook', serif">&#960;</span><sub>N</sub>(R<sub>M</sub>)=NR<sub>M</sub>&#8745;CA=R<sub>MN</sub>, R<sub>M</sub>&isin;BC </p>
+            <span class="Estilo1"><br>
+            </span>
+            <p align="center" class="Estilo1"><span style="font-family: 'New Century Schoolbook', serif">&#960;</span><sub>P</sub>:CA&#8594;AB; <span style="font-family: 'New Century Schoolbook', serif">&#960;</span><sub>P</sub>(R<sub>MN</sub>)=PR<sub>MN</sub>&#8745;AB=R<sub>MNP</sub>, R<sub>MN</sub>&isin;CA</p>
+            <br>
+          </div>
+      </td>
+    </tr>
+    <tr>
+      <td class="table1column1" width="100%" style="border-left: none; border-right: none; border-top: none; border-bottom: none; background-color: #666666" valign="top"><p align="justify"><span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="color: #800000">&#160;</span></span></span></p></td>
+    </tr>
+    <tr>
+      <td class="table1column1" width="100%" style="background-color: #800000; border: 0.0133333in solid" valign="top"><p align="justify"><span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="color: #800000"><span style="font-weight: bold"><span style="color: #ffffcc">2. &iquest;QU&Eacute; TRANSFORMACI&Oacute;N CONVIERTE A R EN R&#8217;?</span></span></span></span></span></p></td>
+    </tr>
+    <tr>
+      <td class="table1column1" width="100%" style="border-left: none; border-right: none; border-top: none; border-bottom: none; background-color: #666666" valign="top"><p align="justify" style="text-align: center"><span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="color: #800000">&#160;</span></span></span></p></td>
+    </tr>
+    <tr>
+      <td class="table1column1" width="100%" style="background-color: #ffffcc; border: 0.0133333in solid" valign="top"><p align="justify" style="text-align: center"><span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="color: #800000"> 
+          <span class="WPCharBoxWrapper" style="width: 583px"><span class="WPCharBox" style="border: none"> 
+          <img src="figura.03.gif" alt="figura.03.gif" width="581" height="355" border="0"></span><span class="WPBoxCaption" style="text-align: center"><span style="color: #000000"><span style="font-size: 9pt">figura 
+          3</span></span></span></span></span></span></span> </p>
+          <div align="justify"><br>
+          </div>
+          <p align="justify"><span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="color: #800000">A nosotros nos interesa, para hallar la soluci&oacute;n, que se cumpla la igualdad entre el punto inicial y el punto final</span></span></span></p>
+          <p align="justify">&nbsp;</p>
+          <p align="center" class="Estilo1"><span style="font-family: 'Courier New', monospace">R<sub>MNP</sub>=R&#8217;=R</span></p>
+          <div align="center" class="Estilo1">
+            <p><br>
+              <span style="font-family: 'New Century Schoolbook', serif">&#960;</span><sub>P</sub>(R<sub>MN</sub>)=R</p>
+            <p>&nbsp;</p>
+          </div>
+        <div align="center" class="Estilo1">
+          <p><span style="font-family: 'New Century Schoolbook', serif">&#960;</span><sub>P</sub>(<span style="font-family: 'New Century Schoolbook', serif">&#960;</span><sub>N</sub>(R<sub>M</sub>))=R</p>
+        </div>
+        <div align="center" class="Estilo1"><br>
+          <span style="font-family: 'New Century Schoolbook', serif">&#960;</span><sub>P</sub>(<span style="font-family: 'New Century Schoolbook', serif">&#960;</span><sub>N</sub>(<span style="font-family: 'New Century Schoolbook', serif">&#960;</span><sub>M</sub>(R)))=R</div>
+        <div align="center" class="Estilo1">          
+          <p>&nbsp;</p>
+        </div>
+        <p align="center" class="Estilo1"><span style="font-family: 'New Century Schoolbook', serif">&#960;</span><sub>P</sub>&#9702;<span style="font-family: 'New Century Schoolbook', serif">&#960;</span><sub>N</sub>&#9702;<span style="font-family: 'New Century Schoolbook', serif">&#960;</span><sub>M</sub>(R)=R.</p>
+<p align="justify"><span class="Estilo1"><br>
+            </span><span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="color: #800000">Por lo tanto la transformaci&oacute;n que transforma al punto R en R&#8217; es la composici&oacute;n de tres proyecciones entre los lados del tri&aacute;ngulo ABC con centros de proyecci&oacute;n respectivos en los v&eacute;rtices del tri&aacute;ngulo MNP.</span></span></span></p>
+          <div align="justify"><br>
+              <span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="color: #800000">Una proyecci&oacute;n entre rectas proyectivas es una homograf&iacute;a y la composici&oacute;n de homograf&iacute;as es homograf&iacute;a.</span></span></span></div>
+          <div align="justify">
+            <p><br>
+                <span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="color: #800000">LA TRANSFORMACI&Oacute;N BUSCADA ES UNA HOMOGRAF&Iacute;A DEL LADO AB DEL PRIMER TRI&Aacute;NGULO ABC SOBRE S&Iacute; MISMO Y EL PUNTO SOLUCI&Oacute;N UN PUNTO FIJO DE ESTA HOMOGRAF&Iacute;A.
+</span></span></span></p>
+            <p align="center" class="Estilo1">&nbsp;</p>
+            <p align="center" class="Estilo1"><span style="font-family: 'Courier New', monospace">h<sub>r</sub>:AB&#8594;AB con R&#8217;=h<sub>r</sub>(R)=<span style="font-family: 'New Century Schoolbook', serif">&#960;</span><sub>P</sub>&#9702;<span style="font-family: 'New Century Schoolbook', serif">&#960;</span><sub>N</sub>&#9702;<span style="font-family: 'New Century Schoolbook', serif">&#960;</span><sub>M</sub>(R<sub>M</sub>)</span></p>
+            <p class="Estilo1">&nbsp;</p>
+            <p><span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="color: #800000">y la soluci&oacute;n X cumplir&aacute;
+</span></span></span></p>
+        <p align="center" class="Estilo1">&nbsp;</p>
+        <p align="center" class="Estilo1"><span style="font-family: 'Courier New', monospace">h<sub>r</sub>(X)=<span style="font-family: 'New Century Schoolbook', serif">&#960;</span><sub>P</sub>&#9702;<span style="font-family: 'New Century Schoolbook', serif">&#960;</span><sub>N</sub>&#9702;<span style="font-family: 'New Century Schoolbook', serif">&#960;</span><sub>M</sub>(X)</span></p>
+          </div>
+      </td>
+    </tr>
+    <tr>
+      <td class="table1column1" width="100%" style="border-left: none; border-right: none; border-top: none; border-bottom: none; background-color: #666666" valign="top"><p align="justify"><span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="color: #800000">&#160;</span></span></span></p></td>
+    </tr>
+    <tr>
+      <td class="table1column1" width="100%" style="background-color: #800000; border: 0.0133333in solid" valign="top"><p align="justify"><span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="color: #800000"><span style="font-weight: bold"><span style="color: #ffffcc">3. PUNTOS FIJOS DE UNA HOMOGRAFIA DE LA RECTA PROYECTIVA</span></span></span></span></span></p></td>
+    </tr>
+    <tr>
+      <td class="table1column1" width="100%" style="border-bottom: none; border-left: none; border-right: none; border-top: none; background-color: #666666" valign="top"><p align="justify"><span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="color: #800000">&#160;</span></span></span></p></td>
+    </tr>
+    <tr>
+      <td class="table1column1" width="100%" style="border-bottom: none; border-left: none; border-right: none; border-top: none; background-color: #b2b2b2" valign="top"><p align="justify"><span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="color: #800000"><span style="font-weight: bold">El m&eacute;todo m&aacute;s directo para hallar gr&aacute;ficamente los puntos fijos de una homograf&iacute;a de la recta proyectiva sobre s&iacute; misma pasa por saber determinar los puntos fijos de una homograf&iacute;a de una c&oacute;nica sobre s&iacute; misma.</span></span></span></span></p>
+          <div align="justify"><br>
+              <span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="color: #800000"><span style="font-weight: bold">En </span></span></span></span><a href="200extraped/gergonne.htm"><span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="font-weight: bold"><span style="color: #0000ff"><span style="color: #000000"><span style="text-decoration: underline">Gergonne y el problema de Castillon (problema 200a)</span></span></span></span></span></span></a><span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="font-weight: bold"><span style="color: #800000">, ya vimos como hallar los puntos fijos (puntos dobles) de una homograf&iacute;a de la c&oacute;nica sobre s&iacute; misma.</span></span></span></span></div>
+          <div align="justify"><br>
+              <span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="font-weight: bold"><span style="color: #800000">S&oacute;lo debemos saber vincular las homograf&iacute;as de la recta sobre s&iacute; misma con las homograf&iacute;as de la c&oacute;nica sobre s&iacute; misma. La respuesta, de nuevo, est&aacute; en las proyecciones.</span></span></span></span></div></td>
+    </tr>
+    <tr>
+      <td class="table1column1" width="100%" style="border-left: none; border-right: none; border-top: none; border-bottom: none; background-color: #666666" valign="top"><p align="justify"><span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="color: #800000">&#160;</span></span></span></p></td>
+    </tr>
+    <tr>
+      <td width="100%" valign="top" class="table1column1" style="background-color: #ffffcc; border: 0.0133333in solid"><p align="justify"><span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="color: #800000"><span style="font-weight: bold">3.1 PROYECCI&Oacute;N DE UNA CONICA SOBRE UNA RECTA</span></span></span></span></p>
+          <div align="justify"><br>
+          </div>
+          
+        <p align="justify"><span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="color: #800000"> 
+          <span class="WPCharBoxWrapper" style="width: 583px"><span class="WPCharBox" style="border: none"> 
+          <img src="figura.04.gif" alt="figura.04.gif" width="581" height="379" border="0"></span><span class="WPBoxCaption" style="text-align: center"><span style="color: #000000"><span style="font-size: 9pt">figura 
+          4</span></span></span></span></span></span></span> </p>
+          <div align="justify"><br>
+          </div>
+          <p align="justify"><span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="color: #800000">Sea O un punto de una c&oacute;nica &#915; y r una recta que no pasa por O. Sea F un punto de &#915;; la recta OF corta a r en F&#8217; (si F est&aacute; en O, la recta OF es naturalmente la tangente a &#915; en O y corta a r en O&#8217;). Se obtiene as&iacute; una biyecci&oacute;n</span></span></span></p>
+          <p align="justify">&nbsp;</p>
+          <p align="center" class="Estilo1"><span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="font-family: 'Courier New', monospace"><span style="font-family: 'New Century Schoolbook', serif">&#960;</span>:<span style="font-family: 'New Century Schoolbook', serif">&#915;</span>&#8594;r,</span></span></span></p>
+          <p align="justify" class="Estilo1">&nbsp;</p>
+          <p align="justify"><span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="color: #800000">Como hemos visto al inicio, queda claro que esta biyecci&oacute;n deja invariante la raz&oacute;n doble de cuatro puntos.</span></span></span></p>
+          <div align="justify"><br>
+        <span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="color: #800000">Esta biyecci&oacute;n recibe el nombre de proyecci&oacute;n de la c&oacute;nica &#915; sobre la recta r desde un punto O. Podemos decir adem&aacute;s que esta proyecci&oacute;n es una homograf&iacute;a de &#915; sobre r.</span></span></span></div>
+          <div align="justify">
+            <p><br>
+                <span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="color: #800000">M&aacute;s a&uacute;n, se llama proyecci&oacute;n de r sobre &#915; desde O a la biyecci&oacute;n</span></span></span></p>
+            <p>&nbsp;</p>
+            <p align="center" class="Estilo1"><span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="font-family: 'Courier New', monospace"><span style="font-family: 'New Century Schoolbook', serif">&#960;</span><sup>-1</sup>:r&#8594;&#915;,</span></span></span></p>
+            <p>&nbsp;</p>
+            <p><span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="color: #800000">Consideremos ahora una homograf&iacute;a</span></span></span></p>
+            <p>&nbsp;</p>
+            <p align="center" class="Estilo1"><span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="font-family: 'Courier New', monospace"><span style="font-family: 'New Century Schoolbook', serif">&#945;:&#915;</span>&#8594;<span style="font-family: 'New Century Schoolbook', serif">&#915;</span></span></span></span></p>
+            <p class="Estilo1">&nbsp;</p>
+            <p><span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="color: #800000">de la c&oacute;nica &#915; sobre s&iacute; misma. La aplicaci&oacute;n</span></span></span></p>
+            <p>&nbsp;</p>
+            <p align="center" class="Estilo1"><span style="font-family: 'New Century Schoolbook', serif">&#960;</span>&#9702;<span style="font-family: 'New Century Schoolbook', serif">&#945;</span>&#9702;<span style="font-family: 'New Century Schoolbook', serif">&#960;</span><sup>-1</sup>:r&#8594;r</p>
+            <br>
+            <p><span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="color: #800000">define una homograf&iacute;a de  r sobre s&iacute; misma. Rec&iacute;procamente, si</span></span></span></p>
+            <p align="center" class="Estilo1">&nbsp;</p>
+            <p align="center" class="Estilo1"><span style="font-family: 'New Century Schoolbook', serif">&#945;</span>&#8217;:r&#8594;r</p>
+            <br>
+            <p><span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="color: #800000">es una homograf&iacute;a de la recta r sobre s&iacute; misma, la biyecci&oacute;n
+</span></span></span></p>
+          <p align="center" class="Estilo1">&nbsp;</p>
+          <p align="center" class="Estilo1"><span style="font-family: 'New Century Schoolbook', serif">&#960;</span><sup>-1</sup>&#9702;<span style="font-family: 'New Century Schoolbook', serif">&#945;</span>&#8217;&#9702;<span style="font-family: 'New Century Schoolbook', serif">&#960;</span>:<span style="font-family: 'New Century Schoolbook', serif">&#915;</span>&#8594;<span style="font-family: 'New Century Schoolbook', serif">&#915;</span></p>
+          <br>
+            <p><span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="color: #800000">es una homograf&iacute;a de la c&oacute;nica &#915; sobre s&iacute; misma. Es inmediato que la aplicaci&oacute;n</span></span></span></p>
+          <p align="center" class="Estilo1">&nbsp;</p>
+          <p align="center" class="Estilo1"><span style="font-family: 'New Century Schoolbook', serif">&#968;</span>:G(<span style="font-family: 'New Century Schoolbook', serif">&#915;</span>)&#8594;G(r) con <span style="font-family: 'New Century Schoolbook', serif">&#968;</span>(<span style="font-family: 'New Century Schoolbook', serif">&#945;</span>)=<span style="font-family: 'New Century Schoolbook', serif">&#960;</span>&#9702;<span style="font-family: 'New Century Schoolbook', serif">&#945;</span>&#9702;<span style="font-family: 'New Century Schoolbook', serif">&#960;</span><sup>-1</sup></p>
+          <br>
+            <p><span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="color: #800000">define un isomorfismo del grupo G(&#915;) de las homograf&iacute;as de &#915; sobre el grupo G(r) de las homograf&iacute;as de r.</span></span></span></p>
+          </div>
+          <div align="justify">
+            <p><br>
+                <span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="color: #800000">Sea O un punto de una c&oacute;nica &#915; y sea una recta r que no contiene a O. La biyecci&oacute;n
+</span></span></span></p>
+            <p align="center">&nbsp;</p>
+            <p align="center"><span class="Estilo1" style="font-family: 'New Century Schoolbook', serif">&#945;</span><span class="Estilo1">&#8594;<span style="font-family: 'New Century Schoolbook', serif">&#960;</span>&#9702;<span style="font-family: 'New Century Schoolbook', serif">&#945;</span>&#9702;<span style="font-family: 'New Century Schoolbook', serif">&#960;<sup>-1</sup></span>,</span></p>
+            <br>
+            <p><span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="color: #800000">donde <span style="font-family: 'New Century Schoolbook', serif">&#960;</span> es la proyecci&oacute;n de la c&oacute;nica &#915; sobre la recta r desde el punto O, define un isomorfismo entre el grupo de homograf&iacute;as de &#915; y el grupo de homograf&iacute;as de r.</span></span></span></p>
+          </div>
+          <div align="justify"><br>
+        <span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="color: #800000">Se define de igual manera la proyecci&oacute;n de &#915; sobre el haz O*, siendo O un punto elegido sobre &#915;. Esto permite definir tambi&eacute;n un isomorfismo entre el grupo de homograf&iacute;as de &#915; y el grupo de homograf&iacute;as de O*.</span></span></span></div>
+          <div align="justify"><br>
+        <span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="color: #800000">LO VISTO EN ESTE APARTADO PERMITE APLICAR A LAS HOMOGRAF&Iacute;AS DE LA CONICA LOS RESULTADOS GENERALES DE LAS HOMOGRAF&Iacute;AS DE LA RECTA.</span></span></span></div>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="table1column1" style="background-color: #666666; border: none">&nbsp;</td>
+    </tr>
+    <tr>
+      <td valign="top" class="table1column1" style="background-color: #ffffcc; border: 0.0133333in solid"><p align="justify" class="Estilo2"><span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="color: #800000">3.2 DETERMINACION DE LOS PUNTOS FIJOS DE LA HOMOGRAFIA DE LA RECTA</span></span></span></p>
+          <div align="justify">
+            <p><br>
+            <span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="color: #800000">Tenemos, en este problema, una homograf&iacute;a h<sub>r</sub> de una recta sobre s&iacute; misma. Si <span style="font-family: 'New Century Schoolbook', serif">&#960;</span> es una proyecci&oacute;n de una c&oacute;nica sobre la recta la composici&oacute;n</span></span></span></p>
+            <p align="center" class="Estilo1">&nbsp;</p>
+            <p align="center" class="Estilo1"><span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt">g<sub><span style="font-family: 'New Century Schoolbook', serif">&#915;</span></sub>=<span style="font-family: 'New Century Schoolbook', serif">&#960;</span>&#9702;h<sub>r</sub>&#9702;<span style="font-family: 'New Century Schoolbook', serif">&#960;</span><sup>-1</sup></span></span></p>
+            <p>&nbsp;</p>
+            <p><span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="color: #800000">es una homograf&iacute;a de la c&oacute;nica sobre s&iacute; misma. Sus puntos fijos X<sub>&#915;</sub> cumplen
+            </span></span></span></p>
+            <p align="center" class="Estilo1">&nbsp;</p>
+            <p align="center" class="Estilo1"><span style="font-family: 'Courier New', monospace">g<sub><span style="font-family: 'New Century Schoolbook', serif">&#915;</span></sub>(X<sub><span style="font-family: 'New Century Schoolbook', serif">&#915;</span></sub>)=X<sub><span style="font-family: 'New Century Schoolbook', serif">&#915;</span></sub></span></p>
+            <div align="center" class="Estilo1"><br>
+            <span style="font-family: 'New Century Schoolbook', serif">&#960;</span>&#9702;g<sub><span style="font-family: 'New Century Schoolbook', serif">&#915;</span></sub>(X<sub><span style="font-family: 'New Century Schoolbook', serif">&#915;</span></sub>)=<span style="font-family: 'New Century Schoolbook', serif">&#960;</span>(X<sub><span style="font-family: 'New Century Schoolbook', serif">&#915;</span></sub>)</div>
+            <div align="center" class="Estilo1"><br>
+            <span style="font-family: 'New Century Schoolbook', serif">&#960;</span>&#9702;g<sub><span style="font-family: 'New Century Schoolbook', serif">&#915;</span></sub>(<span style="font-family: 'New Century Schoolbook', serif">&#960;</span><sup>-1</sup>(X))=<span style="font-family: 'New Century Schoolbook', serif">&#960;(&#960;</span><sup>-1</sup>(X)<span style="font-family: 'New Century Schoolbook', serif">)</span></div>
+            <div align="center" class="Estilo1"><br>
+              <br>
+            <span style="font-family: 'New Century Schoolbook', serif">&#960;</span>&#9702;g<sub><span style="font-family: 'New Century Schoolbook', serif">&#915;</span></sub>&#9702;<span style="font-family: 'New Century Schoolbook', serif">&#960;</span><sup>-1</sup>(X)=X=h(X)</div>
+            <p align="center" class="Estilo1">&nbsp;</p>
+            <p><span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="color: #800000">por lo tanto: LAS IM&Aacute;GENES POR LA PROYECCI&Oacute;N DE LOS PUNTOS DOBLES DE LA HOMOGRAF&Iacute;A DE LA C&Oacute;NICA SOBRE S&Iacute; MISMA SON LOS PUNTOS DOBLES DE LA HOMOGRAF&Iacute;A DE LA RECTA SOBRE S&Iacute; MISMA.</span></span></span></p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td class="table1column1" style="background-color: #666666; border: none" valign="top">&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="table1column1" width="100%" style="background-color: #800000; border: 0.0133333in solid" valign="top"><p align="justify"><span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="color: #800000"><span style="font-weight: bold"><span style="color: #ffffcc">4. SOLUCION</span></span></span></span></span></p></td>
+    </tr>
+    <tr>
+      <td class="table1column1" width="100%" style="border-bottom: none; border-left: none; border-right: none; border-top: none; background-color: #666666" valign="top"><p align="justify"><span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="color: #800000"><span style="font-weight: bold"></span>&#160;</span></span></span></p></td>
+    </tr>
+    <tr>
+      <td class="table1column1" width="100%" style="border-bottom: none; border-left: none; border-right: none; border-top: none; background-color: #b2b2b2" valign="top"><p align="justify"><span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="color: #800000"><span style="font-weight: bold">Para determinar la homograf&iacute;a h<sub>r</sub> de la recta AB sobre s&iacute; misma hallaremos la imagen de tres puntos.</span></span></span></span></p>
+          <div align="justify"><br>
+        <span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="color: #800000"><span style="font-weight: bold">Luego proyectaremos la recta sobre una c&oacute;nica. Escogeremos un c&iacute;rculo porque es m&aacute;s simple y un punto O que nos proporcione la proyecci&oacute;n m&aacute;s clara posible.</span></span></span></span></div>
+          <div align="justify"><br>
+        <span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="color: #800000"><span style="font-weight: bold">Lo anterior define una homograf&iacute;a del c&iacute;rculo sobre s&iacute; mismo. Hallamos sus puntos dobles (dos intersecciones como m&aacute;ximo con su eje de la homograf&iacute;a).</span></span></span></span></div>
+          <div align="justify"><br>
+        <span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="color: #800000"><span style="font-weight: bold">Con el inverso de la proyecci&oacute;n determinamos los puntos dobles en la recta.</span></span></span></span></div>
+          <div align="justify"><br>
+        <span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="color: #800000"><span style="font-weight: bold">Con los puntos dobles en AB hallamos los tri&aacute;ngulos soluci&oacute;n de nuestro enunciado original.</span></span></span></span></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="table1column1" width="100%" style="border-left: none; border-right: none; border-top: none; border-bottom: none; background-color: #666666" valign="top"><p align="justify"><span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="color: #800000"><span style="font-weight: bold"></span>&#160;</span></span></span></p></td>
+    </tr>
+    <tr>
+      <td width="100%" height="3271" valign="top" class="table1column1" style="background-color: #ffffcc; border: 0.0133333in solid"><p align="justify"><strong><span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="color: #800000">4.1 LA SOLUCION PASO A PASO</span></span></span></strong></p>
+          <div align="justify"><br>
+          </div>
+          
+        <p align="justify"><span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="color: #800000"> 
+          <span class="WPCharBoxWrapper" style="width: 583px"><span class="WPCharBox" style="border: none"> 
+          <img src="figura.05.gif" alt="figura.05.gif" width="581" height="355" border="0"></span><span class="WPBoxCaption" style="text-align: center"><span style="color: #000000"><span style="font-size: 9pt">figura 
+          5</span></span></span></span></span></span></span> </p>
+          <p align="justify" style="text-indent: -0.5in; margin-left: 0.5in; margin-right: 0.5in">&#160;</p>
+          <p align="justify" style="text-indent: -0.5in; margin-left: 0.5in; margin-right: 0.5in"><span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="color: #800000">a)<span>&#160;&#160;&#160;</span>Del mismo modo que de hemos obtenido h<sub>r</sub>(R)=R&#8217;, obtenemos h<sub>r</sub>(S)=S&#8217;y h<sub>r</sub>(T)=T&#8217;</span></span></span></p>
+          <p align="justify" style="text-indent: -0.5in; margin-left: 0.5in; margin-right: 0.5in">&nbsp;</p>
+          <p align="justify" style="text-indent: -0.5in; margin-left: 0.5in; margin-right: 0.5in"><span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="color: #800000">b)<span>&#160;&#160;&#160;</span>Trazamos ahora un c&iacute;rculo &#915; cualquiera y elegimos sobre &eacute;l un punto O de forma conveniente.</span></span></span></p>
+          <p align="justify" style="text-indent: -0.5in; margin-left: 0.5in; margin-right: 0.5in">&nbsp;            </p>
+        <p align="justify" style="text-align: center"><span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="color: #800000"> 
+          <span class="WPCharBoxWrapper" style="width: 583px"><span class="WPCharBox" style="border: none"> 
+          <img src="figura.06.gif" alt="figura.06.gif" width="581" height="413" border="0"></span><span class="WPBoxCaption" style="text-align: center"><span style="color: #000000"><span style="font-size: 9pt">figura 
+          6</span></span></span></span></span></span></span> </p>          
+        <p align="justify" style="margin-left: 0.5in; margin-right: 0.5in">&#160;</p>          
+        <p align="justify" style="margin-left: 0.5in; margin-right: 0.5in"><span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="color: #800000">Proyectamos la recta AB sobre el c&iacute;rculo &#915;. Por ejemplo
+</span></span></span></p>
+        <p align="center">&nbsp;</p>
+        <p align="center">&nbsp;</p>
+        <p align="center"><span class="Estilo1" style="font-family: 'New Century Schoolbook', serif">&#960;<sup>-1</sup></span><span class="Estilo1">(R)=OR&#8745;<span style="font-family: 'New Century Schoolbook', serif">&#915;</span>=X<sub><span style="font-family: 'New Century Schoolbook', serif">&#915;</span></sub></span></p>
+        <p align="center">&nbsp;</p>
+        <p align="justify" style="margin-left: 0.5in; margin-right: 0.5in"><span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="color: #800000">Queda as&iacute; definida la homograf&iacute;a del c&iacute;rculo sobre s&iacute; mismo.</span></span></span></p>
+                    <p align="justify" style="margin-left: 0.5in; margin-right: 0.5in">&nbsp;</p>
+        <p align="justify" style="text-align: center"><span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="color: #800000"> 
+          <span class="WPCharBoxWrapper" style="width: 583px"><span class="WPCharBox" style="border: none"> 
+          <img src="figura.07.gif" alt="figura.07.gif" width="581" height="424" border="0"></span><span class="WPBoxCaption" style="text-align: center"><span style="color: #000000"><span style="font-size: 9pt">figura 
+          7</span></span></span></span></span></span></span> </p>          
+        <div align="justify"><br>
+                              </div>          
+        <p align="justify"><span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="color: #800000">c)<span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="color: #800000"><span>&#160;&#160;&#160;</span>H</span></span></span>allamos UV, eje de la homograf&iacute;a del c&iacute;rculo sobre s&iacute; mismo.</span></span></span></p>
+        <p align="center" class="Estilo1">&nbsp;</p>
+        <p align="center" class="Estilo1"><span style="font-family: 'Courier New', monospace">U=R<sub><span style="font-family: 'New Century Schoolbook', serif">&#915;</span></sub>S'<sub><span style="font-family: 'New Century Schoolbook', serif">&#915;</span></sub>&#8745;S<sub><span style="font-family: 'New Century Schoolbook', serif">&#915;</span></sub>R<span style="font-family: 'Courier New', monospace">'</span><sub><span style="font-family: 'New Century Schoolbook', serif">&#915;</span></sub></span></p>
+        <p align="center" class="Estilo1">&nbsp;</p>
+        <div align="center"><span class="Estilo1">          </span>
+        </div>
+        <p align="center" class="Estilo1"><span style="font-family: 'Courier New', monospace">V=R<sub><span style="font-family: 'New Century Schoolbook', serif">&#915;</span></sub>T<span style="font-family: 'Courier New', monospace">'</span><sub><span style="font-family: 'New Century Schoolbook', serif">&#915;</span></sub>&#8745;T<sub><span style="font-family: 'New Century Schoolbook', serif">&#915;</span></sub>R<span style="font-family: 'Courier New', monospace">'</span><sub><span style="font-family: 'New Century Schoolbook', serif">&#915;</span></sub></span></p>
+        <p align="center" class="Estilo1">&nbsp;</p>
+        <p align="justify" style="text-align: center"><span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="color: #800000"> 
+          <span class="WPCharBoxWrapper" style="width: 583px"><span class="WPCharBox" style="border: none"> 
+          <img src="figura.08.gif" alt="figura.08.gif" width="581" height="452" border="0"></span><span class="WPBoxCaption" style="text-align: center"><span style="color: #000000"><span style="font-size: 9pt">figura 
+          8</span></span></span></span></span></span></span> </p>          
+        <p align="justify" style="text-indent: -0.5in; margin-left: 0.5in; margin-right: 0.5in">&#160;</p>          
+        <p align="justify" style="text-indent: -0.5in; margin-left: 0.5in; margin-right: 0.5in"><span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="color: #800000">d)<span>&#160;&#160;&#160;</span>Hallamos los puntos doble X<sub>&#915;</sub> y X<sup>1</sup><sub>&#915;</sub> de la homograf&iacute;a del c&iacute;rculo sobre s&iacute; mismo</span></span></span></p>
+        <p align="center" class="Estilo1">&nbsp;</p>
+        <p align="center" class="Estilo1"><span style="font-family: 'Courier New', monospace">{X<sub><span style="font-family: 'New Century Schoolbook', serif">&#915;</span></sub>,X<sup>1</sup><sub><span style="font-family: 'New Century Schoolbook', serif">&#915;</span></sub>}=UV&#8745;<span style="font-family: 'New Century Schoolbook', serif">&#915;</span></span></p>
+        <p align="center" class="Estilo1">&nbsp;</p>
+        <p align="justify" style="margin-left: 0.5in; margin-right: 0.5in"><span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="color: #800000">Proyectamos ahora estos puntos sobre la recta</span></span></span></p>
+        <p align="center" class="Estilo1" style="margin-left: 0.5in; margin-right: 0.5in">&nbsp;</p>
+        <p align="center" class="Estilo1" style="margin-left: 0.5in; margin-right: 0.5in"><span style="font-family: 'Courier New', monospace">X=OX<sub><span style="font-family: 'New Century Schoolbook', serif">&#915;</span></sub>&#8745;AB</span></p>
+        <p align="center" class="Estilo1" style="margin-left: 0.5in; margin-right: 0.5in">&nbsp;</p>
+        <p align="center" class="Estilo1" style="margin-left: 0.5in; margin-right: 0.5in"><span style="font-family: 'Courier New', monospace">X<sup>1</sup>=OX<sup>1</sup><sub><span style="font-family: 'New Century Schoolbook', serif">&#915;</span></sub>&#8745;AB</span></p>
+        <p align="justify" style="text-align: center"><span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="color: #800000"> 
+          <span class="WPCharBoxWrapper" style="width: 583px"><span class="WPCharBox" style="border: none"> 
+          <img src="figura.09.gif" alt="figura.09.gif" width="581" height="355" border="0"></span><span class="WPBoxCaption" style="text-align: center"><span style="color: #000000"><span style="font-size: 9pt">figura 
+          9</span></span></span></span></span></span></span> </p>          
+        <p align="justify" style="text-indent: -0.5in; margin-left: 0.5in; margin-right: 0.5in">&#160;</p>          <p align="justify" style="text-indent: -0.5in; margin-left: 0.5in; margin-right: 0.5in"><span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="color: #800000">e)<span>&#160;&#160;&#160;</span>MX corta a BC en Y, PX corta a CA en Z. Trazamos el tri&aacute;ngulo XYZ.</span></span></span></p>        
+        <p align="justify" style="text-align: center"><span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="color: #800000"> 
+          <span class="WPCharBoxWrapper" style="width: 583px"><span class="WPCharBox" style="border: none"> 
+          <img src="figura.10.gif" alt="figura.10.gif" width="581" height="355" border="0"></span><span class="WPBoxCaption" style="text-align: center"><span style="color: #000000"><span style="font-size: 9pt">figura 
+          10</span></span></span></span></span></span></span> </p>          
+        <p align="justify" style="text-indent: -0.5in; margin-left: 0.5in; margin-right: 0.5in">&#160;</p>          <p align="justify" style="text-indent: -0.5in; margin-left: 0.5in; margin-right: 0.5in"><span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="color: #800000">f)<span>&#160;&#160;&#160;</span>MX<sup>1</sup> corta a BC en Y<sup>1</sup>, PX<sup>1</sup> corta a CA en Z<sup>1</sup>. Trazamos el tri&aacute;ngulo X<sup>1</sup>Y<sup>1</sup>Z<sup>1</sup>.</span></span></span></p></td>
+    </tr>
+    <tr>
+      <td class="table1column1" style="background-color: #666666; border: none" valign="top">&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="table1column1" width="100%" style="background-color: #ffffcc; border: 0.0133333in solid" valign="top"><p align="justify"><strong><span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="color: #800000">4.2 TODO JUNTO</span></span></span></strong></p>
+          <div align="justify"><br>
+          </div>
+          
+        <p align="justify" style="text-align: center"><span style="font-family: 'Courier New', monospace"><span style="font-size: 11pt"><span style="color: #800000"> 
+          <span class="WPCharBoxWrapper" style="width: 583px"><span class="WPCharBox" style="border: none"> 
+          <img src="figura.11.gif" alt="figura.11.gif" width="581" height="452" border="0"></span><span class="WPBoxCaption" style="text-align: center"><span style="color: #000000"><span style="font-size: 9pt">figura 
+          11</span></span></span></span></span></span></span> </p></td>
+    </tr>
+  </table>
+</div>
+</body>
+
+</html>

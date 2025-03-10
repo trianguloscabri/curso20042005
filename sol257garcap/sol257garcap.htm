@@ -1,0 +1,159 @@
+<title>trianguloscabri257</title> 
+
+
+<body bgcolor="#FFFFFF">
+<h1>Problema 257 de <i>tri&aacute;nguloscabri</i> </h1>
+<table width="100%" border="0">
+  <tr> 
+    <td bgcolor="#FFFF99" height="112">Sea ABC un tri&aacute;ngulo. Interiormente 
+      a &eacute;l, es decir sobre los lados adyacentes a ese v&eacute;rtice, se 
+      construyen los tri&aacute;ngulos<br>
+      <b><i>T</i>(<i>A</i>)</b>=<i>AB'C'</i>, <b><i>T</i>(<i>B</i>)</b>= <i>BA''' 
+      C'''</i>, y <b><i>T</i>(<i>C</i>)</b>= <i>CA''B''</i>, semejantes al tri&aacute;ngulo 
+      dado con <i>B'</i> y <i>B''</i> sobre <i>AC</i>, <i>C'</i> y <i>C'''</i> 
+      sobre <i>AB</i>, y <i>A''</i> y <i>A'''</i> sobre <i>BC</i>, sin ser puntos 
+      medios de los lados del original ninguno de los construidos. 
+      <p align="left">Construimos los siguientes puntos definidos por las intersecciones 
+        de los pares de rectas que se indican: <i>X</i>(<i>A</i>) = <i>B'C'''</i> 
+        <font face="Symbol">&Ccedil; </font><i>B''C'</i>; <i>Y</i>(<i>A</i>) = 
+        <i>A'' C'''</i> <font face="Symbol">&Ccedil;</font> <i>A'''B''</i> ; <i>X</i>(<i>B</i>) 
+        = <i>A'' C''</i>' <font face="Symbol">&Ccedil; </font><i>C'A'''</i>; <i>Y</i>(<i>B</i>) 
+        = <i>A'' B'</i> <font face="Symbol">&Ccedil;</font> <i>B'' C'</i>; <i>X</i>(<i>C</i>) 
+        = <i>B'' A'''</i> <font face="Symbol">&Ccedil;</font> <i>A'' B'</i>, <i>Y</i>(<i>C</i>) 
+        = <i>B'C'''</i> <font face="Symbol">&Ccedil;</font> <i>C'A'''</i>.</p>
+      <p align="left">Probar que :</p>
+      <p>a) Las rectas <i>X</i>(<i>A</i>)<i>Y</i>(<i>A</i>) ; <i>X</i>(<i>B</i>)<i>Y</i>(<i>B</i>) 
+        ; <i>X</i>(<i>C</i>)<i>Y</i>(<i>C</i>) son concurrentes.</p>
+      <p>A partir de ahora se considera que los tri&aacute;ngulos <i><b>T</b></i><b>(<i>A</i>)</b>, 
+        <i><b>T</b></i><b>(<i>B</i>)</b> y <i><b>T</b></i><b>(<i>C</i>)</b> tienen 
+        la misma raz&oacute;n de semajanza respecto a <i>ABC</i>.</p>
+      <p>b) Las rectas <i>X</i>(<i>A</i>)<i>Y</i>(<i>A</i>) ; <i>X</i>(<i>B</i>)<i>Y</i>(<i>B</i>) 
+        ; <i>X</i>(<i>C</i>)<i>Y</i>(<i>C</i>) son concurrentes en el baricentro 
+        de <i>ABC</i>.<br>
+        c) Probar que los tri&aacute;ngulos <i>X</i>(<i>A</i>)<i>X</i>(<i>B</i>)<i>X</i>(<i>C</i>), 
+        <i> </i> <i>Y</i>(<i>A</i>)<i>Y</i>(<i>B</i>)<i>Y</i>(<i>C</i>) y <i>ABC</i> 
+        son semejantes, y encontrar su centro y raz&oacute;n de homotecia.<br>
+        d) Calcular la raz&oacute;n de las &aacute;reas de los hex&aacute;gonos 
+        <i>A''A'''C'''C'B'B''A''</i> y <i>X</i>(<i>A</i>)<i>Y</i>(<i>B</i>)<i>X</i>(<i>C</i>)<i>Y</i>(<i>A</i>)<i>X</i>(<i>B</i>)<i>Y</i>(<i>C</i>).</p>
+      </td>
+  </tr>
+  <tr> 
+    <td height="13"> 
+      <div align="right"> 
+        <p><font size="-1">Propuesto por Juan Bosco Romero M&aacute;rquez</font></p>
+      </div>
+    </td>
+  </tr>
+</table>
+<p><font face="Verdana, Arial, Helvetica, sans-serif"><i>Soluci&oacute;n de <a href="http://garciacapitan.auna.com">Francisco 
+  Javier Garc&iacute;a Capit&aacute;n</a></i> </font></p>
+<p><img src="257a.jpg" width="345" height="259" align="right">La figura de la 
+  derecha se ha construido tomando los puntos <i>B'</i>, <i>A''</i>, <i>C'''</i> 
+  sobre los lados <i>CA</i>, <i>BC</i> y <i>AB</i>, y trazando paralelas por ellos 
+  a los lados <i>BC</i>, <i>AB</i> y <i>CA</i>, respectivamente. </p>
+<p>Los c&aacute;lculos no son muy complicados, pero usaremos <i>Mathematica</i> 
+  para realizarlos:</p>
+<p><img src="math01.gif" width="128" height="18"></p>
+<p>Definimos los puntos <i>B'</i>, <i>A''</i>, <i>C'''</i> :</p>
+<p><img src="math02.gif" width="135" height="58"></p>
+<p>Seg&uacute;n esta definici&oacute;n consideramos que <i>BA&quot;</i> : <i>A&quot;C</i> 
+  = <font face="Symbol">1-l</font> :<font face="Symbol">l</font>, considerando 
+  que <i><font face="Symbol">l</font> = A&quot;C</i>:<i>BC</i> es la raz&oacute;n 
+  de homotecia de los tri&aacute;ngulos <i>B&quot;A&quot;C y ABC</i><i></i>, y 
+  de forma an&aacute;loga para los otros tri&aacute;ngulos.</p>
+<p>Ahora calculamos los puntos <i>C'</i>, <i>B&quot;</i> y <i>A'''</i>, aunque 
+  tambi&eacute;n podemos deducir sus coordenadas por &quot;simetr&iacute;a&quot;, 
+  teniendo en cuenta el concepto de coordenadas baric&eacute;ntricas:</p>
+<p><img src="math03.gif" width="301" height="143"></p>
+<p>Hallamos los puntos de intersecci&oacute;n <i>XA</i>, <i>YB</i>, etc.:</p>
+<p><img src="math04.gif" width="353" height="118"></p>
+<h2><i>a</i>) Las rectas <i>X</i>(<i>A</i>)<i>Y</i>(<i>A</i>) ; <i>X</i>(<i>B</i>)<i>Y</i>(<i>B</i>) 
+  ; <i>X</i>(<i>C</i>)<i>Y</i>(<i>C</i>) son concurrentes.</h2>
+<p>Tres rectas son concurrentes si el determinante de sus coeficientes es cero:</p>
+<p><img src="math05.gif" width="152" height="105"></p>
+<p><font color="#0000FF">(Suponemos a partir de ahora que <font face="Symbol">m</font> 
+  =<font face="Symbol">l</font> y que <font face="Symbol">n</font> =<font face="Symbol">l</font>). 
+  </font></p>
+<h2><i>b</i>) Las rectas <i>X</i>(<i>A</i>)<i>Y</i>(<i>A</i>) ; <i>X</i>(<i>B</i>)<i>Y</i>(<i>B</i>) 
+  ; <i>X</i>(<i>C</i>)<i>Y</i>(<i>C</i>) son concurrentes en el baricentro de 
+  <i>ABC</i>.</h2>
+<p>En efecto, hallamos</p>
+<p><img src="math06.gif" width="445" height="182"></p>
+<p>De hecho, las rectas <i>X</i>(<i>A</i>)<i>Y</i>(<i>A</i>), <i>X</i>(<i>B</i>)<i>Y</i>(<i>B</i>), 
+  <i>X</i>(<i>C</i>)<i>Y</i>(<i>C</i>) son las medianas del tri&aacute;ngulo, 
+  que se cortan en el baricentro. Para demostrar que la recta <i>X</i>(<i>A</i>)<i>Y</i>(<i>A</i>) 
+  es la mediana correspondiente al v&eacute;rtice <i>A</i>, hacemos </p>
+<p><img src="math07.gif" width="331" height="45"></p>
+<p>y, efectivamente, la recta <i>y</i> = <i>z</i> es la mediana correspondiente 
+  al v&eacute;rtice <i>A</i>. </p>
+<h2><i>c</i>) Probar que los tri&aacute;ngulos <i>X</i>(<i>A</i>)<i>X</i>(<i>B</i>)<i>X</i>(<i>C</i>), 
+  <i> </i> <i>Y</i>(<i>A</i>)<i>Y</i>(<i>B</i>)<i>Y</i>(<i>C</i>) y <i>ABC</i> 
+  son semejantes, y encontrar su centro y raz&oacute;n de homotecia.</h2>
+<p><img src="257b.jpg" width="385" height="300" align="right">Comprobemos que 
+  los lados de <i>X</i>(<i>A</i>)<i>X</i>(<i>B</i>)<i>X</i>(<i>C</i>) son paralelos 
+  a los de <i>ABC</i>. Lo hacemos hallando el punto de intersecci&oacute;n de 
+  <i>X</i>(<i>A</i>)<i>X</i>(<i>B</i>) con <i>AB</i> y particularizando para el 
+  caso en que <font face="Symbol">l = </font><font face="Symbol">m</font> =<font face="Symbol"> 
+  n</font>:</p>
+<p><img src="math08.gif" width="219" height="104"></p>
+<p>Al resultar un punto del infinito (la suma de sus coordenadas es cero), las 
+  dos rectas son paralelas. Lo mismo le ocurre a <i>X</i>(<i>B</i>)<i>X</i>(<i>C</i>) 
+  con <i>BC</i> y a <i>X</i>(<i>C</i>)<i>X</i>(<i>A</i>) con <i>CA</i>.<i> </i>Por 
+  tanto los tri&aacute;ngulos <i>X</i>(<i>A</i>)<i>X</i>(<i>B</i>)<i>X</i>(<i>C</i>) 
+  y <i>ABC</i> son semejantes. </p>
+<p>El centro de homotecia es el baricentro <i>G</i> del tri&aacute;ngulo del tri&aacute;ngulo 
+  <i>ABC</i>, seg&uacute;n el apartado <i>b</i>).</p>
+<p>Para hallar la raz&oacute;n de homotecia hacemos:</p>
+<p><img src="math09.gif" width="390" height="60"></p>
+<p>por lo que resultaque 1 - 3<font face="Symbol">l</font> + 3<font face="Symbol">l</font><sup>2</sup> 
+  es la raz&oacute;n de homotecia de los tri&aacute;ngulos <i>X</i>(<i>A</i>)<i>X</i>(<i>B</i>)<i>X</i>(<i>C</i>) 
+  y <i>ABC</i>.</p>
+<p> La expresi&oacute;n 1 - 3<font face="Symbol">l</font> + 3<font face="Symbol">l</font><sup>2</sup> 
+  decrece desde 1 (para <font face="Symbol">l =</font> 0) hasta 1/4 (para <font face="Symbol">l</font>=1/2).</p>
+<p><img src="257c.jpg" width="389" height="311" align="right">Los lados del tri&aacute;ngulos 
+  <i>Y</i>(<i>A</i>)<i>Y</i>(<i>B</i>)<i>Y</i>(<i>C</i>) tambi&eacute;n son paralelos 
+  a los de <i>ABC</i>:</p>
+<p><img src="math10.gif" width="219" height="104"></p>
+<p>El centro de homotecia es, como antes, el baricentro <i>G</i> del tri&aacute;ngulo 
+  <i>ABC</i>. </p>
+<p>&nbsp;</p>
+<p>Para hallar la raz&oacute;n de homotecia hacemos:</p>
+<p><img src="math11.gif" width="390" height="78"></p>
+<p>Entonces, la razon de homotecia de los tri&aacute;ngulos <i>Y</i>(<i>A</i>)<i>Y</i>(<i>B</i>)<i>Y</i>(<i>C</i>) 
+  y <i>ABC</i> es <img src="math12.gif" width="80" height="44" align="absmiddle">, 
+  que comienza siendo 1/2 para <font face="Symbol">l =</font> 0, va decreciendo 
+  hasta un valor m&iacute;nimo de 1/3 para <font face="Symbol">l =</font> 1/3 
+  y vuelve a crecer hasta 1/2 para <font face="Symbol">l =</font> 1/2.</p>
+<p><img src="math13.gif" width="446" height="138"></p>
+<h2><i>d</i>) Calcular la raz&oacute;n de las &aacute;reas de los hex&aacute;gonos 
+  <i>A''A'''C'''C'B'B''A''</i> y <i>X</i>(<i>A</i>)<i>Y</i>(<i>B</i>)<i>X</i>(<i>C</i>)<i>Y</i>(<i>A</i>)<i>X</i>(<i>B</i>)<i>Y</i>(<i>C</i>).</h2>
+<p><img src="257c.jpg" width="389" height="311" align="right">El hex&aacute;gono 
+  <i>A''A'''C'''C'B'B''A''</i> es el resultado de quitar al tri&aacute;ngulo <i>ABC</i> 
+  tres tri&aacute;ngulos semejantes a &eacute;l. Siendo <i><font face="Symbol">l</font> 
+  = A&quot;C</i>:<i>BC</i> = <i>B''C:AC</i>, el &aacute;rea de <i>B''A''C</i> 
+  ser&aacute; <font face="Symbol">l</font><sup>2</sup>, y lo mismo la de los tri&aacute;ngulos 
+  <i>BA'''C'''</i> y <i>AB'C'</i>. Por tanto, el &aacute;rea del hex&aacute;gono 
+  <i>A''A'''C'''C'B'B''A''</i> es 1-3<font face="Symbol">l</font><sup>2</sup>. 
+</p>
+<p>Hagamos hicapi&eacute; en que estamos considerando como unidad el &aacute;rea 
+  del tri&aacute;ngulo <i>ABC.</i></p>
+<p>Para hallar el &aacute;rea del hex&aacute;gono <i>X</i>(<i>A</i>)<i>Y</i>(<i>B</i>)<i>X</i>(<i>C</i>)<i>Y</i>(<i>A</i>)<i>X</i>(<i>B</i>)<i>Y</i>(<i>C</i>), 
+  a&ntilde;adimos al &aacute;rea <font face="Symbol">D</font> del tri&aacute;ngulo 
+  <i>Y</i>(<i>A</i>)<i>Y</i>(<i>B</i>)<i>Y</i>(<i>C</i>) las &aacute;reas <i><font face="Symbol">D</font>A</i> 
+  del tri&aacute;ngulo <i>X</i>(<i>A</i>)<i>Y</i>(<i>C</i>)<i>X</i>(<i>B</i>), 
+  <i><font face="Symbol">D</font>B</i> del tri&aacute;ngulo <i>X</i>(<i>B</i>)<i>Y</i>(<i>A</i>)<i>Y</i>(<i>C</i>) 
+  y <i><font face="Symbol">D</font>C </i>del tri&aacute;ngulo <i>X</i>(<i>C</i>)<i>Y</i>(<i>B</i>)<i></i><i>Y</i>(<i>A</i>). 
+  Por una cuesti&oacute;n de simetr&iacute;a, estas tres &aacute;reas valen lo 
+  mismo. Entonces, para hallar el &aacute;rea del hex&aacute;gono <i>X</i>(<i>A</i>)<i>Y</i>(<i>B</i>)<i>X</i>(<i>C</i>)<i>Y</i>(<i>A</i>)<i>X</i>(<i>B</i>)<i>Y</i>(<i>C</i>) 
+  hacemos: </p>
+<p><img src="math15.gif" width="433" height="219"></p>
+<p>La expresi&oacute;n que expresa el cociente de las &aacute;reas de los dos 
+  hex&aacute;gonos es:</p>
+<p><img src="math16.gif" width="181" height="36"></p>
+<p>Podemos ver la variaci&oacute;n de esta expresi&oacute;n en la siguiente gr&aacute;fica:</p>
+<p><img src="math17.gif" width="288" height="204"></p>
+<p>Para abreviar, diremos que el cociente de las &aacute;reas comienza siendo 
+  1, crece, alcanzando un m&aacute;ximo igual a 3 para <font face="Symbol">l =</font> 
+  1/3 y vuelve a decrecer hasta el valor inicial de 1 para <font face="Symbol">l 
+  =</font> 1/2.</p>
+<p>&nbsp;</p>

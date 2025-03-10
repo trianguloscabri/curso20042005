@@ -1,0 +1,88 @@
+FIGURE CabriII vers. MS-Windows 1.0
+
+Window center x: 2.2225 y: 0.211666666666667 Window size x: 20.7433333333333 y: 12.3825
+
+1: Pt, 0, CN:0, VN:1
+R, W, t, DS:1 1, GT:1, I, nSt
+Val: 0 0
+
+2: Axes, 1, CN:1, VN:3
+Gr, W, t, DS:1 1, GT:0, I, nSt
+Const: 1, Val: 1 0, 0 1
+
+"H", NP: 48, -7, NS: 12, 18
+3: Pt, 0, CN:0, VN:1
+B, W, t, DS:1 1, GT:1, V, nSt
+Val: 1.349375 0.264583333333333
+p: 0, System, S: 0 C: 15 Fa: 0
+
+4: Line, 0, CN:1, VN:2
+V, W, t, DS:1 1, GT:0, I, nSt
+Const: 3, Val: 1 0
+
+"A", NP: -29, -9, NS: 10, 18
+5: Pt/, 0, CN:1, VN:3
+B, W, t, DS:1 1, GT:1, V, nSt
+Const: 4, Val: -0.687916666666667 0.264583333333333
+p: 0, System, S: 0 C: 15 Fa: 0
+
+"B", NP: 203, -11, NS: 12, 18
+6: Pt/, 0, CN:1, VN:3
+B, W, t, DS:1 1, GT:1, V, nSt
+Const: 4, Val: 5.318125 0.264583333333333
+p: 0, System, S: 0 C: 15 Fa: 0
+
+"O", NP: 85, -8, NS: 12, 18
+7: Mid, 0, CN:2, VN:1
+B, W, t, DS:1 1, GT:1, V, nSt
+Const: 5 6
+p: 0, System, S: 0 C: 15 Fa: 0
+
+"C", NP: 47, -133, NS: 11, 18
+8: Cir, 0, CN:2, VN:2
+B, W, t, DS:1 1, GT:0, V, nSt
+Const: 7 5
+p: 0, System, S: 0 C: 15 Fa: 0
+
+9: Seg, 0, CN:2, VN:0
+B, W, t, DS:1 1, GT:0, V, nSt
+Const: 5 6
+
+10: Perp, 0, CN:2, VN:2
+V, W, t, DS:1 1, GT:0, I, nSt
+Const: 3 9
+
+11: Int, 256, CN:2, VN:1
+B, W, t, DS:1 1, GT:1, V, nSt
+Const: 10 8
+
+12: Seg, 0, CN:2, VN:0
+B, W, t, DS:1 1, GT:0, V, nSt
+Const: 5 11
+
+13: Seg, 0, CN:2, VN:0
+B, W, t, DS:1 1, GT:0, V, nSt
+Const: 11 6
+
+14: Seg, 0, CN:2, VN:0
+R, W, t, DS:1 1, GT:0, V, nSt
+Const: 11 3
+
+15: Text, 0, CN:0, VN:1
+B, W, BTh:2, DS:1 1, GT:0, V, nSt
+Val: 10 -26 0, nA, nP, TP: 0.264583333333333, 0.687916666666667,TS: 0.264583333333333, -0.47625
+"a"
+p: 0, System, S: 0 C: 15 Fa: 0
+
+16: Text, 0, CN:0, VN:1
+B, W, BTh:2, DS:1 1, GT:0, V, nSt
+Val: 118 -26 0, nA, nP, TP: 3.12208333333333, 0.687916666666667,TS: 0.264583333333333, -0.47625
+"b"
+p: 0, System, S: 0 C: 15 Fa: 0
+
+17: Text, 0, CN:0, VN:1
+B, W, BTh:2, DS:1 1, GT:0, V, nSt
+Val: 54 -72 0, nA, nP, TP: 1.42875, 1.905,TS: 0.264583333333333, -0.47625
+"h"
+p: 0, System, S: 0 C: 15 Fa: 0
+

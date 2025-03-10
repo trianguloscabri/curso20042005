@@ -1,0 +1,125 @@
+<title>trianguloscabri232</title> 
+
+
+<body bgcolor="#FFFFFF">
+<i></i> 
+<table width="100%" border="0">
+  <tr> 
+    <td height="2"> 
+      <h1>Problema 232 de <i>tri&aacute;nguloscabri</i></h1>
+    </td>
+  </tr>
+</table>
+<table width="100%" border="0">
+  <tr> 
+    <td bgcolor="#FFFF99" height="17"> 
+      <p class="Subsubtitle" align="left">Sea <i>ABC</i> un tri&aacute;ngulo is&oacute;sceles 
+        siendo <i>AB</i>=<i>AC</i>. Hallar <i>x</i> real tal que si tomamos <i>a</i>+<i>x</i>, 
+        <i>b</i>+<i>x</i>, <i>c</i>+<i>x</i>, prolongando una longitud <i>x</i> 
+        a <i>a</i> desde <i>B</i>, y obteniendo <i>C'</i> , prolongando una longitud 
+        <i>x</i> a <i>b</i> desde <i>C</i> y obteniendo <i>A'</i>, y prolongando 
+        una longitud <i>x</i> a <i>c</i> desde <i>A</i> y obteniendo <i>B'</i>, 
+        el tri&aacute;ngulo <i>A'B'C'</i> sea is&oacute;sceles, siendo <i>B'C'</i> 
+        = <i>B'A'</i>.</p>
+    </td>
+  </tr>
+  <tr> 
+    <td height="21"> 
+      <div align="right"> 
+        <p><font size="-1">Propuesto por Juan Bosco Romero M&aacute;rquez</font></p>
+      </div>
+    </td>
+  </tr>
+</table>
+<p><i>Soluci&oacute;n de <a href="http://garciacapitan.auna.com">Francisco Javier 
+  Garc&iacute;a Capit&aacute;n</a></i> </p>
+<table width="90%" border="0" cellpadding="0" align="center">
+  <tr> 
+    <td width="66%" valign="top"> 
+      <div align="left">1. <b>Convenio</b>. Consideramos que <i>x</i> es positivo 
+        cuando <i>C'</i> se aleja de <i>B</i> en la direcci&oacute;n de la semirrecta 
+        <i>CB</i>, y en consonancia, cuando <i>A'</i> se aleja de <i>C</i> en 
+        la direcci&oacute;n de <i> AC</i> y <i>B'</i> se aleja de <i>A</i> en 
+        la direcci&oacute;n de <i>BA</i>. 
+        <p>Por el contrario, si <i>C'</i> est&aacute; en la semirrecta <i>BC</i><font 
+          face="Symbol">&reg;</font>, enctonces x ser&aacute; negativo, y <i>A'</i> 
+          y <i>B'</i> estar&aacute;n en las semirrectas <i>CA</i><font 
+          face="Symbol">&reg;</font> y <i>AB</i><font 
+          face="Symbol">&reg;</font>, respectivamente. </p>
+        <p>Naturalmente, en el el caso <i>x</i> =0 tendremos que <i>B'C'A'</i> 
+          es el tri&aacute;ngulo dado. </p>
+      </div>
+    </td>
+    <td width="34%"> 
+      <div align="center"><img src="solgarcap232a.jpg" width="246" height="261"></div>
+    </td>
+  </tr>
+</table>
+<div align="center"></div>
+<p>&nbsp;</p>
+<table width="90%" border="0" cellpadding="0" align="center">
+  <tr> 
+    <td width="66%" valign="top"> 
+      <div align="left">
+        <p>2. <b>Coordenadas baric&eacute;ntricas</b>. Continuando con la misma 
+          figura, e independientemente de que <i>x</i> sea positivo o negativo, 
+          se cumple que </p>
+        <p align="center"><img src="formula1.gif" width="324" height="25"></p>
+        <p align="left">An&aacute;logamente, tendremos:</p>
+        <p align="center"><img src="formula2.gif" width="144" height="52"></p>
+      </div>
+    </td>
+    <td width="34%"> 
+      <div align="center"><img src="solgarcap232a.jpg" width="246" height="261"></div>
+    </td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<table width="90%" border="0" cellpadding="0" align="center">
+  <tr> 
+    <td valign="top"> 
+      <div align="left"> 
+        <p>3. <b>C&aacute;lculos con <i>Mathematica</i></b>. </p>
+        <p>Comenzamos introduciendo la f&oacute;rmula de la distancia entre dos 
+          puntos, conocidas sus coordenadas baric&eacute;ntricas homog&eacute;neas. 
+          Esta f&oacute;rmula puede encontrarse en el trabajo <a href="http://www.math.fau.edu/yiu/Geometry.html">Introduction 
+          to the Geometry of the Triangle</a>, de Paul Yiu. </p>
+      </div>
+      <div align="left">
+        <p><img src="index_1.gif" width="662" height="89"></p>
+        <p>Ahora, indicamos que nuestro tri&aacute;ngulo es is&oacute;sceles con 
+          <i>AB</i> = <i>AC</i>, introducimos las coordenadas de los los puntos 
+          <i>A'</i>, <i>B'</i>, <i>C'</i>, e imponemos que <i>B'A'</i> = <i>B'C'</i>:</p>
+        <p><img src="index_2.gif" width="519" height="118"></p>
+        <p><img src="index_3.gif" width="125" height="17"></p>
+        <p><i>Nota</i>: Para descargar un cuaderno de <i>Mathematica</i> con &eacute;ste 
+          c&oacute;digo, pulsa <a href="solgarcap232.nb">aqu&iacute;</a>.</p>
+      </div>
+    </td>
+  </tr>
+</table>
+<p>&nbsp;</p><table width="90%" border="0" cellpadding="0" align="center">
+  <tr> 
+    <td width="66%" valign="top"> 
+      <div align="left"> 
+        <p>4. <b>Construcci&oacute;n con Cabri. </b>Para hacer una construcci&oacute;n 
+          con <i>Cabri</i> de la soluci&oacute;n no trivial <i>x</i> = -<i>c</i>, 
+          bastar&aacute; trazar una circunferencia con centro <i>B</i> y radio 
+          <i>BA</i>=c, que cortar&aacute; a la semirrecta <i>BC</i><font 
+          face="Symbol">&reg;</font> en el punto buscado <i>C'</i>. El punto <i>A'</i> 
+          estar&aacute; en la semirrecta <i>CA</i><font 
+          face="Symbol">&reg;</font> con <i>CA</i>'=<i>c</i>, por lo que <i>A</i>=<i>A'</i>. 
+          An&aacute;logamente, el punto B' estar&aacute; en la semirrecta <i>AB</i><font 
+          face="Symbol">&reg;</font>, con <i>AB</i>'=c, por lo que <i>B</i>=<i>B'</i>.</p>
+        </div>
+    </td>
+    <td width="34%"> 
+      <div align="center"><img src="solgarcap232b.jpg" width="259" height="302"></div>
+    </td>
+  </tr>
+</table>
+<div class=Section1>
+  <div class=Section1>
+    <div align="center"></div>
+  </div>
+</div>

@@ -1,0 +1,757 @@
+(************** Content-type: application/mathematica **************
+                     CreatedBy='Mathematica 5.0'
+
+                    Mathematica-Compatible Notebook
+
+This notebook can be used with any Mathematica-compatible
+application, such as Mathematica, MathReader or Publicon. The data
+for the notebook starts with the line containing stars above.
+
+To get the notebook into a Mathematica-compatible application, do
+one of the following:
+
+* Save the data starting with the line of stars above into a file
+  with a name ending in .nb, then open the file inside the
+  application;
+
+* Copy the data starting with the line of stars above to the
+  clipboard, then use the Paste menu command inside the application.
+
+Data for notebooks contains only printable 7-bit ASCII and can be
+sent directly in email or through ftp in text mode.  Newlines can be
+CR, LF or CRLF (Unix, Macintosh or MS-DOS style).
+
+NOTE: If you modify the data for this notebook not in a Mathematica-
+compatible application, you must delete the line below containing
+the word CacheID, otherwise Mathematica-compatible applications may
+try to use invalid cache data.
+
+For more information on notebooks and Mathematica-compatible 
+applications, contact Wolfram Research:
+  web: http://www.wolfram.com
+  email: info@wolfram.com
+  phone: +1-217-398-0700 (U.S.)
+
+Notebook reader applications are available free of charge from 
+Wolfram Research.
+*******************************************************************)
+
+(*CacheID: 232*)
+
+
+(*NotebookFileLineBreakTest
+NotebookFileLineBreakTest*)
+(*NotebookOptionsPosition[     27399,        635]*)
+(*NotebookOutlinePosition[     28152,        661]*)
+(*  CellTagsIndexPosition[     28108,        657]*)
+(*WindowFrame->Normal*)
+
+
+
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Enunciado del problema", "Subsubtitle"],
+
+Cell[TextData[{
+  "Consideremos un tri\[AAcute]ngulo ABC cualquiera. Sean D y E puntos sobre \
+el lado BC, F y G puntos sobre el lado CA yH y I puntos sobre el lado AB, tal \
+que BD:DE:EC = CF:FG:GA = AH:HI:IB = ",
+  StyleBox["p",
+    FontSlant->"Italic"],
+  ":",
+  StyleBox["q",
+    FontSlant->"Italic"],
+  ":",
+  StyleBox["r",
+    FontSlant->"Italic"],
+  " con ",
+  StyleBox["p",
+    FontSlant->"Italic"],
+  "+",
+  StyleBox["q",
+    FontSlant->"Italic"],
+  "+",
+  StyleBox["r",
+    FontSlant->"Italic"],
+  "=1, ",
+  StyleBox["p",
+    FontSlant->"Italic"],
+  ",",
+  StyleBox["q",
+    FontSlant->"Italic"],
+  ",",
+  StyleBox[" r",
+    FontSlant->"Italic"],
+  " > 0.Sean K,L y M los puntos de intersecci\[OAcute]n de las diagonales DG \
+y EH, FI y DG, y EH y FI. Probar que : \n- El \[AAcute]rea de los cuadril\
+\[AAcute]teros DEFG, FGHI, y HIDE es igual a q veces el \[AAcute]rea de ABC. \
+\n- Las \[AAcute]reas de los tri\[AAcute]ngulos GHK, IDL y EFM son iguales a \
+",
+  StyleBox["k",
+    FontSlant->"Italic"],
+  " -se hallar\[AAcute]- veces el \[AAcute]rea de ABC. \n- Las \[AAcute]reas \
+de los tri\[AAcute]ngulos DEK, FGL y HIM son iguales a ",
+  StyleBox["h",
+    FontSlant->"Italic"],
+  " -se hallar\[AAcute]- veces el \[AAcute]rea de ABC \n- El \[AAcute]rea del \
+tri\[AAcute]ngulo KLM es igial a ",
+  StyleBox["l",
+    FontSlant->"Italic"],
+  " -se hallar\[AAcute]-, veces al \[AAcute]rea de ABC. "
+}], "Text",
+  CellDingbat->None],
+
+Cell[BoxData[Cell[GraphicsData["Bitmap", "\<\
+CF5dJ6E]HGAYHf4PAg9QL6QYHg<PAVmbKF5d0`40008k0001;a000`40O003
+h00Oogooogoo?Goo003oOoooOolmOol00?mooomooceoo`00KWoo00<007oo
+Ool01Goo00<007ooOol0ogoo`goo001^Ool00`00Oomoo`05Ool00`00Oomo
+o`3oOoo3Ool006moo`03001oogoo00=oo`03001oogoo0?moolAoo`00Kgoo
+00<007ooOol00goo00<007ooOol0ogooa7oo001_Ool7003oOoo6Ool0071o
+o`05001oogooOol0003oOoo7Ool0071oo`05001oogooOol0003oOoo7Ool0
+071oo`05001oogooOol0003oOoo7Ool0075oo`03001oo`000?moolQoo`00
+LGoo00<007oo0000ogoob7oo001aOol00`00Ool0003oOoo8Ool0079oo`03
+001oogoo0?moolMoo`00ogooogoo?Goo003oOoooOolmOol00?mooomooceo
+o`00ogooogoo?Goo001bOol301ooOoo7Ool0079oo`@07omoolIoo`00LWoo
+0`0O00=oo`0O01l00`0Oogoo`Goo001dOol00`0OOomoo`04Ool601ooOonk
+Ool007Eoo`0301moogoo00Uoo`D07omookIoo`00MGoo00<07gooOol03Woo
+1@0Oogoo/Goo001fOol00`0OOomoo`0BOol501ooOon/Ool007Ioo`0301mo
+ogoo01Moo`D07omoojMoo`00Mgoo00<07gooOol06goo1P0OogooXGoo001h
+Ool00`0OOomoo`0POol501ooOonLOol007Qoo`0301moogoo02Eoo`D07omo
+oiMoo`00NGoo00<07gooOol0:Goo1@0OogooTWoo001iOol00`0OOomoo`0^
+Ool501ooOon=Ool007Yoo`0301moogoo039oo`H07omoohMoo`00Ngoo00<0
+7gooOol0=goo1@0OogooPWoo001kOol00`0OOomoo`0lOol501mJOol7003o
+OolLOol007aoo`0301moogoo041oo`D07eEoo`03001oogoo00Aoo`03001o
+ogoo0?mooaUoo`00O7oo00<07gooOol0AGoo1P0OCgoo00<007ooOol01Goo
+00<007ooOol0ogoo67oo001mOol00`0OOomoo`1:Ool501m:Ool00`00Oomo
+o`06Ool00`00Oomoo`3oOolGOol007eoo`0301moogoo04moo`D07dEoo`03
+001oogoo00Ioo`03001oogoo0?mooaMoo`00OWoo00<07gooOol0Dgoo1@0O
+@7oo00<007ooOol01Woo00<007ooOol0ogoo5goo001oOol00`0OOomoo`1G
+Ool501lkOol00`00Oomoo`06Ool00`00Oomoo`3oOolGOol007moo`0301mo
+ogoo05aoo`H07cEoo`03001oogoo00Ioo`03001oogoo0?mooaMoo`00P7oo
+00<07gooOol0HGoo1@0O<7oo00<007ooOol01Woo00<007ooOol0ogoo5goo
+0020Ool00`0OOomoo`1VOol501l[Ool00`00Oomoo`05Ool00`00Oomoo`3o
+OolHOol0085oo`0301moogoo06Yoo`D07bIoo`03001oogoo00Aoo`03001o
+ogoo0?mooaUoo`00PGoo00<07gooOol0Kgoo1@0O8Goo1`00ogoo77oo0022
+Ool00`0OOomoo`1cOol601ooOolnOol008=oo`0301moogoo07Qoo`D07omo
+ocUoo`00Pgoo00<07gooOol0OGoo1@0Oogoo=7oo0024Ool00`0OOomoo`21
+Ool501ooOol_Ool008Aoo`0301moogoo08Ioo`H07`=oo`<07omoob=oo`00
+QGoo00<07gooOol0Rgoo100O00<0000OOol0ogoo8Woo0025Ool00`0OOomo
+o`2>Ool00`0O00007`0401ooOolOOol008Ioo`0301moogoo08ioo`03001o
+ogoo00=oo`D07omooaYoo`00Qgoo00<07gooOol0SGoo00<007ooOol027oo
+1@0Oogoo5Goo0027Ool00`0OOomoo`2>Ool00`00Oomoo`0<Ool601ooOol?
+Ool008Qoo`0301moogoo08eoo`03001oogoo019oo`D07omoo`Yoo`00R7oo
+00<07gooOol0SGoo00<007ooOol05goo1@0Oogoo1Goo0029Ool00`0OOomo
+o`2<Ool00`00Oomoo`0LOol501ooOol008Yoo`0301moogoo08aoo`03001o
+ogoo021oo`D07oYoo`00RWoo00<07gooOol0S7oo00<007ooOol09Goo1P0O
+m7oo002;Ool00`0OOomoo`2;Ool00`00Oomoo`0[Ool501o_Ool008]oo`03
+01moogoo08]oo`03001oogoo031oo`D07nYoo`00S7oo00<07gooOol0RWoo
+00<007ooOol0=Goo1@0OiGoo002<Ool00`0OOomoo`2;Ool00`00Oomoo`0i
+Ool601oOOol008eoo`0301moogoo08Yoo`03001oogoo03moo`D07mYoo`00
+SWoo00<07gooOol0RGoo00<007ooOol0A7oo1@0OeGoo002>Ool00`0OOomo
+o`29Ool00`00Oomoo`19Ool501o@Ool008moo`0301moogoo08Qoo`03001o
+ogoo04ioo`D07l]oo`00Sgoo0`0ORGoo00<007ooOol0DWoo1P0OaGoo002?
+Ool00`0O00000029Ool00`00Oomoo`1HOol501mAOol9001VOol008moo`<0
+7`<008Ioo`03001oogoo05eoo`D07daoo`03001oogoo06aoo`00TGoo00@0
+7gooOomoo`<008=oo`03001oogoo069oo`D07dMoo`03001oogoo06aoo`00
+TWoo00<07gooOol00goo1000Ogoo00<007ooOol0Igoo1@0O@Woo00<007oo
+Ool0K7oo002BOol00`0OOomoo`07Ool3001mOol00`00Oomoo`1[Ool601ll
+Ool00`00Oomoo`1/Ool008eoo`03001oogoo00=oo`0301moogoo00Uoo`<0
+07Yoo`03001oogoo075oo`D07cMoo`03001oogoo06aoo`00SGoo00<007oo
+Ool00goo00<07gooOol037oo0`00Mgoo00<007ooOol0MWoo1@0O<Woo2000
+Igoo002=Ool00`00Oomoo`04Ool00`0OOomoo`0>Ool4001cOol00`00Oomo
+o`1kOol501l]Ool00`00Oomoo`1/Ool008eoo`03001oogoo00Eoo`0301mo
+ogoo015oo`<0075oo`03001oogoo07moo`H07bMoo`03001oogoo06aoo`00
+SGoo00<007ooOol01Goo00<07gooOol057oo0`00KWoo00<007ooOol0QGoo
+1@0O8Woo00<007ooOol0K7oo002=Ool00`00Oomoo`06Ool00`0OOomoo`0F
+Ool4001ZOol00`00Oomoo`2:Ool501lMOol00`00Oomoo`1/Ool008eoo`03
+001oogoo00Ioo`0301moogoo01Yoo`<006Moo`03001oogoo08moo`D07aQo
+o`T006Ioo`00SGoo00<007ooOol01goo00<07gooOol077oo0`00I7oo00<0
+07ooOol0U7oo1@0OPWoo002=Ool00`00Oomoo`07Ool00`0OOomoo`0OOol4
+001QOol00`00Oomoo`2HOol601mlOol008eoo`03001oogoo00Qoo`0301mo
+ogoo029oo`<005ioo`03001oogoo09ioo`D07gMoo`00SGoo00<007ooOol0
+2Goo00<07gooOol097oo0`00Fgoo00<007ooOol0Xgoo200OKgoo002=Ool0
+0`00Oomoo`09Ool00`0OOomoo`0WOol4001GOol00`00Oomoo`2XOol20003
+01m]Ool009Yoo`0301moogoo02Yoo`<005Aoo`03001oogoo0:Aoo`@000<0
+7`9oo`D07fQoo`00VWoo00<07gooOol0;Goo0`00DWoo00<007ooOol0X7oo
+0`003Woo1P0OHWoo002KOol00`0OOomoo`0_Ool3001?Ool00`00Oomoo`2M
+Ool3000GOol501m=Ool70009Ool009]oo`0301moogoo039oo`@004]oo`03
+001oogoo09Yoo`<001moo`D07dQoo`03001oogoo00Aoo`03001oogoo00Io
+o`00W7oo00<07gooOol0=Goo0`00B7oo00<007ooOol0UWoo10009goo1@0O
+@goo00<007ooOol01Goo00<007ooOol01Goo002MOol00`0OOomoo`0gOol3
+0016Ool00`00Oomoo`2BOol3000`Ool601lmOol00`00Oomoo`05Ool00`00
+Oomoo`05Ool009eoo`0301moogoo03Yoo`@0049oo`03001oogoo08moo`<0
+03Uoo`D07cQoo`03001oogoo00Eoo`03001oogoo00Eoo`00WWoo00<07goo
+Ool0?Goo0`00?goo00<007ooOol0Rgoo1000@Goo1@0O<goo00<007ooOol0
+17oo00<007ooOol01Woo002NOol00`0OOomoo`10Ool3000lOol00`00Oomo
+o`28Ool3001:Ool501l^Ool70009Ool009moo`0301moogoo049oo`@003Qo
+o`03001oogoo08Eoo`<0059oo`D07bUoo`03001oogoo00Aoo`03001oogoo
+00Ioo`00Wgoo00<07gooOol0AWoo0`00=Woo00<007ooOol0PGoo0`00FWoo
+1P0O8goo00<007ooOol01Goo00<007ooOol01Goo002POol00`0OOomoo`18
+Ool3000cOol00`00Oomoo`04Ool7001bOol4001SOol501lNOol00`00Oomo
+o`05Ool00`00Oomoo`05Ool00:5oo`0301moogoo04Yoo`@002moo`03001o
+ogoo00Aoo`03001oogoo07=oo`<006aoo`D07aUoo`03001oogoo00Aoo`03
+001oogoo00Ioo`00XGoo00<07gooOol0CWoo0`00;7oo00<007ooOol017oo
+00<007ooOol0L7oo0`00M7oo1@0O57oo200027oo002ROol00`0OOomoo`1@
+Ool3000YOol00`00Oomoo`04Ool00`00Oomoo`1]Ool3001lOol501lOOol0
+0:9oo`0301moogoo05=oo`@002Ioo`03001oogoo00=oo`03001oogoo06Uo
+o`@008Aoo`H07aUoo`00Xgoo00<07gooOol0EWoo0`008goo00<007ooOol0
+0goo00<007ooOol0IWoo0`00SWoo1@0O00Aoo`0O01l07a1oo`00Y7oo00<0
+7gooOol0F7oo0`0087oo00<007ooOol00goo00<007ooOol0Hgoo0`00UWoo
+100O47oo002TOol00`0OOomoo`1KOol3000MOol00`00Oomoo`03Ool00`00
+Oomoo`1POol3002HOol501l@Ool00:Eoo`0301moogoo05eoo`@001Yoo`03
+001oogoo009oo`03001oogoo05aoo`@009Uoo`807aEoo`00YGoo00<07goo
+Ool0HGoo0`005goo00<007ooOol00Woo00<007ooOol0FGoo0`00Vgoo0P0O
+5goo002VOol00`0OOomoo`1SOol3000DOol00`00Oomoo`02Ool00`00Oomo
+o`0JOol00`00Oomoo`02Ool00`00Oomoo`02Ool00`00Oomoo`0_Ool3002L
+Ool201lIOol00:Ioo`0301moogoo06Ioo`@0011oo`03001oogoo009oo`03
+001oogoo01Yoo`03001oogoo009oo`03001oogoo009oo`03001oogoo02]o
+o`@009eoo`807a]oo`00Ygoo00<07gooOol0JGoo0`003Goo00<007ooOol0
+7goo00L007ooOomoo`00Ool00003Ool00`00Oomoo`0XOol3002OOol201lM
+Ool00:Qoo`0301moogoo06]oo`<000]oo`03001oogoo01ioo`07001oogoo
+Ool007oo00000goo00<007ooOol09Goo0`00X7oo0P0O7goo002XOol00`0O
+Oomoo`1^Ool40007Ool00`00Oomoo`0NOol01`00Oomoogoo001oo`0000=o
+o`03001oogoo029oo`<00:5oo`807b5oo`00ZGoo00<07gooOol0LGoo0`00
+17oo00<007ooOol07Woo00@007ooOol000=oo`04001oogoo000POol4002R
+Ool201lSOol00:Uoo`0301moogoo07Aoo`<000<07amoo`04001oogoo0003
+Ool01000Oomoo`007Goo0`00Y7oo0P0O9Goo002ZOol00`0OOomoo`1fOol3
+01l00`00Oomoo`0LOol00`00Ool00005Ool00`00Ool0000JOol3002UOol2
+01lWOol00:Yoo`0301moogoo07Ioo`<07`04Ool00000000KOol00`00Ool0
+0005Ool00`00Ool0000GOol3002VOol201lYOol00:]oo`0301moogoo07Mo
+o`03001oogoo009oo`<001Qoo`8000Moo`8001=oo`@00:Moo`807b]oo`00
+[7oo00<07gooOol0MWoo00<007ooOol01Goo0`005Goo0P001goo0P0047oo
+0`00ZGoo0P0O;Goo002/Ool00`0OOomoo`1fOol00`00Oomoo`08Ool4000A
+Ool00`00Oomoo`07Ool00`00Oomoo`0;Ool3002ZOol201l_Ool00:eoo`03
+01moogoo07Eoo`03001oogoo00aoo`<0029oo`@00:]oo`807c5oo`00[Goo
+00<07gooOol0MWoo00<007ooOol03Woo0`0077oo0`00[Goo0P0O<goo002^
+Ool00`0OOomoo`1eOol00`00Oomoo`0AOol4000EOol3002^Ool201leOol0
+0:ioo`0301moogoo07Eoo`03001oogoo01Eoo`<000moo`<00:ioo`<07cMo
+o`00[goo00<07gooOol0M7oo00<007ooOol067oo0`0027oo1000[goo0P0O
+>Woo002`Ool00`0OOomoo`1dOol00`00Oomoo`0JOol3000301l2002aOol2
+01llOol00;1oo`0301moogoo07Aoo`03001oogoo01aoo`0500007`0O01l0
+002`Ool201lnOol00;5oo`0301moogoo07=oo`03001oogoo01Uoo`<00005
+Ool07`0O01moo`03002[Ool201m0Ool00;5oo`0301moogoo07=oo`03001o
+ogoo01Eoo`@000]oo`@00:Eoo`807d9oo`00/Woo00<07gooOol0LWoo00<0
+07ooOol04Woo0`004goo0`00X7oo0P0OA7oo002cOol00`0OOomoo`1bOol0
+0`00Oomoo`0>Ool3000IOol3002KOol201m6Ool00;=oo`0301moogoo079o
+o`03001oogoo00Yoo`@001moo`<009Ioo`807dQoo`00]7oo00<07gooOol0
+LGoo00<007ooOol01goo0`009Woo1000T7oo0P0OBWoo002dOol00`0OOomo
+o`1aOol00`00Oomoo`04Ool3000]Ool3002;Ool201m<Ool00;Eoo`0301mo
+ogoo071oo`<07`04Ool00000000cOol30026Ool201m>Ool00;Eoo`0301mo
+ogoo071oo`<07`03001oogoo03Moo`@0081oo`807e1oo`00]Woo00<07goo
+Ool0K7oo0`000`0O?Woo0`00Ngoo0P0ODWoo002gOol00`0OOomoo`1XOol3
+0004Ool00`00Oomoo`10Ool3001fOol201mDOol00;Moo`0301moogoo06Eo
+o`<000Moo`03001oogoo04=oo`@0071oo`807eIoo`00^7oo00<07gooOol0
+H7oo10002goo00<007ooOol017oo00<007ooOol01Goo00<007ooOol0=goo
+0`00Jgoo0P0OF7oo002hOol00`0OOomoo`1MOol3000?Ool00`00Oomoo`04
+Ool00`00Oomoo`04Ool00`00Oomoo`0kOol3001VOol201mJOol00;Uoo`03
+01moogoo05Uoo`<0019oo`03001oogoo00Aoo`03001oogoo00=oo`03001o
+ogoo03moo`@005moo`<07eaoo`00^Goo00<07gooOol0EWoo0`005Goo00<0
+07ooOol017oo00<007ooOol00goo00<007ooOol0@goo0`00FWoo0P0OGgoo
+002jOol00`0OOomoo`1AOol4000HOol00`00Oomoo`04Ool20003Ool00`00
+Oomoo`17Ool3001EOol201mQOol00;]oo`0301moogoo04eoo`<001eoo`03
+001oogoo00=oo`05001oo`00Ool0001=Ool3001@Ool201mSOol00;]oo`03
+01moogoo04Yoo`<0021oo`03001oogoo00=oo`03001oogoo0080051oo`@0
+04Yoo`807fEoo`00_7oo00<07gooOol0AGoo10008goo00<007ooOol00goo
+00D007ooOomoo`0005Aoo`<004Eoo`807fMoo`00_7oo00<07gooOol0@Woo
+0`009goo00<007ooOol00goo00<007ooOol00Woo00<007ooOol0E7oo0`00
+@7oo0P0OJGoo002mOol00`0OOomoo`0nOol3000ZOol00`00Oomoo`03Ool0
+0`00Oomoo`03Ool00`00Oomoo`1FOol4000jOol201m[Ool00;ioo`0301mo
+ogoo03Yoo`<002ioo`03001oogoo009oo`03001oogoo00Aoo`03001oogoo
+05Uoo`<003Eoo`807feoo`00_Woo00<07gooOol0=Woo1000<Goo00<007oo
+Ool00Woo00<007ooOol01Goo00<007ooOol0Fgoo0`00<7oo0P0OKgoo002o
+Ool00`0OOomoo`0bOol3000eOol00`00Oomoo`1[Ool4000ZOol201maOol0
+0;moo`0301moogoo02moo`<003Qoo`03001oogoo06moo`<002Eoo`807g=o
+o`00`7oo00<07gooOol0:goo0`00>goo00<007ooOol0LWoo0`0087oo0P0O
+MGoo0030Ool00`0OOomoo`0WOol4000oOol00`00Oomoo`1dOol4000JOol2
+01mgOol00<5oo`0301moogoo02=oo`<004=oo`03001oogoo07Qoo`<001Eo
+o`807gUoo`00`Woo00<07gooOol07goo0`00AWoo00<007ooOol0Ngoo0`00
+47oo0P0ONgoo0032Ool00`0OOomoo`0KOol40019Ool00`00Oomoo`1nOol3
+000;Ool201mmOol00<=oo`0301moogoo01Moo`<004ioo`03001oogoo081o
+o`@00005Ool07`0O01moo`0201moOol00<=oo`0301moogoo01Aoo`<0055o
+o`03001oogoo08Aoo`<000807h5oo`00a7oo00<07gooOol047oo0`00E7oo
+00<007ooOol0Q7oo100OPWoo0034Ool00`0OOomoo`0<Ool4001GOol00`00
+Oomoo`22Ool201n6Ool00<Eoo`0301moogoo00Qoo`<005]oo`03001oogoo
+081oo`807hQoo`00aWoo00<07gooOol017oo0`00Ggoo00<007ooOol0OGoo
+0P0O1Woo00<007ooOol0PGoo0036Ool301l017oo00000000HWoo00<007oo
+Ool0Ngoo0P0O27oo00<007ooOol0PGoo0036Ool0100O00000000IGoo00<0
+07ooOol0NGoo0P0O2Woo00<007ooOol0PGoo0036Ool301mVOol00`00Oomo
+o`1gOol201l<Ool00`00Oomoo`21Ool00<Qoo`0301moogoo06Aoo`03001o
+ogoo07Eoo`807`ioo`03001oogoo085oo`00^goo00<007ooOol01Goo00<0
+07ooOol00Woo00<07gooOol0IGoo00<007ooOol0LWoo0P0O47oo1`00OGoo
+002kOol00`00Oomoo`05Ool00`00Oomoo`03Ool00`0OOomoo`1TOol00`00
+Oomoo`1`Ool201lBOol00`00Oomoo`21Ool00;]oo`03001oogoo00Eoo`03
+001oogoo00Aoo`0301moogoo06=oo`03001oogoo06ioo`807aAoo`03001o
+ogoo085oo`00^goo00<007ooOol01Goo00<007ooOol017oo00<07gooOol0
+Hgoo00<007ooOol0K7oo0P0O5Woo00<007ooOol0PGoo002kOol00`00Oomo
+o`05Ool00`00Oomoo`05Ool00`0OOomoo`1SOol00`00Oomoo`1YOol201lH
+Ool00`00Oomoo`21Ool00;]oo`03001oogoo00Eoo`03001oogoo00Eoo`03
+01moogoo06=oo`03001oogoo06Moo`807aYoo`03001oogoo085oo`00^goo
+2@0027oo00<07gooOol0HWoo00<007ooOol0IGoo0P0O77oo2000O7oo002k
+Ool00`00Oomoo`05Ool00`00Oomoo`07Ool00`0OOomoo`1QOol00`00Oomo
+o`1SOol201nROol00;]oo`03001oogoo00Eoo`03001oogoo00Moo`0301mo
+ogoo065oo`03001oogoo065oo`807jAoo`00^goo00<007ooOol01Goo00<0
+07ooOol027oo00<07gooOol0HGoo00<007ooOol0GWoo0P0OYWoo002kOol0
+0`00Oomoo`05Ool00`00Oomoo`08Ool00`0OOomoo`1QOol00`00Oomoo`1K
+Ool301nXOol00;]oo`03001oogoo00Eoo`03001oogoo00Uoo`0301moogoo
+061oo`03001oogoo05Uoo`807j]oo`00cgoo00<07gooOol0H7oo00<007oo
+Ool0Egoo0P0O[Goo003@Ool00`0OOomoo`1OOol00`00Oomoo`1EOol201n_
+Ool00=5oo`0301moogoo05moo`03001oogoo059oo`807k5oo`00dGoo00<0
+7gooOol0Ggoo00<007ooOol0D7oo0P0O/goo003BOol00`0OOomoo`1NOol0
+0`00Oomoo`1>Ool201neOol00=9oo`0301moogoo05ioo`03001oogoo04ao
+o`807kMoo`00dgoo00<07gooOol0GGoo00<007ooOol0BWoo0P0O^Goo003C
+Ool00`0OOomoo`1NOol00`00Oomoo`17Ool201nkOol00=Aoo`0301moogoo
+05eoo`03001oogoo04Eoo`807keoo`00eGoo00<07gooOol0G7oo00<007oo
+Ool0@goo0P0O_goo003EOol00`0OOomoo`1LOol00`00Oomoo`11Ool201o1
+Ool00=Ioo`0301moogoo05aoo`03001oogoo03ioo`807l=oo`00eWoo00<0
+7gooOol0G7oo00<007ooOol0?7oo0P0OaGoo003GOol00`0OOomoo`1KOol0
+0`00Oomoo`0jOol201o7Ool00=Qoo`0301moogoo05Yoo`03001oogoo03Qo
+o`807lUoo`00f7oo00<07gooOol0FWoo00<007ooOol0=Woo0P0Obgoo003I
+Ool00`0OOomoo`1JOol00`00Oomoo`0cOol201o=Ool00=Uoo`0301moogoo
+05Yoo`03001oogoo031oo`<07lmoo`00fWoo00<07gooOol0FGoo00<007oo
+Ool0;Woo0P0OdWoo003JOol00`0OOomoo`1IOol00`00Oomoo`0/Ool201oD
+Ool002=oo`03001oogoo0;Eoo`0301moogoo05Qoo`03001oogoo02Yoo`80
+7mIoo`008goo00<007ooOol0@7oo00<007ooOol0Lgoo00<07gooOol0F7oo
+00<007ooOol09goo0P0Of7oo000SOol00`00Oomoo`10Ool00`00Oomoo`1c
+Ool00`0OOomoo`1HOol00`00Oomoo`0UOol201oJOol002=oo`03001oo`00
+008003ioo`03001oogoo02moo`03001oogoo049oo`0301moogoo05Moo`03
+001oogoo02=oo`807maoo`008goo0P000goo00<007ooOol0=goo0`0000=o
+o`00Ool0<7oo00<007ooOol0@Woo00<07gooOol0Egoo00<007ooOol08Goo
+0P0OgWoo000SOol00`00Oomoo`03Ool00`00Oomoo`0eOol01000Oomoogoo
+0P00<Goo00<007ooOol0@goo00<07gooOol0Egoo00<007ooOol07Woo0P0O
+h7oo000SOol00`00Oomoo`03Ool00`00Oomoo`0dOol00`00Oomoo`03Ool0
+0`00Oomoo`0_Ool00`00Oomoo`13Ool00`0OOomoo`1GOol00`00Oomoo`0L
+Ool201oROol002=oo`03001oogoo00=oo`03001oogoo03Aoo`03001oogoo
+00=oo`03001oogoo02moo`03001oogoo04Aoo`0301moogoo05Ioo`03001o
+ogoo01Yoo`807nAoo`008goo00<007ooOol00goo00<007ooOol0=7oo00<0
+07ooOol00goo00<007ooOol0;goo00<007ooOol0AGoo00<07gooOol0EGoo
+00<007ooOol067oo0P0OiWoo000SOol00`00Oomoo`03Ool00`00Oomoo`0d
+Ool00`00Oomoo`03Ool00`00Oomoo`0_Ool00`00Oomoo`15Ool00`0OOomo
+o`1EOol00`00Oomoo`0FOol201oXOol002=oo`8000=oo`03001oogoo03Eo
+o`03001oogoo00=oo`03001oogoo02moo`8004Moo`0301moogoo05Eoo`03
+001oogoo01=oo`807nYoo`008goo00<007oo00000P00>Goo00@007ooOomo
+o`80035oo`04001oo`000015Ool00`0OOomoo`1EOol00`00Oomoo`0AOol2
+01o/Ool0069oo`<00003Ool007oo07Yoo`0301moogoo05Aoo`03001oogoo
+00moo`807nioo`00hWoo00<07gooOol0E7oo00<007ooOol03Goo0P0Ol7oo
+003SOol00`0OOomoo`1COol00`00Oomoo`0;Ool201obOol00>Aoo`0301mo
+ogoo05=oo`03001oogoo00Moo`<07oAoo`00i7oo00<07gooOol0Dgoo00<0
+07ooOol01Goo0P0Omgoo003UOol00`0OOomoo`1BOol00`00Oomoo`03Ool2
+01oiOol000Eoo`<07cYoo`<07d1oo`<07b1oo`<07cYoo`0301moogoo059o
+o`04001oogooOol201okOol000Eoo`0301l0000003X0000301l0000006D0
+000301moogoo03Uoo`0301moogoo055oo`0401l0000O01omOol000Eoo`<0
+7cYoo`<07d1oo`<07b1oo`<07caoo`0301moogoo051oo`0301l0000O0?io
+o`00igoo00<07gooOol0CWoo1@0OoWoo003XOol00`0OOomoo`1;Ool201oo
+Ool4Ool00>Qoo`0301moogoo04Uoo`807omoo`Ioo`00jGoo00<07gooOol0
+AWoo0P0O2goo1000n7oo003YOol00`0OOomoo`14Ool201l<Ool00`00Oomo
+o`02Ool00`00Oomoo`3eOol00>Yoo`0301moogoo045oo`807`eoo`03001o
+ogoo00Aoo`03001oogoo0?Aoo`00jgoo00<07gooOol0?Woo0P0O3Woo00<0
+07ooOol01Woo00<007ooOol0lgoo003[Ool00`0OOomoo`0lOol201l@Ool0
+0`00Oomoo`06Ool00`00Oomoo`3cOol00>aoo`0301moogoo03Uoo`807a9o
+o`03001oogoo009oo`D00?Eoo`00k7oo00<07gooOol0=goo0P0O57oo00<0
+07ooOol0o7oo003]Ool00`0OOomoo`0dOol201lFOol00`00Oomoo`3lOol0
+0>eoo`0301moogoo039oo`807aQoo`03001oogoo0?aoo`00kWoo00<07goo
+Ool0;goo0P0O6goo00<007ooOol017oo00<007ooOol0m7oo003_Ool00`0O
+Oomoo`0[Ool301lNOol00`00Oomoo`02Ool00`00Oomoo`3eOol00>moo`03
+01moogoo02Uoo`807b9oo`@00?Qoo`00l7oo00<07gooOol09Woo0P0Oogoo
+8Goo003`Ool00`0OOomoo`0TOol201ooOolSOol00?5oo`0301moogoo025o
+o`807omoobEoo`00lGoo00<07gooOol07goo0P0Oogoo9goo003bOol00`0O
+Oomoo`0LOol201ooOolYOol00?=oo`0301moogoo01Uoo`807omoob]oo`00
+lgoo00<07gooOol05goo0P0Oogoo;Goo003dOol00`0OOomoo`0DOol201oo
+Ool_Ool00?Aoo`0301moogoo019oo`807omooc5oo`00mGoo00<07gooOol0
+3goo0P0Oogoo<goo003fOol00`0OOomoo`0<Ool201ooOoleOol00?Ioo`03
+01moogoo00Yoo`807omoocMoo`00mgoo00<07gooOol01goo0P0Oogoo>Goo
+003gOol00`0OOomoo`05Ool201ooOolkOol00?Qoo`0301moogoo009oo`80
+7omooceoo`00n7oo1@0Oogoo?goo003hOol301ooOom1Ool00?Qoo`<07omo
+od5oo`00ogooogoo?Goo003oOoooOolmOol00?mooomooceoo`00ogooogoo
+?Goo003oOoooOolmOol00?Yoo`D00?mooceoo`00nGoo00<007ooOol00goo
+00<007ooOol0ogoo>Woo003hOol00`00Oomoo`05Ool00`00Oomoo`3oOoli
+Ool00?Moo`03001oogoo0?mood9oo`00mgoo00<007ooOol0ogoo@Woo003g
+Ool00`00Oomoo`3oOom2Ool00?Moo`03001oogoo0?mood9oo`00mgoo00<0
+07ooOol0ogoo@Woo003gOol00`00Oomoo`3oOom2Ool00?Qoo`03001oogoo
+00Eoo`03001oogoo0?moocUoo`00nGoo00<007ooOol00goo00<007ooOol0
+ogoo>Woo003jOol5003oOolmOol00?mooomooceoo`00ogooogoo?Goo003o
+OoooOolmOol00?mooomooceoo`00ogooogoo?Goo003oOoooOolmOol00?mo
+oomooceoo`00ogooogoo?Goo003oOoooOolmOol00?mooomooceoo`00ogoo
+ogoo?Goo003oOoooOolmOol00?mooomooceoo`00ogooogoo?Goo003oOooo
+OolmOol00?mooomooceoo`00ogooogoo?Goo003oOoooOolmOol00?mooomo
+oceoo`00ogooogoo?Goo003oOoooOolmOol00?mooomooceoo`00ogooogoo
+?Goo003oOoooOolmOol00?mooomooceoo`00ogooogoo?Goo003oOoooOolm
+Ool00?mooomooceoo`00ogooogoo?Goo003oOoooOolmOol00?mooomooceo
+o`00ogooogoo?Goo0000\
+\>"], "Graphics",
+      ImageSize->{571, 303},
+      ImageMargins->{{0, 0}, {0, 0}},
+      ImageRegion->{{0, 1}, {0, 1}}]], "Text"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["F\[OAcute]rmulas necesarias", "Subsubtitle"],
+
+Cell[TextData[{
+  "Como estamos usando Mathematica para resolver el problema, representamos \
+puntos y rectas como ternas {u,v,w} de n\[UAcute]meros. Teniendo en cuenta \
+que {",
+  StyleBox["a",
+    FontSlant->"Italic"],
+  "u, ",
+  StyleBox["a",
+    FontSlant->"Italic"],
+  "v, ",
+  StyleBox["a",
+    FontSlant->"Italic"],
+  "w} es equivalente a {u,v,w}, usaremos una funci\[OAcute]n ",
+  StyleBox["Simplificar",
+    FontWeight->"Bold"],
+  " para eliminar factores como el ",
+  StyleBox["a",
+    FontSlant->"Italic"],
+  " anterior."
+}], "Text"],
+
+Cell[BoxData[
+    \(\(Simplificar[{x_, y_, z_}]\  := \ 
+        Factor[{x, y, z}\/PolynomialGCD[x, y, z]\ ];\)\)], "Input"],
+
+Cell[TextData[{
+  "Usaremos tambi\[EAcute]n la misma funci\[OAcute]n ",
+  StyleBox["Unir",
+    FontWeight->"Bold"],
+  " para hallar el punto de intersecci\[OAcute]n de dos rectas y para hallar \
+la recta que une dos puntos. "
+}], "Text"],
+
+Cell[BoxData[
+    RowBox[{\(Unir[{x1_, y1_, z1_}, {x2_, y2_, z2_}]\), " ", ":=", 
+      "\[IndentingNewLine]", 
+      RowBox[{"Simplificar", "[", 
+        RowBox[{"{", 
+          RowBox[{
+            RowBox[{"Det", "[", 
+              RowBox[{"(", GridBox[{
+                    {"y1", "z1"},
+                    {"y2", "z2"}
+                    }], ")"}], "]"}], ",", 
+            RowBox[{"-", 
+              RowBox[{"Det", "[", 
+                RowBox[{"(", GridBox[{
+                      {"x1", "z1"},
+                      {"x2", "z2"}
+                      }], ")"}], "]"}]}], ",", 
+            RowBox[{"Det", "[", 
+              RowBox[{"(", GridBox[{
+                    {"x1", "y1"},
+                    {"x2", "y2"}
+                    }], ")"}], "]"}]}], "}"}], "]"}]}]], "Input"],
+
+Cell["\<\
+Finalmente, definimos las funciones que calculan el \[AAcute]rea de un tri\
+\[AAcute]ngulo y de un cuadril\[AAcute]tero en coordenadas \
+baric\[EAcute]ntricas.\
+\>", "Text"],
+
+Cell[BoxData[
+    RowBox[{
+      RowBox[{
+        RowBox[{
+          
+          RowBox[{\(AreaTriangulo[{x1_, y1_, z1_}, {x2_, y2_, z2_}, {x3_, 
+                y3_, z3_}]\), " ", ":=", "\[IndentingNewLine]", 
+            RowBox[{"Simplify", "[", 
+              
+              RowBox[{\(1\/\(\((x1 + y1 + z1)\) \((x2 + y2 + z2)\) \((x3 + 
+                          y3 + z3)\)\)\), 
+                RowBox[{"Det", "[", 
+                  RowBox[{"(", GridBox[{
+                        {"x1", "y1", "z1"},
+                        {"x2", "y2", "z2"},
+                        {"x3", "y3", "z3"}
+                        }], ")"}], "]"}]}], "]"}]}], ";"}], 
+        "\[IndentingNewLine]", \(AreaCuadrilatero[ptA_, ptB_, ptC_, 
+              ptD_]\  := \[IndentingNewLine]Simplify[
+              Area[ptA, ptB, ptC]\  + \ Area[ptA, ptC, ptD]\ ];\)}], 
+      " "}]], "Input"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Introducci\[OAcute]n de datos", "Subsubtitle"],
+
+Cell["\<\
+Ahora  introducimos directamente las coordenadas de algunos de los puntos que \
+intervienen en el problema:\
+\>", "Text"],
+
+Cell[BoxData[{
+    \(\(ptA = {1, 0, 0};\)\), "\[IndentingNewLine]", 
+    \(\(ptB = {0, 1, 0};\)\), "\[IndentingNewLine]", 
+    \(\(ptC = {0, 0, 1};\)\), "\[IndentingNewLine]", 
+    \(\(ptD = {0, q + r, p};\)\), "\[IndentingNewLine]", 
+    \(\(ptE = {0, r, p + q};\)\), "\[IndentingNewLine]", 
+    \(\(ptF = {p, 0, q + r};\)\), "\[IndentingNewLine]", 
+    \(\(ptG = {p + q, 0, r};\)\), "\[IndentingNewLine]", 
+    \(\(ptH = {q + r, p, 0};\)\), "\[IndentingNewLine]", 
+    \(\(ptI = {r, p + q, 0};\)\)}], "Input"],
+
+Cell[TextData[{
+  "Usamos la funci\[OAcute]n ",
+  StyleBox["Unir",
+    FontWeight->"Bold"],
+  " para hallar los tres puntos de intersecci\[OAcute]n de las diagonales"
+}], "Text"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+    \(ptK = Unir[Unir[ptD, ptG], Unir[ptE, ptH]]\), "\[IndentingNewLine]", 
+    \(ptL = Unir[Unir[ptF, ptI], Unir[ptD, ptG]]\), "\[IndentingNewLine]", 
+    \(ptM = Unir[Unir[ptE, ptH], Unir[ptF, ptI]]\)}], "Input"],
+
+Cell[BoxData[
+    \({q\ \((p + q)\)\ \((q + r)\), \((q + r)\)\ \((p\^2 + p\ q - p\ r + 
+            r\^2)\), \((p + q)\)\ \((p\^2 - p\ r + q\ r + 
+            r\^2)\)}\)], "Output"],
+
+Cell[BoxData[
+    \({\(-\((p + q)\)\)\ \((p\^2 - p\ r + q\ r + r\^2)\), \(-q\)\ \((p + 
+            q)\)\ \((q + r)\), \(-\((q + r)\)\)\ \((p\^2 + p\ q - p\ r + 
+            r\^2)\)}\)], "Output"],
+
+Cell[BoxData[
+    \({\((q + r)\)\ \((p\^2 + p\ q - p\ r + r\^2)\), \((p + q)\)\ \((p\^2 - 
+            p\ r + q\ r + r\^2)\), q\ \((p + q)\)\ \((q + r)\)}\)], "Output"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["C\[AAcute]lculos", "Subsubtitle"],
+
+Cell["\<\
+Ahora, calculamos las \[AAcute]reas de todos los tri\[AAcute]ngulos y cuadril\
+\[AAcute]teros pedidas en el enunciado.\
+\>", "Text"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(DEFG = AreaCuadrilatero[ptD, ptE, ptF, ptG]\)], "Input"],
+
+Cell[BoxData[
+    \(q\/\(p + q + r\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(FGHI = AreaCuadrilatero[ptF, ptG, ptH, ptI]\)], "Input"],
+
+Cell[BoxData[
+    \(q\/\(p + q + r\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(HIDE = AreaCuadrilatero[ptH, ptI, ptD, ptE]\)], "Input"],
+
+Cell[BoxData[
+    \(q\/\(p + q + r\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(GHK = Area[ptG, \ ptH, \ ptK]\)], "Input"],
+
+Cell[BoxData[
+    \(\(p\^4 + p\^3\ \((q - 2\ r)\) + 3\ p\^2\ r\^2 + r\^3\ \((q + r)\) + p\ \
+r\ \((q\^2 - 2\ r\^2)\)\)\/\(\((p + q + r)\)\^2\ \((p\^2 + q\^2 + p\ \((q - \
+r)\) + q\ r + r\^2)\)\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(IDL = Area[ptI, \ ptD, \ ptL]\)], "Input"],
+
+Cell[BoxData[
+    \(\(p\^4 + p\^3\ \((q - 2\ r)\) + 3\ p\^2\ r\^2 + r\^3\ \((q + r)\) + p\ \
+r\ \((q\^2 - 2\ r\^2)\)\)\/\(\((p + q + r)\)\^2\ \((p\^2 + q\^2 + p\ \((q - \
+r)\) + q\ r + r\^2)\)\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(EFM = Area[ptE, ptF, ptM]\)], "Input"],
+
+Cell[BoxData[
+    \(\(p\^4 + p\^3\ \((q - 2\ r)\) + 3\ p\^2\ r\^2 + r\^3\ \((q + r)\) + p\ \
+r\ \((q\^2 - 2\ r\^2)\)\)\/\(\((p + q + r)\)\^2\ \((p\^2 + q\^2 + p\ \((q - \
+r)\) + q\ r + r\^2)\)\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(DEK = Area[ptD, ptE, ptK]\)], "Input"],
+
+Cell[BoxData[
+    \(\(q\^2\ \((p + q)\)\ \((q + r)\)\)\/\(\((p + q + r)\)\^2\ \((p\^2 + \
+q\^2 + p\ \((q - r)\) + q\ r + r\^2)\)\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(FGL = Area[ptF, ptG, ptL]\)], "Input"],
+
+Cell[BoxData[
+    \(\(q\^2\ \((p + q)\)\ \((q + r)\)\)\/\(\((p + q + r)\)\^2\ \((p\^2 + \
+q\^2 + p\ \((q - r)\) + q\ r + r\^2)\)\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(HIM = Area[ptH, ptI, ptM]\)], "Input"],
+
+Cell[BoxData[
+    \(\(q\^2\ \((p + q)\)\ \((q + r)\)\)\/\(\((p + q + r)\)\^2\ \((p\^2 + \
+q\^2 + p\ \((q - r)\) + q\ r + r\^2)\)\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(KLM\  = Area[ptK, ptL, ptM]\)], "Input"],
+
+Cell[BoxData[
+    \(\((p\^2 - q\^2 - p\ r + r\^2)\)\^2\/\(\((p + q + r)\)\^2\ \((p\^2 + \
+q\^2 + p\ \((q - r)\) + q\ r + r\^2)\)\)\)], "Output"]
+}, Open  ]]
+}, Open  ]]
+},
+FrontEndVersion->"5.0 for Microsoft Windows",
+ScreenRectangle->{{0, 800}, {0, 527}},
+CellGrouping->Manual,
+WindowSize->{789, 500},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+PrintingCopies->1,
+PrintingPageRange->{Automatic, Automatic},
+CellLabelAutoDelete->True
+]
+
+(*******************************************************************
+Cached data follows.  If you edit this Notebook file directly, not
+using Mathematica, you must remove the line containing CacheID at
+the top of  the file.  The cache data will then be recreated when
+you save this file from within Mathematica.
+*******************************************************************)
+
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+
+(*NotebookFileOutline
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[1776, 53, 45, 0, 30, "Subsubtitle"],
+Cell[1824, 55, 1441, 47, 147, "Text"],
+Cell[3268, 104, 16913, 279, 322, "Text"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[20218, 388, 50, 0, 30, "Subsubtitle"],
+Cell[20271, 390, 544, 19, 52, "Text"],
+Cell[20818, 411, 123, 2, 44, "Input"],
+Cell[20944, 415, 237, 6, 33, "Text"],
+Cell[21184, 423, 790, 21, 62, "Input"],
+Cell[21977, 446, 183, 4, 33, "Text"],
+Cell[22163, 452, 867, 20, 123, "Input"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[23067, 477, 52, 0, 30, "Subsubtitle"],
+Cell[23122, 479, 131, 3, 33, "Text"],
+Cell[23256, 484, 511, 9, 190, "Input"],
+Cell[23770, 495, 178, 5, 33, "Text"],
+
+Cell[CellGroupData[{
+Cell[23973, 504, 229, 3, 70, "Input"],
+Cell[24205, 509, 181, 3, 29, "Output"],
+Cell[24389, 514, 196, 3, 29, "Output"],
+Cell[24588, 519, 168, 2, 29, "Output"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[24805, 527, 39, 0, 30, "Subsubtitle"],
+Cell[24847, 529, 142, 3, 33, "Text"],
+
+Cell[CellGroupData[{
+Cell[25014, 536, 76, 1, 30, "Input"],
+Cell[25093, 539, 50, 1, 42, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[25180, 545, 76, 1, 30, "Input"],
+Cell[25259, 548, 50, 1, 42, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[25346, 554, 76, 1, 30, "Input"],
+Cell[25425, 557, 50, 1, 42, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[25512, 563, 62, 1, 30, "Input"],
+Cell[25577, 566, 208, 3, 47, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[25822, 574, 62, 1, 30, "Input"],
+Cell[25887, 577, 208, 3, 47, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[26132, 585, 58, 1, 30, "Input"],
+Cell[26193, 588, 208, 3, 47, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[26438, 596, 58, 1, 30, "Input"],
+Cell[26499, 599, 144, 2, 47, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[26680, 606, 58, 1, 30, "Input"],
+Cell[26741, 609, 144, 2, 47, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[26922, 616, 58, 1, 30, "Input"],
+Cell[26983, 619, 144, 2, 47, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[27164, 626, 60, 1, 30, "Input"],
+Cell[27227, 629, 144, 2, 48, "Output"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+
+
+(*******************************************************************
+End of Mathematica Notebook file.
+*******************************************************************)
+

@@ -1,0 +1,54 @@
+<title>trianguloscabri199</title> 
+<body bgcolor="#FFFFFF">
+<h1>Problema 199 de <i>tri&aacute;nguloscabri</i></h1>
+<table width=636 border=1>
+  <tbody> 
+  <tr> 
+    <td> 
+      <p>Problema 199 </p>
+      <p>De la Introducción: </p>
+      <p>Un día nos encontramos con un libro de matemáticas serio (T. Saati, (1963), 
+        <span class=Estilo2>Métodos matemáticos de investigación de las operaciones</span>, 
+        Ed. Voenizdat, ruso) con un problema que nos pareció que había llegado 
+        de las obras de <span class=Estilo3>Conan Doyle</span> o <span class=Estilo4><strong>Stevenson</strong>:</span> 
+        En éste se trataba de las búsquedas de un tesoro. Cierta persona se enteró 
+        de que en el lugar donde hay enterrado un tesoro crecen solamente tres 
+        árboles: un roble, un pino y un abedul. Para encontrar el tesoro hay que 
+        situarse debajo del abedul, (A), volviéndose de cara a la línea recta 
+        que pasa a través del roble y el pino (R y P). En este caso el roble ha 
+        de estar a la derecha y el pino a la izquierda. Luego es necesario dirigirse 
+        al roble contando los pasos. Al llegar al roble se vira en ángulo recto 
+        hacia la derecha y se da la misma cantidad de pasos que se dio entre el 
+        abedul y el roble. En este punto es necesario detenerse y clavar un jalón 
+        (J1). </p>
+      <p><img height=211 src="pro199.gif" width=479></p>
+      <p>Después hay que regresar al abedul y dirigirse desde este hacia el pino, 
+        contando los pasos. Al llegar al pino se vira en ángulo recto hacia la 
+        izquierda y se da la misma cantidad de pasos que se dio entre el abedul 
+        y el pino. En este punto es preciso detenerse y calvar otro jalón (J2). 
+        El tesoro está enterrado precisamente en el centro entre los jalones (en 
+        la figura, T). En presencia de una instrucción tan detallada, las búsquedas 
+        no pudieron provocar dificultades. Sin embargo, éstas a pesar de todo 
+        surgieron. Resultó que cuando el buscador del tesoro llegó al terreno 
+        indicado sólo encontró el roble y el pino. No había ni señal del abedul. 
+        Pero con todo, encontró el tesoro. Surge la pregunta, ¿cómo logró hacerlo?. 
+      </p>
+      <p>Lyúbich, Y.I., Shor, L.A. (1976, original ruso, 1978 edición en español. 
+        ). Método cinemática en problemas geométricos. Lecciones populares de 
+        matemáticas. Editorial Mir. Moscú. (traducción de Lozhkin, G.A.). (pág 
+        9,10) </p>
+    </td>
+  </tr>
+  </tbody>
+</table>
+<p><i>Soluci&oacute;n de Francisco Javier Garc&iacute;a Capit&aacute;n, profesor 
+  del IES Alvarez Cubero de Priego de C&oacute;rdoba</i></p>
+<p>Para dar una soluci&oacute;n diferente de la que viene en el libro de Ly&uacute;bich, 
+  usaremos los n&uacute;meros complejos. Representemos con letras min&uacute;sculas 
+  los afijos de los puntos que aparecen en la figura y consideremos que A es el 
+  origen de coordenadas. Entonces tendremos que <i>j</i>1 = <i>r</i> - <i>r</i><b> 
+  i</b> y que <i>j</i>2 = <i>p</i> + <i>p</i> <b>i,</b> por lo que </p>
+<p><img src="complejos.gif" width="337" height="46"></p>
+<p>Esto quiere decir que para encontrar el tesoro debemos ir al punto medio del 
+  pino y el roble, y desde all&iacute; volver, perpendicularmente a la recta RP, 
+  la misma distancia que separa a este punto medio de cualquiera de los dos &aacute;rboles.</p>

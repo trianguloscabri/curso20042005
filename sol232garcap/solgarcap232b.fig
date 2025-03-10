@@ -1,0 +1,94 @@
+Figure Cabri II Plus vers. MS-Windows 1.2.5
+
+Window center x: 2.16cm y: 2.39cm Window size x: 20.63cm y: 12.32cm
+Resolution: 38 ppc
+
+1: Pt, Val: 0 0
+invisible, 
+
+2: Axes, Const: 1, cart, Val: 1 0 0 1
+color:Gr, invisible, 
+
+3: Pt, Val: 1.24354166666667 0.132291666666667
+color:Bl, invisible, 
+"M"
+TP:  1.10526315789474,  0.0789473684210526, TS:  0.368421052631579,  0.421052631578947
+p: 0, System, S: 9 C: 15 Fa: 0
+
+4: Line, Const: 3, Val: -1 0
+color:V, invisible, 
+
+5: Pt/, Const: 4, Val: -4.23333333333333 0.132291666666667
+invisible, 
+
+6: Line, Const: 5,  3, 
+color:Bl, 
+
+7: Ray, Const: 3,  5, 
+color:V, 
+
+8: Perp, Const: 3,  6, 
+color:V, invisible, 
+
+9: Pt/, Const: 7, Val: -1.08479166666667 0.132291666666667
+color:Bl, 
+"B"
+TP:  -1.07894736842105,  0.105263157894737, TS:  0.789473684210526,  0.473684210526316
+p: 0, Arial, S: 12 C: 15 Fa: 0
+
+10: Pt/, Const: 8, Val: 1.24354166666667 5.34458333333333
+color:Bl, 
+"A"
+TP:  1.39473684210526,  5.73684210526316, TS:  0.789473684210526,  0.473684210526316
+p: 0, Arial, S: 12 C: 15 Fa: 0
+
+11: Sym, Const: 9,  3, 
+color:Bl, 
+"C"
+TP:  3.23684210526316,  0, TS:  0.789473684210526,  0.473684210526316
+p: 0, Arial, S: 12 C: 15 Fa: 0
+
+12: Line, Const: 9,  10, 
+color:V, 
+
+13: Line, Const: 10,  11, 
+color:V, 
+
+14: Cir, Const: 9,  10, 
+
+15: Tr, Const: 10,  9,  11, 
+color:Bl, fill color:pat, thicker, 
+
+17: Int, Const: 6,  14, int ind:0x10000, 
+"C'"
+TP:  4.76315789473684,  0.0263157894736842, TS:  2.10526315789474,  0.473684210526316
+p: 0, Arial, S: 12 C: 7 Fa: 0
+
+18: Text, Val: 64 -218 0, nA, nP, 
+"=A'"
+TP:  1.68421052631579,  5.73684210526316, TS:  2.63157894736842,  0.473684210526316
+p: 0, Arial, S: 12 C: 7 Fa: 0
+
+19: Text, Val: -29 -4 0, nA, nP, 
+"=B'"
+TP:  -0.763157894736842,  0.105263157894737, TS:  2.63157894736842,  0.473684210526316
+p: 0, Arial, S: 12 C: 7 Fa: 0
+
+20: Text, Val: 45 -24 0, nA, nP, 
+"a"
+TP:  1.18421052631579,  0.631578947368421, TS:  2.63157894736842,  0.473684210526316
+p: 0, Arial, S: 12 C: 40 Fa: 0
+
+21: Text, Val: 10 -119 0, nA, nP, 
+"c"
+TP:  0.263157894736842,  3.13157894736842, TS:  2.63157894736842,  0.473684210526316
+p: 0, Arial, S: 12 C: 40 Fa: 0
+
+22: Text, Val: 81 -108 0, nA, nP, 
+"c"
+TP:  2.13157894736842,  2.84210526315789, TS:  2.63157894736842,  0.473684210526316
+p: 0, Arial, S: 12 C: 40 Fa: 0
+
+23: Tr, Const: 10,  9,  17, 
+color:R, fill color:ltp, 
+

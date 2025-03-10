@@ -1,0 +1,538 @@
+<html>
+
+<head>
+<meta name="generator" content="Corel WordPerfect 12">
+<meta http-equiv="content-Type" content="text/html; charset=utf-8">
+
+<style>
+table
+{
+	border-collapse: collapse;
+	border-spacing: 0pt;
+	border-color: black;
+	empty-cells: show;
+	font-family: "Arial", sans-serif;
+	font-size: 10pt;
+	font-weight: normal;
+	font-style: normal
+}
+
+td
+{
+	color: #800000;
+	border-color: black
+}
+
+td.table1column1
+{
+	text-align: justify;
+	padding-left: 0.196667in;
+	padding-right: 0.196667in;
+}
+
+p
+{
+	margin-top: 0px;
+	margin-bottom: 1px
+}
+
+span.WPCharBox, span.WPBoxCaption
+{
+	text-align:center;
+	color: #000000;
+	font-size: 8pt;
+	padding: 0px;
+	width: 100%
+}
+
+body
+{
+	font-family: "Arial", sans-serif;
+	font-size: 10pt;
+	color: #800000;	
+	font-weight: normal;
+	font-style: normal;
+	background-color: #666666
+}
+
+.EstiloRojo
+{
+	background-color: #800000;
+	border: 0.0133333in solid;
+	font-weight: bold;
+	color: #ffffcc
+}
+
+.EstiloSeparador
+{
+	border: 0.0in solid
+}
+
+.EstiloGris
+{
+	background-color: #b2b2b2;
+	border: 0.0133333in solid;
+}
+
+.EstiloGris2
+{
+	font-weight: bolder;
+	background-color: #888888;
+	border: 0.0133333in solid;
+}
+
+.EstiloAmarillo
+{
+	background-color: #ffffcc;
+	border: 0.0133333in solid;
+}
+</style>
+</head>
+
+<body>
+
+<div align="center"><table width="654px" cellpadding="6" cellspacing="0">
+
+<tr><td class="table1column1 EstiloRojo"><div align="center">PROBLEMA 256 </div></td></tr>
+
+<tr><td class="table1column1 EstiloSeparador">&nbsp;</td></tr>
+
+<tr><td class="table1column1 EstiloGris2">  <p align="center">Soluci&oacute;n de Jos&eacute; Mar&iacute;a Pedret Yebra. Ingeniero Naval. Esplugues de Llobregat (Barcelona)</p>  <p align="center"> 1 de julio de 2005 </p></td></tr>
+
+<tr><td class="table1column1 EstiloSeparador">&nbsp;</td></tr>
+
+<tr><td class="table1column1 EstiloGris"><br>
+	Este problema fue propuesto y resuelto por APOLONIO en su obra &quot;De Sectione Spatii&quot;. La obra se perdió, pero HALLEY la restableció a partir de una traducción árabe.<br><br>
+	Julius Petersen. Méthodes et théories pour la résolution des problèmes de constructions géométriques. Gauthier-Villars. Paris (1880); PROBLÈME 366.<br><br>
+	Juan Sapiña Borja. Problemas gráficos de Geometría. Litograf. Madrid 1955. Capítulo de áreas, PROBLEMA  637.<br><br>
+	<strong><span style="text-decoration: underline">Enunciado</span><br>
+	Por un punto dado P, trazar una recta que forme con otras dos rectas dadas, un triángulo de área dada.</strong><br><br>
+	<p style="margin-left: 0.5in; margin-right: 0.5in">Sea A el punto de intersección de las rectas dadas; se representa el área dada bajo la forma de un triángulo, del que un lado es AP y el otro está sobre una de las rectas dadas. La recta buscada debe ser tal que el elemento de área que se añade al triángulo sea igual al que determina la sección en el triángulo. Pero esas dos áreas son triángulos cuyas alturas son conocidas. La razón de las bases de esos triángulos es pues conocida también y en consecuencia, el problema se transforma en el enunciado auxiliar que sigue.</p><br>
+Enunciado, también de APOLONIO en su obra &quot;De Sectione Rationis&quot;, obra perdida y restablecida en parte por HALLEY.<br><br>
+	Julius Petersen. Méthodes et théories pour la résolution des problèmes de constructions géométriques. Gauthier-Villars. Paris (1880); PROBLÈME 363.<br><br>
+    <strong><span style="text-decoration: underline">Enunciado auxiliar</span><br>
+    Se dan dos rectas, sobre cada una de ellas un punto, A y B, y  un punto exterior P. Trazar por P una recta que encuentra a las rectas dadas en X e Y de tal manera que los segmentos AX y BY estén en una razón dada.</strong><br><br>
+	<p style="margin-left: 0.5in; margin-right: 0.5in">Se determina el centro de rotación O de las rectas dadas, considerando A y B, al igual que X e Y, como puntos homólogos. La razón dada es la razón de semejanza. Como entonces OXY es semejante a OAB la recta OP será vista desde X bajo un ángulo conocido en consecuencia X se determina fácilmente.</p>
+	<br>
+</td></tr>
+
+<tr><td class="table1column1 EstiloSeparador">&nbsp;</td></tr>
+
+<tr><td class="table1column1 EstiloRojo"><div align="center">0. SEMEJANZA - FUNDAMENTOS TEORICOS</div></td></tr>
+
+<tr><td class="table1column1 EstiloSeparador">&nbsp;</td></tr>
+
+<tr><td class="table1column1 EstiloGris"><br>
+	Damos a continuación en NUEVE pasos una serie de ideas sobre la semejanza directa en el plano, que nos ayudan a establecer el método de solución perfilado en el enunciado de Julius Petersen.<br><br>
+</td></tr>
+
+<tr><td class="table1column1 EstiloSeparador">&nbsp;</td></tr>
+
+<tr><td class="table1column1 EstiloAmarillo"><br>
+	<strong>ROTACION</strong><br>
+    Dado un punto O, y un ángulo orientado θ, la transformación del plano que transforma un punto M en un punto M’ tal que<br><br>
+    <span class="WPCharBox"><img src="sol256ped/equ0.gif" alt="equ0.gif" border="0" width="211" height="27"></span><br><br>
+    recibe el nombre de rotación de centro O y ángulo θ.<br><br>
+    <span class="WPCharBox"><img src="sol256ped/equ1.gif" alt="equ1.gif" border="0" width="106" height="26"></span><br><br>
+    <strong>HOMOTECIA</strong><br>
+	Dado un punto O, y una razón algebraica k, la transformación del plano que transforma un punto M en otro M’ tal que<br><br>    <span class="WPCharBox"><img src="sol256ped/equ2.gif" alt="equ2.gif" border="0" width="89" height="19"></span><br><br>
+	recibe el nombre de homotecia de centro O y razón k.<br><br>
+	<span class="WPCharBox"><img src="sol256ped/equ3.gif" alt="equ3.gif" border="0" width="102" height="24"></span><br><br>
+	<strong>SEMEJANZA</strong><br>
+	Dado un punto O, un ángulo orientado θ y una razón algebraica k, la transformación del plano que transforma un punto M en un punto M’ tal que<br><br>
+	<span class="WPCharBox"><img src="sol256ped/equ4.gif" alt="equ4.gif" border="0" width="225" height="27"></span><br><br>
+	recibe el nombre de semejanza de centro O, ángulo θ y razón k.<br><br>
+	<span class="WPCharBox"><img src="sol256ped/equ5.gif" alt="equ5.gif" border="0" width="110" height="25"></span><br><br>
+</td></tr>
+
+<tr><td class="table1column1 EstiloSeparador">&nbsp;</td></tr>
+
+<tr><td class="table1column1 EstiloAmarillo"><br>
+	<strong>0.1</strong><br><br>
+	Si desde un punto dado O se trazan rectas por los puntos de una curva dada Γ y si se hacen girar esas rectas un ángulo θ al rededor de O, y al mismo tiempo se las hace crecer (o disminuir) según una razón dada k, se obtiene una nueva curva Γ&#39; como lugar geométrico de los extremos de las rectas que así se han hecho girar.<br><br>
+	<span class="WPCharBox"><img src="sol256ped/01.gif" alt="01.gif" width="366" height="229" border="0"><br>figura 1</span><br><br>
+    Esta nueva curva debe ser semejante a Γ, pues podemos imaginar realizadas las dos operaciones del modo siguiente:<br><br>
+	<p style="text-indent: 0.5in"><strong>En primer lugar</strong>, rotación de la curva primitiva (sólo cambia la posición).</p>
+	<p style="text-indent: 0.5in"><strong>En segundo lugar</strong>, homotecia de razón k respecto a O.</p><br>
+	Un punto A de la curva Γ determinará por semejanza un punto A&#39; de la curva Γ&#39;. Tales puntos se denominan homólogos. Rectas homólogas son las que unen puntos homólogos, y ángulos homólogos son los formados por rectas homólogas.<br><br>
+	El punto O puede llamarse centro de semejanza (centro de rotación), θ ángulo de rotación y k la razón de semejanza.<br><br>
+	<span class="WPCharBox"><img src="sol256ped/equ6.gif" alt="equ6.gif" width="329" height="25" border="0"></span><br><br>
+	Para dos puntos homólogos cualesquiera, A&#39; y A, el triángulo A&#39;OA debe conservar la misma forma ya que AOA&#39;=θ y OA&#39;/OA=k son constantes. Entonces también podemos decir que la curva Γ&#39; es la que describe el vértice A&#39; de un triángulo A&#39;OA que, todo y conservando su forma, gira en torno de su otro vértice O, mientras que el tercer vértice recorre la curva dada. Cuando se trate de expresar que se hace girar una curva en torno a O, un ángulo de rotación θ y razón k, se podrá decir que se transforma la curva por una semejanza de centro O, razón k y ángulo θ.<br><br>
+</td></tr>
+
+<tr><td class="table1column1 EstiloSeparador">&nbsp;</td></tr>
+
+<tr><td class="table1column1 EstiloAmarillo"><br>
+	<strong>0.2</strong><br><br>
+	Todo punto del plano puede ser considerado como perteneciente a uno de los dos sistemas (original y transformado); y en consecuencia tendrá su homólogo en el otro. Considerado el centro de rotación desde este punto de vista, será su propio homólogo (punto que se corresponde a sí mismo) y a causa de ello podemos denominarlo también el punto doble de la transformación. Igualmente se puede imaginar que todo el plano gira en torno a O de tal manera que uno de sus puntos recorre une curva dada. Si el sistema completo de puntos del plano conserva su forma durante el movimiento, uno cualquiera de sus puntos describirá una curva semejante a la curva dada.<br><br>
+	<span class="WPCharBox"><img src="sol256ped/equ7.gif" alt="equ7.gif" width="232" height="34" border="0"></span><br><br>
+</td></tr>
+
+<tr><td class="table1column1 EstiloSeparador">&nbsp;</td></tr>
+
+<tr><td class="table1column1 EstiloAmarillo"><br>
+	<strong>0.3</strong><br><br>
+	En el momento en que se conoce el centro de rotación, el ángulo y la razón, se puede hacer girar un sistema cualquiera compuesto de rectas y arcos de círculo empleando solamente regla y compás. Se hará girar un punto A alrededor de O tomando AOA’ igual al ángulo de rotación y haciendo OA’=kOA.<br><br>
+	<span class="WPCharBox"><img src="sol256ped/02.gif" alt="02.gif" width="366" height="282" border="0"><br>figura 2</span><br><br>
+	Para una recta, sólo habrá que hacer girar uno de sus puntos y trazar la recta que hará con el radio del punto nuevo un ángulo igual al que hacía la recta original con el radio del punto que se hace girar. También se pueden encontrar los homólogos de dos puntos de la recta.<br>
+	<br>
+	<span class="WPCharBox"><img src="sol256ped/03.gif" alt="03.gif" width="366" height="270" border="0"><br>figura 3</span><br><br>
+	Para un círculo, bastará encontrar los homólogos de su centro y de un punto de su circunferencia.<br><br>
+</td></tr>
+
+<tr><td class="table1column1 EstiloSeparador">&nbsp;</td></tr>
+
+<tr><td class="table1column1 EstiloAmarillo"><p><br>
+	    <strong>0.4</strong><br>
+	    <br>
+	  Por medio de las proposiciones que acabamos de desarrollar, se puede resolver el problema general que sigue:<br>
+	  <br>
+	  <strong>...Colocar un triángulo, semejante a un triángulo dado, de tal manera que uno de sus vértices esté en un punto dado y que los otros dos se hallen sobre dos curvas dadas...</strong><br>
+	  <br>
+	  Tomamos el punto dado como centro de rotación y hacemos girar, en torno a él, una de las curvas, de manera que el ángulo de rotación sea el ángulo del triángulo cuyo vértice está en O y que la razón de semejanza sea la de los lados adyacentes a este ángulo; la curva que así se hace girar* cortará a la otra curva dada en los puntos donde debe caer el segundo vértice.<br>
+	  <br>
+	  Si en lugar de la forma del triángulo se conoce el ángulo cuyo vértice debe coincidir con el punto dado y el producto de los lados adyacentes a este ángulo, el problema se resuelve de la misma manera. Solamente en 
+        lugar de hacer girar una curva que se semejante a una de las curvas dadas, será su curva inversa la que se hará girar.<br>
+        <br>
+	    <em><strong>(*) En algunos casos, usamos la expresión "girar una figura hasta coincidir con la otra" como sinónimo de transformar una figura por semejanza. Espero que el contexto no ofrezca duda alguna.</strong></em></p>
+    <p>&nbsp;</p></td>
+</tr>
+
+<tr><td class="table1column1 EstiloSeparador">&nbsp;</td></tr>
+
+<tr><td class="table1column1 EstiloAmarillo"><br>
+	<strong>0.5</strong><br><br>
+	Dadas dos figuras semejantes; si sus elementos se siguen en el mismo sentido, tendrán siempre un centro de rotación, es decir un punto alrededor del cual se podrá hacer girar una de ellas para que vaya a coincidir sobre la otra; la razón de semejanza está determinada, ya que dos rectas homólogas cualesquiera están según esa razón, y el ángulo de rotación es el ángulo comprendido entre dos rectas homólogas.<br><br>
+	<span class="WPCharBox"><img src="sol256ped/04.gif" alt="04.gif" width="366" height="218" border="0"><br>figura 4</span><br><br>
+	Para encontrar el centro de rotación, podríamos utilizar la razón conocida de sus distancias a un par de puntos homólogos y el arco capaz de ángulo θ para dos puntos homólogos; pero puede emplearse una construcción más simple. Sean A y A’, B y B’ dos pares de puntos homólogos. Las rectas homólogas AB y A’B’ deben comprender al ángulo de rotación; este mismo ángulo es también el que harán los radios que unen dos puntos homólogos al centro de rotación; este último debe encontrarse sobre el mismo círculo que el punto de intersección de dos rectas homólogas y de dos puntos homólogos situados sobre estas rectas.<br>
+	<br>
+	El centro de rotación de dos rectas homólogas, en dos figuras semejantes, es el centro de rotación de las propias figuras; pues si se hace girar* una recta de manera que coincida con la otra, una de las figuras deberá también coincidir con la otra.<br><br>
+	El centro de rotación de dos rectas que se extienden hasta el infinito, consideradas como figuras semejantes, está completamente indeterminado; si sobre las rectas se eligen dos puntos como homólogos, se tiene un círculo como lugar geométrico de los centros de rotación; si se dan otros dos puntos homólogos m&aacute;s o, lo que es lo mismo, la razón de semejanza, el centro de rotación estará completamente determinado; y es único, ya que los círculos se cortan en un segundo punto, el de intersección de las rectas.<br><br>
+	<span class="WPCharBox"><img src="sol256ped/05.gif" alt="05.gif" width="366" height="332" border="0"><br>figura 5</span><br><br>
+	Para dos círculos, el centro de rotación es indeterminado, ya que dos cualesquiera de sus puntos pueden considerarse como puntos homólogos; como las distancias del centro de rotación a los centros de los círculos deben estar entre ellas como los radios, el lugar geométrico de este centro será un círculo que divide armónicamente la recta de centros siguiendo esa razón (es el círculo que pasa por los centros de semejanza de los dos círculos dados y tiene sus centro sobre la recta de centros). Si se eligen dos puntos de los círculos como puntos homólogos, el centro de rotación está determinado y se encuentra de la manera más simple con la ayuda de radios homólogos, ya que los centros son siempre puntos homólogos.<br><br>
+</td></tr>
+
+<tr><td class="table1column1 EstiloSeparador">&nbsp;</td></tr>
+
+<tr><td class="table1column1 EstiloAmarillo"><br>
+	<strong>0.6</strong><br><br>
+	El centro de rotación de dos lados opuestos de un cuadrilátero es también el centro de rotación de los otros dos.<br><br>
+	<span class="WPCharBox"><img src="sol256ped/06.gif" alt="06.gif" width="366" height="351" border="0"><br>figura 6</span><br><br>
+	Sea O el centro de rotación de BA y CD; entonces AOB es semejante a DOC; pero se deduce fácilmente que AOD es semejante a BOC, y resulta además que O es el centro de rotación de AD y BC. En el primer caso B y C, A y D son puntos homólogos; en el segundo lo son B y A, C y D.<br>
+	<br>
+	Del mismo modo se ve que el centro de rotación de AB y CD es también el de AC y BD.<br><br>
+	Prolongamos los lados opuestos hasta que se encuentren; los círculos que determinan el centro de rotación están circunscritos a los cuatro triángulos formados en la figura; se deben utilizar los mismos círculos para determinar el centro de rotación de dos elementos cualesquiera de la figura que no se corten en uno de sus extremos; se tiene así el siguiente teorema:<br><br>
+	<strong>...En un cuadrilátero completo, los círculos circunscritos a los triángulos que se forman, no considerando sucesivamente uno de los lados, pasan por el mismo punto, y este punto es el centro de rotación de dos segmentos cualesquiera de la figura que no se corten en uno de sus extremos...</strong><br><br>
+</td></tr>
+
+<tr><td class="table1column1 EstiloSeparador">&nbsp;</td></tr>
+
+<tr><td class="table1column1 EstiloAmarillo"><br>
+	<strong>0.7</strong><br><br>
+	Si se dividen según la misma razón las rectas que unen los puntos homólogos de curvas semejantes, el lugar geométrico de los puntos de división será una curva semejante a las curvas dadas, y dos cualesquiera de esas curvas tienen el mismo centro de rotación que las primeras.<br>
+	<br>
+	<span class="WPCharBox"><img src="sol256ped/07.gif" alt="07.gif" width="366" height="225" border="0"><br>figura 7</span><br><br>
+	Sean A’ y A dos puntos homólogos y supongamos la recta A’A dividida por el punto P según una razón dada. Sea O el centro de rotación; la forma del triángulo A’OA debe permanecer constante; y lo mismo para AOP y en consecuencia P debe describir una curva semejante a las curvas dadas, cuando el triángulo gira alrededor de O.<br>
+	<br>
+	<strong>Corolario:</strong> Si en un cuadrilátero se trazan dos sistemas de líneas que dividen los dos pares de lados opuestos en partes proporcionales, las líneas de un mismo sistema se dividirán según la misma razón.<br><br>
+</td>
+</tr>
+
+<tr><td class="table1column1 EstiloSeparador">&nbsp;</td></tr>
+
+<tr><td class="table1column1 EstiloAmarillo"><br>
+	<strong>0.8</strong><br><br>
+	Si tenemos tres sistemas semejantes A, B y C y si un punto O es el centro de rotación de A y B, al mismo tiempo de B y C, debe ser también el centro de rotación de A y C. Este punto es pues el centro común de rotación de los tres sistemas; y naturalmente lo puede ser también para un número cualquiera de sistemas.<br>
+	<br>
+	<span class="WPCharBox"><img src="sol256ped/equ8.gif" alt="equ8.gif" border="0" width="604" height="91"></span><br><br>
+	<span class="WPCharBox"><img src="sol256ped/equ9.gif" alt="equ9.gif" border="0" width="509" height="47"></span><br><br>
+	<span class="WPCharBox"><img src="sol256ped/08.gif" alt="08.gif" border="0" width="563" height="328"><br>figura 8</span><br><br>
+	Si unimos tres puntos homólogos A, B y C de los tres sistemas con centro de rotación en O, las razones de estas rectas y los ángulos que hacen entre ellas son constantes; resulta que la forma del triángulo ABC es también constante y, por ello, lo denominaremos el <strong>triángulo fundamental</strong>. Del mismo modo, vemos que a varias figuras semejantes, que tienen un centro común de rotación, corresponde un polígono fundamental de forma constante. Si gira alrededor del centro de rotación de manera que un vértice describe une de las figuras, los otros vértices describirán las otras figuras y cualquier otro punto del plano, considerado como perteneciente al polígono fundamental, trazará una figura semejante a las otras. Como el polígono fundamental llega a tomar sucesivamente todas sus posiciones, el centro de rotación de las figuras dadas es también el centro de rotación del polígono fundamental en todas sus posiciones.<br>
+	<br>
+</td></tr>
+
+<tr><td class="table1column1 EstiloSeparador">&nbsp;</td></tr>
+
+<tr><td class="table1column1 EstiloAmarillo"><br>
+	<strong>0.9</strong><br><br>
+	<span class="WPCharBox"><img src="sol256ped/09.gif" alt="09.gif" border="0" width="510" height="328"><br>figura 9</span><br><br>
+	Para dos rectas, sobre las que se dan dos puntos como puntos homólogos, el centro de rotación debe encontrarse sobre un círculo que pasa por los dos puntos y el punto de intersección de las rectas dadas; para tres rectas, sobre las que se dan tres puntos como puntos homólogos, el centro de rotación está entonces determinado; es el punto de intersección de dos círculos del mismo tipo; El tercer círculo debe pasar por el mismo punto. Uniendo los tres puntos, se forma el triángulo fundamental; puede pues tener una forma cualquiera ya que se pueden elegir arbitrariamente los tres puntos; pero a los distintos triángulos fundamentales les corresponde distintos centros de rotación. Se puede determinar fácilmente el centro de rotación para un triángulo fundamental dado construyendo sobre las tres rectas un triángulo semejante al triángulo dado y determinando de esta manera tres puntos homólogos.<br>
+	<br>
+	Si las tres rectas pasan por un mismo punto O, este último será el centro de rotación para cada triángulo fundamental, de manera que los triángulos semejantes a un triángulo fundamental dado son semejantes y tienen a O por centro de semejanza. Hay no obstante un caso particular donde el centro de rotación está indeterminado; en efecto, si los vértices A y B del triángulo recorren AO y BO y si ∠C=∠AOB, C recorrerá una recta que pasa por O.<br>
+	<br>
+</td></tr>
+
+<tr><td class="table1column1 EstiloSeparador">&nbsp;</td></tr>
+
+<tr><td class="table1column1 EstiloRojo"><div align="center">1. RESOLUCION</div></td></tr>
+
+<tr><td class="table1column1 EstiloSeparador">&nbsp;</td></tr>
+
+<tr><td class="table1column1 EstiloGris2"><div align="center">1.1 EL PROBLEMA AUXILIAR</div></td></tr>
+
+<tr><td class="table1column1 EstiloSeparador">&nbsp;</td></tr>
+
+<tr><td class="table1column1 EstiloGris"><br>
+	<strong>Se dan dos rectas, sobre cada una de ellas sendos puntos, A y B, y además un punto exterior P. Trazar por P una recta que encuentre a las rectas dadas en X e Y de tal manera que los segmentos AX y BY estén seg&uacute;n una razón dada.</strong><br>
+	<br>
+      <p style="margin-left: 0.5in; margin-right: 0.5in">Se determina el centro de rotación O de las rectas dadas, considerando A y B, al igual que X e Y, como puntos homólogos. La razón dada es la razón de semejanza. Como entonces OXY es semejante a OAB la recta OP será vista desde X bajo un ángulo conocido; en consecuencia X se determina fácilmente.</p>
+      <br>
+</td></tr>
+
+<tr><td class="table1column1 EstiloSeparador">&nbsp;</td></tr>
+
+<tr><td class="table1column1 EstiloAmarillo"><br>
+	<strong>1.1.1 DATOS DEL ENUNCIADO </strong><br><br>
+    <span class="WPCharBox"><img src="sol256ped/10.gif" alt="10.gif" border="0" width="561" height="329"><br>
+    figura 10</span><br><br>
+	dibujamos el enunciado.<br><br>
+</td></tr>
+
+<tr><td class="table1column1 EstiloSeparador">&nbsp;</td></tr>
+
+<tr><td class="table1column1 EstiloAmarillo"><br>
+	<strong>1.1.2 PRIMERA SUGERENCIA DEL ENUNCIADO</strong><br><br>
+	<span class="WPCharBox"><img src="sol256ped/11.gif" alt="11.gif" border="0" width="561" height="329"><br>
+	figura 11</span><br><br>
+    Según la indicación del enunciado:<br><br>
+    “...Se determina el centro de rotación O de las rectas dadas, considerando A y B, al igual que X e Y, como puntos homólogos. La razón dada es la razón de semejanza...”<br><br>
+    Según 0.5 (figura 5):<br><br>
+    “...Para dos círculos, el centro de rotación es indeterminado, ya que dos cualesquiera de sus puntos pueden considerarse como puntos homólogos; como las distancias del centro de rotación a los centros de los círculos deben estar entre ellas como los radios, el lugar geométrico de este centro será un círculo que divide armónicamente la recta de centros siguiendo esa razón (es el círculo que pasa por los centros de semejanza de los dos círculos dados y tiene sus centro sobre la recta de centros)...”<br><br>
+    Obtenemos el círculo Γ<sub>1</sub> como primer lugar que contiene al centro de rotación.<br><br>
+</td></tr>
+
+<tr><td class="table1column1 EstiloSeparador">&nbsp;</td></tr>
+
+<tr><td class="table1column1 EstiloAmarillo"><br>
+	<strong>1.1.3 SEGUNDA SUGERENCIA DEL ENUNCIADO</strong><br><br>
+    <span class="WPCharBox"><img src="sol256ped/12.gif" alt="12.gif" border="0" width="559" height="329"><br>
+    figura 12</span><br><br>
+    Según la indicación del enunciado:<br><br>
+    “...Se determina el centro de rotación O de las rectas dadas, considerando A y B, al igual que X e Y, como puntos homólogos...”<br><br>
+	Según 0.5 (figura 4)<br><br>
+    “...pero puede emplearse una construcción más simple. Sean A y A’, B y B’ dos pares de puntos homólogos. Las rectas homólogas AB y A’B’ deben comprender al ángulo de rotación; este mismo ángulo es también el que harán los radios que unen dos puntos homólogos al centro de rotación; este último debe encontrarse sobre el mismo círculo que el punto de intersección de dos rectas homólogas y de dos puntos homólogos situados sobre estas rectas...”<br>
+    <br>
+	Tomando A y B como homólogos y Q punto de intersección de las rectas dadas, obtenemos el círculo Γ<sub>2</sub> como segundo lugar que contiene al centro de rotación.<br><br>	<span class="WPCharBox"><img src="sol256ped/equ10.gif" alt="equ10.gif" border="0" width="97" height="25"></span><br><br>
+</td></tr>
+
+<tr><td class="table1column1 EstiloSeparador">&nbsp;</td></tr>
+
+<tr><td class="table1column1 EstiloAmarillo"><br>
+	<strong>1.1.4</strong> <strong>TERCERA SUGERENCIA DEL ENUNCIADO</strong><br><br>
+	<span class="WPCharBox"><img src="sol256ped/13.gif" alt="13.gif" border="0" width="313" height="219"><br>
+	figura 13</span><br><br>
+	Según la indicación del enunciado:<br><br>
+	“...Como entonces OXY es semejante a OAB la recta OP será vista desde X bajo un ángulo conocido en consecuencia X se determina fácilmente...”<br>
+	<br>
+	En la figura 13 vemos la causa. Si suponemos el problema resuelto deducimos el ángulo bajo el que se ve OP desde X<br><br>	<span class="WPCharBox"><img src="sol256ped/equ11.gif" alt="equ11.gif" border="0" width="537" height="22"></span><br><br>
+</td></tr>
+
+<tr><td class="table1column1 EstiloSeparador">&nbsp;</td></tr>
+
+<tr><td class="table1column1 EstiloAmarillo"><br>
+	<strong>1.1.5 EL ARCO CAPAZ QUE CONTIENE A X</strong><br><br>
+	<span class="WPCharBox"><img src="sol256ped/14.gif" alt="14.gif" border="0" width="563" height="329"><br>
+	figura 14</span><br><br>
+	Determinamos entonces π-∠OAB y lo trasladamos como arco capaz de OP. Como desde X se ve OP bajo ese ángulo, X está sobre el círculo Γ<sub>3</sub> que acabamos de dibujar con el arco capaz mencionado.<br><br>
+</td></tr>
+
+<tr><td class="table1column1 EstiloSeparador">&nbsp;</td></tr>
+
+<tr><td class="table1column1 EstiloAmarillo"><br>
+	<strong>1.1.6 DETERMINACION DE X </strong><br><br>
+	<span class="WPCharBox"><img src="sol256ped/15.gif" alt="15.gif" border="0" width="561" height="329"><br>
+	figura 15</span><br><br>
+	Pero X además está sobre la recta r=AQ, entonces<br><br>	<span class="WPCharBox"><img src="sol256ped/equ12.gif" alt="" border="0" width="194" height="24"></span><br><br>
+	y a lo sumo puede haber dos soluciones pues un círculo corta a la recta en cero, uno o dos puntos.<br><br>
+	<span class="WPCharBox"><img src="sol256ped/16.gif" alt="16.gif" border="0" width="562" height="329"><br>
+	figura 16</span><br><br>
+	Así queda con todas las líneas vistas.<br><br>
+</td></tr>
+
+
+<tr><td class="table1column1 EstiloSeparador">&nbsp;</td></tr>
+
+<tr><td class="table1column1 EstiloGris2"><div align="center">1.2 EL PROBLEMA PRINCIPAL</div></td></tr>
+
+<tr><td class="table1column1 EstiloSeparador">&nbsp;</td></tr>
+
+<tr><td class="table1column1 EstiloGris"><br>
+	<strong>Por un punto dado P, trazar una recta que forme con otras dos rectas dadas, un triángulo de área dada.</strong><br><br>
+	<p style="margin-left: 0.5in; margin-right: 0.5in">Sea A el punto de intersección de las rectas dadas; se representa el área dada bajo la forma de un triángulo, del que un lado es AP y el otro está sobre una de las rectas dadas. La recta buscada debe ser tal que el elemento de área que se añade al triángulo sea igual al que determina la sección en el triángulo. Pero esas dos áreas son triángulos cuyas alturas son conocidas. La razón de las bases de esos triángulos es pues conocida también y en consecuencia, el problema se transforma en el problema auxiliar anterior.</p><br>
+</td></tr>
+
+<tr><td class="table1column1 EstiloSeparador">&nbsp;</td></tr>
+
+<tr><td class="table1column1 EstiloAmarillo"><br>
+	<strong>1.2.1</strong><br><br>
+	<span class="WPCharBox"><img src="sol256ped/17.gif" alt="17.gif" border="0" width="488" height="329"><br>
+	figura 17</span><br><br>
+	Dibujamos el enunciado.<br><br>
+</td></tr>
+
+<tr><td class="table1column1 EstiloSeparador">&nbsp;</td></tr>
+
+<tr><td class="table1column1 EstiloAmarillo"><br>
+	<strong>1.2.2</strong><br><br>
+	<span class="WPCharBox"><img src="sol256ped/18.gif" alt="18.gif" border="0" width="488" height="329"><br>
+	figura 18</span><br><br>
+	Según la indicación del enunciado:<br><br>
+	“... Sea A el punto de intersección de las rectas dadas; se representa el área dada bajo la forma de un triángulo, del que un lado es AP y el otro está sobre una de las rectas dadas ...”<br><br>
+	Es decir dado un segmento k hallar B sobre s tal que<br><br>	<span class="WPCharBox"><img src="sol256ped/equ13.gif" alt="equ13.gif" border="0" width="83" height="37"></span><br><br>
+	Sea M el punto medio de P’A. Por P una paralela a s y por A una perpendicular a s determinan P’. La perpendicular a la recta, que une M con la intersección de s y el círculo de centro A y radio k, corta a P’A 
+      en B’. AB’ es la base del triángulo buscado y PS su altura. Llevamos AB’ sobre s y determinamos B.<br><br>
+</td></tr>
+
+<tr><td class="table1column1 EstiloSeparador">&nbsp;</td></tr>
+
+<tr><td class="table1column1 EstiloAmarillo"><br>
+	<strong>1.2.3</strong><br><br>
+	<span class="WPCharBox"><img src="sol256ped/19.gif" alt="19.gif" border="0" width="488" height="329"><br>
+	figura 19</span><br><br>
+	Según la indicación del enunciado:<br><br>
+	“... La recta buscada debe ser tal que el elemento de área que se añade al triángulo sea igual al que determina la sección en el triángulo. Pero esas dos áreas son triángulos cuyas alturas son conocidas. La razón de las bases de esos triángulos es pues conocida también y en consecuencia, el problema se transforma en el problema auxiliar ...”<br><br>
+	Supongamos para ello que tenemos el problema resuelto, entonces<br><br>
+	<span class="WPCharBox"><img src="sol256ped/equ14.gif" alt="equ14.gif" border="0" width="589" height="18"><br><br>
+							<img src="sol256ped/equ15.gif" alt="equ15.gif" border="0" width="332" height="29"></span><br><br>
+En la última relación es fácil ver el problema auxiliar donde la razón dada es la razón de las distancias del punto P a las rectas dadas. Sigamos pues con el procedimiento desarrollado en el problema auxiliar.<br><br>
+</td></tr>
+
+<tr><td class="table1column1 EstiloSeparador">&nbsp;</td></tr>
+
+<tr><td class="table1column1 EstiloAmarillo"><br>
+	<strong>1.2.4</strong><br><br>
+	<span class="WPCharBox"><img src="sol256ped/20.gif" alt="20.gif" border="0" width="488" height="329"><br>
+	figura 20</span><br><br>
+	Para determinar el centro de giro, como hemos visto en 1.1.2 (figura 11), trazamos el círculo de Apolonio para los puntos B y A con razón de distancias<br><br>
+	<span class="WPCharBox"><img src="sol256ped/equ16.gif" alt="equ16.gif" border="0" width="55" height="33"></span><br><br>
+	Tenemos el círculo Γ<sub>1</sub> como primer lugar geométrico que contiene al centro de giro.<br><br>
+</td></tr>
+
+<tr><td class="table1column1 EstiloSeparador">&nbsp;</td></tr>
+
+<tr><td class="table1column1 EstiloAmarillo"><br>
+	<strong>1.2.5</strong><br><br>
+	<span class="WPCharBox"><img src="sol256ped/21.gif" alt="21.gif" border="0" width="488" height="329"><br>
+	figura 21</span><br><br>
+	Como hemos visto en 1.1.3 (figura 12), trazamos el círculo que pasa por los puntos B, A y la intersección de las rectas dadas; pero A es ese punto, entonces como B y A son puntos de s, considerando A también como punto de r, resulta que el círculo será tangente a r en A.<br><br>
+	La mediatriz de BA y una perpendicular a r en A determinan el centro del círculo buscado.<br><br>
+	Tenemos el círculo Γ<sub>2</sub> como segundo lugar geométrico que contiene al centro de giro<br><br>
+	<span class="WPCharBox"><img src="sol256ped/equ17.gif" alt="equ17.gif" border="0" width="76" height="19"></span><br><br>
+</td></tr>
+
+<tr><td class="table1column1 EstiloSeparador">&nbsp;</td></tr>
+
+<tr><td class="table1column1 EstiloAmarillo"><br>
+	<strong>1.2.6</strong><br><br>
+	<span class="WPCharBox"><img src="sol256ped/22.gif" alt="22.gif" border="0" width="503" height="329"><br>
+	figura 22</span><br>
+	<br>
+	Como hemos visto en 1.1.5 (figura 16), determinamos el ángulo OBA. Trazamos ahora el arco capaz del ángulo OBA y segmento OP.<br><br>
+	Tenemos el círculo Γ<sub>3</sub> como lugar geométrico de los puntos X que se ven desde OP bajo un ángulo OBA.<br><br>
+	Pero X además está sobre la recta s=AB, entonces<br><br>	<span class="WPCharBox"><img src="sol256ped/equ18.gif" alt="equ18.gif" border="0" width="193" height="25"></span><br><br>
+</td></tr>
+
+<tr><td class="table1column1 EstiloSeparador">&nbsp;</td></tr>
+
+<tr><td class="table1column1 EstiloAmarillo"><br>
+	<strong>1.2.7</strong><br><br>
+	<span class="WPCharBox"><img src="sol256ped/23.gif" alt="23.gif" border="0" width="488" height="329"><br>
+	figura 23</span><br><br>
+	La recta XP que corta a la recta s en Y y la recta X’P que corta a s en Y’ son las soluciones pedidas.<br><br>
+</td></tr>
+
+<tr><td class="table1column1 EstiloSeparador">&nbsp;</td></tr>
+
+<tr><td class="table1column1 EstiloGris2"><div align="center">1.3 LA SOLUCION DE JUAN SAPIÑA BORJA</div></td></tr>
+
+<tr><td class="table1column1 EstiloSeparador">&nbsp;</td></tr>
+
+<tr><td class="table1column1 EstiloGris"><br>
+	Exponemos ahora una solución completamente distinta que Juan Sapiña, su autor, denomina método de isogonales.<br><br>
+	La solución de su libro no contempla los pasos constructivos intermedios (figuras 25, 26, 27).<br><br>
+	<strong>CEVIANAS ISOGONALES</strong><br>
+	Dos rectas que parten del vértice de un ángulo se llaman isogonales, respecto a los lados del mismo; cuando forman con ellos ángulos iguales, es decir; cuando son simétricas respecto a la bisectriz del ángulo considerado.<br><br>
+</td></tr>
+
+<tr><td class="table1column1 EstiloSeparador">&nbsp;</td></tr>
+
+<tr><td class="table1column1 EstiloAmarillo"><br>
+	<strong>1.3.1 PLANTEO</strong><br><br>
+	<span class="WPCharBox"><img src="sol256ped/24.gif" alt="24.gif" border="0" width="488" height="329"><br>
+	figura 24</span><br><br>
+	Supuesto el problema resuelto, trazamos PA que forma un ángulo α con AY. Trazamos la recta que forma un ángulo α con AX y corta al círculo circunscrito AXY en E.<br>
+	<br>
+	Entonces los triángulos YAP y XEA son semejantes por la igualdad de los ángulos γ<br><br>
+	<span class="WPCharBox"><img src="sol256ped/equ19.gif" alt="equ19.gif" border="0" width="216" height="36"></span><br><br>
+	Que es una propiedad de las isogonales. Como conocemos el ángulo A y el área podemos escribir<br><br>
+	<span class="WPCharBox"><img src="sol256ped/equ20.gif" alt="equ20.gif" border="0" width="255" height="37"><br><br>
+							<img src="sol256ped/equ21.gif" alt="equ21.gif" border="0" width="160" height="39"></span><br><br>
+	todos son valores conocidos y además (figura 24)<br><br>
+	<span class="WPCharBox"><img src="sol256ped/equ22.gif" alt="equ22.gif" border="0" width="75" height="23"></span><br><br>
+</td></tr>
+
+<tr><td class="table1column1 EstiloSeparador">&nbsp;</td></tr>
+
+<tr><td class="table1column1 EstiloAmarillo"><br>
+	<strong>1.3.2 CONSTRUCCION</strong><br><br>
+	<span class="WPCharBox"><img src="sol256ped/25.gif" alt="" border="0" width="488" height="329"><br>
+	figura 25</span><br><br>
+	Llevamos el ángulo α desde A sobre la recta s; además<br><br>
+	<span class="WPCharBox"><img src="sol256ped/equ23.gif" alt="equ23.gif" border="0" width="74" height="38"></span><br><br>
+</td></tr>
+
+<tr><td class="table1column1 EstiloSeparador">&nbsp;</td></tr>
+
+<tr><td class="table1column1 EstiloAmarillo"><br>
+	<strong>1.3.3</strong><br><br>
+	<span class="WPCharBox"><img src="sol256ped/26.gif" alt="26.gif" width="491" height="328" border="0"><br>
+	figura 26</span><br>
+	<br>
+	Trazamos ahora AQ que nos permite trazar AE<br><br>
+	<span class="WPCharBox"><img src="sol256ped/equ24.gif" alt="equ25.gif" border="0" width="417" height="51"></span><br><br>
+
+	Basta dibujar (ver figura 26)<br>
+	<br>
+	<span class="WPCharBox"><img src="sol256ped/equ25.gif" alt="ole25.gif" border="0" width="65" height="36"></span><br><br>
+</td></tr>
+
+<tr><td class="table1column1 EstiloSeparador">&nbsp;</td></tr>
+
+<tr><td class="table1column1 EstiloAmarillo"><br>
+	<strong>1.3.4</strong><br><br>
+	<span class="WPCharBox"><img src="sol256ped/27.gif" alt="27.gif" border="0" width="488" height="329"><br>
+	figura 27</span><br><br>
+	Acabamos de trazar AE haciendo<br><br>
+	<span class="WPCharBox"><img src="sol256ped/equ26.gif" alt="ole26.gif" border="0" width="59" height="34"></span><br><br>
+	Por A paralela a UV y por U paralela a AV determinan W tal que UV=AW paralela a VW por la intersección de AW y del círculo de radio AQ; esta paralela corta a AV en E’ tal que AE’=AE.<br><br>
+</td></tr>
+
+<tr><td class="table1column1 EstiloSeparador">&nbsp;</td></tr>
+
+<tr><td class="table1column1 EstiloAmarillo"><br>
+	<strong>1.3.5</strong><br><br>
+	<span class="WPCharBox"><img src="sol256ped/28.gif" alt="28.gif" border="0" width="488" height="329"><br>
+	figura 28</span><br><br>
+	Sobre PE trazamos el arco capaz de ángulo<br><br>
+	<span class="WPCharBox"><img src="sol256ped/equ27.gif" alt="" border="0" width="75" height="23"></span><br><br>
+	Obtenemos el círculo Γ<sub>3</sub> lugar geométrico de los puntos X desde los que se ve PE bajo un ángulo β.<br><br>
+	¡Es el mismo círculo Γ<sub>3</sub> hallado en 1.2.5 (figuras 22 y 23)<br>
+	<br>
+</td></tr>
+
+<tr><td class="table1column1 EstiloSeparador">&nbsp;</td></tr>
+
+<tr><td class="table1column1 EstiloAmarillo"><br>
+	<strong>1.3.6</strong><br><br>
+	<span class="WPCharBox"><img src="sol256ped/29.gif" alt="29.gif" border="0" width="488" height="329"><br>
+	figura 29</span><br><br>
+	Pero X además está sobre la recta s, entonces<br><br>	<span class="WPCharBox"><img src="sol256ped/equ28.gif" alt="ole28.gif" border="0" width="96" height="20"></span><br><br>
+	La recta XP que corta a la recta s en Y y la recta X’P que corta a s en Y’ son las soluciones pedidas.<br><br>
+</td></tr>
+
+</table>
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "DTD/xhtml1-transitional.dtd">
+
+<!-- This HTML document was created by converting a Mathematica notebook using Export. -->
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" class="Notebook">
+
+<head >
+<title>220.nb</title>
+
+<link href="HTMLFiles/Default.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+<p class="Subsubtitle">
+ Enunciado del problema
+</p>
+
+
+
+<p class="Text">
+ Una recta d corta los lados AB, BC, CA de un tri&aacute;ngulo ABC en C', A', B' respectivamente. Sean L la intersecci&oacute;n de AA' con BB', M la intersecci&oacute;n de BB' con CC' y N la intersecci&oacute;n de CC' con AA'. Demostrar que las rectas AM, BN y CL son concurrentes. 
+</p>
+
+
+
+<p class="Text">
+ <img src="HTMLFiles/index_1.gif"  border="0"  alt="Cell[GraphicsData[Bitmap, CF5dJ6E]HGAYHf4PAg9QL6QYHg&lt;PAVmbKF5d0`40009D0001&gt;2000`400?l0<b ... geSize -> {596., 312.}, ImageMargins -> {{0., 0.}, {0., 0.}}, ImageRegion -> {{0., 1.}, {0., 1.}}]"  width="601" height="317"  align="absmiddle"  />
+</p>
+
+<p class="Subsubtitle">
+ F&oacute;rmulas necesarias
+</p>
+
+
+
+<p class="Text">
+ Como estamos usando <span style='font-style: italic;'>Mathematica</span> para resolver el problema, representamos puntos y rectas como ternas {u,v,w} de n&uacute;meros. 
+</p>
+
+
+
+<p class="Text">
+ Usaremos la misma funci&oacute;n <span style='font-weight: bold;'>Unir</span> para hallar el punto de intersecci&oacute;n de dos rectas y para hallar la recta que une dos puntos. 
+</p>
+
+
+
+<p class="CellLabel">&nbsp; </p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/index_2.gif"  border="0"  alt="Unir[{x1_, y1_, z1_}, {x2_, y2_, z2_}] := &#62371; {Det[(y1   z1)], -Det[(x1   z1)], Det[(x1   ...                                                           y2   z2          x2   z2         x2   y2"  width="336" height="50"  align="absmiddle"  />
+</p>
+
+<p class="Subsubtitle">
+ Introducci&oacute;n de datos
+</p>
+
+
+
+<p class="Text">
+ Ahora&nbsp;&nbsp;introducimos directamente las coordenadas de algunos de los puntos que intervienen en el problema:
+</p>
+
+
+
+<p class="CellLabel">&nbsp; </p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/index_3.gif"  border="0"  alt="rtBC = ptA = {1, 0, 0} ; rtCA = ptB = {0, 1, 0} ; rtAB = ptC = {0, 0, 1} ; rtd = {u, v, w} ; "  width="147" height="78"  align="absmiddle"  />
+</p>
+
+<p class="Subsubtitle">
+ C&aacute;lculos
+</p>
+
+
+
+<p class="Text">
+ Vamos haciendo los c&aacute;lculos especificados por el enunciado:
+</p>
+
+
+
+<p class="CellLabel">&nbsp; </p>
+
+
+
+<p class="Input"> <img src="HTMLFiles/index_4.gif"  border="0"  alt="ptA1 = Unir[rtd, rtBC] ptB1 = Unir[rtd, rtCA] ptC1 = Unir[rtd, rtAB] "  width="151" height="58"  align="absmiddle"  /></p>
+<p class="Input"><img src="HTMLFiles/index_5.gif"  border="0"  alt="{0, w, -v}"  width="70" height="17"  align="absmiddle"  /><br>
+  <img src="HTMLFiles/index_6.gif"  border="0"  alt="{-w, 0, u}"  width="70" height="17"  align="absmiddle"  /><br>
+  <img src="HTMLFiles/index_7.gif"  border="0"  alt="{v, -u, 0}"  width="70" height="17"  align="absmiddle"  /> 
+</p>
+
+<p class="CellLabel">&nbsp; </p>
+
+
+
+<p class="Output"><img src="HTMLFiles/index_8.gif"  border="0"  alt="ptL = Unir[Unir[ptA, ptA1], Unir[ptB, ptB1]] ptM = Unir[Unir[ptB, ptB1], Unir[ptC, ptC1]] ptN = Unir[Unir[ptC, ptC1], Unir[ptA, ptA1]] "  width="305" height="58"  align="absmiddle"  /> 
+</p>
+<p class="Output"> <img src="HTMLFiles/index_9.gif"  border="0"  alt="{v w, u w, -u v}"  width="100" height="17"  align="absmiddle"  /><br>
+  <img src="HTMLFiles/index_10.gif"  border="0"  alt="{-v w, u w, u v}"  width="100" height="17"  align="absmiddle"  /><br>
+  <img src="HTMLFiles/index_11.gif"  border="0"  alt="{v w, -u w, u v}"  width="100" height="17"  align="absmiddle"  /> 
+</p>
+
+<p class="CellLabel">&nbsp;</p>
+
+
+
+<p class="Input"> <img src="HTMLFiles/index_12.gif"  border="0"  alt="rtAM = Unir[ptA, ptM] rtBN = Unir[ptB, ptN] rtCL = Unir[ptC, ptL] "  width="145" height="58"  align="absmiddle"  /> 
+</p>
+<p class="Output"> <img src="HTMLFiles/index_13.gif"  border="0"  alt="{0, -u v, u w}"  width="90" height="17"  align="absmiddle"  /><br>
+  <img src="HTMLFiles/index_14.gif"  border="0"  alt="{u v, 0, -v w}"  width="90" height="17"  align="absmiddle"  /><br>
+  <img src="HTMLFiles/index_15.gif"  border="0"  alt="{-u w, v w, 0}"  width="90" height="17"  align="absmiddle"  /> 
+</p>
+<p class="CellLabel">&nbsp;</p>
+<p class="Input">Las tres rectas ser&aacute;n concurrentes si y solo si su determinante 
+  es cero:</p>
+<p class="Input"> <img src="HTMLFiles/index_16.gif"  border="0"  alt="Det[{rtAM, rtBN, rtCL}]"  width="161" height="18"  align="absmiddle"  /></p>
+<p class="Output">
+ <img src="HTMLFiles/index_17.gif"  border="0"  alt="0"  width="11" height="17"  align="absmiddle"  />
+</p>
+
+
+<hr />
+<p style='font-family: Helvetica; font-size: 8pt'>Created by
+<a href="http://www.wolfram.com"><span style='font-style: italic'>Mathematica</span></a>
+&nbsp;(March 1, 2005) </p>
+
+</body>
+
+</html>

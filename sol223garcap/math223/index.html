@@ -1,0 +1,209 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "DTD/xhtml1-transitional.dtd">
+
+<!-- This HTML document was created by converting a Mathematica notebook using Export. -->
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" class="Notebook">
+
+<head >
+<title>
+  223.nb
+</title>
+
+<link href="HTMLFiles/Default.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+<p class="Subsubtitle">
+ Enunciado del problema
+</p>
+
+
+
+<p class="Text">
+ Consideremos un tri&aacute;ngulo ABC cualquiera. Sean D y E puntos sobre el lado BC, F y G puntos sobre el lado CA yH y I puntos sobre el lado AB, tal que BD:DE:EC = CF:FG:GA = AH:HI:IB = <span style='font-style: italic;'>p</span>:<span style='font-style: italic;'>q</span>:<span style='font-style: italic;'>r</span> con <span style='font-style: italic;'>p</span>+<span style='font-style: italic;'>q</span>+<span style='font-style: italic;'>r</span>=1, <span style='font-style: italic;'>p</span>,<span style='font-style: italic;'>q</span>,<span style='font-style: italic;'> r</span> &gt; 0.Sean K,L y M los puntos de intersecci&oacute;n de las diagonales DG y EH, FI y DG, y EH y FI. Probar que : <br />- El &aacute;rea de los cuadril&aacute;teros DEFG, FGHI, y HIDE es igual a q veces el &aacute;rea de ABC. <br />- Las &aacute;reas de los tri&aacute;ngulos GHK, IDL y EFM son iguales a <span style='font-style: italic;'>k</span> -se hallar&aacute;- veces el &aacute;rea de ABC. <br />- Las &aacute;reas de los tri&aacute;ngulos DEK, FGL y HIM son iguales a <span style='font-style: italic;'>h</span> -se hallar&aacute;- veces el &aacute;rea de ABC <br />- El &aacute;rea del tri&aacute;ngulo KLM es igial a <span style='font-style: italic;'>l</span> -se hallar&aacute;-, veces al &aacute;rea de ABC. 
+</p>
+
+
+
+<p class="Text">
+ <img src="HTMLFiles/index_1.gif"  border="0"  alt="Cell[GraphicsData[Bitmap, CF5dJ6E]HGAYHf4PAg9QL6QYHg&lt;PAVmbKF5d0`40008k0001;a000`40O003<br / ... geSize -> {571., 303.}, ImageMargins -> {{0., 0.}, {0., 0.}}, ImageRegion -> {{0., 1.}, {0., 1.}}]"  width="576" height="308"  align="absmiddle"  />
+</p>
+
+<p class="Subsubtitle">
+ F&oacute;rmulas necesarias
+</p>
+
+
+
+<p class="Text">
+ Como estamos usando Mathematica para resolver el problema, representamos puntos y rectas como ternas {u,v,w} de n&uacute;meros. Teniendo en cuenta que {<span style='font-style: italic;'>a</span>u, <span style='font-style: italic;'>a</span>v, <span style='font-style: italic;'>a</span>w} es equivalente a {u,v,w}, usaremos una funci&oacute;n <span style='font-weight: bold;'>Simplificar</span> para eliminar factores como el <span style='font-style: italic;'>a</span> anterior.
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/index_2.gif"  border="0"  alt="Simplificar[{x_, y_, z_}] := Factor[{x, y, z}/PolynomialGCD[x, y, z] ] ;"  width="423" height="32"  align="absmiddle"  />
+</p>
+
+<p class="Text">
+ Usaremos tambi&eacute;n la misma funci&oacute;n <span style='font-weight: bold;'>Unir</span> para hallar el punto de intersecci&oacute;n de dos rectas y para hallar la recta que une dos puntos. 
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/index_3.gif"  border="0"  alt="Unir[{x1_, y1_, z1_}, {x2_, y2_, z2_}] := &#62371;Simplificar[{Det[(y1   z1)], -Det[(x1   z1)] ...                                                           y2   z2          x2   z2         x2   y2"  width="427" height="50"  align="absmiddle"  />
+</p>
+
+<p class="Text">
+ Finalmente, definimos las funciones que calculan el &aacute;rea de un tri&aacute;ngulo y de un cuadril&aacute;tero en coordenadas baric&eacute;ntricas.
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/index_4.gif"  border="0"  alt="AreaTriangulo[{x1_, y1_, z1_}, {x2_, y2_, z2_}, {x3_, y3_, z3_}] := &#62371;Simplify[1/((x1 +  ...                                                                                       x3   y3   z3"  width="473" height="111"  align="absmiddle"  />
+</p>
+
+<p class="Subsubtitle">
+ Introducci&oacute;n de datos
+</p>
+
+
+
+<p class="Text">
+ Ahora&nbsp;&nbsp;introducimos directamente las coordenadas de algunos de los puntos que intervienen en el problema:
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/index_5.gif"  border="0"  alt="ptA = {1, 0, 0} ; ptB = {0, 1, 0} ; ptC = {0, 0, 1} ; ptD = {0, q + r, p} ; ptE = {0, r, p + q} ; ptF = {p, 0, q + r} ; ptG = {p + q, 0, r} ; ptH = {q + r, p, 0} ; ptI = {r, p + q, 0} ; "  width="125" height="178"  align="absmiddle"  />
+</p>
+
+<p class="Text">
+ Usamos la funci&oacute;n <span style='font-weight: bold;'>Unir</span> para hallar los tres puntos de intersecci&oacute;n de las diagonales
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/index_6.gif"  border="0"  alt="ptK = Unir[Unir[ptD, ptG], Unir[ptE, ptH]] ptL = Unir[Unir[ptF, ptI], Unir[ptD, ptG]] ptM = Unir[Unir[ptE, ptH], Unir[ptF, ptI]] "  width="291" height="58"  align="absmiddle"  />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/index_7.gif"  border="0"  alt="{q (p + q) (q + r), (q + r) (p^2 + p q - p r + r^2), (p + q) (p^2 - p r + q r + r^2)}"  width="444" height="17"  align="absmiddle"  />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/index_8.gif"  border="0"  alt="{-(p + q) (p^2 - p r + q r + r^2), -q (p + q) (q + r), -(q + r) (p^2 + p q - p r + r^2)}"  width="467" height="17"  align="absmiddle"  />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/index_9.gif"  border="0"  alt="{(q + r) (p^2 + p q - p r + r^2), (p + q) (p^2 - p r + q r + r^2), q (p + q) (q + r)}"  width="444" height="17"  align="absmiddle"  />
+</p>
+
+<p class="Subsubtitle">
+ C&aacute;lculos
+</p>
+
+
+
+<p class="Text">
+ Ahora, calculamos las &aacute;reas de todos los tri&aacute;ngulos y cuadril&aacute;teros pedidas en el enunciado.
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/index_10.gif"  border="0"  alt="DEFG = AreaCuadrilatero[ptD, ptE, ptF, ptG]"  width="295" height="18"  align="absmiddle"  />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/index_11.gif"  border="0"  alt="q/(p + q + r)"  width="58" height="30"  align="absmiddle"  />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/index_12.gif"  border="0"  alt="FGHI = AreaCuadrilatero[ptF, ptG, ptH, ptI]"  width="295" height="18"  align="absmiddle"  />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/index_13.gif"  border="0"  alt="q/(p + q + r)"  width="58" height="30"  align="absmiddle"  />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/index_14.gif"  border="0"  alt="HIDE = AreaCuadrilatero[ptH, ptI, ptD, ptE]"  width="295" height="18"  align="absmiddle"  />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/index_15.gif"  border="0"  alt="q/(p + q + r)"  width="58" height="30"  align="absmiddle"  />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/index_16.gif"  border="0"  alt="GHK = Area[ptG, ptH, ptK]"  width="176" height="18"  align="absmiddle"  />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/index_17.gif"  border="0"  alt="(p^4 + p^3 (q - 2 r) + 3 p^2 r^2 + r^3 (q + r) + p r (q^2 - 2 r^2))/((p + q + r)^2 (p^2 + q^2 + p (q - r) + q r + r^2))"  width="317" height="35"  align="absmiddle"  />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/index_18.gif"  border="0"  alt="IDL = Area[ptI, ptD, ptL]"  width="176" height="18"  align="absmiddle"  />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/index_19.gif"  border="0"  alt="(p^4 + p^3 (q - 2 r) + 3 p^2 r^2 + r^3 (q + r) + p r (q^2 - 2 r^2))/((p + q + r)^2 (p^2 + q^2 + p (q - r) + q r + r^2))"  width="317" height="35"  align="absmiddle"  />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/index_20.gif"  border="0"  alt="EFM = Area[ptE, ptF, ptM]"  width="171" height="18"  align="absmiddle"  />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/index_21.gif"  border="0"  alt="(p^4 + p^3 (q - 2 r) + 3 p^2 r^2 + r^3 (q + r) + p r (q^2 - 2 r^2))/((p + q + r)^2 (p^2 + q^2 + p (q - r) + q r + r^2))"  width="317" height="35"  align="absmiddle"  />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/index_22.gif"  border="0"  alt="DEK = Area[ptD, ptE, ptK]"  width="171" height="18"  align="absmiddle"  />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/index_23.gif"  border="0"  alt="(q^2 (p + q) (q + r))/((p + q + r)^2 (p^2 + q^2 + p (q - r) + q r + r^2))"  width="250" height="35"  align="absmiddle"  />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/index_24.gif"  border="0"  alt="FGL = Area[ptF, ptG, ptL]"  width="171" height="18"  align="absmiddle"  />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/index_25.gif"  border="0"  alt="(q^2 (p + q) (q + r))/((p + q + r)^2 (p^2 + q^2 + p (q - r) + q r + r^2))"  width="250" height="35"  align="absmiddle"  />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/index_26.gif"  border="0"  alt="HIM = Area[ptH, ptI, ptM]"  width="171" height="18"  align="absmiddle"  />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/index_27.gif"  border="0"  alt="(q^2 (p + q) (q + r))/((p + q + r)^2 (p^2 + q^2 + p (q - r) + q r + r^2))"  width="250" height="35"  align="absmiddle"  />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/index_28.gif"  border="0"  alt="KLM = Area[ptK, ptL, ptM]"  width="174" height="18"  align="absmiddle"  />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/index_29.gif"  border="0"  alt="(p^2 - q^2 - p r + r^2)^2/((p + q + r)^2 (p^2 + q^2 + p (q - r) + q r + r^2))"  width="250" height="36"  align="absmiddle"  />
+</p>
+
+
+<hr />
+<p style='font-family: Helvetica; font-size: 8pt'>Created by
+<a href="http://www.wolfram.com"><span style='font-style: italic'>Mathematica</span></a>
+&nbsp;(March 1, 2005) </p>
+
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<title>trianguloscabri250</title> 
+
+
+<body bgcolor="#FFFFFF">
+<h1>Problema 250 de <i>tri&aacute;nguloscabri</i> </h1>
+<table width="100%" border="0">
+  <tr> 
+    <td bgcolor="#FFFF99" height="41">En un tri&aacute;ngulo ABC se toman los 
+      puntos M, N y P de contacto de los c&iacute;rculos exinscritos en los &aacute;ngulos 
+      A, B y C con los lados BC, CA y AB respectivamente. Se une N con M y con 
+      P, cortando la recta NM a AB en D, y la NP a BC en E y se designa por I 
+      el punto de encuentro de BN y CP. Siendo a el punto com&uacute;n de IE y 
+      AB, y b el de intersecci&oacute;n de ID con BC, demostrar que las rectas 
+      AN, PM, DE y ab concurren en un mismo punto</td>
+  </tr>
+  <tr> 
+    <td height="21"> 
+      <div align="right"> 
+        <p><font size="-1">Instituto Jorge Juan. Propuesto por Maite Pe&ntilde;a 
+          Alcaraz</font></p>
+      </div>
+    </td>
+  </tr>
+</table>
+<p><font face="Verdana, Arial, Helvetica, sans-serif"><i>Soluci&oacute;n de <a href="http://garciacapitan.auna.com">Francisco 
+  Javier Garc&iacute;a Capit&aacute;n</a></i> </font></p>
+<p>Resolveremos una <b>generalizaci&oacute;n del problema</b> con coordenadas 
+  baric&eacute;ntricas. Aplicando el resultado obtenido al caso particular planteado 
+  por el problema deduciremos que las <b>cuatro rectas son paralelas</b> cuando 
+  el tri&aacute;ngulo es <b>is&oacute;sceles en B</b>.</p>
+<p><img src="250.jpg" width="461" height="336" align="right">Es conocido que las 
+  rectas que unen los v&eacute;rtices <i>A</i>, <i>B</i>, <i>C</i> con los puntos 
+  <i>M</i>, <i>N</i> y <i>P</i> de contacto de los c&iacute;rculos exinscritos 
+  concurren en un punto, llamado <i>punto de Nagel</i> del tri&aacute;ngulo <i>ABC</i>.</p>
+<p>Vamos a comprobar que el enunciado del problema es cierto en el caso general 
+  de que <i>AM</i>, <i>BN</i> y <i>CP</i> sean tres cevianas concurrentes en un 
+  punto cualquiera <i>I</i>.</p>
+<p>En efecto, tendremos las coordenadas baric&eacute;ntricas <i>I</i>=(<i>u</i>:<i>v</i>:<i>w</i>), 
+  <i>M</i>=(0:<i>v</i>:<i>w</i>), <i>N</i>=(<i>u</i>:0:<i>w</i>) y <i>P</i>=(<i>u</i>:<i>v</i>:0).</p>
+<p>Entonces podemos calcular las rectas</p>
+<p><img src="ecuacion1.gif" width="278" height="149"></p>
+<p>Haciendo z=0 en <i>NM</i> obtenemos <i>D</i> =(-<i>u</i>:<i>v</i>:0), y haciendo 
+  <i>x</i>=0 en <i>NP</i> obtenemos <i>E</i>=(0:<i>v</i>:-<i>w</i>). </p>
+<p>Evidentemente es <i>I=</i>(<i>u</i>:<i>v</i>:<i>w</i>). Entonces podemos calcular 
+  las rectas</p>
+<p><img src="ecuacion2.gif" width="296" height="149"></p>
+<p>Como intersecci&oacute;n de <i>IE</i> y <i>AB</i> resulta el punto <b>a</b>=(<i>u</i>:2<i>v</i>:0), 
+</p>
+<p>Como intersecci&oacute;n de <i>ID</i> y <i>BC</i> resulta el punto <b>b</b>=(0:2<i>v</i>:<i>w</i>).</p>
+<p>Hay que comprobar que las rectas</p>
+<ul>
+  <li><i>AN</i>: y=0</li>
+  <li>PM: <i>vw x </i>-<i> wu y + u v z</i> =0</li>
+  <li><i>DE</i>: <i>vw</i> <i>x</i> + <i>wu</i> <i>y</i> + <i>uv</i> <i>z</i>=0.</li>
+  <li><b>ab</b>: 2 <i>vw x </i> - <i>wu</i> <i>y</i> + 2 <i>uv </i>z = 0</li>
+</ul>
+<p>son concurrentes. Es evidente que las cuatro pasan por el punto pasan por el 
+  punto (<i>u</i>:0:-<i>w</i>).</p>
+<p><i>Observaci&oacute;n</i>: Este punto com&uacute;n a todas las rectas ser&aacute; 
+  un punto del infinito, siendo paralelas las cuatro rectas, si <i>u</i>-<i>w</i> 
+  =0. En el caso del enunciado del problema tenemos que (<i>u</i>:<i>v</i>:<i>w</i>)=(<i>s</i>-<i>a</i>:<i>s</i>-<i>b</i>:<i>s</i>-<i>c</i>) 
+  que ser&aacute; un punto del infinito si y solo si <i>a</i>=<i>c</i>, es decir 
+  si el tri&aacute;ngulo es is&oacute;sceles en <i>B</i>. </p>

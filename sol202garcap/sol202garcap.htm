@@ -1,0 +1,110 @@
+<title>trianguloscabri202</title> 
+<body bgcolor="#FFFFFF">
+<table width="100%" border="0">
+  <tr> 
+    <td height="2">
+      <h1>Problema 202 de <i>tri&aacute;nguloscabri</i></h1>
+    </td>
+  </tr>
+  <tr> 
+    <td> 
+      <div align="right"><font size="-1">(o una invitaci&oacute;n a las coordenadas 
+        baric&eacute;ntricas)</font></div>
+    </td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<table width="100%" border="0">
+  <tr>
+    <td bgcolor="#FFFF99">Sea el triángulo ABC, cuyos excírculos (Ib),(Ic) tienen 
+      como puntos de tangencia a (<i>D</i>,<i>E</i>) y (<i>F</i>,<i>G</i>) con 
+      (<i>AC</i>, <i>BC</i>) y (<i>AB</i>,<i>BC</i>) respectivamente. Demostrar 
+      que <i>FG</i> y <i>DE</i> se cortan en la altura ha del triángulo <i>ABC</i>. 
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <div align="right"><font size="-1">Propuesto por <b>Juan Carlos Salazar</b></font></div>
+    </td>
+  </tr>
+</table>
+<p><i><font color="#660000">Soluci&oacute;n de Francisco Javier Garc&iacute;a 
+  Capit&aacute;n</font></i> (con coordenadas baric&eacute;ntricas).</p>
+<p>Usaremos las coordenadas baric&eacute;ntricas para resolver este problema y, 
+  rec&iacute;procamente, usaremos este problema para introducir las coordenadas 
+  baric&eacute;ntricas.</p>
+<p>Un punto de partida para aprender sobre coordenadas baric&eacute;ntricas puede 
+  ser mi trabajo (incompleto) <a href="cb.pdf">Coordenadas baric&eacute;ntricas</a>, 
+  y para profundizar bastante m&aacute;s est&aacute; lo que yo creo la obra de 
+  referencia, <a href="http://www.math.fau.edu/yiu/Geometry.html">Introduction 
+  to the Geometry of the Triangle</a>, de Paul Yiu.</p>
+<p>&nbsp;</p>
+<APPLET CODEBASE="../" CODE="CabriJava.class"  WIDTH="940" HEIGHT="568" archive="CabriJava.jar">
+      <param name="lang" value="en">
+      <param name="bgcolor" value="#FFFFF">
+      <param name="file" value="sol202garcap.fig">
+</APPLET>
+<p>Considerando un tri&aacute;ngulo de referencia <i>ABC</i>, un punto P tendr&aacute; 
+  coordenadas baric&eacute;ntricas (<i>u</i>:<i>v</i>:<i>w</i>) cuando los tri&aacute;ngulos 
+  <i>PBC</i>, <i>PCA</i> y <i>PAB</i> tengan &aacute;reas (con signo) proporcionales 
+  a <i>u</i>:<i>v</i>:<i>w</i> (las coordenadas baric&eacute;ntricas son &uacute;nicas 
+  salvo un factor de proporcionalidad).</p>
+<p><img src="sol202garcap.gif" width="409" height="254" align="right">Partiendo 
+  del tri&aacute;ngulo de referencia ABC, los v&eacute;rtices tienen coordenadas 
+  A=(1:0:0), B=(0:1:0) y C=(0:0:1).</p>
+<p>Cualquier punto que est&eacute; en la recta <i>BC</i> tendr&aacute; coordendas 
+  de la forma (0:<i>v</i>:<i>w</i>). En ese caso tendremos que <i>BP</i>:<i>PC</i> 
+  = <i>w</i>:<i>v</i> (teniendo en cuenta de nuevo las medidas con signo). Por 
+  ejemplo, teniendo en cuenta que <i>GB</i> = <i>s</i>&#151;<i></i><i>a</i>, siendo 
+  <i>s</i> el semiper&iacute;metro de ABC y, como es habtual <i>a</i>=<i>BC</i>, 
+  tendremos que <i>BG</i> : <i>GC</i> = &#151;<i></i>(<i>s</i>&#151;<i></i><i>a</i>):<i></i><i>s</i>, 
+  por lo que podemos expresar G = (0: &#151;<i></i><i>s</i>,<i> s&#151;<i></i></i><i>a</i>). 
+  An&aacute;logamente ser&aacute; <i>E</i>=(0:<i> s</i>&#151;<i>a </i>: &#151;<i></i><i>s</i>).</p>
+<p>An&aacute;logamente, en la recta <i>AB</i> el punto <i>F</i> cumple que <i>AF</i>:<i>FB</i> 
+  = <i>s</i>&#151;<i>b</i>:<i>s</i>&#151;<i>a</i>, por lo que <i>F</i>=(<i>s</i>&#151;<i>a</i>:<i>s</i>&#151;b:0), 
+  y an&aacute;logamente, <i>D</i>=(<i>s</i>&#151;<i>a</i>:0:<i>s</i>&#151;<i>c</i>).</p>
+<p>Hallemos ahora las coordenadas del punto <i>N</i>, pie de la altura trazada 
+  por <i>A</i>. Como</p>
+<p><img src="formula1.gif" width="537" height="94"></p>
+<p>resulta que <img src="formula2.gif" width="254" height="28" align="absmiddle"></p>
+<p>Ahora que ya tenemos calculadas las coordenadas de todos los puntos que intervienen 
+  como datos podemos pasar a calcular rectas que pasan por dos puntos y puntos 
+  de intersecci&oacute;n de rectas. Aqu&iacute; el uso de coordenadas baric&eacute;ntricas 
+  hace las cosas muy sencillas, porque podemos usar la misma cuenta para efectuar 
+  las dos operaciones. </p>
+<p>Lo que necesitamos saber para continuar es que:</p>
+<ul>
+  <li>La ecuaci&oacute;n de la recta que pasa por dos puntos es 
+    <p><img src="formula3.gif" width="126" height="84"></p>
+  </li>
+  <li>La intersecci&oacute;n de las rectas <img src="formula6.gif" width="134" height="25" align="absmiddle"> 
+    y <img src="formula7.gif" width="141" height="25" align="absmiddle"> es el 
+    punto 
+    <p><img src="formula4.gif" width="286" height="25"></p>
+  </li>
+  <li>Una condici&oacute;n para que tres puntos est&eacute;n alineados es 
+    <p><img src="formula5.gif" width="126" height="84"></p>
+  </li>
+</ul>
+<p>El lector advertir&aacute; que en los dos primeros apartados los coeficientes 
+  de la ecuaci&oacute;n de la recta y las coordenadas del punto se obtienen exactamente 
+  de la misma manera, por lo que pueden calcularse con una misma funci&oacute;n 
+  de <i>Mathematica</i>:</p>
+<p><img src="unir.gif" width="343" height="71"><br>
+  Cada terna representa a un punto o a una recta. La funci&oacute;n <b>Unir</b> 
+  aplicada a dos rectas devuelve las coordenadas del punto de intersecci&oacute;n, 
+  y aplicada a dos puntos devuelve los coeficientes de la recta que los une.</p>
+<p>Una vez introducidos estos conceptos y herramientas, la resoluci&oacute;n del 
+  problema se reduce a la siguientes instrucciones:</p>
+<p><img src="solucion.gif" width="343" height="232"><br>
+  <img src="resultado.gif" width="11" height="17"> </p>
+<p>Como el &aacute;rea del tri&aacute;ngulo <i>AUN</i>, calculada con un determinante, 
+  es 0, deducimos que <i>U</i> est&aacute; en la altura <i>AN</i>.</p>
+<p>Por no acabar aqu&iacute;, podemos preguntarnos si el punto <i>U</i> siempre 
+  estar&aacute; en una posici&oacute;n determinada de la recta <i>AN</i>, por 
+  lo que vamos a calcular la proporci&oacute;n <i>AU</i>:<i>UN</i>. En este caso, 
+  usamos la f&oacute;rmula de la distancia en coordenadas baric&eacute;ntricas 
+  homog&eacute;neas, que es, sencillamente, descomunal:</p>
+<p><img src="soldistancia.gif" width="662" height="125"></p>
+<p><img src="distancia.gif" width="58" height="35"></p>
+<p align="left">Descubrimos entonces que siempre es<img src="formula8.gif" width="130" height="48" align="absmiddle"></p>

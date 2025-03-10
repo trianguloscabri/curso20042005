@@ -1,0 +1,120 @@
+FIGURE CabriII vers. MS-Windows 1.0
+
+Window center x: 1.69333333333333 y: -0.211666666666667 Window size x: 26.590625 y: 16.2983333333333
+
+1: Pt, 0, CN:0, VN:1
+R, W, t, DS:1 1, GT:1, I, nSt
+Val: 0 0
+
+2: Axes, 1, CN:1, VN:3
+Gr, W, t, DS:1 1, GT:0, I, nSt
+Const: 1, Val: 1 0, 0 1
+
+"Pino", NP: -102, -73, NS: 31, 18
+3: Pt, 0, CN:0, VN:1
+R, W, t, DS:1 1, GT:2, V, St
+Val: -2.64583333333333 1.13770833333333
+p: 0, System, S: 0 C: 3 Fa: 0
+
+"Roble", NP: 199, -107, NS: 40, 18
+4: Pt, 0, CN:0, VN:1
+R, W, t, DS:1 1, GT:2, V, St
+Val: 5.21229166666667 2.03729166666667
+p: 0, System, S: 0 C: 3 Fa: 0
+
+"Abedul", NP: 80, 19, NS: 46, 18
+5: Pt, 0, CN:0, VN:1
+R, W, t, DS:1 1, GT:2, V, nSt
+Val: 1.984375 -0.635
+p: 0, System, S: 0 C: 3 Fa: 0
+
+6: Line, 0, CN:2, VN:2
+V, W, t, DS:1 1, GT:0, V, nSt
+Const: 3 4
+
+7: Seg, 0, CN:2, VN:0
+dG, W, tT, DS:1 1, GT:0, V, nSt
+Const: 3 5
+
+8: Seg, 0, CN:2, VN:0
+Bl, W, tT, DS:1 1, GT:0, V, nSt
+Const: 5 4
+
+9: Perp, 0, CN:2, VN:2
+V, W, t, DS:1 1, GT:0, I, nSt
+Const: 3 7
+
+10: Perp, 0, CN:2, VN:2
+V, W, t, DS:1 1, GT:0, I, nSt
+Const: 4 8
+
+11: Cir, 0, CN:2, VN:2
+Bl, W, t, DS:1 1, GT:0, I, nSt
+Const: 3 5
+
+12: Cir, 0, CN:2, VN:2
+Bl, W, t, DS:1 1, GT:0, I, nSt
+Const: 4 5
+
+"J2", NP: -167, 135, NS: 17, 18
+13: Int, 0, CN:2, VN:1
+R, W, t, DS:1 1, GT:1, V, nSt
+Const: 9 11
+p: 0, System, S: 0 C: 3 Fa: 0
+
+"J1", NP: 299, 47, NS: 17, 18
+14: Int, 0, CN:2, VN:1
+R, W, t, DS:1 1, GT:1, V, nSt
+Const: 10 12
+p: 0, System, S: 0 C: 3 Fa: 0
+
+15: Seg, 0, CN:2, VN:0
+dG, W, tT, DS:1 1, GT:0, V, nSt
+Const: 13 3
+
+16: Seg, 0, CN:2, VN:0
+Bl, W, tT, DS:1 1, GT:0, V, nSt
+Const: 4 14
+
+17: Seg, 0, CN:2, VN:0
+V, W, t, DS:1 1, GT:0, V, nSt
+Const: 13 14
+
+18: Perp, 0, CN:2, VN:2
+V, W, t, DS:1 1, GT:0, V, nSt
+Const: 13 6
+
+19: Perp, 0, CN:2, VN:2
+V, W, t, DS:1 1, GT:0, V, nSt
+Const: 14 6
+
+20: Int, 0, CN:2, VN:1
+R, W, t, DS:1 1, GT:1, V, nSt
+Const: 6 18
+
+21: Int, 0, CN:2, VN:1
+R, W, t, DS:1 1, GT:1, V, nSt
+Const: 6 19
+
+"Tesoro", NP: 65, 92, NS: 47, 18
+22: Mid, 0, CN:2, VN:1
+dG, W, t, DS:1 1, GT:2, V, nSt
+Const: 13 14
+p: 0, System, S: 0 C: 9 Fa: 0
+
+23: Angle, 0, CN:3, VN:4
+B, W, t, DS:1 1, GT:16, V, nSt
+Const: 13 20 3, Val: 1, 1
+
+24: Angle, 0, CN:3, VN:4
+B, W, t, DS:1 1, GT:16, V, nSt
+Const: 13 3 5, Val: 1, 1
+
+25: Angle, 0, CN:3, VN:4
+B, W, t, DS:1 1, GT:16, V, nSt
+Const: 5 4 14, Val: 1, 1
+
+26: Angle, 0, CN:3, VN:4
+B, W, t, DS:1 1, GT:16, V, nSt
+Const: 14 21 4, Val: 1, 1
+

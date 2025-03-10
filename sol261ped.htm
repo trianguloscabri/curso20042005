@@ -1,0 +1,419 @@
+<html>
+
+<head>
+<meta name="generator" content="Corel WordPerfect 12">
+<meta http-equiv="content-Type" content="text/html; charset=utf-8">
+
+<style>
+table
+{
+	border-collapse: collapse;
+	border-spacing: 0pt;
+	border-color: black;
+	empty-cells: show;
+	font-family: "Times New Roman", serif;
+	font-size: 12pt;
+	font-weight: normal;
+	font-style: normal
+}
+
+td
+{
+	border-color: black
+}
+
+p
+{
+	margin-top: 0px;
+	margin-bottom: 1px
+}
+
+span.WPCharBox
+{
+	border-width: 0.0133333in;
+	border-style: solid;
+	border-color: black;
+	padding: 0px;
+	width: 100%;
+	margin: 0px
+}
+
+span.WPCharBoxWrapper
+{
+	padding: 0px;
+	vertical-align: text-top
+}
+
+span.WPBoxCaption
+{
+	padding: 0px;
+	width: 100%;
+	margin: 2px
+}
+
+body
+{
+	font-family: "Times New Roman", serif;
+	font-size: 12pt;
+	font-weight: normal;
+	font-style: normal
+}
+</style>
+
+</head>
+
+<body>
+<div align="center">
+<table width="705.44px" cellpadding="6" cellspacing="0">
+<tr>
+<td width="100%" style="background-color: #808080; border: 0.0133333in solid" valign="top"><p align="justify"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt"></span></span><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">Problema 261</span></span></p>
+<div align="justify"><br>
+  <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">Propuesto por Juan Bosco Romero M&aacute;rquez, profesor colaborador de la Universidad de Valladolid </span></span></div>
+  <div align="justify"><br>
+<span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">1) Dado el tri&aacute;ngulo ABC, Supongamos D, E, y F son puntos sobre los lados BC, AC, y AB, respectivamente, y tales
+que AD, BE, y CF concurren en un punto. Construimos las reflexiones del rayo AD con respecto a la bisectriz de &lt;BAC
+que corta a BC en D&#769;. Similarmente definimos E&#769;y F&#769;. Demostrar que AD&#769;, BE&#769;, y CF&#769; son concurrentes.</span></span></div>
+  <div align="justify">
+    <p><br>
+        <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">Baragar, A. (2002) A survey of Classical and Modern Geometries with computer activities, Prentice Hall, New Jersey. </span></span></p>
+    <p>&nbsp;
+        </p>
+  </div>
+  <p align="justify" style="text-align: right"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 8pt"><span style="font-size: 8pt">Soluci&oacute;n de Jos&eacute; Mar&iacute;a Pedret, Ingeniero Naval. Esplugues de Llobregat (Barcelona). (12 de julio de 2005)</span></span></span></p>
+</td>
+</tr>
+<tr>
+<td width="100%" valign="top"><p align="justify"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">&#160;</span></span></p>
+</td>
+</tr>
+<tr>
+<td width="100%" style="background-color: #808080; border: 0.0133333in solid" align="center" valign="top"><p align="center"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt"><span style="font-weight: bold">INTRODUCCI&Oacute;N</span></span></span></p>
+</td>
+</tr>
+<tr>
+<td width="100%" valign="top"><p align="justify"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">&#160;</span></span></p>
+</td>
+</tr>
+<tr>
+<td width="100%" style="border: 0.0133333in solid" valign="top"><p align="justify" style="margin-left: 1in; margin-right: 1in">&#160;</p>
+<p align="justify" style="margin-left: 1in; margin-right: 1in"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt"></span></span><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">Vamos a resolver este problema empleando s&oacute;lo <span style="font-weight: bold">GEOMETR&Iacute;A PROYECTIVA</span>.</span></span></p>
+<p align="justify" style="margin-left: 1in; margin-right: 1in">&nbsp;</p>
+<p align="justify" style="margin-left: 1in; margin-right: 1in"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">En particular, utilizamos las propiedades del <span style="font-weight: bold">CUADRIV&Eacute;RTICE</span> (o de su dual el
+        <span style="font-weight: bold">CUADRIL&Aacute;TERO</span>).</span></span></p>
+<p align="justify" style="margin-left: 1in; margin-right: 1in">&#160;</p>
+<p align="justify" style="margin-left: 1in; margin-right: 1in"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">Aunque lo damos por conocido enunciaremos el <span style="font-weight: bold">TEOREMA DE CONCURRENCIA DE
+LAS BISECTRICES</span>.</span></span></p>
+<p align="justify" style="margin-left: 1in; margin-right: 1in">&#160;</p>
+<p align="justify" style="margin-left: 1in; margin-right: 1in"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">Enunciamos el <span style="font-weight: bold">TEOREMA DE PAPPUS</span> y tambi&eacute;n el <span style="font-weight: bold">SEGUNDO TEOREMA DE
+DESARGUES</span> que nos ayudan a mantener la soluci&oacute;n en un plano m&aacute;s elemental.
+Estos teoremas se consideran conocidos y demostrados.</span></span></p>
+<p align="justify" style="margin-left: 1in; margin-right: 1in">&#160;</p>
+<p align="justify" style="margin-left: 1in; margin-right: 1in"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">Demostramos las propiedades necesarias en el cuadriv&eacute;rtice o en el cuadril&aacute;tero. Y
+trasladamos los resultados de uno a otro por medio del <span style="font-weight: bold">PRINCIPIO DE DUALIDAD</span>
+que tambi&eacute;n se considera conocido y demostrado.</span></span></p>
+<p align="justify" style="margin-left: 1in; margin-right: 1in">&nbsp;</p></td>
+</tr>
+<tr>
+<td width="100%" valign="top"><p align="justify"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">&#160;</span></span></p>
+</td>
+</tr>
+<tr>
+<td width="100%" style="background-color: #808080; border: 0.0133333in solid" align="center" valign="top"><p align="center"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt"><span style="font-weight: bold">DEFINICIONES</span></span></span></p>
+</td>
+</tr>
+<tr>
+<td width="100%" valign="top"><p align="justify"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">&#160;</span></span></p>
+</td>
+</tr>
+<tr>
+<td width="100%" style="border: 0.0133333in solid" valign="top"><div align="justify"><br>
+  <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt"></span></span><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt"><span style="font-weight: bold">EL CUADRIV&Eacute;RTICE (o cuadr&aacute;ngulo)</span></span></span></div>
+  <div align="justify"><br>
+    <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">Un <span style="font-weight: bold">cuadriv&eacute;rtice</span> es la figura formada por cuatro puntos (tres a tres no alineados); cuatro puntos que reciben el nombre
+de <span style="font-weight: bold">v&eacute;rtices</span> del cuadriv&eacute;rtice.</span></span></div>
+  <div align="justify"><br>
+    <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">Las rectas que unen los v&eacute;rtices dos a dos reciben el nombre de <span style="font-weight: bold">lados</span> del cuadriv&eacute;rtice.</span></span></div>
+  <div align="justify"><br>
+    <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">Las intersecciones de los lados &#8220;opuestos&#8221; son los <span style="font-weight: bold">v&eacute;rtices diagonales</span>.</span></span></div>
+  <div align="justify"><br>
+    <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">El tri&aacute;ngulo formado por los tres v&eacute;rtices diagonales es el <span style="font-weight: bold">tri&aacute;ngulo diagonal</span>.</span></span></div>
+  <div align="justify"><br>
+    <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">El resultado fundamental concerniente a esta figura es el <span style="font-weight: bold">SEGUNDO TEOREMA DE DESARGUES</span>.</span></span></div>
+  <div align="justify"><br>
+<span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt"><span style="font-weight: bold">EL CUADRIL&Aacute;TERO</span></span></span></div>
+  <div align="justify"><br>
+    <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">Un <span style="font-weight: bold">cuadril&aacute;tero</span> es la figura formada por cuatro rectas (tres a tres no concurrentes); cuatro rectas que son los <span style="font-weight: bold">lados</span> del cuadril&aacute;tero.</span></span></div>
+  <div align="justify"><br>
+    <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">Las intersecciones de esas cuatro rectas dos a dos son los <span style="font-weight: bold">v&eacute;rtices</span>.</span></span></div>
+  <div align="justify"><br>
+    <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">Las rectas que unen dos v&eacute;rtices que no est&aacute;n sobre un mismo lado son las <span style="font-weight: bold">diagonales</span>.</span></span></div>
+  <div align="justify">
+    <p><br>
+        <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">El tri&aacute;ngulo formado por las tres diagonales es el <span style="font-weight: bold">tri&aacute;ngulo diagonal</span>.</span></span></p>
+    <p>&nbsp;</p>
+  </div>
+  </td>
+</tr>
+<tr>
+<td width="100%" valign="top"><p align="justify"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">&#160;</span></span></p>
+</td>
+</tr>
+<tr>
+<td width="100%" style="background-color: #808080; border: 0.0133333in solid" align="center" valign="top"><p align="center"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt"><span style="font-weight: bold">TEOREMAS SIN DEMOSTRACI&Oacute;N</span></span></span></p>
+</td>
+</tr>
+<tr>
+<td width="100%" valign="top"><p align="justify"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">&#160;</span></span></p>
+</td>
+</tr>
+<tr>
+<td width="100%" valign="top" style="border: 0.0133333in solid"><div align="justify"><br>
+  <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt"></span></span><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt"><span style="font-weight: bold">TEOREMA SOBRE LA CONCURRENCIA DE BISECTRICES</span></span></span></div>
+  <div align="justify"><br>
+    <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">Las bisectrices interiores de cualquier tri&aacute;ngulo son concurrentes en un mismo punto.</span></span></div>
+  <div align="justify"><br>
+    <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt"><span style="font-weight: bold">PRINCIPIO DE DUALIDAD</span></span></span></div>
+  <div align="justify"><br>
+    <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">A todo teorema de un espacio proyectivo, referente a propiedades de uni&oacute;n, intersecci&oacute;n de subespacios del mismo,
+corresponde un teorema, llamado dual, de un espacio proyectivo el cual se obtiene cambiando en el enunciado
+primitivo</span></span>
+  </div>
+  <p align="justify" style="text-align: center"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">
+<span class="WPCharBoxWrapper" style="width: 260px"><span class="WPCharBox" style="border: none">
+<img src="sol261ped/ole.gif" alt="ole.gif" width="258" height="107" border="0"></span></span>
+</span></span></p>
+<div align="justify"><br>
+  <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">Y en el plano queda</span></span>
+  </div>
+  <p align="justify" style="text-align: center"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">
+<span class="WPCharBoxWrapper" style="width: 259px"><span class="WPCharBox" style="border: none">
+<img src="sol261ped/ole1.gif" alt="ole1.gif" width="257" height="107" border="0"></span></span>
+</span></span></p>
+<p align="justify"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">Otro enunciado es:</span></span></p>
+<p align="justify">&#160;</p>
+<p align="justify" style="margin-left: 0.5in; margin-right: 0.5in"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">&#8220; Una proposici&oacute;n <i><span style="font-weight: bold">P</span></i> relativa a subespacios de un espacio proyectivo es cierta si y s&oacute;lo si lo es su
+proposici&oacute;n dual <i><span style="font-weight: bold">P*</span></i>. &#8220;</span></span></p>
+<p align="justify" style="margin-left: 0.5in; margin-right: 0.5in">&nbsp;</p>
+<p align="justify"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt"><span style="font-weight: bold">TEOREMA DE PAPPUS</span></span></span></p>
+<p align="justify">&nbsp;
+  </p>
+<p align="justify" style="text-align: center"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">
+  <span class="WPCharBoxWrapper" style="width: 585px; vertical-align: text-top"><span class="WPCharBox" style="border: none">
+  <img src="sol261ped/01.gif" alt="01.gif" width="583" height="250" border="0"></span></span></span></span></p>
+<p align="justify" style="text-align: center"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt"><span class="WPCharBoxWrapper" style="width: 585px; vertical-align: text-top"><span class="WPBoxCaption" style="text-align: center"><span style="font-size: 8pt"><span style="font-weight: bold">figura 1</span></span></span></span></span></span>
+</p>
+<div align="justify">
+  <p><br>
+      <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">Sean r, r&#8217; dos rectas distintas y A, B, C tres puntos distintos de r y A&#8217;, B&#8217;, C&#8217; tres puntos distintos de r&#8217;:</span></span></p>
+  <p>&nbsp;
+  </p>
+</div><p align="justify" style="text-align: center"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">
+  <span class="WPCharBoxWrapper" style="width: 613px"><span class="WPCharBox" style="border: none">
+  <img src="sol261ped/ole2.gif" alt="ole2.gif" width="611" height="24" border="0"></span></span>
+</span></span></p><div align="justify">        
+  <p><br>
+          <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt"><span style="font-weight: bold">TEOREMA DE DESARGUES (SEGUNDO)</span></span></span></p>
+  <p>&nbsp;
+  </p>
+</div><p align="justify" style="text-align: center"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">
+  <span class="WPCharBoxWrapper" style="width: 584px; vertical-align: text-top"><span class="WPCharBox" style="border: none">
+  <img src="sol261ped/02.gif" alt="02.gif" width="582" height="266" border="0"></span></span></span></span></p>
+<p align="justify" style="text-align: center"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt"><span class="WPCharBoxWrapper" style="width: 584px; vertical-align: text-top"><span class="WPBoxCaption" style="text-align: center"><span style="font-size: 8pt"><span style="font-weight: bold">figura 2</span></span></span></span></span></span>
+</p>
+<div align="justify">
+  <p><br>
+      <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">Sea un cuadriv&eacute;rtice y una recta que nos pasa por ninguno de los v&eacute;rtices del mismo. Entonces los lados opuestos del
+    cuadriv&eacute;rtice cortan a la recta en puntos que se corresponden en una misma involuci&oacute;n.</span></span></p>
+  <p>&nbsp;
+  </p>
+</div><p align="justify" style="text-align: center"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">
+  <span class="WPCharBoxWrapper" style="width: 224px"><span class="WPCharBox" style="border: none">
+  <img src="sol261ped/ole3.gif" alt="ole3.gif" width="222" height="22" border="0"></span></span>
+</span></span></p>
+<p align="justify" style="text-align: center">&nbsp;</p></td>
+</tr>
+<tr>
+<td width="100%" valign="top"><p align="justify"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">&#160;</span></span></p>
+</td>
+</tr>
+<tr>
+<td width="100%" style="background-color: #808080; border: 0.0133333in solid" align="center" valign="top"><p align="center"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt"><span style="font-weight: bold">TEOREMAS CON DEMOSTRACI&Oacute;N</span></span></span></p>
+</td>
+</tr>
+<tr>
+<td width="100%" valign="top"><p align="justify"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">&#160;</span></span></p>
+</td>
+</tr>
+<tr>
+<td width="100%" style="border: 0.0133333in solid" valign="top"><div align="justify"><br>
+  <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt"></span></span><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt"><span style="font-weight: bold">TEOREMA UNO</span></span></span></div>
+  <div align="justify">
+    <p><br>
+        <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">Dos lados del tri&aacute;ngulo diagonal de un cuadriv&eacute;rtice son conjugados respecto los lados que pasan por el v&eacute;rtice
+  diagonal correspondiente.</span></span></p>
+    <p>&nbsp;
+        </p>
+  </div>
+  <p align="justify" style="text-align: center"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">
+<span class="WPCharBoxWrapper" style="width: 585px; vertical-align: text-top"><span class="WPCharBox" style="border: none">
+<img src="sol261ped/03.gif" alt="03.gif" width="583" height="396" border="0"></span></span></span></span></p>
+  <p align="justify" style="text-align: center"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt"><span class="WPCharBoxWrapper" style="width: 585px; vertical-align: text-top"><span class="WPBoxCaption" style="text-align: center"><span style="font-size: 8pt"><span style="font-weight: bold">figura 3</span></span></span></span></span></span>
+  </p>
+  <div align="justify"><br>
+    <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt"><span style="font-weight: bold">DEMOSTRACI&Oacute;N UNO</span></span></span></div>
+  <div align="justify">
+    <p><br>
+        <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">Sea el cuadriv&eacute;rtice PQRS. Sean los v&eacute;rtices diagonales</span></span></p>
+    <p>&nbsp;
+        </p>
+  </div>
+  <p align="justify" style="text-align: center"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">
+<span class="WPCharBoxWrapper" style="width: 354px"><span class="WPCharBox" style="border: none">
+<span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt"><span class="WPCharBoxWrapper" style="width: 354px"><span class="WPCharBox" style="border: none"><img src="sol261ped/ole4.gif" alt="ole4.gif" width="352" height="22" border="0"></span></span></span></span></span></span>
+</span></span></p>
+<div align="justify"><br>
+  <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">Sean las rectas</span></span></div>
+  <p align="justify" style="text-align: center"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">
+<span class="WPCharBoxWrapper" style="width: 161px"><span class="WPCharBox" style="border: none">
+<img src="sol261ped/ole5.gif" alt="ole5.gif" width="159" height="22" border="0"></span></span>
+</span></span></p>
+<div align="justify"><br>
+  <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">Estas rectas cortan al lado AB en</span></span></div>
+<p align="justify" style="text-align: center"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">
+<span class="WPCharBoxWrapper" style="width: 118px"><span class="WPCharBox" style="border: none">
+<img src="sol261ped/ole6.gif" alt="ole6.gif" width="116" height="22" border="0"></span></span>
+</span></span></p>
+<div align="justify"><br>
+  <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">Los puntos A y B son fijos en la involuci&oacute;n que sobre AB se define seg&uacute;n el <span style="font-weight: bold">SEGUNDO TEOREMA DE DESARGUES</span> e I, J son
+hom&oacute;logos en esta involuci&oacute;n</span></span></div>
+<p align="justify" style="text-align: center"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">
+<span class="WPCharBoxWrapper" style="width: 506px"><span class="WPCharBox" style="border: none">
+<img src="sol261ped/ole7.gif" alt="ole7.gif" width="504" height="122" border="0"></span></span>
+</span></span></p>
+<div align="justify">
+  <p><br>
+      <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">c.q.d.</span></span></p>
+  <p>&nbsp;</p>
+</div>
+</td>
+</tr>
+<tr>
+<td width="100%" valign="top"><p align="justify"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">&#160;</span></span></p>
+</td>
+</tr>
+<tr>
+<td width="100%" valign="top" style="border: 0.0133333in solid"><div align="justify"><br>
+  <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt"></span></span><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt"><span style="font-weight: bold">TEOREMA DOS</span></span></span></div>
+  <div align="justify"><br>
+    <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">Si tres rectas l, m, n trazadas por los v&eacute;rtices diagonales de un cuadriv&eacute;rtice son concurrentes, sus rectas conjugadas
+l&#8217;, m&#8217;, n&#8217; respecto a los lados del cuadriv&eacute;rtice tambi&eacute;n son concurrentes.</span></span></div>
+  <div align="justify"><br>
+    <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt"><span style="font-weight: bold">DEMOSTRACI&Oacute;N DOS</span></span></span></div>
+  <div align="justify"><br>
+    <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">Daremos por demostrado este teorema, demostrando su dual (<span style="font-weight: bold">PRINCIPIO DE DUALIDAD)</span>:</span></span></div>
+  <div align="justify"><br>
+    <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">&#8220; Si tres puntos L, M, N situados sobre las diagonales AA&#8217;, BB`, CC&#8217; de un cuadril&aacute;tero est&aacute;n alineados sobre una recta
+d, los conjugados arm&oacute;nicos L&#8217;, M&#8217;, N&#8217; respectivos de estos puntos respecto a los v&eacute;rtices est&aacute;n tambi&eacute;n alineados
+sobre una recta d&#8217;.&#8221;</span></span>
+  </div>
+  <p align="justify" style="text-align: center"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">
+<span class="WPCharBoxWrapper" style="width: 585px; vertical-align: text-top"><span class="WPCharBox" style="border: none">
+<img src="sol261ped/04.gif" alt="04.gif" width="583" height="396" border="0"></span></span></span></span></p>
+  <p align="justify" style="text-align: center"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt"><span class="WPCharBoxWrapper" style="width: 585px; vertical-align: text-top"><span class="WPBoxCaption" style="text-align: center"><span style="font-size: 8pt"><span style="font-weight: bold">figura 4</span></span></span></span></span></span>
+  </p>
+  <div align="justify"><br>
+<span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">Trazamos el cuadril&aacute;tero ABA&#8217;B&#8217; de diagonales AA&#8217;, BB&#8217;, CC&#8217;.</span></span></div>
+  <div align="justify"><br>
+    <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">Trazamos la recta d (verde en la figura 4) y obtenemos</span></span></div>
+  <div align="center"><br>
+      <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">L sobre AA&#8217;</span></span></div>  <p align="center"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">M sobre BB&#8217;</span></span></p>
+<p align="center"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">N sobre CC&#8217;.</span></span></p>
+<div align="justify"><br>
+  <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">Gracias al <span style="font-weight: bold">TEOREMA UNO</span> sabemos trazar el conjugado arm&oacute;nico de un punto respecto a otros dos. En la figura 4
+vemos el c&aacute;lculo de N&#8217; conjugado de N respecto CC&#8217;. Obtenemos:</span></span></div>
+<div align="center"><br>
+    <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">L&#8217;   conjugado arm&oacute;nico de L respecto AA&#8217;</span></span></div><p align="center"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">M&#8217; conjugado arm&oacute;nico de M respecto BB&#8217;</span></span></p>
+<p align="center"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">N&#8217; conjugado arm&oacute;nico de N respecto CC&#8217;</span></span></p>
+<p align="center">&nbsp;</p><p align="justify" style="text-align: center"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt"></span></span><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">
+  <span class="WPCharBoxWrapper" style="width: 585px; vertical-align: text-top"><span class="WPCharBox" style="border: none">
+  <img src="sol261ped/05.gif" alt="05.gif" width="583" height="396" border="0"></span></span></span></span></p>
+<p align="justify" style="text-align: center"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt"><span class="WPCharBoxWrapper" style="width: 585px; vertical-align: text-top"><span class="WPBoxCaption" style="text-align: center"><span style="font-size: 8pt"><span style="font-weight: bold">figura 5</span></span></span></span></span></span>
+</p>
+<div align="justify"><br>
+  <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">La recta d corta a los lados del cuadril&aacute;tero en P, Q, R y S.</span></span></div><div align="justify">
+    <p><br>
+        <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">Si, desde P, proyectamos ahora M, M&#8217;, B, B&#8217; sobre BC y proyectamos, desde Q, N, N&#8217;, C, C&#8217; sobre BC; dichas proyecciones
+    coinciden y constatamos lo siguiente</span></span>
+</p>
+    <p>&nbsp;    </p>
+  </div><p align="justify" style="text-align: center"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">
+  <span class="WPCharBoxWrapper" style="width: 470px"><span class="WPCharBox" style="border: none">
+  <img src="sol261ped/ole8.gif" alt="ole8.gif" width="468" height="24" border="0"></span></span>
+</span></span></p>
+  <div align="justify">  <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">y de forma an&aacute;loga</span></span>
+  </div><p align="justify" style="text-align: center"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">
+  <span class="WPCharBoxWrapper" style="width: 456px"><span class="WPCharBox" style="border: none">
+  <img src="sol261ped/ole9.gif" alt="ole9.gif" width="454" height="52" border="0"></span></span>
+</span></span></p><div align="justify">
+  <p><br>
+      <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">Si consideramos ahora los puntos P, Q, R sobre la recta d y los puntos I, J, K sobre la recta BC tenemos que:</span></span></p>
+  <p>&nbsp;
+  </p>
+</div><p align="justify" style="text-align: center"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">
+  <span class="WPCharBoxWrapper" style="width: 363px"><span class="WPCharBox" style="border: none">
+  <img src="sol261ped/ole10.gif" alt="ole10.gif" width="361" height="22" border="0"></span></span>
+</span></span></p><div align="justify"><br>
+  <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">Pero el <span style="font-weight: bold">TEOREMA DE PAPPUS</span> nos asegura que K&#8217;, M&#8217;, y N&#8217; est&aacute;n alineados.</span></span></div><div align="justify">
+    <p><br>
+        <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">c.q.d.</span></span></p>
+    <p>&nbsp;</p>
+  </div></td>
+</tr>
+<tr>
+<td width="100%" valign="top"><p align="justify"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">&#160;</span></span></p>
+</td>
+</tr>
+<tr>
+<td width="100%" style="background-color: #808080; border: 0.0133333in solid" align="center" valign="top"><p align="center"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt"><span style="font-weight: bold">LA SOLUCION</span></span></span></p>
+</td>
+</tr>
+<tr>
+<td width="100%" valign="top"><p align="justify" style="text-align: center"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">&#160;</span></span></p>
+</td>
+</tr>
+<tr>
+<td width="100%" style="border: 0.0133333in solid" valign="top"><div align="justify">
+  <p>&nbsp;</p>
+  </div>
+  <p align="justify" style="text-align: center"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt"></span></span><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">
+<span class="WPCharBoxWrapper" style="width: 585px; vertical-align: text-top"><span class="WPCharBox" style="border: none">
+<img src="sol261ped/06.gif" alt="06.gif" width="583" height="579" border="0"></span></span></span></span></p>
+  <p align="justify" style="text-align: center"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt"><span class="WPCharBoxWrapper" style="width: 585px; vertical-align: text-top"><span class="WPBoxCaption" style="text-align: center"><span style="font-size: 8pt"><span style="font-weight: bold">figura 6</span></span></span></span></span></span>
+  </p>
+  <div align="justify"><br>
+<span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">Trazamos el enunciado.</span></span></div>
+  <div align="justify"><br>
+    <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">Sean A&#8217;, B&#8217; C&#8217; los v&eacute;rtices del tri&aacute;ngulo formado por las bisectrices exteriores del tri&aacute;ngulo ABC.</span></span></div>
+  <div align="justify"><br>
+    <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">Se sabe (<span style="font-weight: bold">TEOREMA CONCURRENCIA BISECTRICES)</span> que las bisectrices interiores de un tri&aacute;ngulo son concurrentes
+en un punto J; y de aqu&iacute;, a</span></span><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">unque no es la disposici&oacute;n t&iacute;pica, podemos ver que los puntos A&#8217;, B&#8217;, C&#8217;, J forman un cuadriv&eacute;rtice que tiene A, B, C
+como puntos diagonales. AB, BC, CA son las diagonales. Y ABC es el tri&aacute;ngulo diagonal de este cuadriv&eacute;rtice.</span></span></div>
+  <div align="justify"><br>
+    <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">Por la simetr&iacute;a respecto a la bisectriz y por el <span style="font-weight: bold">TEOREMA UNO</span> tenemos que:</span></span></div>
+  <div align="center"><br>
+      <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">AD&#8217; es el conjugado arm&oacute;nico de AD respecto a los lados que concurren en A,</span></span></div>  <p align="center"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">BE&#8217; es el conjugado arm&oacute;nico de BE respecto a los lados que concurren en B,</span></span></p>
+  <p align="center"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">CF&#8217; es el conjugado arm&oacute;nico de CF respecto a los lados que concurren en C,</span></span></p>
+  <div align="justify">
+    <p><br>
+        <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">Como AD, BE y CF son concurrentes en un punto P,  aplicando el <span style="font-weight: bold">TEOREMA DOS</span>, y por ser sus conjugadas</span></span></p>
+    <p>&nbsp;
+        </p>
+  </div>
+<p align="justify" style="text-align: center"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt"><span style="font-weight: bold">LAS RECTAS AD&#8217;, BE&#8217; Y CF&#8217; SON CONCURRENTES EN UN PUNTO P&#8217;</span></span></span></p>
+<p align="justify" style="text-align: center">&nbsp;</p></td>
+</tr>
+</table>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,305 @@
+<html>
+
+<head>
+<meta name="generator" content="Corel WordPerfect 12">
+<meta http-equiv="content-Type" content="text/html; charset=utf-8">
+
+<style>
+table
+{
+	border-collapse: collapse;
+	border-spacing: 0pt;
+	border-color: black;
+	empty-cells: show;
+	font-family: "Times New Roman", serif;
+	font-size: 12pt;
+	font-weight: normal;
+	font-style: normal
+}
+
+td
+{
+	border-color: black
+}
+
+p
+{
+	margin-top: 0px;
+	margin-bottom: 1px
+}
+
+span.WPCharBox
+{
+	border-width: 0.0133333in;
+	border-style: solid;
+	border-color: black;
+	padding: 0px;
+	width: 100%;
+	margin: 0px
+}
+
+span.WPCharBoxWrapper
+{
+	padding: 0px;
+	vertical-align: text-top
+}
+
+span.WPBoxCaption
+{
+	padding: 0px;
+	width: 100%;
+	margin: 2px
+}
+
+body
+{
+	font-family: "Times New Roman", serif;
+	font-size: 12pt;
+	font-weight: normal;
+	font-style: normal
+}
+</style>
+
+</head>
+
+<body>
+<div align="center">
+<table width="705.44px" cellpadding="6" cellspacing="0">
+<tr>
+<td width="100%" style="background-color: #808080; border: 0.0133333in solid" valign="top"><p align="justify"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt"></span></span><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">Problema 267</span></span></p>
+<div align="justify"><br>
+  <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">8. Desde cada v&eacute;rtice de un tri&aacute;ngulo ABC se trazan dos segmentos que se unen con puntos del lado opuesto de
+manera que lo dividen en tres segmentos de igual longitud. Estas seis l&iacute;neas determinan un hex&aacute;gono. </span></span></div>
+  <div align="justify"><br>
+    <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">Demostrar que las tres diagonales que unen los v&eacute;rtices opuestos de ese hex&aacute;gono tienen un punto en com&uacute;n.</span></span></div>
+  <div align="justify">
+    <p><br>
+        <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">Yaglom IS(1962) Geometric Transformations III The Mathematical Association of America (MAA) New Matematical
+  Library (p. 5) (Traducido del ruso por Allen Shields)</span></span></p>
+    <p><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">&#160;</span></span></p>
+  </div>
+  <p align="justify" style="text-align: right"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 8pt"><span style="font-size: 8pt">Soluci&oacute;n de Jos&eacute; Mar&iacute;a Pedret, Ingeniero Naval. Esplugues de Llobregat (Barcelona). (11 de julio de 2005)</span></span></span></p>
+</td>
+</tr>
+<tr>
+<td width="100%" valign="top"><p align="justify"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">&#160;</span></span></p>
+</td>
+</tr>
+<tr>
+<td width="100%" style="background-color: #808080; border: 0.0133333in solid" align="center" valign="top"><p align="center"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt"><span style="font-weight: bold">INTRODUCCION</span></span></span></p>
+</td>
+</tr>
+<tr>
+<td width="100%" valign="top"><p align="justify"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">&#160;</span></span></p>
+</td>
+</tr>
+<tr>
+<td width="100%" style="border: 0.0133333in solid" valign="top"><div align="justify"><br>
+  <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt"></span></span><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt"><span style="font-weight: bold">TRIANGULO DEL ENUNCIADO</span></span></span></div>
+  <p align="justify" style="text-align: center"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">
+<span class="WPCharBoxWrapper" style="width: 585px; vertical-align: text-top"><span class="WPCharBox" style="border: none">
+<img src="sol267ped/01.gif" alt="01.gif" width="583" height="397" border="0"></span></span></span></span></p>
+  <p align="justify" style="text-align: center"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt"><span class="WPCharBoxWrapper" style="width: 585px; vertical-align: text-top"><span class="WPBoxCaption" style="text-align: center"><span style="font-size: 8pt"><span style="font-weight: bold">figura 1</span></span></span></span></span></span>
+  </p>
+  <div align="justify"><br>
+    <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">Partiremos de un tri&aacute;ngulo cualquiera ABC.</span></span></div>
+<div align="justify"><br>
+  <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">Sean H, I  los puntos que dividen a BC en tres segmentos iguales.</span></span></div>
+<p align="justify"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">Sean D, F los puntos que dividen a CA en tres segmentos iguales.</span></span></p>
+<p align="justify"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">Sean E, G los puntos que dividen a AB en tres segmentos iguales.</span></span></p>
+<div align="justify"><br>
+  <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">Sabemos entonces que</span></span></div>
+<div align="justify"><br>
+  <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">DE y FG son paralelas a BC (por ejemplo, la divisi&oacute;n en partes iguales nos dice que ADE y ACB son homot&eacute;ticos).</span></span></div>
+<p align="justify"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">GI y EH son paralelas a CA.</span></span></p>
+<p align="justify"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">FH y DI son paralelas a AB.</span></span></p>
+<div align="justify"><br>
+  <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">Establecido lo anterior, no estudiaremos la figura completa. Estudiaremos s&oacute;lo la construcci&oacute;n de una parte que nos
+proporcionar&aacute; lo suficiente para responder al enunciado.</span></span></div>
+<div align="justify">
+  <p><br>
+      <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">Tomamos como referencia el lado BC y empezamos a construir el enunciado s&oacute;lo en parte.</span></span></p>
+  <p>&nbsp;</p>
+</div>
+</td>
+</tr>
+<tr>
+<td width="100%" valign="top"><p align="justify"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">&#160;</span></span></p>
+</td>
+</tr>
+<tr>
+<td width="100%" style="background-color: #808080; border: 0.0133333in solid" align="center" valign="top"><p align="center"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt"><span style="font-weight: bold">CONSTRUCCION - CONSIDERAMOS LOS V&Eacute;RTICES BC</span></span></span></p>
+</td>
+</tr>
+<tr>
+<td width="100%" valign="top"><p align="justify"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">&#160;</span></span></p>
+</td>
+</tr>
+<tr>
+<td width="100%" style="border: 0.0133333in solid" valign="top"><div align="justify"><br>
+  <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt"></span></span><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt"><span style="font-weight: bold">PASO I</span></span></span>
+      <br>
+  </div>
+  <p align="justify" style="text-align: center"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">
+<span class="WPCharBoxWrapper" style="width: 585px; vertical-align: text-top"><span class="WPCharBox" style="border: none">
+<img src="sol267ped/02.gif" alt="02.gif" width="583" height="397" border="0"></span></span></span></span></p>
+  <p align="justify" style="text-align: center"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt"><span class="WPCharBoxWrapper" style="width: 585px; vertical-align: text-top"><span class="WPBoxCaption" style="text-align: center"><span style="font-size: 8pt"><span style="font-weight: bold">figura 2</span></span></span></span></span></span>
+  </p>
+  <div align="justify">
+    <p><br>
+        <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">Trazamos BD y CE, recordemos que DE es paralela a CB</span></span></p>
+    <p>&nbsp;
+        </p>
+  </div>
+  <p align="justify" style="text-align: center"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">
+<span class="WPCharBoxWrapper" style="width: 112px"><span class="WPCharBox" style="border: none">
+<img src="sol267ped/ole.gif" alt="ole.gif" width="110" height="18" border="0"></span></span>
+</span></span></p>
+<div align="justify">
+  <p><br>
+      <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">BCDE con A y <span style="font-size: 14pt">&#8734;</span> es un cuadril&aacute;tero completo. BD y CE son sus diagonales interiores. Los lados CD y EB se cortan en
+  A y las diagonales interiores en P; entonces por las propiedades del cuadril&aacute;tero</span></span></p>
+  <p>&nbsp;
+  </p>
+</div>
+  <p align="justify" style="text-align: center"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">
+<span class="WPCharBoxWrapper" style="width: 496px"><span class="WPCharBox" style="border: none">
+<img src="sol267ped/ole1.gif" alt="ole1.gif" width="494" height="24" border="0"></span></span>
+</span></span></p>
+<div align="justify">
+  <p><br>
+      <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">AP encuentra a BC en M; se cumple pues</span></span></p>
+  <p>&nbsp;
+  </p>
+</div>
+  <p align="justify" style="text-align: center"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">
+<span class="WPCharBoxWrapper" style="width: 451px"><span class="WPCharBox" style="border: none">
+<img src="sol267ped/ole2.gif" alt="ole2.gif" width="449" height="92" border="0"></span></span>
+</span></span></p>
+<div align="justify">
+  <p><br>
+      <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">De donde M es el punto medio de BC y por tanto</span></span></p>
+  <p>&nbsp;
+  </p>
+</div>
+  <p align="justify" style="text-align: center"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt"><span style="font-weight: bold">LA RECTA AP COINCIDE CON LA MEDIANA POR A</span></span></span></p>
+  <p align="justify" style="text-align: center">&nbsp;</p></td>
+</tr>
+<tr>
+<td width="100%" valign="top"><p align="justify"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">&#160;</span></span></p>
+</td>
+</tr>
+<tr>
+<td width="100%" style="border: 0.0133333in solid" valign="top"><div align="justify">
+  <p><br>
+      <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt"></span></span><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt"><span style="font-weight: bold">PASO II</span></span></span>
+</p>
+  <p>&nbsp;  </p>
+</div>
+  <p align="justify" style="text-align: center"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">
+<span class="WPCharBoxWrapper" style="width: 585px; vertical-align: text-top"><span class="WPCharBox" style="border: none">
+<img src="sol267ped/03.gif" alt="03.gif" width="583" height="397" border="0"></span></span></span></span></p>
+  <p align="justify" style="text-align: center"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt"><span class="WPCharBoxWrapper" style="width: 585px; vertical-align: text-top"><span class="WPBoxCaption" style="text-align: center"><span style="font-size: 8pt"><span style="font-weight: bold">figura 3</span></span></span></span></span></span>
+  </p>
+  <div align="justify">
+    <p><br>
+        <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">Trazamos BF y CG, recordemos que FG es paralela a CB</span></span></p>
+    <p>&nbsp;
+        </p>
+  </div>
+  <p align="justify" style="text-align: center"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">
+<span class="WPCharBoxWrapper" style="width: 110px"><span class="WPCharBox" style="border: none">
+<img src="sol267ped/ole3.gif" alt="ole3.gif" width="108" height="18" border="0"></span></span>
+</span></span></p>
+<div align="justify">
+  <p><br>
+      <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">BCFG con A y <span style="font-size: 14pt">&#8734;</span> es un cuadril&aacute;tero completo. BF y CG son sus diagonales interiores. Los lados CF y GB se cortan en
+  A y las diagonales interiores en Q; entonces por las propiedades del cuadril&aacute;tero</span></span></p>
+  <p>&nbsp;
+  </p>
+</div>
+  <p align="justify" style="text-align: center"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">
+<span class="WPCharBoxWrapper" style="width: 502px"><span class="WPCharBox" style="border: none">
+<img src="sol267ped/ole4.gif" alt="ole4.gif" width="500" height="24" border="0"></span></span>
+</span></span></p>
+<div align="justify">
+  <p><br>
+      <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">AQ encuentra a BC en N; se cumple pues</span></span></p>
+  <p>&nbsp;
+  </p>
+</div>
+  <p align="justify" style="text-align: center"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">
+<span class="WPCharBoxWrapper" style="width: 437px"><span class="WPCharBox" style="border: none">
+<img src="sol267ped/ole5.gif" alt="ole5.gif" width="435" height="92" border="0"></span></span>
+</span></span></p>
+<div align="justify">
+  <p><br>
+      <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">De donde N es el punto medio de BC y por tanto</span></span></p>
+  <p>&nbsp;
+  </p>
+</div>
+  <p align="justify" style="text-align: center"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt"><span style="font-weight: bold">LA RECTA AQ COINCIDE CON LA MEDIANA POR A</span></span></span></p>
+  <p align="justify" style="text-align: center">&nbsp;</p></td>
+</tr>
+<tr>
+<td width="100%" valign="top"><p align="justify"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">&#160;</span></span></p>
+</td>
+</tr>
+<tr>
+<td width="100%" style="background-color: #808080; border: 0.0133333in solid" align="center" valign="top"><p align="center"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt"><span style="font-weight: bold">CONCLUSI&Oacute;N</span></span></span></p>
+</td>
+</tr>
+<tr>
+<td width="100%" valign="top"><p align="justify"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">&#160;</span></span></p>
+</td>
+</tr>
+<tr>
+<td width="100%" style="border: 0.0133333in solid" valign="top"><div align="justify">
+  <p><br>
+      <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt"></span></span><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">Hemos visto que M y N coinciden con el punto medio de BC, por lo tanto</span></span></p>
+  <p>&nbsp;
+  </p>
+</div>
+  <p align="justify" style="text-align: center"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">
+<span class="WPCharBoxWrapper" style="width: 585px; vertical-align: text-top"><span class="WPCharBox" style="border: none">
+<img src="sol267ped/04.gif" alt="04.gif" width="583" height="397" border="0"></span></span></span></span></p>
+  <p align="justify" style="text-align: center"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt"><span class="WPCharBoxWrapper" style="width: 585px; vertical-align: text-top"><span class="WPBoxCaption" style="text-align: center"><span style="font-size: 8pt"><span style="font-weight: bold">figura 4</span></span></span></span></span></span>
+<br>
+  </p>
+  <p align="justify" style="text-align: center"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">
+<span class="WPCharBoxWrapper" style="width: 382px"><span class="WPCharBox" style="border: none">
+<img src="sol267ped/ole6.gif" alt="ole6.gif" width="380" height="83" border="0"></span></span>
+</span></span></p>
+<div align="justify">
+  <p><br>
+      <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">Pero siguiendo el enunciado PQ es una de las diagonales del ex&aacute;gono. Podemos pues concluir que:</span></span></p>
+  <p>&nbsp;
+  </p>
+</div>
+  <p align="justify" style="text-align: center"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt"><span style="font-weight: bold">LAS TRES DIAGONALES DEL EX&Aacute;GONO SON LAS TRES MEDIANAS DEL TRI&Aacute;NGULO</span></span></span></p>
+<p align="justify" style="text-align: center"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt"><span style="font-weight: bold">Y POR TANTO SON CONCURRENTES EN EL BARICENTRO</span> </span></span></p>
+<p align="justify" style="text-align: center">&nbsp;</p></td>
+</tr>
+<tr>
+<td width="100%" valign="top"><p align="justify"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">&#160;</span></span></p>
+</td>
+</tr>
+<tr>
+<td width="100%" style="border: 0.0133333in solid" valign="top"><div align="justify">
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+</div>
+  <p align="justify" style="text-align: center"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt"></span></span><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">
+<span class="WPCharBoxWrapper" style="width: 585px; vertical-align: text-top"><span class="WPCharBox" style="border: none">
+<img src="sol267ped/05.gif" alt="05.gif" width="583" height="397" border="0"></span></span></span></span></p>
+  <p align="justify" style="text-align: center"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt"><span class="WPCharBoxWrapper" style="width: 585px; vertical-align: text-top"><span class="WPBoxCaption" style="text-align: center"><span style="font-size: 8pt"><span style="font-weight: bold">figura 5</span></span></span></span></span></span>
+  </p>
+  <div align="justify"><br>
+    <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">&#160;</span></span></div>
+  </td>
+</tr>
+</table>
+</div>
+</body>
+
+</html>

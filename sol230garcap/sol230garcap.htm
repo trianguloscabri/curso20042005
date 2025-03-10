@@ -1,0 +1,80 @@
+<title>trianguloscabri230</title> 
+
+
+<body bgcolor="#FFFFFF">
+<i></i> 
+<table width="100%" border="0">
+  <tr> 
+    <td height="32"> 
+      <h1>Problema 230 de <i>tri&aacute;nguloscabri</i></h1>
+      </td>
+  </tr>
+</table>
+<table width="100%" border="0">
+  <tr> 
+    <td bgcolor="#FFFF99" height="22"> 
+      <p class="Subsubtitle" align="left">189. Calcular la hipotenusa y cateto 
+        de un tri&aacute;ngulo rect&aacute;ngulo de per&iacute;metro 60 cms y 
+        tal que la altura del &aacute;ngulo recto mide 12 cms. </p>
+      </td>
+  </tr>
+  <tr> 
+    <td height="23"> 
+      <div align="right">
+        <p><font size="-1">Revista publicada por el instituto Jorge Juan de matem&aacute;ticas 
+          y la Real Sociedad Matem&aacute;tica Espa&ntilde;ola. </font><font size="-1">Propuesto 
+          por Maite Pe&ntilde;a Alcaraz.</font></p>
+      </div>
+    </td>
+  </tr>
+</table>
+<p><i>Soluci&oacute;n de <a href="http://garciacapitan.auna.com">Francisco Javier 
+  Garc&iacute;a Capit&aacute;n</a></i> </p>
+<p><b>Soluci&oacute;n num&eacute;rica</b>:</p>
+<div align="center"></div>
+<p><img src="sol230garcap.jpg" width="286" height="171" align="right">La altura 
+  relativa a la hipotenusa puede calcularse usando tri&aacute;ngulos semejantes 
+  y resulta como indica la figura de la derecha. Entonces, el problema se reduce 
+  a resolver el sistema:</p>
+<p><img src="ecuacion1.gif" width="101" height="77"></p>
+<div class=Section1>
+  <div class=Section1> 
+    <div align="left"> 
+      <p>Para ello, hacemos:<br>
+        <img src="ecuacion2.gif" width="222" height="98"> </p>
+      <p>Ahora, por ser <img src="ecuacion3.gif" width="128" height="18" align="absmiddle"> 
+        y <img src="ecuacion4.gif" width="114" height="18" align="absmiddle">, 
+        tendremos que <i>a</i> y <i>b</i> son las soluciones de la ecuaci&oacute;n 
+        <img src="ecuacion5.gif" width="122" height="21" align="absbottom">, es 
+        decir, los catetos son <i>a</i>=15 y <i>b</i>=20 o viceversa. </p>
+      <p><b>Soluci&oacute;n gr&aacute;fica</b>:</p>
+      <p><img src="230ii.jpg" width="391" height="342" align="right">Usamos que 
+        el semiper&iacute;metro s es la distancia del v&eacute;rtice C a los puntos 
+        de contacto <i>X</i> e <i>Y</i> de la circunferencia exinscrita correspondiente 
+        al v&eacute;rtice <i>C</i> con los lados <i>CA</i> y <i>CB</i>.</p>
+      <p>Entonces, en la figura ser&aacute; <i>CX</i>=<i>CY</i>=s. La distancia 
+        <i>CH</i> es dada, por lo que <i>H</i> estar&aacute; en una circunferencia 
+        de centro C y radio C<i>H</i>. </p>
+      <p>Por tanto, lo &uacute;nico que tenemos que hacer dados <i>s</i> y <i>CH</i> 
+        es dibujar el cuadrado <i>CXOY</i> de lado s, la circunferencia con centro 
+        <i>O</i> y radio <i>s</i>, la circunferencia con centro <i>C</i> y radio 
+        <i>CH</i>, y la tangente com&uacute;n a ambas circunferencias, que determinar&aacute; 
+        con los lados <i>CX</i> y <i>CY</i> los v&eacute;rtices del tri&aacute;ngulo 
+        buscado. </p>
+      <p>&nbsp;</p>
+      <p><i>Applet de CabriJava</i>: Puedes modificar el per&iacute;metro y la 
+        altura sobre la hipotenusa:</p>
+      <p align="center"><applet
+codebase="../."
+archive="CabriJava.jar"
+code="CabriJava.class"
+width=520 height=360>
+    <param name=file value="230ii.fig">
+    <param name=lang value="es">
+    <param name=border value=0>
+    <param name=bgcolor value=#FFFFCC>
+    <param name=controller value=true>
+  </applet></p>
+      </div>
+  </div>
+</div>

@@ -1,0 +1,287 @@
+(************** Content-type: application/mathematica **************
+                     CreatedBy='Mathematica 5.0'
+
+                    Mathematica-Compatible Notebook
+
+This notebook can be used with any Mathematica-compatible
+application, such as Mathematica, MathReader or Publicon. The data
+for the notebook starts with the line containing stars above.
+
+To get the notebook into a Mathematica-compatible application, do
+one of the following:
+
+* Save the data starting with the line of stars above into a file
+  with a name ending in .nb, then open the file inside the
+  application;
+
+* Copy the data starting with the line of stars above to the
+  clipboard, then use the Paste menu command inside the application.
+
+Data for notebooks contains only printable 7-bit ASCII and can be
+sent directly in email or through ftp in text mode.  Newlines can be
+CR, LF or CRLF (Unix, Macintosh or MS-DOS style).
+
+NOTE: If you modify the data for this notebook not in a Mathematica-
+compatible application, you must delete the line below containing
+the word CacheID, otherwise Mathematica-compatible applications may
+try to use invalid cache data.
+
+For more information on notebooks and Mathematica-compatible 
+applications, contact Wolfram Research:
+  web: http://www.wolfram.com
+  email: info@wolfram.com
+  phone: +1-217-398-0700 (U.S.)
+
+Notebook reader applications are available free of charge from 
+Wolfram Research.
+*******************************************************************)
+
+(*CacheID: 232*)
+
+
+(*NotebookFileLineBreakTest
+NotebookFileLineBreakTest*)
+(*NotebookOptionsPosition[      7858,        215]*)
+(*NotebookOutlinePosition[      8527,        238]*)
+(*  CellTagsIndexPosition[      8483,        234]*)
+(*WindowFrame->Normal*)
+
+
+
+Notebook[{
+Cell["\<\
+Para hallar la ecuaci\[OAcute]n de la elipse de los baricentros necesitamos \
+calcular puntos medios y baricentros:\
+\>", "Text"],
+
+Cell[BoxData[
+    \(\(PuntoMedio[{x1_, y1_}, {x2_, 
+            y2_}] := {\(x1 + x2\)\/2, \(y1 + y2\)\/2};\)\)], "Input"],
+
+Cell[BoxData[
+    \(\(Baricentro[{x1_, y1_}, {x2_, y2_}, {x3_, 
+            y3_}] := \[IndentingNewLine]{\(x1 + x2 + x3\)\/3, \(y1 + y2 + \
+y3\)\/3};\)\)], "Input"],
+
+Cell["\<\
+Tambi\[EAcute]n usaremos la f\[OAcute]rmula de una c\[OAcute]nica que pasa \
+por cinco puntos:\
+\>", "Text"],
+
+Cell[BoxData[
+    RowBox[{
+      RowBox[{\(ConicaCincoPuntos[{x1_, y1_}, {x2_, y2_}, {x3_, 
+            y3_}, \[IndentingNewLine]{x4_, y4_}, {x5_, y5_}]\), " ", ":=", 
+        "\[IndentingNewLine]", 
+        RowBox[{"Det", "[", 
+          RowBox[{"(", GridBox[{
+                {\(x\^2\), \(x\ y\), \(y\^2\), \(\(x\)\(\ \)\), \(\(y\)\(\ \)\
+\), "1"},
+                {\(x1\^2\), \(x1\ y1\), \(y1\^2\), \(\(x1\)\(\ \)\), \(\(y1\)\
+\(\ \)\), "1"},
+                {\(x2\^2\), \(x2\ y2\), \(y2\^2\), \(\(x2\)\(\ \)\), \(\(y2\)\
+\(\ \)\), "1"},
+                {\(x3\^2\), \(x3\ y3\), \(y3\^2\), \(\(x3\)\(\ \)\), \(\(y3\)\
+\(\ \)\), "1"},
+                {\(x4\^2\), \(x4\ y4\), \(y4\^2\), \(\(x4\)\(\ \)\), \(\(y4\)\
+\(\ \)\), "1"},
+                {\(x5\^2\), \(x5\ y5\), \(y5\^2\), \(\(x5\)\(\ \)\), \(\(y5\)\
+\(\ \)\), "1"}
+                }], ")"}], "]"}]}], ";"}]], "Input"],
+
+Cell["\<\
+Ahora podemos calcular la ecuaci\[OAcute]n de la elipse de los baricentros\
+\>", "Text"],
+
+Cell[BoxData[
+    \(\(ElipseBaricentros[p1_, p2_, 
+          p3_]\  := \[IndentingNewLine]Module[{m1, m2, m3, g, g1, g2, g3, g4, 
+            g5, g6}, \[IndentingNewLine]{m1\  := \ \ PuntoMedio[p2, 
+                p3]; \[IndentingNewLine]m2\  := \ \ PuntoMedio[p3, 
+                p1]; \[IndentingNewLine]m3\  := \ \ PuntoMedio[p1, 
+                p2]; \[IndentingNewLine]g\ \ \ \  := \ \ Baricentro[p1, p2, 
+                p3]; \[IndentingNewLine]g1\  := \ \ Baricentro[g, \ p1, \ 
+                m3]; \[IndentingNewLine]g2\  := \ \ Baricentro[g, p1, \ 
+                m2]; \[IndentingNewLine]g3\  := \ \ Baricentro[g, \ p2, \ 
+                m1]; \[IndentingNewLine]g4\  := \ \ Baricentro[g, p2, \ 
+                m3]; \[IndentingNewLine]g5\  := \ \ Baricentro[g, \ p3, \ 
+                m1]; \[IndentingNewLine]g6\  := \ \ Baricentro[g, p3, \ 
+                m2]; \[IndentingNewLine]ConicaCincoPuntos[g2, g3, g4, g5, 
+              g6]\[IndentingNewLine]\ }];\)\)], "Input"],
+
+Cell["La aplicamos al tri\[AAcute]ngulo de v\[EAcute]rtices {-1,0}, {1,0} y \
+{u,v}", "Text"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Factor[ElipseBaricentros[{\(-1\), 0}, {1, 0}, {u, v}]]\)], "Input"],
+
+Cell[BoxData[
+    \({\(-\(\(v\^2\ \((2\ v\^2 + 27\ v\^2\ x\^2 - 54\ v\ y - 54\ u\ v\ x\ y + 
+                  81\ y\^2 + 27\ u\^2\ y\^2)\)\)\/8748\)\)}\)], "Output"]
+}, Open  ]],
+
+Cell["\<\
+Calculamos el circuncentro del tri\[AAcute]ngulo de v\[EAcute]rtices {-1,0}, \
+{1,0} y {u,v}\
+\>", "Text"],
+
+Cell[BoxData[
+    \(\(Mediatriz[{x1_, y1_}, {x2_, 
+            y2_}]\  := \[IndentingNewLine]\((x1 - 
+                  x2)\) \((x - \(x1 + x2\)\/2)\)\  + \ \((y1 - 
+                  y2)\) \((y - \(y1 + y2\)\/2)\) \[Equal] 0;\)\)], "Input"],
+
+Cell[BoxData[
+    \(\(Circuncentro[p1_, p2_, 
+          p3_]\  := \ \(Solve[\[IndentingNewLine]{Mediatriz[p1, p2], 
+              Mediatriz[p1, p3]}, {x, y}]\)[\([1]\)];\)\)], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Circuncentro[{\(-1\), 0}, {1, 0}, {u, v}]\)], "Input"],
+
+Cell[BoxData[
+    \({y \[Rule] \(-\(\(1 - u\^2 - v\^2\)\/\(2\ v\)\)\), 
+      x \[Rule] 0}\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(\(\(Factor[
+      ElipseBaricentros[{\(-1\), 0}, {1, 0}, {u, 
+            v}]\  /. \[IndentingNewLine]Circuncentro[{\(-1\), 0}, {1, 0}, {u, 
+            v}]]\)\(\ \)\)\)], "Input"],
+
+Cell[BoxData[
+    \({\(\(-81\) + 135\ u\^2 - 27\ u\^4 - 27\ u\^6 + 54\ v\^2 - 54\ u\^4\ \
+v\^2 + 19\ v\^4 - 27\ u\^2\ v\^4\)\/34992}\)], "Output"]
+}, Open  ]],
+
+Cell[BoxData[
+    \(\(Altura[{x1_, y1_}, {x2_, y2_}, {x3_, 
+            y3_}]\  := \[IndentingNewLine]\((x2 - x3)\) \((x - 
+                  x1)\)\  + \ \((y2 - y3)\) \((y - y1)\) \[Equal] 
+          0;\)\)], "Input"],
+
+Cell[BoxData[
+    \(\(Ortocentro[p1_, p2_, 
+          p3_]\  := \ \(Solve[\[IndentingNewLine]{Altura[p1, p2, p3], 
+              Altura[p2, p3, p1]}, {x, y}]\)[\([1]\)];\)\)], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(\(\(Factor[
+      ElipseBaricentros[{\(-1\), 0}, {1, 0}, {u, 
+            v}]\  /. \[IndentingNewLine]Ortocentro[{\(-1\), 0}, {1, 0}, {u, 
+            v}]]\)\(\ \)\)\)], "Input"],
+
+Cell[BoxData[
+    \({\(\(-81\) + 135\ u\^2 - 27\ u\^4 - 27\ u\^6 + 54\ v\^2 - 54\ u\^4\ \
+v\^2 - 2\ v\^4 - 27\ u\^2\ v\^4\)\/8748}\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(\(\(\(\(DeBaricentricasACartesianas[{u_, v_, 
+          w_}, \[IndentingNewLine]{xA_, yA_}, {xB_, yB_}, {xC_, yC_}] := 
+      Factor[{x -> \(u\ xA + v\ xB + w\ xC\)\/\(u + v + w\), 
+            y -> \(u\ yA + v\ yB + w\ yC\)\/\(u + v + w\)} \
+/. \[IndentingNewLine]{a \[Rule] \@\(\((xB - xC)\)\^2 + \((yB - yC)\)\^2\), \
+\[IndentingNewLine]b \[Rule] \@\(\((xC - xA)\)\^2 + \((yC - yA)\)\^2\), \
+\[IndentingNewLine]c \[Rule] \@\(\((xA - xB)\)\^2 + \((yA - yB)\)\^2\)}]\)\(\
+\[IndentingNewLine]\)
+    \)\[IndentingNewLine]
+    \(\(Incentro[ptA_, ptB_, ptC_]\  := 
+        DeBaricentricasACartesianas[\[IndentingNewLine]{a, b, c}, ptA, ptB, 
+          ptC];\)\(\[IndentingNewLine]\)
+    \)\[IndentingNewLine]
+    Factor[
+      ElipseBaricentros[{\(-1\), 0}, {1, 0}, {u, 
+            v}]\  /. \[IndentingNewLine]Incentro[{\(-1\), 0}, {1, 0}, {u, 
+            v}]]\)\(\ \)\)\)], "Input"],
+
+Cell[BoxData[
+    \({\(v\^4\ \((\(-87\) - 29\ u\^2 - 29\ v\^2 + 50\ \@\(1 - 2\ u + u\^2 + v\
+\^2\) + 50\ \@\(\((1 + u)\)\^2 + v\^2\) + 25\ \@\(1 - 2\ u + u\^2 + v\^2\)\ \
+\@\(\((1 + u)\)\^2 + v\^2\))\)\)\/\(4374\ \((2 + \@\(1 - 2\ u + u\^2 + v\^2\) \
++ \@\(\((1 + u)\)\^2 + v\^2\))\)\^2\)}\)], "Output"]
+}, Open  ]]
+},
+FrontEndVersion->"5.0 for Microsoft Windows",
+ScreenRectangle->{{0, 800}, {0, 527}},
+WindowSize->{792, 500},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+CellLabelAutoDelete->True
+]
+
+(*******************************************************************
+Cached data follows.  If you edit this Notebook file directly, not
+using Mathematica, you must remove the line containing CacheID at
+the top of  the file.  The cache data will then be recreated when
+you save this file from within Mathematica.
+*******************************************************************)
+
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+
+(*NotebookFileOutline
+Notebook[{
+Cell[1754, 51, 139, 3, 33, "Text"],
+Cell[1896, 56, 121, 2, 42, "Input"],
+Cell[2020, 60, 164, 3, 63, "Input"],
+Cell[2187, 65, 118, 3, 33, "Text"],
+Cell[2308, 70, 877, 19, 174, "Input"],
+Cell[3188, 91, 98, 2, 33, "Text"],
+Cell[3289, 95, 987, 14, 290, "Input"],
+Cell[4279, 111, 93, 1, 33, "Text"],
+
+Cell[CellGroupData[{
+Cell[4397, 116, 87, 1, 30, "Input"],
+Cell[4487, 119, 166, 2, 45, "Output"]
+}, Open  ]],
+Cell[4668, 124, 116, 3, 33, "Text"],
+Cell[4787, 129, 241, 4, 63, "Input"],
+Cell[5031, 135, 184, 3, 50, "Input"],
+
+Cell[CellGroupData[{
+Cell[5240, 142, 74, 1, 30, "Input"],
+Cell[5317, 145, 104, 2, 45, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[5458, 152, 200, 4, 50, "Input"],
+Cell[5661, 158, 146, 2, 45, "Output"]
+}, Open  ]],
+Cell[5822, 163, 218, 4, 50, "Input"],
+Cell[6043, 169, 184, 3, 50, "Input"],
+
+Cell[CellGroupData[{
+Cell[6252, 176, 198, 4, 50, "Input"],
+Cell[6453, 182, 144, 2, 45, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[6634, 189, 902, 17, 275, "Input"],
+Cell[7539, 208, 303, 4, 58, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+
+
+(*******************************************************************
+End of Mathematica Notebook file.
+*******************************************************************)
+

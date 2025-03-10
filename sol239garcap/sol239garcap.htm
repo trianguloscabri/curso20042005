@@ -1,0 +1,148 @@
+<title>trianguloscabri239</title> 
+
+
+<body bgcolor="#FFFFFF">
+<table width="100%" border="0">
+  <tr> 
+    <td height="2"> 
+      <h1><font face="Verdana, Arial, Helvetica, sans-serif">Problema 239 de <i>tri&aacute;nguloscabri</i></font></h1>
+    </td>
+  </tr>
+</table>
+<table width="100%" border="0">
+  <tr> 
+    <td bgcolor="#FFFF99" height="103"> En el tri&aacute;ngulo <i>ABC</i> con 
+      inc&iacute;rculo (<i>I</i>, <i>r</i>) y circunc&iacute;rculo (<i>O</i>, 
+      <i>R</i>). 
+      <p>Un c&iacute;rculo tangente externamente opuesto al vertice <i>A</i>, 
+        es tangente al circunc<i>i</i>rculo y <i>AB</i>, <i>AC</i> en <i>A</i><sub>1</sub>,<i> 
+        D</i>, <i>E</i>. De manera similar para el v&eacute;rtice <i>B</i> tenemos 
+        puntos de tangencia <i>B</i><sub>1</sub>, <i>F</i>, <i>G</i> con el circunc&iacute;rculo 
+        y <i>AB</i>, <i>BC</i>, y para el v&eacute;rtice <i>C</i> tenemos puntos 
+        de tangencia <i>C</i><sub>1</sub>, <i>M</i>, <i>N</i> con el circuncirculo 
+        y <i>AC</i>, <i>BC</i>. Adem&aacute;s las rectas <i>DE</i>, <i>FG</i>, 
+        <i>MN</i> conforman el tri&aacute;ngulo <i>XYZ</i>. Probar que: </p>
+      <ol>
+        <li><i>I</i> es el circuncentro de <i>XYZ</i>.</li>
+        <li> [XYZ]/[ABC]=8R/r (donde [<i>XYZ</i>]=area de <i>XYZ</i>)</li>
+      </ol>
+    </td>
+  </tr>
+  <tr> 
+    <td height="12"> 
+      <div align="right"> 
+        <p><font size="-1">Propuesto por Juan Carlos Salazar.</font></p>
+      </div>
+    </td>
+  </tr>
+</table>
+<p><img src="239a.jpg" width="340" height="390" align="right"><font face="Verdana, Arial, Helvetica, sans-serif"><i>Soluci&oacute;n 
+  de <a href="http://garciacapitan.auna.com">Francisco Javier Garc&iacute;a Capit&aacute;n</a></i> 
+  </font></p>
+<p>La figura muestra la manera de construir la circunferencia referida al v&eacute;rtice 
+  <i>A</i>, usando la inversi&oacute;n. </p>
+<p>Consideramos una inversi&oacute;n con centro <i>A</i> y radio <i>R</i>. La 
+  circunferencia circunscrita a ABC pasa por el centro de inversi&oacute;n, por 
+  lo que se transformar&aacute; en una recta, concretamente la recta que pasa 
+  por los puntos de intersecci&oacute;n de ambas. En la figura, esta recta corta 
+  a los lados AB y AC en los puntos <i>U</i> y <i>V</i>. </p>
+<p>La inversi&oacute;n deja fijas las rectas <i>AB</i> y <i>AC</i>, por lo que 
+  la circunferencia buscada se invertir&aacute; en la circunferencia inscrita 
+  al tri&aacute;ngulo <i>AUV</i>. Adem&aacute;s, <i>B</i> y <i>C</i> son los inversos 
+  de <i>U</i> y <i>V</i>, por lo que los tri&aacute;ngulos <i>AUV</i> y <i>ACB</i> 
+  son semejantes. </p>
+<p>De <i>AU</i>&middot;<i>AB</i>=R<sup>2</sup>, resulta que <i>AU</i>=<i>R</i><sup>2</sup>/c. 
+  La raz&oacute;n de semejanza entre los <i>AUV</i> y <i>ACB</i> es entonces <i>R</i><sup>2</sup>/<i>bc</i>, 
+  por<i> </i> lo que tendremos tambi&eacute;n <i>AV</i>=<i>R</i><sup>2</sup>/<i>b</i> 
+  y <i>UV</i>=<i>aR</i><sup>2</sup>/<i>bc</i>.</p>
+<p>Los puntos <i>D</i> y <i>E</i> ser&aacute;n los inversos de los puntos de conctacto 
+  <i>S</i> y <i>T</i> de la circunferencia inscrita a <i>AUV</i> con los lados 
+  <i>AB</i> y <i>AC</i>, respectivamente. Llamando s al semiper&iacute;metro del 
+  tri&aacute;ngulo <i>ABC</i>, sabemos que <i>s</i>-<i>a</i> es la distancia del 
+  v&eacute;rtice <i>A</i> a los punto de contacto de su circunferencia inscrita 
+  con los lados <i>AB</i> y <i>AC</i>, y aplicando la semejanza de los tri&aacute;ngulos 
+  <i>AUV</i> y <i>ACB</i> tendremos <i>AS</i> = <i>AT</i> =(<i>s</i>-<i>a</i>) 
+  <i>R</i><sup>2</sup>/<i>bc</i>. </p>
+<p>Como hemos dicho <i>D</i> y <i>E</i> ser&aacute;n los inversos de los puntos 
+  de conctacto <i>S</i> y <i>T</i>. Entonces <i>AS</i>&middot;<i>AD</i>=R<sup>2</sup>, 
+  de donde <i>AD</i>=<i>bc</i>/(<i>s</i>-<i>a</i>), y el mismo valor se obtiene 
+  para <i>AE</i>.</p>
+<p align="left">Tenemos:</p>
+<p align="center"><img src="ecuacion1.gif" width="421" height="88"></p>
+<p>An&aacute;logamente, se cumplen las relaciones:</p>
+<table width="100%" border="0">
+  <tr> 
+    <td width="98%"> 
+      <div align="center"><img src="ecuacion2.gif" width="457" height="41"></div>
+    </td>
+    <td width="2%">(1)</td>
+  </tr>
+</table>
+<p>Ahora, teniendo en cuenta estas f&oacute;rmulas para el &aacute;rea del tri&aacute;ngulo 
+  <i>ABC</i>, </p>
+<p align="center"><img src="ecuacion3.gif" width="173" height="92"></p>
+<p align="left">podemos expresar</p>
+<table width="100%" border="0">
+  <tr> 
+    <td width="98%"> 
+      <div align="center"><img src="ecuacion4.gif" width="442" height="90"></div>
+    </td>
+    <td width="2%">(2)</td>
+  </tr>
+</table>
+<p align="center">&nbsp;</p>
+<p align="left"><img src="239b.jpg" width="454" height="438" align="right">Teniendo 
+  en cuenta las relaciones de (1) podemos expresar f&aacute;cilmente las coordenadas 
+  de los puntos que intervienen en el problema.</p>
+<p align="left"><img src="index_6.gif" width="106" height="18"><br>
+  <img src="index_7.gif" width="133" height="18"> <br>
+  <img src="index_8.gif" width="133" height="18"> <br>
+  <img src="index_9.gif" width="132" height="18"> <br>
+  <img src="index_10.gif" width="132" height="18"> <br>
+  <img src="index_12.gif" width="133" height="18"> <br>
+  <img src="index_11.gif" width="133" height="18"> <br>
+</p>
+<p align="left">Ahora hallamos las rectas que los unen:<br>
+  <img src="index_13.gif" width="152" height="18"><br>
+  <img src="index_14.gif" width="152" height="18"> <br>
+  <img src="index_15.gif" width="152" height="18"> </p>
+<p align="left">y los puntos donde se cortan estas rectas:<br>
+  <img src="index_16.gif" width="161" height="18"> <br>
+  <img src="index_17.gif" width="161" height="18"> <br>
+  <img src="index_18.gif" width="158" height="18"></p>
+<p align="left">Una vez calculado todo lo necesario comprobamos que se cumplen 
+  las afirmaciones del enunciado:</p>
+<p align="left">En primer lugar, los v&eacute;rtices <i>X</i>, <i>Y</i>, <i>Z</i> 
+  est&aacute;n a la misma distancia de <i>I</i>:<br>
+  <img src="index_19.gif" width="250" height="18"><br>
+  <img src="index_20.gif" width="250" height="18"><br>
+  <img src="index_21.gif" width="250" height="18"> <br>
+  <img src="index_22.gif" width="269" height="35"> <br>
+  <img src="index_23.gif" width="269" height="35"> <br>
+  <img src="index_24.gif" width="269" height="35"> </p>
+<p align="left">El &aacute;rea de XYZ (considerando al &aacute;rea de ABC como 
+  unidad) es 8 veces el cociente <i>R</i>/<i>r</i> que hemos expresado en (2):<img src="index_25.gif" width="192" height="18"><br>
+  <img src="index_26.gif" width="206" height="32"> <br>
+  <br>
+  Nos cuesta poco comprobar que los tri&aacute;ngulos <i>XYZ</i> y <i>ABC</i> 
+son perspectivos. </p>
+<p align="left"><img src="index_27.gif" width="441" height="105"><br>
+</p>
+<p align="left">Tambi&eacute;n podemos hallar el punto de intersecci&oacute;n 
+  de <i>AX</i>, <i>BY</i> y <i>CZ</i>, y comprobar que <font color="#FF0000">no 
+  est&aacute;</font> en la <a href="http://faculty.evansville.edu/ck6/encyclopedia/">enciclopedia 
+  de Clark Kimberling</a>:</p>
+<p align="left"><img src="index_28.gif" width="514" height="118"> </p>
+<p align="center"><img src="kimberling.jpg" width="375" height="203"></p>
+<p align="left">A continuaci&oacute;n siguen las funciones de <i>Mathematica</i> 
+  que hemos definido y usado para hacer este problema (el c&oacute;digo fuente 
+  de todas ellas puede descargarse <a href="239.nb">aqu&iacute;</a>):</p>
+<p align="left"><img src="index_1.gif" width="432" height="30"></p>
+<p align="left"><br>
+  <img src="index_2.gif" width="427" height="50"> </p>
+<p align="left"><br>
+  <img src="index_3.gif" width="415" height="33"> </p>
+<p align="left"><br>
+  <img src="index_4.gif" width="662" height="53"> </p>
+<p align="left"><br>
+  <img src="index_5.gif" width="396" height="68"> </p>

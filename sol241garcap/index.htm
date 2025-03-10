@@ -1,0 +1,85 @@
+<title>trianguloscabri241</title> 
+
+
+<body bgcolor="#FFFFFF">
+<table width="100%" border="0">
+  <tr> 
+    <td height="2"> 
+      <h1><font face="Verdana, Arial, Helvetica, sans-serif">Problema 241 de <i>tri&aacute;nguloscabri</i></font></h1>
+    </td>
+  </tr>
+</table>
+<table width="100%" border="0">
+  <tr> 
+    <td bgcolor="#FFFF99" height="22"> <b>432</b>. Construir un tri&aacute;ngulo 
+      rect&aacute;ngulo conociendo la hipotenusa <i>a</i> y la bisectriz del &aacute;ngulo 
+      <i>B</i>. 
+      <p></p>
+      
+    </td>
+  </tr>
+  <tr> 
+    <td height="12"> 
+      <div align="right"> 
+        <p><font size="-1">Problemas Gr&aacute;ficos de Geometr&iacute;a. Juan 
+          Sapi&ntilde;a Borja. Propuesto por Jose Mar&iacute;a Pedret.</font></p>
+      </div>
+    </td>
+  </tr>
+</table>
+<p><font face="Verdana, Arial, Helvetica, sans-serif"><i>Soluci&oacute;n de <a href="http://garciacapitan.auna.com">Francisco 
+  Javier Garc&iacute;a Capit&aacute;n</a></i> </font></p>
+<p><i>An&aacute;lisis</i>: </p>
+<p>Si en la f&oacute;rmula general de la bisectriz del &aacute;ngulo <i>B</i>:</p>
+<p align="center"><img src="formula1.gif" width="176" height="62"></p>
+<p>sustituimos <img src="formula2.gif" width="94" height="26" align="absmiddle"> 
+  llegamos f&aacute;cilmente a la relaci&oacute;n:</p>
+<p align="center"><img src="formula3.gif" width="88" height="50"></p>
+<p align="left">es decir, el lado c debe ser soluci&oacute;n de la ecuaci&oacute;n 
+  de segundo grado: </p>
+<p align="center"><img src="formula4.gif" width="162" height="28"></p>
+<p align="left">Las soluciones de esta ecuaci&oacute;n ser&aacute;n dos longitudes<img src="formula5.gif" width="16" height="25" align="absmiddle"> 
+  (positiva, la que nos interesa) y <img src="formula6.gif" width="18" height="25" align="absmiddle"> 
+  (negativa) tales que</p>
+<p align="center"><img src="formula7.gif" width="110" height="105"></p>
+<p align="left">Para obtener tales longitudes existe un procedimiento general. 
+  Este procedimiento puede encontrarse, por ejemplo, en Geometr&iacute;a Superior 
+  de Bru&ntilde;o (17&ordf; edici&oacute;n, p&aacute;gina 261). </p>
+<p align="left">En primer lugar debemos construir un segmento que tenga por longitud 
+  la mitad de la suma deseada para <img src="formula5.gif" width="16" height="25" align="absmiddle"> 
+  y <img src="formula6.gif" width="18" height="25" align="absmiddle">, es decir 
+</p>
+<p align="center"><img src="formula8.gif" width="32" height="50"></p>
+<p align="left"><img src="432a.jpg" width="352" height="191" align="right">Para 
+  ello, dibujamos un tri&aacute;ngulo rect&aacute;ngulo <i>BUV</i> rect&aacute;ngulo 
+  en <i>U</i> con hipotenusa <i>BC</i>=<i>a</i> y <img src="formula9.gif" width="73" height="25" align="absmiddle"> 
+  Los tri&aacute;ngulos semejantes <i>BUV</i> y <i>BCU</i> nos dan</p>
+<p align="center"> <img src="formula10.gif" width="238" height="50"></p>
+<p align="left">Por tanto, dividiendo el segmento <i>BV</i> en cuatro partes, 
+  obtendremos un punto <i>M</i> tal que <img src="formula11.gif" width="81" height="50" align="absmiddle"></p>
+<p align="left"><img src="432b.jpg" width="497" height="284" align="right">Ahora 
+  debemos buscar dos n&uacute;meros <i>m</i> y <i>n</i> cualesquiera tales que 
+  <img src="formula12.gif" width="97" height="49" align="absmiddle"> por ejemplo 
+  nosotros elegimos:</p>
+<p align="center"><img src="formula13.gif" width="144" height="46"></p>
+<p align="left">Representamos estos valores en una recta perpendicular a BM, tomando 
+  como origen el punto B. Como los valores son opuestos, los representamos en 
+  sentidos opuestos: <i>BR</i>=<i>m</i>, <i>BS</i>=<i>n</i>. </p>
+<p align="left">Ahora obtenemos el punto medio <i>N</i> de <i>RS</i> y hallamos 
+  la intersecci&oacute;n <i>W</i> de las perpendiculares a <i>BM</i> por <i>M</i> 
+  y a <i>BN</i> por <i>N</i>.</p>
+<p align="left">Con centro en <i>W</i> trazamos la circunferencia que pasa por 
+  <i>R</i> y <i>S</i>, que determinar&aacute; los puntos <i>P</i> y <i>Q</i> sobre 
+  el eje <i>BM</i>. </p>
+<p align="left">Los segmentos <i>BP</i> y <i>BQ</i> son las soluciones buscadas. 
+  A nosotros nos interesa <i>BP</i>, que ser&aacute; el lado <i>c</i> del tri&aacute;ngulo 
+  rect&aacute;ngulo que ped&iacute;a el enunciado. Trazando una circunferencia 
+  con centro <i>B</i> y radio <i>BP</i>, &eacute;sta cortar&aacute; a la circunferencia 
+  con di&aacute;metro <i>BC</i> en v&eacute;rtice <i>A</i> del tri&aacute;ngulo 
+  buscado.</p>
+<table width="10%" border="0" cellpadding="0" align="center">
+  <tr> 
+    <td><img src="432.jpg" width="586" height="408"></td>
+  </tr>
+</table>
+<div class=Section1></div>

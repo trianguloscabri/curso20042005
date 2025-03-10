@@ -1,0 +1,50 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<link rel=Edit-Time-Data href="sol254garcap_archivos/editdata.mso">
+<title>trianguloscabri254</title>
+<style>
+<!--
+.Section1
+	{page:Section1;}
+.Estilo1 {color: #FFFFFF}
+-->
+</style>
+</head>
+<body bgcolor=#FFFFFF link=blue vlink=blue class="Normal" lang=ES> 
+<div class=Section1> 
+  <h1>Problema 254 de <i>triánguloscabri</i> </h1> 
+  <table border=0 cellpadding=0 width="100%"> 
+    <tr> 
+      <td bgcolor="#FFFF99" class="Normal"> <p>Construir un triángulo dados un lado <i>a</i>, el radio <i>R</i> de la circunferencia circunscrita y la distancia <i>e</i> entre el punto de intersección de sus alturas y el centro de dicha circunferencia. </p></td> 
+    </tr> 
+    <tr> 
+      <td class="Normal"> <p align=right style='text-align:right'><span style='font-size:10.0pt'>Instituto Jorge Juan. Propuesto por Maite Peña Alcaraz</span></p></td> 
+    </tr> 
+  </table> 
+  <p><i><span style='font-family:Verdana'>Solución de <a
+href="http://garciacapitan.auna.com">Francisco Javier García Capitán</a></span></i><span
+style='font-family:Verdana'> </span></p> 
+  <p><img width=473 height=285 src=sol254garcap.jpg
+align=right v:shapes="_x0000_s1026">Recordemos que la circunferencia de los nueve puntos del triángulo tiene su centro <i>N</i> en el punto medio del segmento <i>OH</i> y que su radio es la mitad del de la circunferencia circunscrita al triángulo. </p> 
+  <p>Si tenemos en cuenta que la circunferencia de los nueve puntos pasa por el punto medio <i>M</i> del lado dado, su centro estará en una circunferencia de centro <i>M</i> y radio <i>R</i>/2 y por tanto el ortocentro <i>H</i> estará en la circunferencia (<i>Q</i>) resultante de aplicar a dicha circunferencia una homotecia de centro <i>O</i> y razón 2. </p> 
+  <p>El ortocentro <i>H</i> también estará en la circunferencia con centro <i>O</i> y radio <i>OH</i>, que es dado.</p> 
+  <p>Por tanto podemos obtener <i>H</i> como intersección de las dos circunferencias. </p> 
+  <p>El centro <i>Q</i> de una de las circunferencias necesarias podemos hallarlo directamente como el punto simétrico de <i>O</i> respecto del lado <i>BC</i>, por lo que la construcción quedaría simplificada:</p> 
+  <ol start=1 type=1> 
+    <li>Fijamos un punto <i>O</i> y trazamos una circunferencia con centro <i>O</i> y radio <i>R</i>.</li> 
+    <li>Sobre un punto cualquiera <i>B</i> de esta circunferencia trazamos un arco de radio <i>BC</i>=<i>a</i> (siendo <i>a</i> el lado dado), que determinará el vértice <i>B</i>.</li> 
+    <li>Hallamos el punto simétrico <i>Q</i> de <i>O</i> respecto de <i>BC</i>.</li> 
+    <li>Trazamos la circunferencia con centro Q que pasa por <i>B</i> (o <i>C</i>), que tendrá radio <i>R</i>.</li> 
+    <li>Trazamos la circunferencia con centro <i>O</i> y radio <i>OH</i>.</li> 
+    <li>Obtenemos <i>H</i> como intersección de estas dos circunferencias.</li> 
+  </ol> 
+  <applet code="CabriJava.class" width="775" height="522" align="bottom" ARCHIVE="CabriJava.jar"> 
+    <PARAM NAME=file VALUE="sol254garcap.fig"> 
+    <PARAM NAME=lang VALUE="ca"> 
+    <PARAM NAME=bgcolor VALUE="#CCCCCC"> 
+    <PARAM NAME=yposition VALUE="90"> 
+  </applet> 
+<span class="Estilo1"></span></div> 
+</body>
+</html>

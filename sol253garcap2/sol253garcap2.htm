@@ -1,0 +1,195 @@
+<title>trianguloscabri253</title> 
+
+
+<body bgcolor="#FFFFFF">
+<h1>Problema 253 de <i>tri&aacute;nguloscabri</i> </h1>
+<table width="100%" border="0">
+  <tr> 
+    <td bgcolor="#FFFF99" height="41"> 
+      <div class=Section1> 
+        <p> Los excírculos (<i>I<sub>a</sub></i>), (<i>I<sub>b</sub></i>), (<i>I<sub>c</sub></i>) 
+          determinan con el círculo de los nueve puntos (centro <i>N</i>, radio 
+          <font face="Symbol">r</font>) del triángulo <i>ABC</i> los puntos de 
+          tangencia <i>X</i>, <i>Y</i>, <i>Z</i> respectivamente. Además (<i>D</i>, 
+          <i>E</i>),(<i>K</i>, <i>J</i>),(<i>M</i>, <i>L</i>) son los puntos de 
+          tangencia sobre (<i>AB</i>, <i>AC</i>), (<i>BA</i>, <i>BC</i>), (<i>CB</i>, 
+          <i>CA</i>) con los excírculos (<i>I<sub>a</sub></i>), (<i>I<sub>b</sub></i>), 
+          (<i>I<sub>c</sub></i>) respectivamente. Probar que: </p>
+      </div>
+      <ol>
+        <li><i>AX</i>, <i>BY</i>, <i>CZ</i> son concurrentes en <i>P</i>. </li>
+        <li>La perspectriz de los triángulos <i>ABC</i> y <i>XYZ</i> es la recta 
+          de Monge de los tres exc&iacute;rculos. </li>
+        <li><i>P</i> es colineal con (<i>N</i>) y el incentro (<i>I</i>). Además 
+          se cumple: <i>IP</i> : <i>PN</i> = <i>r</i> : <font face="Symbol">r</font>. 
+        </li>
+        <li><i>XE &middot;</i><i>YK</i><i> &middot;</i><i>ZM</i> = <i>XD</i><i> 
+          &middot;</i><i>YJ &middot;</i><i>ZL</i></li>
+      </ol>
+    </td>
+  </tr>
+  <tr> 
+    <td height="21"> 
+      <div align="right"> 
+        <p><font size="-1">Propuesto por Juan Carlos Salazar</font></p>
+      </div>
+    </td>
+  </tr>
+</table>
+<p><font face="Verdana, Arial, Helvetica, sans-serif"><i>Soluci&oacute;n de <a href="http://garciacapitan.auna.com">Francisco 
+  Javier Garc&iacute;a Capit&aacute;n</a></i><br>
+  </font></p>
+<h2 align="left">El teorema de las tres circunferencias de Monge</h2>
+<table width="90%" border="0" align="center" bordercolor="#FFFFCC">
+  <tr>
+    <td bgcolor="#FFFF99" height="101"> 
+      <p align="left">Dadas tres circunferencias se cumplen:</p>
+      <ul>
+        <li>Los centros de semejanza directos de cada pareja de cirunferencias 
+          est&aacute;n alineados.</li>
+        <li>Los centros de semejanza inversos de dos parejas de circunferencias 
+          y el centro de semejanza directo de la pareja restante est&aacute;n 
+          alineados.</li>
+      </ul>
+      </td>
+  </tr>
+</table>
+<p align="left">Como consecuencia, los seis centros de semejanza est&aacute;n 
+  alineados tres a tres en cuatro rectas:</p>
+<p align="center"><img src="monge1.jpg" width="474" height="375"></p>
+<p align="left">&nbsp;</p>
+<p align="left">La demostraci&oacute;n para el caso de los tres centros de semejanza 
+  directos usando el teorema de Desargues que reproducimos aqu&iacute; est&aacute; 
+  tomada de la web de <a href="http://www.cut-the-knot.com/Curriculum/Geometry/MongeTheorem.shtml">Alexander 
+  Bogomolny</a>. Considerando el tri&aacute;ngulo <i>A'B'C'</i> formado por las 
+  tangentes exteriores, resulta que <i>AA'</i>, <i>BB'</i> y <i>CC'</i> son sus 
+  bisectrices interiores, por lo que se cortar&aacute;n en un punto, el incentro 
+  de <i>A'B'C'</i>. Por tanto, seg&uacute;n el teorema de Desargues, los puntos 
+  de intersecci&oacute;n de <i>AB</i> y <i>A'B'</i>, <i>BC</i> y <i>B'C'</i>, 
+  y <i>CA</i> y <i>C'A'</i> estar&aacute;n alineados.</p>
+<p align="center"><img src="monge2.jpg" width="551" height="453"></p>
+<p align="left">La demostraci&oacute;n original de Monge usa el espacio tridimensional. 
+  (Puede encontrarse en el &sect;32. &quot;The Tangency Problem of Apollonius&quot;, 
+  en H. D&ouml;rrie: <i><a href="http://www.amazon.com/exec/obidos/ASIN/0486613488/">100 
+  Great Problems of Elementary Mathematics, their history and solution</a></i>) 
+  y la reproducimos aqu&iacute;:</p>
+<table width="100%" border="0">
+  <tr> 
+    <td width="90%" valign="middle" height="195"> 
+      <p align="left">Sean <i>P</i>, <i>Q</i>, <i>R</i> los centros de homotecia 
+        de las circunferencias (<i>B</i>,<i>C</i>), (<i>C</i>, <i>A</i>) y (<i>A</i>, 
+        <i>B</i>). Al girar el par de circunferencias (<i>B</i>, <i>C</i>) alrededor 
+        del eje PBC obtenemos las esferas <b>B</b>, <b>C</b> y su cono tangente 
+        con v&eacute;rtice en <i>P</i>. Algo parecido ocurre con los otros pares 
+        de circunferencias.</p>
+      <p align="left">Ahora consideremos dos planos <b>E</b> y <b>F</b> tangentes 
+        a las tres esferas, todas ellas quedando por el mismo lado de cada plano 
+        (podemos imaginar que las esferas est&aacute;n sobre el plano de una mesa 
+        y que ponemos un folio de papel sobre ellas).</p>
+      <p align="left">Como los tres conos ser&aacute;n tangentes a las a los planos, 
+        estos contendr&aacute;n a los v&eacute;rtices y por tanto los tres v&eacute;rtices 
+        <i>P</i>, <i>Q</i>, <i>R</i> estar&aacute;n en la recta de intersecci&oacute;n 
+        de los dos planos.</p>
+</td>
+    <td width="10%" height="195"><img src="monge4.jpg" width="370" height="282"></td>
+  </tr>
+</table>
+<table width="100%" border="0" height="62">
+  <tr> 
+    <td width="51%" valign="middle"> 
+      <p align="left">Para demostrar el caso de los centros de homotecia inversos 
+        de los pares (<i>A</i>, <i>C</i>) y (<i>B</i>, <i>C</i>) y el centro de 
+        homotecia directo del par (<i>A</i>, <i>B</i>) consideramos los planos 
+        <b>E</b> y <b>F</b> de manera que las esferas <b>A</b> y <b>B</b> quedan 
+        en un lado de cada plano y la esfera <b>C</b> queda en el otro.</p>
+      </td>
+    <td width="49%">
+      <div align="center"><img src="monge5.jpg" width="302" height="240"></div>
+    </td>
+  </tr>
+</table>
+<h2 align="left">2. Soluci&oacute;n del problema</h2>
+<p align="left">El siguiente razonamiento puede encontrarse en el mensaje n&uacute;mero 
+  6135 (de Darij Grinberg) en el grupo de noticias <a href="http://groups.yahoo.com/group/Hyacinthos/">Hyacinthos</a> 
+  (para ver los mensajes de este grupo hay que registrarse)</p>
+<p align="left"><img src="253d.jpg" width="358" height="217" align="right">En 
+  la figura de la derecha tenemos un tri&aacute;ngulo <i>ABC</i>, y las circunferencias 
+  inscrita, de los nueve puntos y exinscrita correspondiente al v&eacute;rtice 
+  <i>C</i>. </p>
+<p align="left">Hemos destacado los puntos de contacto <i>F</i> y Z de la circunferencia 
+  de los nueve puntos con la circunferencia inscrita y con la circunferencia exinscrita 
+  correspondiente al v&eacute;rtice C, respectivamente. </p>
+<p align="left">El punto <i>F</i>, llamado punto de Feuerbach, es el centro de 
+  semejanza directo de dichas circunferencias. Su conjugado arm&oacute;nico <i>P</i> 
+  respecto de los centros <i>N</i> e<i> I</i> ser&aacute; el centro de semejanza 
+  inverso. </p>
+<p align="left">Por tanto, tenemos:</p>
+<ul>
+  <li><i>P</i> es el centro de semejanza inverso de la circunferencia de los nueve 
+    puntos y la circunferencia inscrita.</li>
+  <li>Z es el centro de semejanza inverso de la circunferencia de los nueve puntos 
+    y la circunferencia exinscrita correspondiente al v&eacute;rtice <i>C</i>.</li>
+  <li><i>C</i> es el centro de semejanza directo de la circunferencia inscrita 
+    y la circunferencia exinscrita correspondiente al v&eacute;rtice C.</li>
+</ul>
+<p align="left">Seg&uacute;n el teorema de las tres circunferencias de Monge, 
+  <i>P</i>, <i>Z</i> y <i>C</i> est&aacute;n alineados. Como lo mismo ocurre con 
+  <i>P</i>, <i>X</i>, <i>A</i> y <i>P</i>, <i>Y</i>, <i>B</i>, queda demostrado 
+  que </p>
+<table width="100%" border="1" bordercolor="#000000" bgcolor="#FFFF99">
+  <tr>
+    <td>
+      <div align="center"><i>AX</i>, <i>BY</i>, <i>CZ</i> son concurrentes en 
+        <i>P</i>.</div>
+    </td>
+  </tr>
+</table>
+<p>Lo que sigue es de mi cosecha:</p>
+<p align="left"><img src="253e.jpg" width="547" height="432" align="right">Ahora, 
+  en la figura de la derecha tenemos las circunferencias exinscritas y sus centros 
+  de homotecia directos <i>U, V</i> y <i>W</i>, que est&aacute;n alineados en 
+  virtud del teorema de las tres circunferencias de Monge. La recta que pasa por 
+  los tres puntos es la <i>recta de Monge</i>.</p>
+<p align="left">Pero si consideramos las circunferencias (Ia), (Ic), y la circunferencia 
+  de los nueve puntos tenemos que <i>V</i> es el centro de semejanza directo de 
+  (Ia) e (Ic), <i>X</i> es el centro de semejanza inverso de (Ia) y la circunferencia 
+  de los nueve puntos, y <i>Z</i> es el centro de semejanza inverso de (Ic) y 
+  la circunferencia de los nueve puntos. Por tanto <i>X</i>, <i>Z</i> y <i>V</i> 
+  est&aacute;n alineados. Esto indica que <i>ZX</i> e IcIa se cortan en <i>V</i>. 
+</p>
+<p align="left">An&aacute;logamente, <i>W</i> es la intersecci&oacute;n de <i>XY</i> 
+  e IaIb, y <i>U</i> es la intersecci&oacute;n de <i>YZ</i> e IbIc.</p>
+<p align="left">Todo esto permite afirmar que</p>
+<table width="100%" border="1" bordercolor="#000000" bgcolor="#FFFF99">
+  <tr> 
+    <td> 
+      <div align="center">La perspectriz de los triángulos <i>ABC</i> y <i>XYZ</i> 
+        es la recta de Monge de los tres exc&iacute;rculos,</div>
+    </td>
+  </tr>
+</table>
+<p align="left">ya que cada recta est&aacute; determinada por tres puntos alineados 
+  que resultan ser los mismos.</p>
+<p align="left">Por ser <i>P</i> el centro de semejanza inverso de la circunferencia 
+  inscrita (con centro <i>I</i> y radio <i>r</i>) y la circunferencia de los nueve 
+  puntos (con centro <i>N</i> y radio <font face="Symbol">r</font>), es evidente 
+  que</p>
+<table width="100%" border="1" bordercolor="#000000" bgcolor="#FFFF99">
+  <tr> 
+    <td> 
+      <div align="center"><i>P</i> es colineal con <i>N</i> e <i>I</i>. Además 
+        se cumple: <i>IP</i> : <i>PN</i> = <i>r</i> : <font face="Symbol">r</font>. 
+      </div>
+    </td>
+  </tr>
+</table>
+<p align="left">Queda pendiente la demostraci&oacute;n de la igualadad </p>
+<table width="100%" border="1" bordercolor="#FFFFFF" bgcolor="#FF0000">
+  <tr> 
+    <td> 
+      <div align="center"><i><font color="#FFFFFF"><b>XE &middot;</b></font></i><b><font color="#FFFFFF"><i>YK 
+        &middot;ZM</i> = <i>XD &middot;YJ &middot;ZL</i></font></b></div>
+    </td>
+  </tr>
+</table>
+<p align="left">y esta soluci&oacute;n queda incompleta en este punto.</p>

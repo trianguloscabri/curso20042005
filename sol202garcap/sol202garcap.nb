@@ -1,0 +1,160 @@
+(************** Content-type: application/mathematica **************
+                     CreatedBy='Mathematica 5.0'
+
+                    Mathematica-Compatible Notebook
+
+This notebook can be used with any Mathematica-compatible
+application, such as Mathematica, MathReader or Publicon. The data
+for the notebook starts with the line containing stars above.
+
+To get the notebook into a Mathematica-compatible application, do
+one of the following:
+
+* Save the data starting with the line of stars above into a file
+  with a name ending in .nb, then open the file inside the
+  application;
+
+* Copy the data starting with the line of stars above to the
+  clipboard, then use the Paste menu command inside the application.
+
+Data for notebooks contains only printable 7-bit ASCII and can be
+sent directly in email or through ftp in text mode.  Newlines can be
+CR, LF or CRLF (Unix, Macintosh or MS-DOS style).
+
+NOTE: If you modify the data for this notebook not in a Mathematica-
+compatible application, you must delete the line below containing
+the word CacheID, otherwise Mathematica-compatible applications may
+try to use invalid cache data.
+
+For more information on notebooks and Mathematica-compatible 
+applications, contact Wolfram Research:
+  web: http://www.wolfram.com
+  email: info@wolfram.com
+  phone: +1-217-398-0700 (U.S.)
+
+Notebook reader applications are available free of charge from 
+Wolfram Research.
+*******************************************************************)
+
+(*CacheID: 232*)
+
+
+(*NotebookFileLineBreakTest
+NotebookFileLineBreakTest*)
+(*NotebookOptionsPosition[      4235,        115]*)
+(*NotebookOutlinePosition[      4904,        138]*)
+(*  CellTagsIndexPosition[      4860,        134]*)
+(*WindowFrame->Normal*)
+
+
+
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{\(Simplificar[p_]\  := 
+        Factor[p\/PolynomialGCD[p\[LeftDoubleBracket]1\[RightDoubleBracket], \
+p\[LeftDoubleBracket]2\[RightDoubleBracket], p\[LeftDoubleBracket]3\
+\[RightDoubleBracket]]];\), "\[IndentingNewLine]", 
+    RowBox[{
+      RowBox[{\(Unir[{x1_, y1_, z1_}, {x2_, y2_, z2_}]\), " ", ":=", 
+        "\[IndentingNewLine]", 
+        RowBox[{"Simplificar", "[", 
+          RowBox[{"{", 
+            RowBox[{
+              RowBox[{"Det", "[", 
+                RowBox[{"(", GridBox[{
+                      {"y1", "z1"},
+                      {"y2", "z2"}
+                      }], ")"}], "]"}], ",", 
+              RowBox[{"-", 
+                RowBox[{"Det", "[", 
+                  RowBox[{"(", GridBox[{
+                        {"x1", "z1"},
+                        {"x2", "z2"}
+                        }], ")"}], "]"}]}], ",", 
+              RowBox[{"Det", "[", 
+                RowBox[{"(", GridBox[{
+                      {"x1", "y1"},
+                      {"x2", "y2"}
+                      }], ")"}], "]"}]}], "}"}], "]"}]}], 
+      ";"}], "\[IndentingNewLine]", \(s = \((a + b + c)\)/
+          2;\), "\[IndentingNewLine]", \(ptA = {1, 0, 
+          0};\), "\[IndentingNewLine]", 
+    RowBox[{\(ptD = {s - a, 0, s - c};\), 
+      " "}], "\[IndentingNewLine]", \(ptE = {0, 
+          s - a, \(-s\)};\), "\[IndentingNewLine]", \(ptF = {s - a, s - b, 
+          0};\), "\[IndentingNewLine]", \(ptG = {0, \(-s\), 
+          s - a};\), "\[IndentingNewLine]", \(ptN = {0, a\^2 + b\^2 - c\^2, 
+          c\^2 + a\^2 - b\^2};\), "\[IndentingNewLine]", \(ptU = 
+        Unir[Unir[ptD, ptE], 
+          Unir[ptF, ptG]];\), "\[IndentingNewLine]", \(Det[{ptA, ptU, 
+        ptN}]\)}], "Input"],
+
+Cell[BoxData[
+    \(0\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+    \(SA = \(b\^2 + c\^2 - a\^2\)\/2; SB = \(c\^2 + a\^2 - b\^2\)\/2; 
+    SC = \(a\^2 + b\^2 - c\^2\)\/2;\), "\[IndentingNewLine]", 
+    \(\(Distancia2[{u_, v_, w_}, {x_, y_, 
+            z_}]\  := \[IndentingNewLine]\(1\/\(\(\((u + v + 
+                        w)\)\^2\) \((x + y + z)\)\^2\)\) \((SA \((\((v + w)\) \
+x - u \((y + z)\))\)\^2 + SB \((\((w + u)\) y - v \((z + x)\))\)\^2 + 
+              SC \((\((u + v)\) z - w \((x + y)\))\)\^2)\);\)\), "\
+\[IndentingNewLine]", 
+    \(Factor[Distancia2[ptA, ptU]\/Distancia2[ptU, ptN]]\)}], "Input"],
+
+Cell[BoxData[
+    \(a\^2\/\((b + c)\)\^2\)], "Output"]
+}, Open  ]],
+
+Cell[BoxData[""], "Input"]
+},
+FrontEndVersion->"5.0 for Microsoft Windows",
+ScreenRectangle->{{0, 800}, {0, 527}},
+WindowSize->{787, 500},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+CellLabelAutoDelete->True
+]
+
+(*******************************************************************
+Cached data follows.  If you edit this Notebook file directly, not
+using Mathematica, you must remove the line containing CacheID at
+the top of  the file.  The cache data will then be recreated when
+you save this file from within Mathematica.
+*******************************************************************)
+
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+
+(*NotebookFileOutline
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[1776, 53, 1716, 37, 277, "Input"],
+Cell[3495, 92, 35, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[3567, 98, 566, 9, 137, "Input"],
+Cell[4136, 109, 54, 1, 47, "Output"]
+}, Open  ]],
+Cell[4205, 113, 26, 0, 30, "Input"]
+}
+]
+*)
+
+
+
+(*******************************************************************
+End of Mathematica Notebook file.
+*******************************************************************)
+

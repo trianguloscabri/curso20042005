@@ -1,0 +1,114 @@
+FIGURE CabriII vers. MS-Windows 1.0
+
+Window center x: 4.73604166666667 y: -3.51895833333333 Window size x: 25.8497916666667 y: 16.5364583333333
+
+1: Pt, 0, CN:0, VN:1
+R, W, t, DS:1 1, GT:1, I, nSt
+Val: 0 0
+
+2: Axes, 1, CN:1, VN:3
+Gr, W, t, DS:1 1, GT:0, I, nSt
+Const: 1, Val: 1 0, 0 1
+
+3: Pt, 0, CN:0, VN:1
+R, W, t, DS:1 1, GT:1, V, nSt
+Val: 2.88395833333333 -3.36020833333333
+
+4: Cir, 0, CN:1, VN:2
+Bl, W, t, DS:1 1, GT:0, V, nSt
+Const: 3, Val: 4.79545887077034
+
+"A1", NP: -93, 182, NS: 18, 18
+5: Pt/, 0, CN:1, VN:3
+R, W, t, DS:1 1, GT:1, V, nSt
+Const: 4, Val: -1.75732238630821 -4.56641688194074
+p: 0, System, S: 0 C: 3 Fa: 0
+
+"B1", NP: 69, -79, NS: 20, 18
+6: Pt/, 0, CN:1, VN:3
+R, W, t, DS:1 1, GT:1, V, nSt
+Const: 4, Val: 2.20195905958452 1.38650661195842
+p: 0, System, S: 0 C: 3 Fa: 0
+
+"C1", NP: 243, 248, NS: 19, 18
+7: Pt/, 0, CN:1, VN:3
+R, W, t, DS:1 1, GT:1, V, nSt
+Const: 4, Val: 6.31405702587498 -6.71145418236828
+p: 0, System, S: 0 C: 3 Fa: 0
+
+8: Tr, 0, CN:3, VN:0
+B, Y, t, DS:1 1, GT:1, V, nSt
+Const: 5 6 7
+
+9: Biss, 0, CN:3, VN:2
+V, W, t, DS:1 1, GT:0, V, nSt
+Const: 5 6 7
+
+10: Biss, 0, CN:3, VN:2
+V, W, t, DS:1 1, GT:0, V, nSt
+Const: 7 5 6
+
+11: Biss, 0, CN:3, VN:2
+V, W, t, DS:1 1, GT:0, V, nSt
+Const: 6 7 5
+
+"B", NP: 67, 297, NS: 12, 18
+12: Int, 256, CN:2, VN:1
+R, W, t, DS:1 1, GT:1, V, nSt
+Const: 9 4
+p: 0, System, S: 0 C: 3 Fa: 0
+
+13: Int, 32768, CN:2, VN:1
+R, W, t, DS:1 1, GT:1, V, nSt
+Const: 11 4
+
+"C", NP: -54, 3, NS: 11, 18
+14: Int, 33024, CN:2, VN:1
+R, W, t, DS:1 1, GT:1, V, nSt
+Const: 11 4
+p: 0, System, S: 0 C: 3 Fa: 0
+
+"A", NP: 276, 40, NS: 10, 18
+15: Int, 256, CN:2, VN:1
+R, W, t, DS:1 1, GT:1, V, nSt
+Const: 10 4
+p: 0, System, S: 0 C: 3 Fa: 0
+
+16: Tr, 0, CN:3, VN:0
+V, W, t, DS:1 1, GT:0, V, nSt
+Const: 14 12 15
+
+17: Int, 0, CN:2, VN:1
+R, W, t, DS:1 1, GT:1, V, nSt
+Const: 10 16
+
+18: Int, 256, CN:2, VN:1
+R, W, t, DS:1 1, GT:1, V, nSt
+Const: 11 16
+
+19: Int, 512, CN:2, VN:1
+R, W, t, DS:1 1, GT:1, V, nSt
+Const: 9 16
+
+20: Angle, 0, CN:3, VN:5
+B, W, t, DS:1 1, GT:16, V, nSt
+Const: 15 17 12, Val: 1, 0.59
+
+21: Angle, 0, CN:3, VN:5
+B, W, t, DS:1 1, GT:16, V, nSt
+Const: 12 18 14, Val: 1, 0.79
+
+22: Angle, 0, CN:3, VN:5
+B, W, t, DS:1 1, GT:16, V, nSt
+Const: 14 19 12, Val: 1, 0.67
+
+"ORTOCENTRO", NP: 78, 115, NS: 96, 18
+23: Int, 0, CN:2, VN:1
+R, W, t, DS:1 1, GT:1, V, nSt
+Const: 9 10
+p: 0, System, S: 0 C: 3 Fa: 0
+
+24: Tr, 0, CN:3, VN:0
+V, lBl, t, DS:5 8, GT:1, V, nSt
+Const: 19 17 18
+

@@ -1,0 +1,375 @@
+<html>
+
+<head>
+<meta name="generator" content="Corel WordPerfect 12">
+<meta http-equiv="content-Type" content="text/html; charset=utf-8">
+
+<style>
+table
+{
+	border-collapse: collapse;
+	border-spacing: 0pt;
+	border-color: black;
+	empty-cells: show;
+	font-family: "Times New Roman", serif;
+	font-size: 12pt;
+	font-weight: normal;
+	font-style: normal
+}
+
+td
+{
+	border-color: black
+}
+
+p
+{
+	margin-top: 0px;
+	margin-bottom: 1px
+}
+
+span.WPCharBox
+{
+	border-width: 0.0133333in;
+	border-style: solid;
+	border-color: black;
+	padding: 0px;
+	width: 100%;
+	margin: 0px
+}
+
+span.WPCharBoxWrapper
+{
+	padding: 0px;
+	vertical-align: text-top
+}
+
+span.WPBoxCaption
+{
+	padding: 0px;
+	width: 100%;
+	margin: 2px
+}
+
+body
+{
+	font-family: "Times New Roman", serif;
+	font-size: 12pt;
+	font-weight: normal;
+	font-style: normal
+}
+.Estilo1 {
+	font-family: 'Arial', sans-serif;
+	font-size: 10pt;
+}
+</style>
+
+</head>
+
+<body>
+<div align="center">
+<table width="705.44px" cellpadding="6" cellspacing="0">
+<tr>
+<td width="100%" style="background-color: #808080; border: 0.0133333in solid" valign="top"><p align="justify"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">Problema 264</span></span></p>
+  <p align="justify">&nbsp;</p>
+  <p align="justify"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">Diez. Ejercicio 9: Supongamos que los puntos P y Q se encuentran sobre la circunferencia K descrita alrededor del
+tri&aacute;ngulo ABC. Demostrar que el punto de intersecci&oacute;n de las rectas correspondientes de Simpson p y q describe una
+circunferencia K' cuando A, B, P, Q est&aacute;n inm&oacute;viles y C recorre K. </span></span></p>
+<div align="justify"><br>
+  <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">Ly&uacute;bich, Y.I., Shor, L.A. (1976, original ruso, 1978 edici&oacute;n en espa&ntilde;ol. ). M&eacute;todo cinem&aacute;tica en problemas geom&eacute;tricos.
+Lecciones populares de matem&aacute;ticas. Editorial Mir. Mosc&uacute;. (traducci&oacute;n de Lozhkin, G.A.). (p&aacute;g 51) </span></span></div>
+  <div align="justify"><br>
+    <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">Rese&ntilde;a: </span></span></div>
+  <p align="justify"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">A veces, para resolver un problema geom&eacute;trico, es &uacute;til imaginar las transformaciones que sufrir&aacute;n los elementos de
+la figura a examinar, si algunos de sus puntos empiezan a desplazarse. La dependencia de unos elementos en funci&oacute;n
+de otros puede pasar a ser evidente en este caso y la soluci&oacute;n del problema saltar&aacute; a la vista. </span></span></p>
+  <p align="justify">&nbsp; </p>
+  <p align="justify" style="text-align: right"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 8pt"><span style="font-size: 8pt">Soluci&oacute;n de Jos&eacute; Mar&iacute;a Pedret, Ingeniero Naval. Esplugues de Llobregat (Barcelona). (11 de julio de 2005)</span></span></span></p>
+</td>
+</tr>
+<tr>
+<td width="100%" valign="top"><p align="justify"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">&#160;</span></span></p>
+</td>
+</tr>
+<tr>
+<td width="100%" style="background-color: #808080; border: 0.0133333in solid" align="center" valign="top"><p align="center"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt"><span style="font-weight: bold">CONSTRUCCI&Oacute;N DE LA RECTA DE SIMPSON p</span></span></span></p>
+</td>
+</tr>
+<tr>
+<td width="100%" valign="top"><p align="justify"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">&#160;</span></span></p>
+</td>
+</tr>
+<tr>
+<td width="100%" valign="top" style="border: 0.0133333in solid"><div align="justify">
+  <p><br>
+      <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt"></span></span><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt"><span style="font-weight: bold">TRIANGULO DEL ENUNCIADO</span></span></span></p>
+  <p>&nbsp;</p>
+</div>
+  <p align="justify" style="text-align: center"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">
+<span class="WPCharBoxWrapper" style="width: 585px; vertical-align: text-top"><span class="WPCharBox" style="border: none">
+<img src="sol264ped/01.gif" alt="01.gif" width="583" height="397" border="0"></span></span></span></span></p>
+  <p align="justify" style="text-align: center"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt"><span class="WPCharBoxWrapper" style="width: 585px; vertical-align: text-top"><span class="WPBoxCaption" style="text-align: center"><span style="font-size: 8pt"><span style="font-weight: bold">figura 1</span></span></span></span></span></span>
+  </p>
+  <div align="justify"><br>
+    <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">Partiremos de un c&iacute;rculo cualquiera, que consideraremos como circunscrito a un tri&aacute;ngulo ABC. Sobre dicho c&iacute;rculo
+colocamos tres puntos A, B y C. Consideraremos que A y B son fijos, mientras que C puede desplazarse sobre el
+c&iacute;rculo.</span></span></div>
+<div align="justify">
+  <p><br>
+      <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">Considerado C de forma DIN&Aacute;MICA podemos decir que el &aacute;ngulo ACB es tal que su v&eacute;rtice describe una circunferencia
+  y sus lados pasan por dos puntos fijos de la misma circunferencia y por lo tanto (ARCO CAPAZ)</span></span></p>
+  <p>&nbsp;
+    </p>
+</div>
+<p align="justify" style="text-align: center"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt"><span style="font-weight: bold">EN UN TRIANGULO ABC, FIJADA LA CIRCUNFERENCIA CIRCUNSCRITA Y BC</span></span></span></p>
+<p align="justify" style="text-align: center">&nbsp; </p>
+<p align="justify" style="text-align: center"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">
+<span class="WPCharBoxWrapper" style="width: 151px"><span class="WPCharBox" style="border: none">
+<img src="sol264ped/ole.gif" alt="ole.gif" width="149" height="24" border="0"></span></span>
+</span></span></p>
+<p align="justify" style="text-align: center">&nbsp; </p>
+<p align="justify"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt"></span></span><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt"><span style="font-weight: bold">TEOREMA I</span></span></span></p><div align="justify"><br>
+  <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt"><span style="font-weight: bold">Dado un tri&aacute;ngulo ABC, las proyecciones de un punto cualquiera de la circunferencia circunscrita sobre los
+  lados del tri&aacute;ngulo est&aacute;n alineados en una l&iacute;nea recta llamada Recta de Simpson.</span></span></span></div><div align="justify">
+    <p><br>
+        <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt"><span style="font-weight: bold">CONSTRUCCION DE LA RECTA p</span></span></span>
+</p>
+    <p>&nbsp;    </p>
+  </div><p align="justify" style="text-align: center"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">
+  <span class="WPCharBoxWrapper" style="width: 585px; vertical-align: text-top"><span class="WPCharBox" style="border: none">
+  <img src="sol264ped/02.gif" alt="02.gif" width="583" height="397" border="0"></span></span></span></span></p>
+  <p align="justify" style="text-align: center"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt"><span class="WPCharBoxWrapper" style="width: 585px; vertical-align: text-top"><span class="WPBoxCaption" style="text-align: center"><span style="font-size: 8pt"><span style="font-weight: bold">figura 2</span></span></span></span></span></span>
+  </p>
+  <div align="justify"><br>
+    <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">Tomamos un punto cualquiera P sobre el circulo circunscrito. Consideraremos P como un punto fijo.</span></span></div><div align="justify">
+      <p><br>
+          <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">Proyectamos (ortogonalmente) P sobre AB; obtenemos el punto U. Como P es fijo y AB es fijo, deducimos que</span></span></p>
+      <p>&nbsp;
+            </p>
+    </div><p align="justify" style="text-align: center"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt"><span style="font-weight: bold">U ES UN PUNTO FIJO.</span></span></span></p><div align="justify"><br>
+      <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">Proyectamos (ortogonalmente) P sobre BC; obtenemos el punto V.</span></span></div><div align="justify">
+        <p><br>
+            <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">La recta de Simpson del punto P es</span></span></p>
+        <p>&nbsp;
+                </p>
+      </div><p align="justify" style="text-align: center"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">
+  <span class="WPCharBoxWrapper" style="width: 65px"><span class="WPCharBox" style="border: none">
+  <img src="sol264ped/ole1.gif" alt="ole1.gif" width="63" height="23" border="0"></span></span>
+</span></span></p><div align="justify">
+  <p><br>
+      <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">Por el <span style="font-weight: bold">TEOREMA I</span> anterior, si W es la proyecci&oacute;n ortogonal P sobre CA</span></span></p>
+  <p>&nbsp;
+  </p>
+</div>
+<p align="justify" style="text-align: center"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">
+  <span class="WPCharBoxWrapper" style="width: 220px"><span class="WPCharBox" style="border: none">
+  <img src="sol264ped/ole2.gif" alt="ole2.gif" width="218" height="24" border="0"></span></span>
+</span></span></p>
+<p align="justify" style="text-align: center">&nbsp;
+  </p>
+<p align="justify"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt"></span></span><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt"><span style="font-weight: bold">LUGAR GEOM&Eacute;TRICO DEL PUNTO W AL DESPLAZARSE C SOBRE SU CIRCULO</span></span></span></p>
+<p align="justify">&nbsp;
+    </p>
+<p align="justify" style="text-align: center"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">
+  <span class="WPCharBoxWrapper" style="width: 585px; vertical-align: text-top"><span class="WPCharBox" style="border: none">
+  <img src="sol264ped/03.gif" alt="03.gif" width="583" height="397" border="0"></span></span></span></span></p>
+<p align="justify" style="text-align: center"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt"><span class="WPCharBoxWrapper" style="width: 585px; vertical-align: text-top"><span class="WPBoxCaption" style="text-align: center"><span style="font-size: 8pt"><span style="font-weight: bold">figura 3</span></span></span></span></span></span>
+  </p>
+<div align="justify">
+  <p><br>
+      <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">Considerado C de forma DIN&Aacute;MICA podemos decir que el &aacute;ngulo PWA  siempre es recto y sus lados pasan por dos
+    puntos fijos P y A; por lo tanto (ARCO CAPAZ)</span></span></p>
+  <p>&nbsp;
+    </p>
+</div>  <p align="justify" style="text-align: center"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt"><span style="font-weight: bold">EL LUGAR GEOM&Eacute;TRICO DE W ES LA CIRCUNFERENCIA DE DI&Aacute;METRO AP</span></span></span></p>
+<p align="justify" style="text-align: center">&nbsp;
+    </p>
+<p align="justify"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt"></span></span><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt"><span style="font-weight: bold">EL &Aacute;NGULO AWU Y EL &Aacute;NGULO CWV</span></span></span></p>
+<p align="justify">&nbsp;
+      </p>
+<p align="justify" style="text-align: center"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">
+  <span class="WPCharBoxWrapper" style="width: 585px; vertical-align: text-top"><span class="WPCharBox" style="border: none">
+  <img src="sol264ped/04.gif" alt="04.gif" width="583" height="397" border="0"></span></span></span></span></p>
+<p align="justify" style="text-align: center"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt"><span class="WPCharBoxWrapper" style="width: 585px; vertical-align: text-top"><span class="WPBoxCaption" style="text-align: center"><span style="font-size: 8pt"><span style="font-weight: bold">figura 4</span></span></span></span></span></span>
+    </p>
+<div align="justify">
+  <p><br>
+      <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">Considerado C de forma DIN&Aacute;MICA podemos decir que el &aacute;ngulo AWU es tal que su v&eacute;rtice describe una
+    circunferencia y sus lados pasan por dos puntos fijos A y U de la misma circunferencia y por lo tanto (ARCO CAPAZ)</span></span></p>
+  <p>&nbsp;
+      </p>
+</div>    <p align="justify" style="text-align: center"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">
+  <span class="WPCharBoxWrapper" style="width: 157px"><span class="WPCharBox" style="border: none">
+  <img src="sol264ped/ole3.gif" alt="ole3.gif" width="155" height="24" border="0"></span></span>
+</span></span></p>    <div align="justify">
+  <p><br>
+      <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">Como AWU y CWV son &aacute;ngulos opuestos por el v&eacute;rtice</span></span></p>
+  <p>&nbsp;
+      </p>
+</div>    <p align="justify" style="text-align: center"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">
+  <span class="WPCharBoxWrapper" style="width: 228px"><span class="WPCharBox" style="border: none">
+  <img src="sol264ped/ole4.gif" alt="ole4.gif" width="226" height="24" border="0"></span></span>
+</span></span></p>
+<p align="justify" style="text-align: center">&nbsp;</p></td>
+</tr>
+<tr>
+<td width="100%" valign="top"><p align="justify"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">&#160;</span></span></p>
+</td>
+</tr>
+<tr>
+<td width="100%" style="background-color: #808080; border: 0.0133333in solid" align="center" valign="top"><p align="center"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt"><span style="font-weight: bold">El PUNTO Q Y LA RECTA q</span></span></span></p>
+</td>
+</tr>
+<tr>
+<td width="100%" valign="top"><p align="justify"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">&#160;</span></span></p>
+</td>
+</tr>
+<tr>
+<td width="100%" style="border: 0.0133333in solid" valign="top"><div align="justify">
+  <p>&nbsp;</p>
+  <p align="center"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">
+  <span class="WPCharBoxWrapper" style="width: 585px; vertical-align: text-top"><span class="WPCharBox" style="border: none">
+  <img src="sol264ped/05.gif" alt="05.gif" width="583" height="397" border="0"></span></span></span></span></p>
+</div>
+  <p align="justify" style="text-align: center"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt"><span class="WPCharBoxWrapper" style="width: 585px; vertical-align: text-top"><span class="WPBoxCaption" style="text-align: center"><span style="font-size: 8pt"><span style="font-weight: bold">figura 5</span></span></span></span></span></span>
+  </p>
+  <div align="justify"><br>
+    <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">Al igual que con el punto P, tomamos un punto cualquiera Q fijo sobre el c&iacute;rculo circunscrito.</span></span></div>
+  <div align="justify">
+    <p><br>
+        <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">La proyecci&oacute;n de Q sobre AB es X.</span></span></p>
+    <p>&nbsp;
+        </p>
+  </div>
+  <p align="justify" style="text-align: center"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt"><span style="font-weight: bold">X ES UN PUNTO FIJO.</span></span></span></p>
+<div align="justify">
+  <p><br>
+      <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">La proyecci&oacute;n de Q sobre CA es Y; entonces la recta de Simpson es</span></span></p>
+  <p>&nbsp;
+  </p>
+</div>
+  <p align="justify" style="text-align: center"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">
+<span class="WPCharBoxWrapper" style="width: 63px"><span class="WPCharBox" style="border: none">
+<img src="sol264ped/ole5.gif" alt="ole5.gif" width="61" height="23" border="0"></span></span>
+</span></span></p>
+<div align="justify">
+  <p><br>
+      <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">Y la proyecci&oacute;n de Q sobre BC es</span></span></p>
+  <p>&nbsp;
+  </p>
+</div>
+  <p align="justify" style="text-align: center"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">
+<span class="WPCharBoxWrapper" style="width: 216px"><span class="WPCharBox" style="border: none">
+<img src="sol264ped/ole6.gif" alt="ole6.gif" width="214" height="24" border="0"></span></span>
+</span></span></p>
+<div align="justify">
+  <p><br>
+      <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">An&aacute;logamente</span></span></p>
+  <p>&nbsp;
+  </p>
+</div>
+  <p align="justify" style="text-align: center"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt"><span style="font-weight: bold">EL LUGAR GEOM&Eacute;TRICO DE Z ES LA CIRCUNFERENCIA DE DI&Aacute;METRO BQ.</span></span></span></p>
+<div align="justify">
+  <p><br>
+      <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">Y en consecuencia</span></span></p>
+  <p>&nbsp;
+  </p>
+</div>
+  <p align="justify" style="text-align: center"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">
+<span class="WPCharBoxWrapper" style="width: 216px"><span class="WPCharBox" style="border: none">
+<img src="sol264ped/ole7.gif" alt="ole7.gif" width="214" height="24" border="0"></span></span>
+</span></span></p>
+  <p align="justify" style="text-align: center">&nbsp;</p></td>
+</tr>
+<tr>
+<td width="100%" valign="top"><p align="justify"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">&#160;</span></span></p>
+</td>
+</tr>
+<tr>
+<td width="100%" style="background-color: #808080; border: 0.0133333in solid" align="center" valign="top"><p align="center"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt"><span style="font-weight: bold">EL LUGAR GEOM&Eacute;TRICO DE LA INTERSECCI&Oacute;N DE p Y q</span></span></span></p>
+</td>
+</tr>
+<tr>
+<td width="100%" valign="top"><p align="justify"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">&#160;</span></span></p>
+</td>
+</tr>
+<tr>
+<td width="100%" style="border: 0.0133333in solid" valign="top"><div align="justify">
+  <p><br>
+      <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt"></span></span><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">Sea S el punto buscado</span></span></p>
+  <p>&nbsp;
+  </p>
+</div>
+  <p align="justify" style="text-align: center"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">
+<span class="WPCharBoxWrapper" style="width: 172px"><span class="WPCharBox" style="border: none">
+<img src="sol264ped/ole8.gif" alt="ole8.gif" width="170" height="23" border="0"></span></span>
+</span></span></p>
+<div align="justify"><br>
+  <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">Obtenido S estudiemos el &aacute;ngulo USX.</span></span>
+  </div>
+  <p align="justify" style="text-align: center"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">
+<span class="WPCharBoxWrapper" style="width: 585px; vertical-align: text-top"><span class="WPCharBox" style="border: none">
+<img src="sol264ped/06.gif" alt="06.gif" width="583" height="397" border="0"></span></span></span></span></p>
+  <p align="justify" style="text-align: center"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt"><span class="WPCharBoxWrapper" style="width: 585px; vertical-align: text-top"><span class="WPBoxCaption" style="text-align: center"><span style="font-size: 8pt"><span style="font-weight: bold">figura 6</span></span></span></span></span></span>
+  </p>
+  <div align="justify">
+    <p><br>
+        <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt"><span style="font-weight: bold">Tri&aacute;ngulo CZY</span></span></span></p>
+    <p>&nbsp;
+        </p>
+  </div>
+  <p align="justify" style="text-align: center"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">
+<span class="WPCharBoxWrapper" style="width: 663px"><span class="WPCharBox" style="border: none">
+<img src="sol264ped/ole9.gif" alt="ole9.gif" width="661" height="24" border="0"></span></span>
+</span></span></p>
+<div align="justify">
+  <p><br>
+      <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">pero los &aacute;ngulos ZYC y SYW son opuestos por el v&eacute;rtice y por tanto</span></span></p>
+  <p>&nbsp;
+  </p>
+</div>
+  <p align="justify" style="text-align: center"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">
+<span class="WPCharBoxWrapper" style="width: 200px"><span class="WPCharBox" style="border: none">
+<img src="sol264ped/ole10.gif" alt="ole10.gif" width="198" height="24" border="0"></span></span>
+</span></span></p>
+<div align="justify">
+  <p><br>
+      <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt"><span style="font-weight: bold">Triangulo WSY</span></span></span></p>
+  <p>&nbsp;
+  </p>
+</div>
+  <p align="justify" style="text-align: center"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">
+<span class="WPCharBoxWrapper" style="width: 531px"><span class="WPCharBox" style="border: none">
+<img src="sol264ped/ole11.gif" alt="ole11.gif" width="529" height="24" border="0"></span></span>
+</span></span></p>
+<div align="justify">
+  <p><br>
+      <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">De lo que obtenemos que</span></span></p>
+  <p>&nbsp;
+  </p>
+</div>
+  <p align="justify" style="text-align: center"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">
+<span class="WPCharBoxWrapper" style="width: 217px"><span class="WPCharBox" style="border: none">
+<img src="sol264ped/ole12.gif" alt="ole12.gif" width="215" height="24" border="0"></span></span>
+</span></span></p>
+<div align="justify"><br>
+  <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">El lado SU pasa por el punto fijo U y el SX por el punto fijo X.</span></span></div>
+  <div align="justify">
+    <p><br>
+        <span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt">Es claro que S describe el arco capaz de &aacute;ngulo fijo USX y cuerda UX y por tanto</span></span></p>
+    <p class="Estilo1">&nbsp;</p>
+    <p class="Estilo1">&nbsp;
+            </p>
+  </div>
+  <p align="justify" style="text-align: center"><span style="font-family: 'Arial', sans-serif"><span style="font-size: 10pt"><span style="font-weight: bold">&iexcl; EL LUGAR GEOM&Eacute;TRICO DE S ES UNA CIRCUNFERENCIA QUE PASA POR U Y X !</span></span></span></p>
+<div align="justify">
+  <p>&nbsp;</p>
+  <p><br>
+  </p>
+</div></td>
+</tr>
+</table>
+</div>
+</body>
+
+</html>

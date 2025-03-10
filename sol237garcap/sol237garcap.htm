@@ -1,0 +1,148 @@
+<title>trianguloscabri237</title> 
+
+
+<body bgcolor="#FFFFFF">
+<table width="100%" border="0">
+  <tr> 
+    <td height="2"> 
+      <h1><font face="Verdana, Arial, Helvetica, sans-serif">Problema 237 de <i>tri&aacute;nguloscabri</i></font></h1>
+    </td>
+  </tr>
+</table>
+<table width="100%" border="0">
+  <tr> 
+    <td bgcolor="#FFFF99" height="31"> Sea el tri&aacute;ngulo <i>ABC</i>, por 
+      su incentro <i>I</i> se traza una perpendicular a <i>AC</i> que corta en 
+      <i>M</i> y <i>N</i> a <i>BC</i> y la prolongaci&oacute;n de <i>AB</i> respectivamente. 
+      <br>
+      Si adem&aacute;s se cumple que: 1/<i>IM</i>2 + 1/<i>IN</i>2 = 1/r2, donde 
+      <i>r</i> = inradio de <i>ABC</i>, probar que <font face="Symbol">&ETH;</font><i>B</i>=90&ordm;. 
+    </td>
+  </tr>
+  <tr> 
+    <td height="12"> 
+      <div align="right"> 
+        <p><font size="-1">Propuesto por Juan Carlos Salazar.</font></p>
+      </div>
+    </td>
+  </tr>
+</table>
+<p><img src="01.gif" width="363" height="360" align="right"><font face="Verdana, Arial, Helvetica, sans-serif"><i>Soluci&oacute;n 
+  de <a href="http://garciacapitan.auna.com">Francisco Javier Garc&iacute;a Capit&aacute;n</a></i> 
+  </font></p>
+<p>Si seguimos al pie de la letra los datos del enunciado, colocaremos el punto 
+  <i>M</i> como en la figura (tomada de la soluci&oacute;n de Jose Mar&iacute;a 
+  Pedret), entendiendo la prolongaci&oacute;n de <i>AB</i> como la semirrecta 
+  que parte de <i>B</i> que no contiene a <i>A</i>.</p>
+<p>Al resolver el problema con coordenadas baric&eacute;ntricas no imponemos a 
+  <i>M</i> tal limitaci&oacute;n, y lo dejamos estar en cualquier punto de la 
+  recta <i>AB</i>. De esta manera, aparecer&aacute; una soluci&oacute;n para <i>B</i> 
+  distinta del &aacute;ngulo recto vaticinado por el enunciado.</p>
+<div class=Section1> 
+  <p>Finalmente, daremos una visi&oacute;n global de todos los tri&aacute;ngulos 
+    que cumplen la condici&oacute;n que aparece en el enunciado.</p>
+  <h2>1. C&aacute;lculos con <i>Mathematica</i></h2>
+  (Para descargar un cuaderno de Mathematica con estos c&aacute;lculos, pulsa 
+  <a href="237.nb">aqu&iacute;</a>) . 
+  <p><b>a. F&oacute;rmulas relacionadas con coordenadas baric&eacute;ntricas que 
+    usaremos</b>:</p>
+  </div>
+<ul>
+  <li> 
+    <div class=Section1>Simplificaci&oacute;n de un punto o una recta:</div>
+    <div class=Section1><img src="index_1.gif" width="432" height="30"> 
+      <div class=Section1></div>
+    </div>
+  </li>
+</ul>
+<ul>
+  <li>Ecuaci&oacute;n de una recta que pasa por dos puntos, o punto de intersecci&oacute;n 
+    de dos rectas:<img src="index_2.gif" width="427" height="50"></li>
+</ul>
+<ul>
+  <li>Cuadrado de la distancia entre dos puntos:<br>
+    <img src="index_3.gif" width="329" height="33"><img src="index_4.gif" width="655" height="53"></li>
+</ul>
+<p><b>b. Puntos y rectas que intervienen en el problema</b>:</p>
+<ul>
+  <li>El incentro del tri&aacute;ngulo <i>ABC</i>:<br>
+    <img src="index_5.gif" width="106" height="18"></li>
+</ul>
+<ul>
+  <li>El punto de tangencia <i>T</i> de la circunferencia inscrita a ABC con el 
+    lado AC:<br>
+    <img src="index_6.gif" width="185" height="18"></li>
+</ul>
+<ul>
+  <li>Las rectas <i>BC</i> y <i>AB<br>
+    </i><img src="index_7.gif" width="147" height="18"><br>
+    <img src="index_8.gif" width="147" height="18"><br>
+  </li>
+</ul>
+<p><b>c. Efectuamos los c&aacute;lculos necesarios</b>:</p>
+<ul>
+  <li>La recta <i>IT</i> y sus puntos de intersecci&oacute;n <i>M</i> y <i>N</i> 
+    con con <i>AB</i> y <i>BC</i>, respectivamente. <br>
+    <img src="index_9.gif" width="152" height="18"><br>
+    <img src="index_11.gif" width="158" height="18"><br>
+    <img src="index_10.gif" width="158" height="18"></li>
+</ul>
+<ul>
+  <li>Obtenemos en forma factorizada la expresi&oacute;n que debe anularese cuando 
+    se cumpla el enunciado:<br>
+    <img src="index_12.gif" width="241" height="18"> <br>
+    <img src="index_13.gif" width="235" height="18"> <br>
+    <img src="index_14.gif" width="228" height="18"><br>
+    <img src="index_15.gif" width="197" height="18"> <br>
+    <img src="index_16.gif" width="346" height="35"> <br>
+  </li>
+</ul>
+<h2>2. Un primer an&aacute;lisis</h2>
+<p>Vemos r&aacute;pidamente que el factor <img src="index_17.gif" width="67" height="17" align="absmiddle">corresponde 
+  al caso de que el &aacute;ngulo <i>B</i> sea recto, correspondiendo a la tesis 
+  del enunciado, pero observamos que el factor <img src="index_18.gif" width="174" height="17" align="absmiddle">quiz&aacute;s 
+  pueda anularse, aportando una nueva soluci&oacute;n del problema. Si despejamos 
+  <i>b</i> en funci&oacute;n de <i>a</i> y <i>c</i> obtenemos dicha soluci&oacute;n:</p>
+<p align="center"><img src="ecuacion1.gif" width="208" height="52"></p>
+<h2>3. Representaci&oacute;n de los resultados con Cabri</h2>
+<p>La f&oacute;rmula anterior parece decir, que para cualesquiera valores de <i>a</i> 
+  y <i>c</i> vamos a poder encontrar un valor de <i>b</i> que forme con ellos 
+  un tri&aacute;ngulo que cumpla las condiciones del enunciado. </p>
+<p>Para visualizarlo con Cabri, podriamos fijar un segmento <i>BC</i> de longitud 
+  <i>a</i>, y calcular <i>b</i> para este <i>a</i> fijo y para un <i>c</i> variable. 
+  Entonces determinar<i>i</i>amos <i>A</i> tal que <i>BA</i>=c y <i>CA</i>=<i>b</i>, 
+  y observariamos las diferentes posiciones del punto <i>A</i>.</p>
+<p align="left">Pero gracias a una sencill&iacute;sima construcci&oacute;n de 
+  Jose Mar&iacute;a Pedret (gracias de nuevo, Jose Mar&iacute;a) nos podemos ahorrar 
+  el c&aacute;lculo de <i>b</i>:</p>
+<ul>
+  <li><img src="237a.jpg" width="356" height="310" align="right">Fijamos el segmento 
+    <i>BC</i> de longitud <i>a</i>.</li>
+  <li>Tomamos un punto variable <i>X</i> sobre la semirrecta <i>BC</i>. Ser&aacute; 
+    <i>BX</i>=c.</li>
+  <li>Trazamos la circunferencia con centro <i>B</i> y radio <i>BX</i>, que corta 
+    a la perpendicular a <i>BC</i> por <i>B</i> en <i>D</i>.</li>
+  <li>Entonces A es el punto buscado. </li>
+</ul>
+<p>En efecto, usando la potencia de <i>C</i> respecto de la circunferencia, </p>
+<p align="left"><img src="ecuacion2.gif" width="372" height="45"></p>
+<p align="left">Usando la herramienta <b>Lugar geom&eacute;trico</b> de Cabri 
+  obtenemos la curva mostrada en la figura. </p>
+<h2 align="left">4. Ecuaci&oacute;n de la curva</h2>
+<p align="left">Terminaremos hallando la ecuaci&oacute;n de la curva obtenida. 
+  Para ello consideramos a <i>B</i> como origen de coordenadas y a <i>BC</i> como 
+  eje <i>x</i>. Entonces, <i>B</i>=(0, 0) y <i>C</i>=(<i>a</i>, 0). Si <i>A</i>=(<i>x</i>, 
+  <i>y</i>) entonces</p>
+<p align="center"><img src="ecuacion3.gif" width="433" height="129"> </p>
+<h2 align="left">5. Para finalizar ...</h2>
+<ul>
+  <li>La recta tangente a la curva en el origen contiene contiene a los puntos 
+    <i>A</i> correspondientes a las soluciones para los que <i>B</i> es recto.</li>
+  <li>La curva s&oacute;lo existe si<font face="Symbol"> 0 &pound;</font> <i>x</i> 
+    <font face="Symbol">&pound;</font> 2<i>a</i>, y x=2a es una as&iacute;ntota 
+    de la curva.</li>
+  <li>En los tri&aacute;ngulos soluci&oacute;n <i>ABC</i> cuyo v&eacute;rtice 
+    <i>A</i> est&aacute; en la curva, uno de los &aacute;ngulos <i>A</i> o <i>C</i> 
+    es obtuso, por lo que <i>M</i> y <i>N</i> quedan separados por el incentro 
+    <i>I</i>. </li>
+</ul>

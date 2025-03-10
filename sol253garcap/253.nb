@@ -1,0 +1,293 @@
+(************** Content-type: application/mathematica **************
+                     CreatedBy='Mathematica 5.1'
+
+                    Mathematica-Compatible Notebook
+
+This notebook can be used with any Mathematica-compatible
+application, such as Mathematica, MathReader or Publicon. The data
+for the notebook starts with the line containing stars above.
+
+To get the notebook into a Mathematica-compatible application, do
+one of the following:
+
+* Save the data starting with the line of stars above into a file
+  with a name ending in .nb, then open the file inside the
+  application;
+
+* Copy the data starting with the line of stars above to the
+  clipboard, then use the Paste menu command inside the application.
+
+Data for notebooks contains only printable 7-bit ASCII and can be
+sent directly in email or through ftp in text mode.  Newlines can be
+CR, LF or CRLF (Unix, Macintosh or MS-DOS style).
+
+NOTE: If you modify the data for this notebook not in a Mathematica-
+compatible application, you must delete the line below containing
+the word CacheID, otherwise Mathematica-compatible applications may
+try to use invalid cache data.
+
+For more information on notebooks and Mathematica-compatible 
+applications, contact Wolfram Research:
+  web: http://www.wolfram.com
+  email: info@wolfram.com
+  phone: +1-217-398-0700 (U.S.)
+
+Notebook reader applications are available free of charge from 
+Wolfram Research.
+*******************************************************************)
+
+(*CacheID: 232*)
+
+
+(*NotebookFileLineBreakTest
+NotebookFileLineBreakTest*)
+(*NotebookOptionsPosition[      6019,        204]*)
+(*NotebookOutlinePosition[      6709,        228]*)
+(*  CellTagsIndexPosition[      6665,        224]*)
+(*WindowFrame->Normal*)
+
+
+
+Notebook[{
+Cell[BoxData[
+    \(\(<< Baricentricas`;\)\)], "Input"],
+
+Cell["\<\
+El centro N de la circunferencia de los nueve puntos es el punto medio del \
+circuncentro y el ortocentro.\
+\>", "Text"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(ptN = Medio[ptO, ptH]\)], "Input"],
+
+Cell[BoxData[
+    \({\(-\((b\^2 - c\^2)\)\^2\) + a\^2\ \((b\^2 + c\^2)\), \(-a\^4\) + 
+        c\^2\ \((b\^2 - c\^2)\) + a\^2\ \((b\^2 + 2\ c\^2)\), \(-a\^4\) - 
+        b\^4 + b\^2\ c\^2 + a\^2\ \((2\ b\^2 + c\^2)\)}\)], "Output"]
+}, Open  ]],
+
+Cell[BoxData[{
+    \(\(ptIa = {\(-a\), b, c};\)\), "\[IndentingNewLine]", 
+    \(\(ptIb = {a, \(-b\), c};\)\), "\[IndentingNewLine]", 
+    \(\(ptIc = {a, b, \(-c\)};\)\), "\[IndentingNewLine]", 
+    \(\(ptX = 
+        DividirRazon[ptN, ptIa, a\ b\ c\ \ , 
+          8  s \((s - b)\) \((s - c)\)];\)\), "\[IndentingNewLine]", 
+    \(\(ptY = 
+        DividirRazon[ptN, ptIb, a\ b\ c\ \ , 
+          8  s \((s - c)\) \((s - a)\)];\)\), "\[IndentingNewLine]", 
+    \(\(ptZ = 
+        DividirRazon[ptN, ptIc, a\ b\ c\ \ , 
+          8  s \((s - a)\) \((s - b)\)];\)\)}], "Input"],
+
+Cell["\<\
+AX, BY, CZ son concurrentes en P. Para comprobar que son concurrentes \
+hallamos el determinante\
+\>", "Text"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Simplify[
+      Det[{\[IndentingNewLine]Recta[ptA, ptX], \[IndentingNewLine]Recta[ptB, 
+            ptY], \[IndentingNewLine]Recta[ptC, ptZ]}]]\)], "Input"],
+
+Cell[BoxData[
+    \(0\)], "Output"]
+}, Open  ]],
+
+Cell["Obtenemos P como intersecci\[OAcute]n de dos de las rectas:", "Text"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(ptP = 
+      Punto[\[IndentingNewLine]Recta[ptA, ptX], \[IndentingNewLine]Recta[ptB, 
+          ptY]]\)], "Input"],
+
+Cell[BoxData[
+    \({\(-\((\(-a\^2\) + \((b - c)\)\^2)\)\)\ \((b + c)\)\^2, \(-\((a + \
+c)\)\^2\)\ \((a\^2 - b\^2 - 2\ a\ c + c\^2)\), \(-\((a + b)\)\^2\)\ \((a\^2 - 
+            2\ a\ b + b\^2 - c\^2)\)}\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Kimberling[ptP]\)], "Input"],
+
+Cell[BoxData[
+    \(1.3341639246203588503413416915`10.893881985205121\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Recta[\[IndentingNewLine]Punto[Recta[ptA, ptB], 
+        Recta[ptX, ptY]], \[IndentingNewLine]Punto[Recta[ptB, ptC], 
+        Recta[ptY, ptZ]]]\)], "Input"],
+
+Cell[BoxData[
+    \({\(-b\)\ c, \(-a\)\ c, \(-a\)\ b}\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(ptX1 = Punto[Recta[ptA, ptIc], Recta[ptB, ptC]]\)], "Input"],
+
+Cell[BoxData[
+    \({0, b, \(-c\)}\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+    \(ptY1 = 
+      Punto[Recta[ptB, ptIa], Recta[ptC, ptA]]\), "\[IndentingNewLine]", 
+    \(ptZ1 = Punto[Recta[ptC, ptIa], Recta[ptA, ptB]]\)}], "Input"],
+
+Cell[BoxData[
+    \({\(-a\), 0, c}\)], "Output"],
+
+Cell[BoxData[
+    \({\(-a\), b, 0}\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(CuadradoDistancia[ptI, ptP]\/CuadradoDistancia[ptP, ptN]\)], "Input"],
+
+Cell[BoxData[
+    \(\(\((a - b - c)\)\^2\ \((a + b - c)\)\^2\ \((a - b + c)\)\^2\)\/\(a\^2\ \
+b\^2\ c\^2\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+    \(ptM = {0, \(-s\), s - a}; 
+    ptJ = {0, s - a, \(-s\)};\), "\[IndentingNewLine]", 
+    \(ptL = {\(-s\), 0, s - b}; 
+    ptE = {s - b, 0, \(-s\)};\), "\[IndentingNewLine]", 
+    \(ptD = {s - c, \(-s\), 0}; 
+    ptK = {\(-s\), s - c, 0};\), "\[IndentingNewLine]", 
+    \(XED = 
+      Simplify[CuadradoDistancia[ptX, ptE]\/CuadradoDistancia[ptX, ptD]]\), "\
+\[IndentingNewLine]", 
+    \(YKJ = 
+      Simplify[CuadradoDistancia[ptY, ptK]\/CuadradoDistancia[ptY, ptJ]]\), "\
+\[IndentingNewLine]", 
+    \(ZML = 
+      Simplify[CuadradoDistancia[ptZ, ptM]\/CuadradoDistancia[ptZ, ptL]]\), "\
+\[IndentingNewLine]", 
+    \(Simplify[XED\ YKJ\ ZML]\)}], "Input"],
+
+Cell[BoxData[
+    \(\(\((a + b - c)\)\ c\ \((a + c)\)\^2\)\/\(b\ \((a + b)\)\^2\ \((a - b + \
+c)\)\)\)], "Output"],
+
+Cell[BoxData[
+    \(\(-\(\(a\ \((a + b)\)\^2\ \((a - b - c)\)\)\/\(\((a + b - 
+                c)\)\ c\ \((b + c)\)\^2\)\)\)\)], "Output"],
+
+Cell[BoxData[
+    \(\(-\(\(b\ \((a - b + c)\)\ \((b + c)\)\^2\)\/\(a\ \((a - b - 
+                c)\)\ \((a + c)\)\^2\)\)\)\)], "Output"],
+
+Cell[BoxData[
+    \(1\)], "Output"]
+}, Open  ]]
+},
+FrontEndVersion->"5.1 for Microsoft Windows",
+ScreenRectangle->{{0, 800}, {0, 527}},
+WindowSize->{787, 503},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+ShowSelection->True,
+CellLabelAutoDelete->True
+]
+
+(*******************************************************************
+Cached data follows.  If you edit this Notebook file directly, not
+using Mathematica, you must remove the line containing CacheID at
+the top of  the file.  The cache data will then be recreated when
+you save this file from within Mathematica.
+*******************************************************************)
+
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+
+(*NotebookFileOutline
+Notebook[{
+Cell[1754, 51, 55, 1, 30, "Input"],
+Cell[1812, 54, 130, 3, 33, "Text"],
+
+Cell[CellGroupData[{
+Cell[1967, 61, 54, 1, 30, "Input"],
+Cell[2024, 64, 231, 3, 32, "Output"]
+}, Open  ]],
+Cell[2270, 70, 574, 12, 130, "Input"],
+Cell[2847, 84, 120, 3, 33, "Text"],
+
+Cell[CellGroupData[{
+Cell[2992, 91, 176, 3, 90, "Input"],
+Cell[3171, 96, 35, 1, 29, "Output"]
+}, Open  ]],
+Cell[3221, 100, 75, 0, 33, "Text"],
+
+Cell[CellGroupData[{
+Cell[3321, 104, 134, 3, 70, "Input"],
+Cell[3458, 109, 218, 3, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[3713, 117, 48, 1, 30, "Input"],
+Cell[3764, 120, 83, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[3884, 126, 176, 3, 70, "Input"],
+Cell[4063, 131, 67, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[4167, 137, 80, 1, 30, "Input"],
+Cell[4250, 140, 48, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[4335, 146, 170, 3, 50, "Input"],
+Cell[4508, 151, 48, 1, 29, "Output"],
+Cell[4559, 154, 48, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[4644, 160, 89, 1, 44, "Input"],
+Cell[4736, 163, 120, 2, 45, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[4893, 170, 673, 16, 198, "Input"],
+Cell[5569, 188, 114, 2, 47, "Output"],
+Cell[5686, 192, 138, 2, 47, "Output"],
+Cell[5827, 196, 138, 2, 47, "Output"],
+Cell[5968, 200, 35, 1, 29, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+
+
+(*******************************************************************
+End of Mathematica Notebook file.
+*******************************************************************)
+

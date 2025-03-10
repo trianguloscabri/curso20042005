@@ -1,0 +1,92 @@
+FIGURE CabriII vers. MS-Windows 1.0
+
+Window center x: 0 y: 0 Window size x: 26.6435416666667 y: 16.430625
+
+1: Pt, 0, CN:0, VN:1
+R, W, t, DS:1 1, GT:1, I, nSt
+Val: 0 0
+
+2: Axes, 1, CN:1, VN:3
+Gr, W, t, DS:1 1, GT:0, I, nSt
+Const: 1, Val: 1 0, 0 1
+
+"Hc", NP: -103, 42, NS: 18, 18
+3: Pt, 0, CN:0, VN:1
+R, W, t, DS:1 1, GT:1, V, nSt
+Val: -2.16958333333333 -1.37583333333333
+p: 0, Arial, S: 13 C: 3 Fa: 0
+
+"Ha", NP: -29, 121, NS: 18, 18
+4: Pt, 0, CN:0, VN:1
+R, W, t, DS:1 1, GT:1, V, nSt
+Val: -0.767291666666667 -3.12208333333333
+p: 0, Arial, S: 13 C: 3 Fa: 0
+
+"Hb", NP: 24, 15, NS: 18, 18
+5: Pt, 0, CN:0, VN:1
+R, W, t, DS:1 1, GT:1, V, nSt
+Val: 0.47625 -0.687916666666667
+p: 0, Arial, S: 13 C: 3 Fa: 0
+
+6: Tr, 0, CN:3, VN:0
+V, W, t, DS:1 1, GT:0, V, nSt
+Const: 3 4 5
+
+"bisecHa", NP: -57, -155, NS: 49, 18
+7: Biss, 0, CN:3, VN:2
+lGr, W, t, DS:1 1, GT:0, V, nSt
+Const: 3 4 5
+p: 0, Arial, S: 13 C: 12 Fa: 0
+
+"bisecHc", NP: -224, 2, NS: 49, 18
+8: Biss, 0, CN:3, VN:2
+lGr, W, t, DS:1 1, GT:0, V, nSt
+Const: 5 3 4
+p: 0, Arial, S: 13 C: 12 Fa: 0
+
+"bisecHb", NP: 78, -24, NS: 49, 18
+9: Biss, 0, CN:3, VN:2
+lGr, W, t, DS:1 1, GT:0, V, nSt
+Const: 4 5 3
+p: 0, Arial, S: 13 C: 12 Fa: 0
+
+10: Perp, 0, CN:2, VN:2
+G, W, t, DS:1 1, GT:0, V, nSt
+Const: 5 9
+
+11: Perp, 0, CN:2, VN:2
+G, W, t, DS:1 1, GT:0, V, nSt
+Const: 3 8
+
+12: Perp, 0, CN:2, VN:2
+G, W, t, DS:1 1, GT:0, V, nSt
+Const: 4 7
+
+"B", NP: -100, 120, NS: 11, 18
+13: Int, 0, CN:2, VN:1
+R, W, t, DS:1 1, GT:1, V, nSt
+Const: 11 12
+p: 0, Arial, S: 13 C: 3 Fa: 0
+
+"C", NP: 87, 101, NS: 11, 18
+14: Int, 0, CN:2, VN:1
+R, W, t, DS:1 1, GT:1, V, nSt
+Const: 10 12
+p: 0, Arial, S: 13 C: 3 Fa: 0
+
+"A", NP: -41, -60, NS: 11, 18
+15: Int, 0, CN:2, VN:1
+R, W, t, DS:1 1, GT:1, V, nSt
+Const: 10 11
+p: 0, Arial, S: 13 C: 3 Fa: 0
+
+16: Tr, 0, CN:3, VN:0
+V, W, t, DS:1 1, GT:0, V, nSt
+Const: 15 13 14
+
+17: Text, 0, CN:0, VN:1
+B, W, BTh:2, DS:1 1, GT:0, V, nSt
+Val: -290 -151 0, nA, nP, TP: -7.67291666666667, 3.99520833333333,TS: 4.048125, -0.635
+"Moveu Ha, Hb, Hc"
+p: 0, Arial, S: 19 C: 3 Fa: 0
+

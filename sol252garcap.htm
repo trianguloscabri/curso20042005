@@ -1,0 +1,54 @@
+<title>trianguloscabri252</title> 
+
+
+<body bgcolor="#FFFFFF">
+<h1>Problema 252 de <i>tri&aacute;nguloscabri</i> </h1>
+<table width="100%" border="0">
+  <tr> 
+    <td bgcolor="#FFFF99" height="34">Si <i>ABC</i> es un triángulo equilátero, 
+      hallar el lugar geométrico de un punto <i>D</i> tal que <i>DA</i> = <i>DB</i> 
+      + <i>DC</i>.</td>
+  </tr>
+  <tr> 
+    <td height="25"> 
+      <div align="right"> 
+        <p><font size="-1">Conant L.L. (1905): Original exercises in plane and 
+          solid geometry.</font></p>
+      </div>
+    </td>
+  </tr>
+</table>
+<p><font face="Verdana, Arial, Helvetica, sans-serif"><i>Soluci&oacute;n de <a href="http://garciacapitan.auna.com">Francisco 
+  Javier Garc&iacute;a Capit&aacute;n</a></i> </font></p>
+<p>Usaremos la desigualdad de Ptolomeo. Seg&uacute;n podemos ver en <a href="http://garciacapitan.auna.com/escritos/ptolomeo.zip">http://garciacapitan.auna.com/escritos/ptolomeo.zip</a>,</p>
+<blockquote> 
+  <blockquote> 
+    <p><i>Si ABCD es un cuadril&aacute;tero cualquiera del plano, entonces AB&middot;CD 
+      + BC&middot;DA </i><font face=Symbol>&sup3;</font><i><font face=Symbol> 
+      </font>AC&middot;BD, cumpli&eacute;ndose la igualdad si y solo si el cuadril&aacute;tero 
+      es c&iacute;clico y convexo.</i></p>
+  </blockquote>
+</blockquote>
+<p><img src="sol252garcap.jpg" width="244" height="256" align="right">Si lo adaptamos al 
+  cuadril&aacute;tero <i>ABDC</i>, tendremos </p>
+<blockquote>
+  <blockquote> 
+    <p><i>Si ABDC es un cuadril&aacute;tero cualquiera del plano, entonces AB&middot;DC 
+      + BD&middot;CA </i><font face=Symbol>&sup3;</font><i><font face=Symbol> 
+      </font>AD&middot;BC, cumpli&eacute;ndose la igualdad si y solo si el cuadril&aacute;tero 
+      es c&iacute;clico y convexo.</i></p>
+  </blockquote>
+</blockquote>
+<p></p>
+<p>Pero en la suposici&oacute;n de que el tri&aacute;ngulo <i>ABC</i> es equil&aacute;tero 
+  la desigualdad es equivalente a <i>DB</i> + <i>DC</i> <font face=Symbol>&sup3;</font> 
+  <i>DA</i>. </p>
+<p>Como conclusi&oacute;n, para que se cumpla la igualdad la condici&oacute;n 
+  necesaria y suficiente es que <i>D</i> est&eacute; en el arco <i>BC</i> que 
+  no contiene a <i>A</i> de la circunferencia circunscrita a <i>ABC</i>.</p>
+<applet code="CabriJava.class" width="775" height="522" align="bottom" ARCHIVE="CabriJava.jar"> 
+    <PARAM NAME=file VALUE="sol252garcap.fig"> 
+    <PARAM NAME=lang VALUE="ca"> 
+    <PARAM NAME=bgcolor VALUE="#CCCCCC"> 
+    <PARAM NAME=yposition VALUE="90"> 
+  </applet>

@@ -1,0 +1,119 @@
+<title>trianguloscabri213</title> 
+
+<script 
+  type="text/JavaScript" 
+  language="JavaScript">
+<!-- 
+//
+// format date as dd-mmm-yy
+// example: 12-Jan-99
+//
+function date_ddmmmyy(date)
+{
+  var d = date.getDate();
+  var m = date.getMonth() + 1;
+  var y = date.getYear();
+
+  // handle different year values 
+  // returned by IE and NS in 
+  // the year 2000.
+  if(y >= 2000)
+  {
+    y -= 2000;
+  }
+  if(y >= 100)
+  {
+    y -= 100;
+  }
+
+  // could use splitString() here 
+  // but the following method is 
+  // more compatible
+  var mmm = 
+    ( 1==m)?'Ene':( 2==m)?'Feb':(3==m)?'Mar':
+    ( 4==m)?'Abr':( 5==m)?'May':(6==m)?'Jun':
+    ( 7==m)?'Jul':( 8==m)?'Ago':(9==m)?'Sep':
+    (10==m)?'Oct':(11==m)?'Nov':'Dec';
+
+  return "" +
+    (d<10?"0"+d:d) + "-" +
+    mmm + "-" +
+    (y<10?"0"+y:y);
+}
+
+
+//
+// get last modified date of the 
+// current document.
+//
+function date_lastmodified()
+{
+  var lmd = document.lastModified;
+  var s   = "Unknown";
+  var d1;
+
+  // check if we have a valid date
+  // before proceeding
+  if(0 != (d1=Date.parse(lmd)))
+  {
+    s = "" + date_ddmmmyy(new Date(d1));
+  }
+
+  return s;
+}
+// -->
+</script>
+
+
+<body bgcolor="#FFFFFF">
+<table width="100%" border="0">
+  <tr> 
+    <td height="2"> 
+      <h1>Problema 213 de <i>tri&aacute;nguloscabri</i></h1>
+    </td>
+  </tr>
+</table>
+<table width="100%" border="0">
+  <tr> 
+    <td bgcolor="#FFFF99" height="18"> 
+      <p>Construir un tri&aacute;ngulo rect&aacute;ngulo conocidos un cateto y 
+        la diferencia de la hipotenusa con el otro cateto.</p>
+      </td>
+  </tr>
+  <tr> 
+    <td height="2"> 
+      <div align="right"><font size="-1">Gonz&aacute;lez, O. (2005). Comunicaci&oacute;n 
+        personal.</font></div>
+    </td>
+  </tr>
+</table>
+<p><i>Soluci&oacute;n de <a href="http://garciacapitan.auna.com">Francisco Javier 
+  Garc&iacute;a Capit&aacute;n</a></i> </p>
+<p><img src="solgarcap213.jpg" width="195" height="160" align="right">Supongamos 
+  que <i>c</i> y <i>a</i>-<i>b</i> son las longitudes dadas (<i>a</i> es la hipotenusa 
+  y b y c son los catetos). Entonces, como <i>c</i>-(<i>a</i>-<i>b</i>)=<i>b</i>+<i>c</i>-<i>a</i> 
+  = 2(<i>s</i>-<i>a</i>) = 2<i>r</i>, siendo <i>r</i> el radio de la circunferencia 
+  inscrita, encontramos la siguiente construcci&oacute;n:</p>
+<ul>
+  <li>Fijamos AB de longitud c.</li>
+  <li>Restamos a AB el segmento <i>DB</i>=<i>a</i>-<i>b</i>, con lo que <i>AD</i>=2<i>r</i>.</li>
+  <li>El punto medio <i>E</i> de <i>AD</i> ser&aacute; el punto de tangencia de 
+    la circunferencia inscrita con el lado <i>AB</i>.</li>
+  <li>Construimos la circunferencia inscrita (con radio <i>AE</i> y centro en 
+    la recta perpendicular por <i>E</i> a <i>AB</i>).</li>
+  <li>Trazamos la otra recta tangente a dicha circunferencia desde el punto <i>B</i> 
+    y hallamos su intersecci&oacute;n con la perpendicular a <i>AB</i> por <i>A</i>, 
+    lo que nos dar&aacute; como intersecci&oacute;n el v&eacute;rtice <i>C</i> 
+    del tri&aacute;ngulo buscado. </li>
+</ul>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>
+  <applet code="CabriJava.class" width="767" height="518" archive="CabriJava.jar" align="left">
+    <param name="lang" value="all">
+    <param name="bgcolor" value="#F0F0CC">
+    <param name="file" value="sol213garcap.fig">
+  </applet>
+</p>
+<p>&nbsp;</p>
+<p>&nbsp; </p>

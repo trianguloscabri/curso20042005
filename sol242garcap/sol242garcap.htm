@@ -1,0 +1,244 @@
+<title>trianguloscabri242</title> 
+
+
+<body bgcolor="#FFFFFF">
+<table width="100%" border="0">
+  <tr> 
+    <td height="2"> 
+      <h1><font face="Verdana, Arial, Helvetica, sans-serif">Problema 242 de <i>tri&aacute;nguloscabri</i></font></h1>
+    </td>
+  </tr>
+</table>
+<table width="100%" border="0">
+  <tr> 
+    <td bgcolor="#FFFF99" height="234"> 
+      <p>Sean <i>ABC</i> un tri&aacute;ngulo, y <i>AA'</i>, <i>BB'</i> y <i>CC'</i> 
+        tres cevianas arbitrarias que concurren en el punto interior del tri&aacute;ngulo 
+        <i>P'</i>, distinto del centro de gravedad. <br>
+        Sean los puntos <i>A&quot;</i>, <i>B&quot;</i> y <i>C&quot;</i> sobre 
+        los lados <i>BC</i>, <i>AC</i> y <i>AB</i>, respectivamente, tales que: 
+        <i>CA'</i>=<i>A&quot;B</i>, <i>AB'</i>= <i>B&quot;C</i> y <i>AC'</i>= 
+        <i>C&quot;B</i>. Probar que : <br>
+        <b>a</b>) Las cevianas <i>AA&quot;</i>, <i>BB&quot;</i> y <i>CC&quot;</i> 
+        concurren en un punto <i>P&quot;</i>.<br>
+        <b>b</b>) Si definimos los puntos <i>A*</i> como intersecci&oacute;n de 
+        las rectas <i>C&acute;B&quot;</i> y <i>C&quot;B&acute;</i>, <i>B*</i> 
+        como intersecci&oacute;n de las rectas <i>A'C&quot;</i> y <i>A&quot;C' 
+        </i>y, <i>C*</i> como la intersecci&oacute;n de las rectas <i>B'A&quot;</i> 
+        y <i>B&quot;A'</i>, probar que los puntos <i>A*</i>, <i>B*</i> y <i>C*</i> 
+        est&aacute;n alineados y que la recta <i>A*B*C*</i> pasa por los puntos 
+        <i>P'</i> y <i>P&quot;</i>.<br>
+        <b>c</b>) Calculad el cociente de las razones dobles de los cuatro pares 
+        de puntos siguientes: (<i>A*</i>, <i>B*</i>, <i>C* </i>,<i>P'</i>):(<i>A*</i>,<i>B*</i>, 
+        <i>C*</i>, <i>P&quot;</i>). <br>
+        <b>d</b>) &iquest;Qu&eacute; sucede si <i>P' </i>= <i>G</i>, centro de 
+        gravedad del tri&aacute;ngulo?<br>
+        Bonus:<br>
+        <b><font color="#0000FF"><i>e</i>) &iquest;En qu&eacute; casos alguno 
+        de los puntos <i>A*</i>,<i> B*</i>, <i>C*</i> es un punto del infinito, 
+        por ser paralelas las rectas que lo definen?<br>
+        <i>f</i>) &iquest;Qu&eacute; punto P' de partida debemos tomar si queremos 
+        que el baricentro G pertenezca a la recta <i>A*B*C*</i>? </font></b></p>
+      </td>
+  </tr>
+  <tr> 
+    <td height="12"> 
+      <div align="right"> 
+        <p><font size="-1">Propuesto por Juan Carlos Salazar.</font></p>
+      </div>
+    </td>
+  </tr>
+</table>
+<p><font face="Verdana, Arial, Helvetica, sans-serif"><i>Soluci&oacute;n de <a href="http://garciacapitan.auna.com">Francisco 
+  Javier Garc&iacute;a Capit&aacute;n</a></i> </font></p>
+<p><img src="242a.jpg" width="307" height="272" align="right">La figura de la 
+  derecha muestra los puntos <i>P'</i> y <i>P&quot;</i>, que se se llaman <i>conjugados 
+  isot&oacute;micos</i>. </p>
+<p>Que las cevianas <i>AA&quot;</i>, <i>BB&quot;</i> y <i>CC&quot;</i> concurren 
+  en un punto <i>P&quot;</i>, como afirma el apartado a), y que sirve para dar 
+  validez a la definici&oacute;n anterior, puede demostrarse muy f&aacute;cilmente 
+  usando el teorema de Ceva. Sin embargo, contando con que otros compa&ntilde;eros 
+  usar&aacute;n este teorema, recurrir&eacute; al uso de las coordenadas baric&eacute;ntricas 
+  para resolver este problema.</p>
+<h2>Preliminares</h2>
+<p class="CellLabel">Los c&aacute;lculos con ecuaciones baric&eacute;ntricas para 
+  resolver este problema no son muy complicados. De todas formas, estas ser&iacute;an 
+  las instrucciones para realizar con <i>Mathematica</i>. El c&oacute;digo fuente 
+  con todas las instrucciones puede descargarse pulsando <a href="242.nb">aqu&iacute;</a>.</p>
+<p class="CellLabel">Partimos de que </p>
+<ul>
+  <li>Un punto o una recta pueden representarse ambos como una terna de n&uacute;meros.</li>
+  <li>Dos ternas son equivalentes si una es m&uacute;ltiplo de la otra. Por eso 
+    usamos <b>Simplificar</b> para obtener la expresi&oacute;n m&aacute;s sencilla.</li>
+  <li>El mismo procedimiento <b>Unir</b> nos sirve para hallar el punto de intersecci&oacute;n 
+    de dos rectas y la ecuaci&oacute;n de la recta que une dos puntos. </li>
+</ul>
+<p class="CellLabel"><img src="imgs/index_1.gif" alt="Simplificar[{u_, v_, w_}] := Simplify[{u, v, w}/PolynomialGCD[u, v, w]]"  width="429" height="32"  style="vertical-align:middle" /> 
+  <br>
+  <img src="imgs/index_2.gif" alt="Unir[{x1_, y1_, z1_}, {x2_, y2_, z2_}] := &#62371;Simplificar[{Det[({{y1, z1}, {y2, z2}})], -Det[({{x1, z1}, {x2, z2}})], Det[({{x1, y1}, {x2, y2}})]}]"  width="427" height="50"  style="vertical-align:middle" /><br>
+  <img src="imgs/index_3.gif" alt="Punto[r_, s_] := Unir[r, s] ;"  width="195" height="18"  style="vertical-align:middle" /> 
+  <br>
+  <img src="imgs/index_4.gif" alt="Recta[P_, Q_] := Unir[P, Q] ;"  width="196" height="18"  style="vertical-align:middle" /> 
+</p>
+<p class="CellLabel"> </p>
+<p>&nbsp;</p>
+<h2>a) Las cevianas <i>AA&quot;</i>, <i>BB&quot;</i> y <i>CC&quot;</i> concurren 
+  en un punto <i>P&quot;</i>.</h2>
+<p class="CellLabel">Introducimos las coordenadas de los v&eacute;rtices del tri&aacute;ngulo 
+  de referencia:</p>
+<p class="Input"> <img src="imgs/index_5.gif" alt="ptA = {1, 0, 0} ; ptB = {0, 1, 0} ; ptC = {0, 0, 1} ;"  width="313" height="18"  style="vertical-align:middle" /> 
+</p>
+<p class="CellLabel"> Ahora, las coordenadas del punto P' y de sus correspondientes 
+  <i>trazas</i> <i>A'</i>, <i>B'</i> y <i>C'</i>. Las coordenadas de <i>A'</i>, 
+  <i>B'</i> y <i>C'</i> pueden obtenerse a partir del concepto de coordenadas 
+  baric&eacute;ntricas, o bien como intersecci&oacute;n de la recta que une <i>P'</i> 
+  con un v&eacute;rtice y el lado opuesto.<br>
+  <img src="imgs/index_6.gif" alt="ptP1 = {u, v, w} ; "  width="117" height="18"  style="vertical-align:middle" /> 
+  <img src="imgs/index_7.gif" alt="ptA1 = {0, v, w} ;"  width="114" height="18"  style="vertical-align:middle" /> 
+  <img src="imgs/index_8.gif" alt="ptB1 = {u, 0, w} ;"  width="114" height="18"  style="vertical-align:middle" /><img src="imgs/index_9.gif" alt="ptC1 = {u, v, 0} ;"  width="112" height="18"  style="vertical-align:middle" /> 
+</p>
+<p class="CellLabel"> Las coordenadas de los puntos <i>A&quot;</i>, <i>B&quot;</i> 
+  y <i>C&quot;</i> se obtienen permutando coordenadas en <i>A'</i>, <i>B'</i> 
+  y <i>C'</i>:<br>
+  <img src="imgs/index_10.gif" alt="ptA2 = {0, w, v} ;"  width="114" height="18"  style="vertical-align:middle" /> 
+  <img src="imgs/index_11.gif" alt="ptB2 = {w, 0, u} ;"  width="114" height="18"  style="vertical-align:middle" /> 
+  <img src="imgs/index_12.gif" alt="ptC2 = {v, u, 0} ;"  width="112" height="18"  style="vertical-align:middle" /> 
+</p>
+<p class="CellLabel">Ahora comprobamos que <i>AA&quot;</i>, <i>BB&quot;</i> y 
+  <i>CC&quot;</i> concurren en un punto. </p>
+<p class="Input"> <img src="imgs/index_13.gif" alt="Det[{&#62371;Recta[ptA, ptA2], &#62371;Recta[ptB, ptB2], &#62371;Recta[ptC, ptC2]}]"  width="145" height="78"  style="vertical-align:middle" /> 
+  <br>
+  <img src="imgs/index_14.gif" alt="0"  width="11" height="17"  style="vertical-align:middle" /> 
+</p>
+<p class="CellLabel">Obtengamos las coordenadas del punto de intersecci&oacute;n 
+  <i>P&quot;</i>:</p>
+<p class="CellLabel"><img src="imgs/index_15.gif" alt="ptP2 = Punto[Recta[ptA, ptA2], Recta[ptB, ptB2]]"  width="338" height="18"  style="vertical-align:middle" /><br>
+  <img src="imgs/index_16.gif" alt="{v w, u w, u v}"  width="92" height="17"  style="vertical-align:middle" /> 
+</p>
+<h2 class="CellLabel"><i>b</i>) Si definimos los puntos <i>A*</i> como intersecci&oacute;n 
+  de las rectas <i>C&acute;B&quot;</i> y <i>C&quot;B&acute;</i>, <i>B*</i> como 
+  intersecci&oacute;n de las rectas <i>A'C&quot;</i> y <i>A&quot;C' </i>y, <i>C*</i> 
+  como la intersecci&oacute;n de las rectas <i>B'A&quot;</i> y <i>B&quot;A'</i>, 
+  probar que los puntos <i>A*</i>, <i>B*</i> y <i>C*</i> est&aacute;n alineados 
+  y que la recta <i>A*B*C*</i> pasa por los puntos <i>P'</i> y <i>P&quot;</i>.</h2>
+<p class="Output">Hallemos las coordenadas de los puntos A*, B* y C*:</p>
+<p class="Output"><img src="imgs/index_17.gif" alt="ptA3 = Punto[Recta[ptB1, ptC2], Recta[ptB2, ptC1]]"  width="346" height="18"  style="vertical-align:middle" /><br>
+  <img src="imgs/index_18.gif" alt="ptB3 = Punto[Recta[ptC1, ptA2], Recta[ptC2, ptA1]]"  width="346" height="18"  style="vertical-align:middle" /><br>
+  <img src="imgs/index_19.gif" alt="ptC3 = Punto[Recta[ptA1, ptB2], Recta[ptA2, ptB1]]"  width="346" height="18"  style="vertical-align:middle" /></p>
+<p class="Output"> <img src="imgs/index_20.gif" alt="{-u^4 + v^2 w^2, u v (-u^2 + w^2), u (-u^2 + v^2) w}"  width="260" height="17"  style="vertical-align:middle" /><br>
+  <img src="imgs/index_21.gif" alt="{u v (-v^2 + w^2), -v^4 + u^2 w^2, v (u^2 - v^2) w}"  width="253" height="17"  style="vertical-align:middle" /> 
+  <br>
+  <img src="imgs/index_22.gif" alt="{u w (v^2 - w^2), v w (u^2 - w^2), u^2 v^2 - w^4}"  width="237" height="17"  style="vertical-align:middle" /> 
+  <br>
+</p>
+<p class="Output">Comprobamos que estos tres puntos est&aacute;n alineados:<br>
+  <img src="imgs/index_23.gif" alt="Det[{ptA3, ptB3, ptC3}]"  width="164" height="18"  style="vertical-align:middle" /> 
+  <br>
+  <img src="imgs/index_24.gif" alt="0"  width="11" height="17"  style="vertical-align:middle" /> 
+</p>
+<p class="CellLabel">Hallamos los coeficientes de la ecuaci&oacute;n de la recta 
+  A*B*C*: </p>
+<p class="CellLabel"><img src="imgs/index_25.gif" alt="A3B3C3 = Recta[ptA3, ptB3]"  width="180" height="18"  style="vertical-align:middle" /> 
+</p>
+<p class="CellLabel"> <img src="imgs/index_26.gif" alt="{u (-v^2 + w^2), v (u^2 - w^2), (-u^2 + v^2) w}"  width="241" height="17"  style="vertical-align:middle" /> 
+</p>
+<p class="CellLabel">Sustituimos las coordenadas de <i>P'</i> y <i>P&quot;</i>, 
+  para ver que son puntos de la recta:</p>
+<h2 class="CellLabel"> <img src="imgs/index_27.gif" alt="Simplify[Tr[A3B3C3 * ptP1]]"  width="191" height="18"  style="vertical-align:middle" /><br>
+  <img src="imgs/index_28.gif" alt="Simplify[Tr[A3B3C3 * ptP2]]"  width="191" height="18"  style="vertical-align:middle" /> 
+  <br>
+  <img src="imgs/index_29.gif" alt="0"  width="11" height="17"  style="vertical-align:middle" /> 
+  <br>
+  <img src="imgs/index_30.gif" alt="0"  width="11" height="17"  style="vertical-align:middle" /> 
+</h2>
+<h2 class="CellLabel"><br>
+  c) Calculad el cociente de las razones dobles de los cuatro pares de puntos 
+  siguientes: (<i>A*</i>, <i>B*</i>, <i>C* </i>,<i>P'</i>):(<i>A*</i>,<i>B*</i>, 
+  <i>C*</i>, <i>P&quot;</i>). </h2>
+<p class="CellLabel">Necesitamos la complicada f&oacute;rmula del cuadrado de 
+  la distancia entre dos puntos. Una vez, introducida, la usamos para definir 
+  otra funci&oacute;n que calcula el cuadrado de la raz&oacute;n doble de cuatro 
+  puntos. </p>
+<p class="CellLabel"><img src="imgs/index_31.gif" alt="SA = (b^2 + c^2 - a^2)/2 ; SB = (c^2 + a^2 - b^2)/2 ; SC = (a^2 + b^2 - c^2)/2 ;"  width="329" height="33"  style="vertical-align:middle" /> 
+</p>
+<p class="Input"> <img src="imgs/index_32.gif" alt="CuadradoDistancia[{u_, v_, w_}, {x_, y_, z_}] := 1/((u + v + w)^2 (x + y + z)^2) (SA ((v + w) x - u (y + z))^2 + SB ((w + u) y - v (z + x))^2 + SC ((u + v) z - w (x + y))^2) ;"  width="662" height="53"  style="vertical-align:middle" /> 
+</p>
+<p class="CellLabel"> <img src="imgs/index_33.gif" alt="CuadradoRazonDoble[P_, Q_, R_, S_] := &#62371;Divide[CuadradoDistancia[P, R]/CuadradoDistancia[Q, R], CuadradoDistancia[P, S]/CuadradoDistancia[Q, S]]"  width="412" height="53"  style="vertical-align:middle" /> 
+</p>
+<p class="CellLabel"> <img src="imgs/index_34.gif" alt="Factor[CuadradoRazonDoble[ptA3, ptB3, ptC3, ptP1]/CuadradoRazonDoble[ptA3, ptB3, ptC3, ptP2]] &#62371;"  width="358" height="53"  style="vertical-align:middle" /> 
+</p>
+<p class="CellLabel"> <img src="imgs/index_35.gif" alt="u^8/v^8"  width="24" height="33"  style="vertical-align:middle" /> 
+</p>
+<p class="CellLabel">Podemos entonces interpretar que el cociente de las razones 
+  dobles es </p>
+<p class="CellLabel"><img src="formula.gif" width="156" height="49"></p>
+<h2>d) &iquest;Qu&eacute; sucede si <i>P' </i>= <i>G</i>, centro de gravedad del 
+  tri&aacute;ngulo?</h2>
+<p><i>P'</i> y <i>P&quot;</i> coinciden, y los puntos <i>A*</i>, <i>B*</i> y <i>C*</i> 
+  quedan indeterminados.</p>
+<h2>e) &iquest;En qu&eacute; casos alguno de los puntos <i>A*</i>,<i> B*</i>, 
+  <i>C*</i> es un punto del infinito, por ser paralelas las rectas que lo definen?</h2>
+<p><img src="242c.jpg" width="428" height="438" align="right">Consideremos el 
+  caso, por ejemplo, del punto <i>A*</i>, cuyas coordenadas hemos visto que son: 
+</p>
+<p><img src="imgs/index_20.gif" alt="{-u^4 + v^2 w^2, u v (-u^2 + w^2), u (-u^2 + v^2) w}"  width="260" height="17"  style="vertical-align:middle" /><br>
+</p>
+<p> Se tratar&aacute; de un punto del infinito si sus coordenadas suman 0. Usamos 
+  la funci&oacute;n <b>Tr</b> (traza) de <i>Mathematica</i> para sumar todas las 
+  coordenadas y <b>Factor</b> para ver m&aacute;s f&aacute;cilmente cuando se 
+  anula la expresi&oacute;n resultante. </p>
+<p><img src="imgs/index_36.gif" width="118" height="18"></p>
+<p><img src="imgs/index_37.gif" width="156" height="17"> </p>
+<p>Al tratarse de un punto interior al tri&aacute;ngulo el &uacute;nico factor 
+  que puede anularse es el &uacute;ltimo. Vemos que se trata de una c&oacute;nica, 
+  por se un polinomio de segundo grado. Es evidente que pasa por los puntos <i>B</i> 
+  y <i>C</i>, y por el baricentro <i>G</i>. Para representarla r&aacute;pidamente 
+  con Cabri, podemos hallar otros dos puntos, por ejemplo los puntos <i>X</i>=(2,4,1) 
+  e <i>Y</i>=(2,1,4). </p>
+<p>La ceviana <i>BX</i> corta a <i>AC</i> en el punto <i>U</i>=(2,0,1), cumpliendo 
+  <i>CU</i>:<i>UA</i>=2:1, y la ceviana <i>CX</i> corta a <i>AB</i> en el punto 
+  <i>V</i>=(2:4:0)=(1:2:0), cumpliendo <i>AV</i>:<i>VB</i> = 2:1. An&aacute;logamente 
+  podemos hallar el punto <i>Y</i>. </p>
+<p>Podemos ver en la figura obtenida, y podemos razonar f&aacute;cilmente a partir 
+  de la ecuaci&oacute;n, que las c&oacute;nica tiene por tangentes los lados <i>AB</i> 
+  y <i>AC</i> del tri&aacute;ngulo</p>
+<p>En el siguiente applet, el punto <i>P'</i> var&iacute;a en la c&oacute;nica 
+  (una elipse) hallada anteriormente y vemos c&oacute;mo las rectas <i>B'C&quot;</i> 
+  y <i>B&quot;C'</i> que definen el punto <i>A*</i> son paralelas. </p>
+<p align="center"><applet
+codebase="../."
+archive="CabriJava.jar"
+code="CabriJava.class"
+width=520 height=360>
+    <font size="+1"> 
+    <param name=file value="242d.fig">
+    <param name=lang value="es">
+    <param name=border value=0>
+    <param name=bgcolor value=#FFFFCC>
+    <param name=controller value=true>
+    </font> 
+  </applet></p>
+<h2><i>f</i>) <font color="#000000">&iquest;En <b>qu&eacute; punto <i>P'</i> de 
+  partida debemos tomar si queremos que el baricentro <i>G</i> pertenezca a la 
+  recta <i>A*B*C*</i>?</b></font><b><font color="#0000FF"> </font></b></h2>
+<p>Sustituimos las coordenadas del baricentro G en la recta A*B*C*, y obtenemos 
+  la expresi&oacute;n en u, v, w que debe anularse:<img src="imgs/index_38.gif" width="105" height="18"><br>
+  <img src="imgs/index_39.gif" width="181" height="18"> <br>
+  <img src="imgs/index_40.gif" width="132" height="17"> </p>
+<p>Puede comprobarse f&aacute;cilmente que cada uno de los factores corresponde 
+  a una de las medianas del tri&aacute;ngulo <i>ABC</i>.</p>
+<p>En el applet que sigue <i>P'</i> var&iacute;a en la mediana que pasa por <i>B</i>, 
+  y vemos que A* y C* coinciden con el punto medio del lado <i>AC</i>:</p>
+<p align="center"><applet
+codebase="../."
+archive="CabriJava.jar"
+code="CabriJava.class"
+width=520 height=360>
+    <font size="+1"> 
+    <param name=file value="242e.fig">
+    <param name=lang value="es">
+    <param name=border value=0>
+    <param name=bgcolor value=#FFFFCC>
+    <param name=controller value=true>
+    </font> 
+  </applet></p>

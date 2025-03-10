@@ -1,0 +1,90 @@
+<title>trianguloscabri255</title> 
+
+
+<body bgcolor="#FFFFFF">
+<h1>Problema 255 de <i>tri&aacute;nguloscabri</i> </h1>
+<table width="100%" border="0">
+  <tr> 
+    <td bgcolor="#FFFF99" height="41">Construir un triángulo conociendo, en posición, 
+      sus tres bisectrices y un punto sobre el perímetro del triángulo. </td>
+  </tr>
+  <tr> 
+    <td height="13"> 
+      <div align="right"> 
+        <p><font size="-1">Juan Sapi&ntilde;a Borja: Problemas gr&aacute;ficos 
+          de Geometr&iacute;a. Propueso por Jose Mar&iacute;a Pedret</font></p>
+      </div>
+    </td>
+  </tr>
+</table>
+<p><font face="Verdana, Arial, Helvetica, sans-serif"><i>Soluci&oacute;n de <a href="http://garciacapitan.auna.com">Francisco 
+  Javier Garc&iacute;a Capit&aacute;n</a></i> </font></p>
+<p><i>An&aacute;lisis</i>: </p>
+<table width="58%" border="0" cellpadding="0" align="right">
+  <tr> 
+    <td><img src="411a.jpg" width="437" height="271"></td>
+  </tr>
+</table>
+<p> Supongamos el problema resuelto como en la figura, en el que el punto dado 
+  <i>P</i> pertenece al lado <i>AC</i> del tri&aacute;ngulo buscado <i>ABC</i>.</p>
+<p>Los puntos sim&eacute;tricos <i>Q</i> y <i>R</i> del punto <i>P</i> respecto 
+  de las bisectrices de los &aacute;ngulos <i>A</i> y <i>C </i>deber&aacute;n 
+  estar en los lados <i>AB</i> y <i>CB</i>, respectivamente. </p>
+<p>A su vez, los sim&eacute;tricos de los puntos obtenidos respecto de las rectas 
+  correspondientes estar&aacute;n en otros lados del tri&aacute;ngulo.</p>
+<p><i>Construcci&oacute;n</i>:</p>
+<p>Dadas las rectas <i>ra</i>, <i>rb</i> y <i>rc</i> y el punto <i>P</i>, como 
+  en la figura, hallamos los puntos <i>Q</i> y <i>R</i> sim&eacute;tricos de <i>P</i> 
+  respecto de <i>ra</i> y <i>rc</i>, respectivamente. A continuaci&oacute;n, hallamos 
+  los puntos <i>S</i>, sim&eacute;trico de <i>R</i> respecto de <i>rb</i>, y <i>T</i>, 
+  sim&eacute;trico de <i>S</i> respecto de <i>ra</i>. Finalmente, <i>U</i> es 
+  el sim&eacute;trico de <i>T</i> respecto de <i>rc</i> (o tambi&eacute;n el sim&eacute;trico 
+  de <i>Q</i> respecto de <i>rb</i>).</p>
+<p>As&iacute; tendremos dos puntos en cada lado del tri&aacute;ngulo buscado, 
+  y el tri&aacute;ngulo podr&aacute; obtenerse trazando las rectas <i>PT</i>, 
+  <i>QS</i> y <i>RU</i>.</p>
+<p><i>Observaciones</i>:</p>
+<table width="90%" border="0" cellpadding="0" align="center">
+  <tr> 
+    <td width="76%" valign="top">Observemos que, llamando <i>I</i> al punto de 
+      intersecci&oacute;n de las tres rectas dadas, las distancias de <i>I</i> 
+      a <i>P</i>, <i>Q</i>, <i>R</i>, <i>S</i>, <i>T</i>, <i>U</i> ser&aacute;n 
+      todas iguales. Por ejemplo, al ser Q el sim&eacute;trico de P respecto de 
+      la recta <i>ra</i>, el tir&aacute;ngulo <i>IPQ</i> ser&aacute; is&oacute;sceles 
+      y tendremos <i>IP</i>=<i>IQ</i>.</td>
+    <td width="24%"> 
+      <table width="10%" border="0" cellpadding="0" align="center">
+        <tr> 
+          <td><img src="411b.jpg" width="420" height="267"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr> 
+    <td width="76%" valign="top">&nbsp;</td>
+    <td width="24%">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td width="76%" valign="top">En el caso especial que <i>P</i>=<i>T</i>, <i>Q</i>=<i>S</i> 
+      y <i>R</i>=<i>U</i>, suceder&aacute; que <i>P</i>, <i>Q</i> y <i>R</i> son 
+      los puntos de contacto de la circunferencia inscrita con los tres lados, 
+      y tambi&eacute;n podremos hallar el tri&aacute;ngulo <i>ABC</i> trazando 
+      la circunferencia con centro <i>I</i> y radio <i>P</i> y la recta tangente 
+      a la misma por el punto <i>P</i>, que determinar&aacute; con dos de las 
+      rectas dadas dos de los v&eacute;rtices del tri&aacute;ngulo buscado.</td>
+    <td width="24%"> 
+      <table width="10%" border="0" cellpadding="0" align="center">
+        <tr> 
+          <td><img src="411c.jpg" width="386" height="260"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<p>Finalmente, obtendremos otra soluci&oacute;n si repetimos lo mismo, pero suponiendo 
+  que <i>P</i> es un punto del lado <i>BC</i>.</p>
+<table width="10%" border="0" cellpadding="0" align="center">
+  <tr> 
+    <td><img src="411d.jpg" width="602" height="314"></td>
+  </tr>
+</table>

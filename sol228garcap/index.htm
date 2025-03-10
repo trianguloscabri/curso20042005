@@ -1,0 +1,280 @@
+<title>trianguloscabri228</title> 
+
+
+<body bgcolor="#FFFFFF">
+<i><font size="+1" face="Verdana, Arial, Helvetica, sans-serif"><a name="INICIO"></a></font></i> 
+<table width="100%" border="0">
+  <tr> 
+    <td height="2"> 
+      <h1><font face="Verdana, Arial, Helvetica, sans-serif">Problema 228 de <i>tri&aacute;nguloscabri</i></font></h1>
+    </td>
+  </tr>
+</table>
+<table width="100%" border="0">
+  <tr> 
+    <td bgcolor="#FFFF99" height="36"> 
+      <p class="Subsubtitle" align="left"><font face="Verdana, Arial, Helvetica, sans-serif">Sea 
+        <i>ABC</i> un tri&aacute;ngulo rect&aacute;ngulo en <i>A</i>. Sea <i>a</i> 
+        > <i>b</i> <font face="Symbol">&sup3;</font></font> <font face="Verdana, Arial, Helvetica, sans-serif"><i>c</i>. 
+        Hallar <i>x</i> real tal que si tomamos <i>a</i>+<i>x</i>, <i>b</i>+<i>x</i>, 
+        <i>c</i>+<i>x</i>, prolongando una longitud <i>x</i> a <i>a</i> desde 
+        <i>B</i>, y obteniendo <i>C'</i> , prolongando una longitud <i>x</i> a 
+        <i>b</i> desde <i>C</i> y obteniendo <i>A'</i>, y prolongando una longitud 
+        <i>x</i> a <i>c</i> desde <i>A</i> y obteniendo <i>B'</i>, el tri&aacute;ngulo 
+        <i>A'B'C'</i> es rect&aacute;ngulo en <i>B'</i>.</font></p>
+    </td>
+  </tr>
+  <tr> 
+    <td height="15"> 
+      <div align="right"> 
+        <p><font size="-1" face="Verdana, Arial, Helvetica, sans-serif">Propuesto 
+          por Juan Bosco Romero M&aacute;rquez.</font></p>
+      </div>
+    </td>
+  </tr>
+</table>
+<p><font face="Verdana, Arial, Helvetica, sans-serif"><i>Soluci&oacute;n de <a href="http://garciacapitan.auna.com">Francisco 
+  Javier Garc&iacute;a Capit&aacute;n</a></i> </font></p>
+<ul>
+  <li><font face="Verdana, Arial, Helvetica, sans-serif"><a href="#GENERAL">Soluci&oacute;n 
+    del caso general</a>, en el que el tri&aacute;ngulo rect&aacute;ngulo dado 
+    no es necesario que sea rect&aacute;ngulo en <i>A</i>.</font></li>
+  <li><font face="Verdana, Arial, Helvetica, sans-serif"><a href="#RECTANGULO">Soluci&oacute;n 
+    en el caso del tri&aacute;ngulo rect&aacute;ngulo en <i>A</i></a>.</font></li>
+  <li><font face="Verdana, Arial, Helvetica, sans-serif"><a href="sol228garcap-applet.htm">Applet 
+    Cabrijava en el caso del tri&aacute;ngulo rect&aacute;ngulo en A</a>.</font></li>
+</ul>
+<ul>
+  <li><font face="Verdana, Arial, Helvetica, sans-serif"><b><a href="#ANALISIS">An&aacute;lisis 
+    del caso general</a></b>. Si fijamos el segmento <i>BC</i>, &iquest;que regi&oacute;n 
+    ocupan los v&eacute;rtices <i>A</i> de los tri&aacute;ngulos <i>ABC</i> para 
+    los que el problema tiene soluci&oacute;n? <br>
+    </font></li>
+</ul>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><font size="+1" face="Verdana, Arial, Helvetica, sans-serif"><a name="GENERAL"></a>Soluci&oacute;n 
+  del caso general</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif">Usando las coordenadas baric&eacute;ntricas 
+  y el programa de c&aacute;lculo simb&oacute;lico <i>Mathematica</i> obtendremos 
+  el valor de <i>x</i> sin imponer las condiciones <i>a</i> > <i>b</i> <font face="Symbol">&sup3;</font></font> 
+  <font face="Verdana, Arial, Helvetica, sans-serif"><i>c</i> sobre los lados 
+  del tri&aacute;ngulo, e incluso para un tri&aacute;ngulo cualquiera, no necesariamente 
+  rect&aacute;ngulo en <i>A</i>.</font></p>
+<div class=Section1> 
+  <table width="43%" border="0" cellpadding="0" align="center" height="109">
+    <tr> 
+      <td height="30"><font face="Verdana, Arial, Helvetica, sans-serif"><img src="index_1.gif" width="416" height="235"></font></td>
+    </tr>
+    <tr> 
+      <td height="3"> 
+        <div align="center"><font size="-1" face="Verdana, Arial, Helvetica, sans-serif">Figura 
+          1</font></div>
+      </td>
+    </tr>
+  </table>
+  <p >&nbsp;</p>
+  <p ><font face="Verdana, Arial, Helvetica, sans-serif">Comenzamos un poco fuerte, 
+    introduciendo la f&oacute;rmula para la <b>distancia al cuadrado</b> de dos 
+    puntos en coordenadas baric&eacute;ntricas homog&eacute;neas. </font></p>
+  <p ><font face="Verdana, Arial, Helvetica, sans-serif"><img src="index_3.gif" width="662" height="89"></font></p>
+  <p ><font face="Verdana, Arial, Helvetica, sans-serif">A continuaci&oacute;n, 
+    introducimos las coordenadas de los puntos <i>A'</i>, <i>B'</i>, <i>C'</i> 
+    en funci&oacute;n del n&uacute;mero <i>x</i> que queremos determinar. </font></p>
+  <p ><font face="Verdana, Arial, Helvetica, sans-serif"><img src="index_4.gif" width="140" height="58"></font></p>
+  <p ><font face="Verdana, Arial, Helvetica, sans-serif">Ahora, imponemos la condici&oacute;n 
+    de que el tri&aacute;ngulo <i>A'B'C'</i> debe ser rect&aacute;ngulo en <i>B'</i>:</font></p>
+  <p ><font face="Verdana, Arial, Helvetica, sans-serif"><img src="index_7.gif" width="378" height="18"><br>
+  <img src="index_8.gif" width="608" height="50"> </font></p>
+  <p ><font face="Verdana, Arial, Helvetica, sans-serif">Vemos que se trata de 
+    un polinomio de segundo grado. Hallando sus ra&iacute;ces tendremos el valor 
+    <i>x</i> buscado. </font></p>
+  <p ><font face="Verdana, Arial, Helvetica, sans-serif"><img src="index_9.gif" width="103" height="18"><br>
+  <img src="index_10.gif" width="577" height="168"> </font></p>
+  <p ><font face="Verdana, Arial, Helvetica, sans-serif">Para poder introducir 
+    estas soluciones en la <b>Calculadora</b> de <i>Cabri</i>, necesitamos expresar 
+    el resultado de otra forma:</font></p>
+  <p ><font face="Verdana, Arial, Helvetica, sans-serif"><img src="index_11.gif" width="89" height="18"><br>
+    <font size="-1">{{x -&gt; (-(a^3*b) + a*b^3 - a^3*c - a^2*b*c + a*b^2*c - 
+    b^3*c + 3*a*b*c^2 + a*c^3 + b*c^3 - <br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sqrt[(a^3*b - a*b^3 + a^3*c + a^2*b*c - a*b^2*c 
+    + b^3*c - 3*a*b*c^2 - a*c^3 - b*c^3)^2 - <br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4*(a^3 - a^2*b - a*b^2 + b^3 + a^2*c 
+    - 2*a*b*c + b^2*c - a*c^2 - b*c^2 - c^3)*<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(a^3*b*c - a*b^3*c - a*b*c^3)])/(2*(a^3 
+    - a^2*b - a*b^2 + b^3 + a^2*c - 2*a*b*c + <br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b^2*c - a*c^2 - b*c^2 - c^3))}, <br />
+    {x -&gt; (-(a^3*b) + a*b^3 - a^3*c - a^2*b*c + a*b^2*c - b^3*c + 3*a*b*c^2 
+    + a*c^3 + b*c^3 + <br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sqrt[(a^3*b - a*b^3 + a^3*c + a^2*b*c - a*b^2*c 
+    + b^3*c - 3*a*b*c^2 - a*c^3 - b*c^3)^2 - <br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4*(a^3 - a^2*b - a*b^2 + b^3 + a^2*c 
+    - 2*a*b*c + b^2*c - a*c^2 - b*c^2 - c^3)*<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(a^3*b*c - a*b^3*c - a*b*c^3)])/(2*(a^3 
+    - a^2*b - a*b^2 + b^3 + a^2*c - 2*a*b*c + <br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b^2*c - a*c^2 - b*c^2 - c^3))}} </font></font></p>
+  <p class="Text"> </p>
+  <p ><font face="Verdana, Arial, Helvetica, sans-serif">Todav&iacute;a tendremos 
+    que hacer algunos arreglos, como sustituir los corchetes por par&eacute;ntesis, 
+    poner todo el texto de una f&oacute;rmula en una l&iacute;nea para que la 
+    <b>Calculadora</b> de <i>Cabri</i> lo acepte. Puede presentarse alg&uacute;n 
+    problema adicional si Cabri comete errores de redondeo al efectuar potencias, 
+    por lo que es conveniente convertir &eacute;stas en productos. Aqu&iacute; 
+    est&aacute; la expresi&oacute;n de una de las soluciones tal como debemos 
+    introducirla en la ventana de la calculadora:</font></p>
+  <p > <font face="Verdana, Arial, Helvetica, sans-serif" size="-1">(-(a*a*a*b) 
+    + a*b*b*b - a*a*a*c - a*a*b*c + a*b*b*c - b*b*b*c + 3*a*b*c*c + a*c*c*c + 
+    b*c*c*c+sqrt((a*a*a*b - a*b*b*b + a*a*a*c + a*a*b*c - a*b*b*c + b*b*b*c - 
+    3*a*b*c*c - a*c*c*c - b*c*c*c)^2 -4*(a*a*a - a*a*b - a*b*b + b*b*b + a*a*c 
+    - 2*a*b*c + b*b*c - a*c*c - b*c*c - c*c*c)*(a*a*a*b*c - a*b*b*b*c - a*b*c*c*c)))/(2*(a*a*a 
+    - a*a*b - a*b*b + b*b*b + a*a*c - 2*a*b*c +b*b*c - a*c*c - b*c*c - c*c*c)) 
+    </font></p>
+  <p ><font face="Verdana, Arial, Helvetica, sans-serif">Habr&aacute;, en general, 
+    dos soluciones del problema. Cuando se obtengan valores negativos de <i>x</i>, 
+    como ocurre para ambas soluciones en la figura siguiente, el tri&aacute;ngulo 
+    correspondiente estar&aacute; inscrito en el dado.</font></p>
+  <table width="62%" border="0" cellpadding="0" align="center">
+    <tr> 
+      <td><font face="Verdana, Arial, Helvetica, sans-serif"><img src="figura1.jpg" width="463" height="251"></font></td>
+    </tr>
+    <tr> 
+      <td> 
+        <div align="center"><font size="-1" face="Verdana, Arial, Helvetica, sans-serif">Figura 
+          2: </font></div>
+      </td>
+    </tr>
+  </table>
+  <p><font face="Verdana, Arial, Helvetica, sans-serif">Aqu&iacute; vemos un caso 
+    en el que hay una soluci&oacute;n positiva y otra negativa:</font></p>
+  <table width="62%" border="0" cellpadding="0" align="center">
+    <tr> 
+      <td><font face="Verdana, Arial, Helvetica, sans-serif"><img src="figura3.jpg" width="471" height="251"></font></td>
+    </tr>
+    <tr> 
+      <td> 
+        <div align="center"><font size="-1" face="Verdana, Arial, Helvetica, sans-serif">Figura 
+          2: </font></div>
+      </td>
+    </tr>
+  </table>
+  <p>&nbsp;</p>
+  <div class=Section1> 
+    <p ></p>
+    <p><font face="Verdana, Arial, Helvetica, sans-serif"><a href="#INICIO">Volver</a></font></p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p><font size="+1" face="Verdana, Arial, Helvetica, sans-serif"><i><a name="RECTANGULO"></a></i>Soluci&oacute;n 
+      en el caso del tri&aacute;ngulo rect&aacute;ngulo en <i>A</i>.</font></p>
+    <p><font face="Verdana, Arial, Helvetica, sans-serif">En el caso del tri&aacute;ngulo 
+      rect&aacute;ngulo, los c&aacute;lculos son mucho m&aacute;s sencillos:</font></p>
+    <p><font face="Verdana, Arial, Helvetica, sans-serif"><img src="index_31.gif" width="412" height="38"><br>
+    <img src="index_32.gif" width="164" height="33"> </font></p>
+    <p><font face="Verdana, Arial, Helvetica, sans-serif">Vemos que una soluci&oacute;n 
+      siempre es cero. La otra la podemos expresar as&iacute;:</font></p>
+    <p><font face="Verdana, Arial, Helvetica, sans-serif"><img src="formula1.gif" width="185" height="50"><br>
+      es decir es la diferencia de dos segmentos de la forma <img src="formula2.gif" width="25" height="48" align="absmiddle">, 
+    donde <i>u</i>, <i>v</i> y <i>w</i> son conocidos.</font></p>
+    <p><font face="Verdana, Arial, Helvetica, sans-serif"><img src="figura4.jpg" width="216" height="204" align="right">Para 
+      construir tales segmentos usaremos una figura como la mostrada a la derecha: 
+      Si las cuerdas <i>AB</i> y <i>CD</i> se cortan en <i>O</i>, entonces <i>OA</i>&middot;<i>OB</i> 
+      = <i>OC</i>&middot;<i>OD</i>, de donde podemos obtener:</font></p>
+    <p align="center"><font face="Verdana, Arial, Helvetica, sans-serif"><img src="formula3.gif" width="152" height="48"></font></p>
+    <p align="left"><font face="Verdana, Arial, Helvetica, sans-serif">Todo lo 
+      que tenemos que hacer es aplicar este m&eacute;todo dos veces con los valores 
+      que aparecen en la f&oacute;rmula de <i>x</i>. El &uacute;nico de esos valores 
+      que no es un lado del tri&aacute;ngulo dado es <i>a</i>-<i>b</i>+<i>c = 
+      </i>2&middot;(<i>s-b</i>), el doble doble de la distancia <i>BD</i>, siendo 
+      <i>D</i> el punto de contacto de la circunferencia inscrita con <i>BC</i>. 
+      Por tanto, la expresi&oacute;n de <i>x</i> puede hallarse f&aacute;cilmente. 
+      </font></p>
+    <p align="center"><img src="figura5.jpg" width="343" height="241"></p>
+    <p align="left"><font face="Verdana, Arial, Helvetica, sans-serif">.</font></p>
+    <p><font face="Verdana, Arial, Helvetica, sans-serif"><a href="#INICIO">Volver</a></font></p>
+    <p></p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p><font size="+1" face="Verdana, Arial, Helvetica, sans-serif"><i><a name="ANALISIS"></a></i>An&aacute;lisis 
+      del caso general.</font></p>
+    <p><font face="Verdana, Arial, Helvetica, sans-serif">Supongamos que fijamos 
+      el segmento BC. Moviendo el punto A vemos que hay soluci&oacute;n del problema 
+      en algunos casos y no en otros. Evidentemente, estos &uacute;ltimos corresponden 
+      a aquellos en los que el radicando de la f&oacute;rmula de x es negativo. 
+      </font></p>
+    <p><font face="Verdana, Arial, Helvetica, sans-serif">&iquest;Qu&eacute; regi&oacute;n 
+      forman los puntos A para los que hay soluci&oacute;n? &iquest;C&oacute;mo 
+      hallarla con Cabri?</font></p>
+    <p><font face="Verdana, Arial, Helvetica, sans-serif">Hallemos el sim&eacute;trico 
+      A* de A respecto de B' y luego el sim&eacute;trico A** de A* respecto de 
+      B'. El punto A** es lo que Roger Cuppens llama <b>ping-pong central</b> 
+      en el cap&iacute;tulo Geometr&iacute;a L&oacute;gica de su cuaderno <i>Avec 
+      Cabri-G&eacute;om&egrave;tre II, jouez... et faites de la G&eacute;om&egrave;trie!</i> 
+      (tomo II).</font></p>
+    <p><font face="Verdana, Arial, Helvetica, sans-serif">Es claro que A** existir&aacute; 
+      y coincidir&aacute; con A si y solo si B' existe, es decir si la construcci&oacute;n 
+      es posible. </font></p>
+    <p align="center"><img src="figura6.jpg" width="327" height="236"></p>
+    <p><font face="Verdana, Arial, Helvetica, sans-serif">Por tanto, usando la 
+      </font><font face="Verdana, Arial, Helvetica, sans-serif"> herramienta <b>Traza</b> 
+      de <i>Cabri</i> sobre el punto <i>A**</i> y arrastrando A por la pantalla 
+      ir&aacute;n apareciendo puntos correspondientes a A para los que el problema 
+      tiene soluci&oacute;n. El resultado es parecido al siguiente:</font></p>
+    <p><font face="Verdana, Arial, Helvetica, sans-serif"><img src="region1.jpg" width="718" height="297"></font></p>
+    <p><font face="Verdana, Arial, Helvetica, sans-serif">Esta otra figura est&aacute; 
+      obtenida con la ayuda de <i>Mathematica</i>, considerando que B=(-1,0), 
+      C=(1,0), variando A y comprobando directamente que la ecuaci&oacute;n de 
+      segundo grado de la que x es soluci&oacute;n tiene discriminante no negativo:</font></p>
+    <p align="center"><font face="Verdana, Arial, Helvetica, sans-serif"><img src="region2.jpg" width="288" height="288"></font></p>
+    <p><font face="Verdana, Arial, Helvetica, sans-serif"><a href="#INICIO">Volver</a></font></p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+  </div>
+</div>
